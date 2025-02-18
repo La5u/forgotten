@@ -10,6 +10,8 @@ Tinder | dry, flammable material for a fire
 Twitch | sudden small movement
 Sublime | very great excellence or beauty
 Puma | cougar (cat)
+Firefox | nickname for red panda
+Nike | Greek Goddess of victory
 Notion | a conception of or belief about something
 
 
