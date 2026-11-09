@@ -1,0 +1,817 @@
+{
+ "fix": {
+  "bud": {
+   "brand": "Bud",
+   "owner": "Anheuser-Busch",
+   "launch_year": 1876,
+   "source_url": "https://en.wikipedia.org/wiki/Budweiser",
+   "group": "contested",
+   "winner": "original",
+   "brand_article": "Budweiser"
+  },
+  "defender": {
+   "brand": "Land Rover Defender",
+   "owner": "Land Rover",
+   "launch_year": 1983,
+   "source_url": "https://en.wikipedia.org/wiki/Land_Rover_Defender",
+   "group": "contested",
+   "winner": "original",
+   "brand_article": "Land Rover Defender"
+  },
+  "galaxy": {
+   "brand": "Samsung Galaxy",
+   "owner": "Samsung",
+   "launch_year": 2009,
+   "source_url": "https://en.wikipedia.org/wiki/Samsung_Galaxy",
+   "group": "contested",
+   "winner": "even",
+   "brand_article": "Samsung Galaxy"
+  },
+  "prime": {
+   "brand": "Amazon Prime",
+   "owner": "Amazon",
+   "launch_year": 2005,
+   "source_url": "https://en.wikipedia.org/wiki/Amazon_Prime",
+   "group": "contested",
+   "winner": "even",
+   "brand_article": "Amazon Prime"
+  },
+  "toast": {
+   "brand": "Toast",
+   "owner": "Toast, Inc.",
+   "launch_year": 2012,
+   "source_url": "https://en.wikipedia.org/wiki/Toast%2C_Inc.",
+   "group": "failed",
+   "winner": "original",
+   "brand_article": "Toast, Inc."
+  },
+  "transit": {
+   "brand": "Ford Transit",
+   "owner": "Ford",
+   "launch_year": 1965,
+   "source_url": "https://en.wikipedia.org/wiki/Ford_Transit",
+   "group": "contested",
+   "winner": "original",
+   "brand_article": "Ford Transit"
+  },
+  "samba": {
+   "brand": "Adidas Samba",
+   "owner": "Adidas",
+   "launch_year": 1949,
+   "source_url": "https://en.wikipedia.org/wiki/Adidas_Samba",
+   "group": "contested",
+   "winner": "original",
+   "brand_article": "Adidas Samba",
+   "reason": "A famous trainer, but the Brazilian dance comes first."
+  },
+  "dove": {
+   "launch_year": 1957
+  },
+  "garfield": {
+   "launch_year": 1978
+  },
+  "hades": {
+   "launch_year": 2018
+  },
+  "mounds": {
+   "launch_year": 1920
+  },
+  "lucid": {
+   "launch_year": 2021
+  },
+  "polestar": {
+   "launch_year": 2019
+  },
+  "starburst": {
+   "launch_year": 1967,
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Starburst first."
+  },
+  "starling": {
+   "launch_year": 2017
+  },
+  "uber": {
+   "launch_year": 2010
+  },
+  "joy": {
+   "owner": "Procter & Gamble",
+   "group": "failed",
+   "winner": "original",
+   "reason": "Joy never displaced the original meaning for most people."
+  },
+  "dishonored": {
+   "group": "failed"
+  },
+  "supra": {
+   "brand": "Toyota Supra"
+  },
+  "tercel": {
+   "brand": "Toyota Tercel"
+  },
+  "scirocco": {
+   "brand": "Volkswagen Scirocco"
+  },
+  "claude": {
+   "brand": "Claude",
+   "owner": "Anthropic",
+   "group": "taken",
+   "winner": "brand",
+   "source_url": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "brand_article": "Claude (AI)"
+  },
+  "cursor": {
+   "group": "contested",
+   "winner": "brand",
+   "source_url": "https://en.wikipedia.org/wiki/Cursor_(code_editor)",
+   "brand_article": "Cursor (code editor)"
+  },
+  "anthropic": {
+   "group": "taken",
+   "winner": "brand",
+   "original_article": "Anthropic principle"
+  },
+  "perplexity": {
+   "group": "contested",
+   "winner": "brand",
+   "original_article": "Perplexity",
+   "brand_article": "Perplexity AI",
+   "no_plot": true
+  },
+  "threads": {
+   "original_views": null,
+   "group": "contested",
+   "winner": "original"
+  },
+  "grok": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "mistral": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "gemini": {
+   "group": "contested",
+   "winner": "brand"
+  },
+  "copilot": {
+   "group": "contested",
+   "winner": "brand"
+  },
+  "codex": {
+   "group": "contested",
+   "winner": "even",
+   "brand_article": "OpenAI Codex (AI agent)",
+   "extra_brand_articles": [
+    "OpenAI Codex",
+    "OpenAI Codex (language model)"
+   ],
+   "original_article": "Codex"
+  },
+  "sonnet": {
+   "group": "contested",
+   "winner": "original",
+   "no_plot": true
+  },
+  "opus": {
+   "group": "contested",
+   "winner": "original",
+   "no_plot": true
+  },
+  "haiku": {
+   "group": "contested",
+   "winner": "original",
+   "no_plot": true
+  },
+  "devin": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Devin never displaced the original meaning for most people."
+  },
+  "whisper": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Whisper never displaced the original meaning for most people."
+  },
+  "character": {
+   "group": "contested",
+   "winner": "original"
+  },
+  "wise": {
+   "group": "contested",
+   "winner": "original"
+  },
+  "arc": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Arc never displaced the original meaning for most people."
+  },
+  "llama": {
+   "group": "contested",
+   "winner": "original"
+  },
+  "stray": {
+   "group": "contested",
+   "winner": "original",
+   "owner": "BlueTwelve Studio"
+  },
+  "inflection": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Inflection never displaced the original meaning for most people."
+  },
+  "ideogram": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "carbon": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "beeper": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "vicuna": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "quill": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "alpaca": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "phi": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "pythia": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "falcon": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "aurora": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "cadence": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "relay": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "jasper": {
+   "group": "failed",
+   "winner": "original"
+  },
+  "dodge": {
+   "group": "contested",
+   "winner": "original",
+   "reason": "Everyone knows the cars, but \"dodge\" is still an everyday verb."
+  },
+  "dolly": {
+   "group": "failed",
+   "winner": "original",
+   "brand_article": null,
+   "brand_views": null,
+   "reason": "Databricks released it as a model; the traffic belongs to the parent company."
+  },
+  "poe": {
+   "group": "failed",
+   "winner": "original",
+   "brand_article": null,
+   "brand_views": null,
+   "reason": "A chatbot app from Quora, with no standing of its own against the surname and the poet."
+  },
+  "nothing": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Nothing never displaced the original meaning for most people."
+  },
+  "kick": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Kick never displaced the original meaning for most people."
+  },
+  "miller": {
+   "group": "contested",
+   "winner": "original",
+   "reason": "A familiar beer, but miller is still the trade and one of the commonest surnames."
+  },
+  "nyx": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "A drugstore make-up brand with a fraction of the attention the goddess of night still gets."
+  },
+  "marathon": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Marathon never displaced the original meaning for most people."
+  },
+  "clubhouse": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Clubhouse never displaced the original meaning for most people."
+  },
+  "chai": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Chai never displaced the original meaning for most people."
+  },
+  "pears": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Pears never displaced the original meaning for most people."
+  },
+  "reaper": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "REAPER never displaced the original meaning for most people."
+  },
+  "zed": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Zed never displaced the original meaning for most people."
+  },
+  "kafka": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Apache Kafka never displaced the original meaning for most people."
+  },
+  "gemma": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Gemma never displaced the original meaning for most people."
+  },
+  "aria": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Aria never displaced the original meaning for most people."
+  },
+  "block": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Block never displaced the original meaning for most people."
+  },
+  "orca": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Orca never displaced the original meaning for most people."
+  },
+  "warp": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Warp never displaced the original meaning for most people."
+  },
+  "windsurf": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Windsurf never displaced the original meaning for most people."
+  },
+  "zephyr": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Zephyr never displaced the original meaning for most people."
+  },
+  "energizer": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Energizer first."
+  },
+  "hulk": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Hulk first."
+  },
+  "mac": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Mac first."
+  },
+  "pampers": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Pampers first."
+  },
+  "snickers": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Snickers first."
+  },
+  "oculus": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Oculus first."
+  },
+  "bard": {
+   "winner": "original"
+  },
+  "twitter": {
+   "winner": "brand"
+  },
+  "prototype": {
+   "owner": "Activision"
+  },
+  "husky": {
+   "original_meaning": "A sled dog of the Arctic; also strongly built."
+  },
+  "felix": {
+   "launch_year": 1963
+  },
+  "ninja": {
+   "no_plot": true
+  },
+  "shark": {
+   "no_plot": true
+  },
+  "unity": {
+   "no_plot": true
+  },
+  "sonic": {
+   "brand": "Sonic the Hedgehog",
+   "owner": "Sega",
+   "launch_year": 1991,
+   "brand_article": "Sonic the Hedgehog",
+   "source_url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog",
+   "winner": "brand",
+   "reason": "Say Sonic and most people picture the hedgehog; the adjective survives in sonic boom."
+  },
+  "pluto": {
+   "brand": "Pluto",
+   "owner": "The Walt Disney Company",
+   "launch_year": 1930,
+   "brand_article": "Pluto (Disney)",
+   "source_url": "https://en.wikipedia.org/wiki/Pluto_(Disney)",
+   "winner": "original",
+   "reason": "The dog is famous, but the dwarf planet and the god come first."
+  },
+  "elsa": {
+   "brand": "Elsa",
+   "owner": "The Walt Disney Company",
+   "launch_year": 2013,
+   "brand_article": "Elsa (Frozen)",
+   "source_url": "https://en.wikipedia.org/wiki/Elsa_(Frozen)",
+   "group": "contested",
+   "winner": "brand",
+   "reason": "Since Frozen, the Disney queen comes first for many people, though it is still a real name."
+  },
+  "flash": {
+   "brand": "The Flash",
+   "owner": "DC Comics",
+   "launch_year": 1940,
+   "brand_article": "Flash (DC Comics character)",
+   "source_url": "https://en.wikipedia.org/wiki/Flash_(DC_Comics_character)",
+   "winner": "original",
+   "reason": "The superhero is famous, but a flash of light comes first."
+  },
+  "columbia": {
+   "brand": "Columbia Pictures",
+   "owner": "Sony",
+   "launch_year": 1924,
+   "brand_article": "Columbia Pictures",
+   "source_url": "https://en.wikipedia.org/wiki/Columbia_Pictures",
+   "winner": "original"
+  },
+  "admiral": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Admiral never displaced the original meaning for most people."
+  },
+  "ambrosia": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Ambrosia never displaced the original meaning for most people."
+  },
+  "anchor": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Anchor never displaced the original meaning for most people."
+  },
+  "aquarius": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Aquarius never displaced the original meaning for most people."
+  },
+  "bird": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Bird never displaced the original meaning for most people."
+  },
+  "bliss": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Bliss never displaced the original meaning for most people."
+  },
+  "bold": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Bold never displaced the original meaning for most people."
+  },
+  "box": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Box never displaced the original meaning for most people."
+  },
+  "brilliant": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Brilliant never displaced the original meaning for most people."
+  },
+  "cohost": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Cohost never displaced the original meaning for most people."
+  },
+  "hush": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Hush never displaced the original meaning for most people."
+  },
+  "justice": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Justice never displaced the original meaning for most people."
+  },
+  "kathmandu": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Kathmandu never displaced the original meaning for most people."
+  },
+  "lemonade": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Lemonade never displaced the original meaning for most people."
+  },
+  "libby": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Libby never displaced the original meaning for most people."
+  },
+  "lion": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Lion never displaced the original meaning for most people."
+  },
+  "logic": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Logic Pro never displaced the original meaning for most people."
+  },
+  "match": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Match.com never displaced the original meaning for most people."
+  },
+  "herschel": {
+   "group": "failed",
+   "winner": "original",
+   "reason": "Herschel Supply never displaced the original meaning for most people.",
+   "original_meaning": "A surname and given name, as of the astronomer William Herschel."
+  },
+  "android": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Android first."
+  },
+  "skittles": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Skittles first."
+  },
+  "slinky": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Slinky first."
+  },
+  "sprite": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Sprite first."
+  },
+  "transformers": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Transformers first."
+  },
+  "whopper": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Whopper burger first."
+  },
+  "vogue": {
+   "group": "taken",
+   "winner": "brand",
+   "reason": "Most people now think of Vogue first."
+  },
+  "benefit": {
+   "launch_year": 1976
+  },
+  "kettle": {
+   "launch_year": 1978
+  },
+  "intuit": {
+   "launch_year": 1983
+  },
+  "bugles": {
+   "no_plot": true
+  },
+  "messenger": {
+   "no_plot": true
+  },
+  "tomcat": {
+   "no_plot": true
+  },
+  "robin": {
+   "brand": "Robin",
+   "owner": "DC Comics",
+   "launch_year": 1940,
+   "brand_article": "Robin (character)",
+   "source_url": "https://en.wikipedia.org/wiki/Robin_(character)",
+   "group": "contested",
+   "winner": "original",
+   "reason": "Batman's sidekick is famous, but the bird and the name come first."
+  },
+  "buzz": {
+   "brand": "Buzz Lightyear",
+   "owner": "Pixar",
+   "launch_year": 1995,
+   "brand_article": "Buzz Lightyear",
+   "source_url": "https://en.wikipedia.org/wiki/Buzz_Lightyear",
+   "group": "contested",
+   "winner": "original",
+   "reason": "The toy astronaut is famous, but a buzz is still mainly a sound."
+  },
+  "ariel": {
+   "brand": "Ariel",
+   "owner": "The Walt Disney Company",
+   "launch_year": 1989,
+   "brand_article": "Ariel (The Little Mermaid)",
+   "source_url": "https://en.wikipedia.org/wiki/Ariel_(The_Little_Mermaid)",
+   "winner": "brand",
+   "reason": "For most people the name now means the mermaid."
+  },
+  "ajax": {
+   "brand": "Ajax",
+   "owner": "AFC Ajax",
+   "launch_year": 1900,
+   "brand_article": "AFC Ajax",
+   "source_url": "https://en.wikipedia.org/wiki/AFC_Ajax",
+   "winner": "brand",
+   "reason": "The Amsterdam club is the best-known Ajax today, ahead of the Greek hero."
+  }
+ },
+ "reject": [
+  "amiga",
+  "costa",
+  "bandcamp",
+  "bell",
+  "cobra",
+  "bacchus",
+  "domino",
+  "kirkland",
+  "greggs",
+  "kinder",
+  "fuji",
+  "firefly",
+  "levin",
+  "digg",
+  "maxima",
+  "nautica",
+  "okta",
+  "pesa",
+  "midjourney",
+  "luigi",
+  "loop",
+  "sabra",
+  "sibelius",
+  "simply",
+  "tabasco",
+  "touareg",
+  "uno",
+  "versa",
+  "vivaldi",
+  "vive",
+  "wendy",
+  "wizz",
+  "service",
+  "max",
+  "whip",
+  "rio",
+  "lay",
+  "blogger",
+  "jira",
+  "jetta",
+  "quicksilver",
+  "cola",
+  "pipers"
+ ],
+ "reject_strict_bare_word": [
+  "accent",
+  "acclaim",
+  "armada",
+  "ascent",
+  "atlas",
+  "avalanche",
+  "avalon",
+  "cayenne",
+  "celebrity",
+  "challenger",
+  "champ",
+  "cherokee",
+  "chieftain",
+  "citation",
+  "cobalt",
+  "compass",
+  "conquest",
+  "crown",
+  "cutlass",
+  "equinox",
+  "escape",
+  "expedition",
+  "explorer",
+  "fiesta",
+  "firebird",
+  "fit",
+  "focus",
+  "forester",
+  "forte",
+  "fury",
+  "gladiator",
+  "highlander",
+  "insight",
+  "juke",
+  "kona",
+  "laser",
+  "leaf",
+  "legacy",
+  "malibu",
+  "maverick",
+  "neon",
+  "odyssey",
+  "outback",
+  "passport",
+  "pathfinder",
+  "phaeton",
+  "phoenix",
+  "pilot",
+  "plaza",
+  "prelude",
+  "prowler",
+  "pursuit",
+  "rabbit",
+  "ranger",
+  "reliant",
+  "renegade",
+  "rogue",
+  "scamp",
+  "scirocco",
+  "sequoia",
+  "solstice",
+  "sonata",
+  "soul",
+  "spark",
+  "stinger",
+  "suburban",
+  "sunbird",
+  "sunburst",
+  "supra",
+  "tacoma",
+  "tahoe",
+  "taurus",
+  "telluride",
+  "tempest",
+  "tercel",
+  "thunderbird",
+  "titan",
+  "torpedo",
+  "tracker",
+  "traverse",
+  "tucson",
+  "tundra",
+  "vibe",
+  "viper",
+  "volt",
+  "harrier",
+  "polo",
+  "transit",
+  "defender",
+  "animate",
+  "index",
+  "harmony",
+  "pivotal",
+  "pelican",
+  "puffin",
+  "acorn",
+  "acme"
+ ],
+ "note_watching": "Watching only when there is too little data to judge (owner 2026-11-09): recency alone is not uncertainty."
+}

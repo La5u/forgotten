@@ -1,0 +1,5812 @@
+[
+{
+"word": "Accent",
+"kind": "common",
+"brand": "Hyundai Accent",
+"owner": "Hyundai Motor Company",
+"launch_year": 1994,
+"original_meaning": "A distinctive way of pronouncing a language.",
+"source_url": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+"pre_launch_per_million": 2.5946
+},
+{
+"word": "Access",
+"kind": "common",
+"brand": "Microsoft Access",
+"owner": "Microsoft",
+"launch_year": 1992,
+"original_meaning": "The ability to enter or use something",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Access",
+"pre_launch_per_million": 69.5783
+},
+{
+"word": "Accord",
+"kind": "common",
+"brand": "Honda Accord",
+"owner": "Honda",
+"launch_year": 1976,
+"original_meaning": "Agreement or harmony.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Accord",
+"pre_launch_per_million": 6.4934
+},
+{
+"word": "Ace",
+"kind": "common",
+"brand": "Ace Hardware",
+"owner": "Ace Hardware Corporation",
+"launch_year": 1924,
+"original_meaning": "A playing card marked with one symbol.",
+"source_url": "https://en.wikipedia.org/wiki/Ace_Hardware",
+"pre_launch_per_million": 0.9039
+},
+{
+"word": "Acrobat",
+"kind": "common",
+"brand": "Adobe Acrobat",
+"owner": "Adobe",
+"launch_year": 1993,
+"original_meaning": "A performer of physical feats",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Acrobat",
+"pre_launch_per_million": 0.0799
+},
+{
+"word": "ada",
+"kind": "name",
+"brand": "Ada",
+"owner": "Ada",
+"launch_year": 2016,
+"original_meaning": "A feminine given name.",
+"source_url": "https://www.ada.cx/about/",
+"pre_launch_per_million": 1.9091
+},
+{
+"word": "adept",
+"kind": "common",
+"brand": "Adept",
+"owner": "Adept AI",
+"launch_year": 2022,
+"original_meaning": "Highly skilled or proficient.",
+"source_url": "https://www.adept.ai/blog/introducing-adept/",
+"pre_launch_per_million": 1.8841
+},
+{
+"word": "admiral",
+"kind": "common",
+"brand": "Admiral",
+"owner": "Admiral Group plc",
+"launch_year": 1993,
+"original_meaning": "A senior naval officer.",
+"source_url": "https://www.admiralgroup.co.uk/who-we-are/our-milestones",
+"pre_launch_per_million": 0.6026
+},
+{
+"word": "Adobe",
+"kind": "common",
+"brand": "Adobe",
+"owner": "Adobe Inc.",
+"launch_year": 1982,
+"original_meaning": "Sun-dried clay brick used for building.",
+"source_url": "https://asof.is/facts/founded",
+"pre_launch_per_million": 0.6239
+},
+{
+"word": "Aerie",
+"kind": "rare",
+"brand": "Aerie",
+"owner": "American Eagle Outfitters",
+"launch_year": 2006,
+"original_meaning": "A large bird of prey's nest.",
+"source_url": "https://en.wikipedia.org/wiki/Aerie_(clothing_retailer)",
+"pre_launch_per_million": 0.0367
+},
+{
+"word": "Aero",
+"kind": "rare",
+"brand": "Aero",
+"owner": "Nestl\u00e9",
+"launch_year": 1935,
+"original_meaning": "A prefix relating to air.",
+"source_url": "https://en.wikipedia.org/wiki/Aero_(chocolate_bar)",
+"pre_launch_per_million": 0.3179
+},
+{
+"word": "Affinity",
+"kind": "common",
+"brand": "Affinity",
+"owner": "Canva",
+"launch_year": 2014,
+"original_meaning": "A natural liking or connection",
+"source_url": "https://en.wikipedia.org/wiki/Affinity_(software)",
+"pre_launch_per_million": 7.9411
+},
+{
+"word": "Airflow",
+"kind": "common",
+"brand": "Apache Airflow",
+"owner": "Apache Software Foundation",
+"launch_year": 2015,
+"original_meaning": "The movement of air",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Airflow",
+"pre_launch_per_million": 1.2384
+},
+{
+"word": "ajax",
+"kind": "name",
+"brand": "Ajax",
+"owner": "Colgate-Palmolive",
+"launch_year": 1947,
+"original_meaning": "Name of a Greek mythological hero",
+"source_url": "https://mylifeatomic.wordpress.com/2016/02/05/the-1950s-housewife-cleaning-products-vs-modern-cleaning-products/",
+"pre_launch_per_million": 0.6546
+},
+{
+"word": "alan",
+"kind": "name",
+"brand": "Alan",
+"owner": "Alan SA",
+"launch_year": 2016,
+"original_meaning": "A masculine given name.",
+"source_url": "https://techcrunch.com/2016/10/24/alan-wants-to-turn-health-insurance-into-software-as-a-service/",
+"pre_launch_per_million": 12.5737
+},
+{
+"word": "Alaska",
+"kind": "name",
+"brand": "Alaska Airlines",
+"owner": "Alaska Air Group",
+"launch_year": 1944,
+"original_meaning": "A state in the northwestern United States.",
+"source_url": "https://en.wikipedia.org/wiki/Alaska_Airlines",
+"pre_launch_per_million": 25.7501
+},
+{
+"word": "Alexa",
+"kind": "name",
+"brand": "Alexa",
+"owner": "Amazon",
+"launch_year": 2014,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_chatbots",
+"pre_launch_per_million": 0.9481
+},
+{
+"word": "Alice",
+"kind": "name",
+"brand": "Alice",
+"owner": "Yandex",
+"launch_year": 2017,
+"original_meaning": "A feminine given name.",
+"source_url": "https://www.globenewswire.com/news-release/2017/10/10/1143532/10644/en/yandex-launches-alice-the-first-ai-assistant-designed-for-the-russian-market.html",
+"pre_launch_per_million": 14.3287
+},
+{
+"word": "allegra",
+"kind": "name",
+"brand": "Allegra",
+"owner": "Opella",
+"launch_year": 1996,
+"original_meaning": "A feminine given name",
+"source_url": "https://www.researchgate.net/publication/30480916_Modeling_Innovation_Diffusion_Patterns",
+"pre_launch_per_million": 0.1673
+},
+{
+"word": "Alpaca",
+"kind": "common",
+"brand": "Stanford Alpaca",
+"owner": "Stanford University",
+"launch_year": 2023,
+"original_meaning": "A domesticated South American camelid.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.1736
+},
+{
+"word": "alphabet",
+"kind": "common",
+"brand": "Alphabet",
+"owner": "Alphabet Inc.",
+"launch_year": 2015,
+"original_meaning": "A set of letters used in writing.",
+"source_url": "https://blog.google/alphabet/google-alphabet/",
+"pre_launch_per_million": 3.1858
+},
+{
+"word": "Amazon",
+"kind": "name",
+"brand": "Amazon",
+"owner": "Amazon.com, Inc.",
+"launch_year": 1995,
+"original_meaning": "A South American river.",
+"source_url": "https://en.wikipedia.org/wiki/Amazon_(company)",
+"pre_launch_per_million": 2.2157
+},
+{
+"word": "amelia",
+"kind": "name",
+"brand": "Amelia",
+"owner": "IPsoft",
+"launch_year": 2014,
+"original_meaning": "A feminine given name.",
+"source_url": "https://amelia.ai/wp-content/uploads/2017/07/On-the-Radar-IPsoft-delivers-single-comprehensive-AI-platform.pdf",
+"pre_launch_per_million": 3.2835
+},
+{
+"word": "American",
+"kind": "common",
+"brand": "American Airlines",
+"owner": "American Airlines Group",
+"launch_year": 1934,
+"original_meaning": "A person from the United States.",
+"source_url": "https://en.wikipedia.org/wiki/American_Airlines",
+"pre_launch_per_million": 0.3817
+},
+{
+"word": "Anchor",
+"kind": "common",
+"brand": "Anchor",
+"owner": "Fonterra",
+"launch_year": 1886,
+"original_meaning": "A device that holds a vessel in place.",
+"source_url": "https://en.wikipedia.org/wiki/Anchor_(brand)",
+"pre_launch_per_million": 3.3608
+},
+{
+"word": "Android",
+"kind": "common",
+"brand": "Android",
+"owner": "Google",
+"launch_year": 2008,
+"original_meaning": "A humanlike robot",
+"source_url": "https://en.wikipedia.org/wiki/Android_(operating_system)",
+"pre_launch_per_million": 0.1618
+},
+{
+"word": "anduril",
+"kind": "name",
+"brand": "Anduril",
+"owner": "Anduril Industries",
+"launch_year": 2017,
+"original_meaning": "Aragorn's reforged sword in Tolkien's Middle-earth.",
+"source_url": "https://jobs.a16z.com/company/anduril",
+"pre_launch_per_million": 0.0007
+},
+{
+"word": "Animate",
+"kind": "common",
+"brand": "Adobe Animate",
+"owner": "Adobe",
+"launch_year": 2016,
+"original_meaning": "To give movement or life to something",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Animate",
+"pre_launch_per_million": 1.393
+},
+{
+"word": "Ant",
+"kind": "common",
+"brand": "Apache Ant",
+"owner": "Apache Software Foundation",
+"launch_year": 2000,
+"original_meaning": "A small social insect",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Ant",
+"pre_launch_per_million": 6.0979
+},
+{
+"word": "anthropic",
+"kind": "rare",
+"brand": "Anthropic",
+"owner": "Anthropic",
+"launch_year": 2021,
+"original_meaning": "Relating to humans or human existence.",
+"source_url": "https://www.ibm.com/think/topics/claude-ai/jcr%3Acontent",
+"pre_launch_per_million": 0.1649
+},
+{
+"word": "Apple",
+"kind": "common",
+"brand": "Apple",
+"owner": "Apple Inc.",
+"launch_year": 1976,
+"original_meaning": "The edible fruit of an apple tree.",
+"source_url": "https://en.wikipedia.org/wiki/Apple_Inc.",
+"pre_launch_per_million": 5.5997
+},
+{
+"word": "Aquarius",
+"kind": "name",
+"brand": "Aquarius",
+"owner": "The Coca-Cola Company",
+"launch_year": 1983,
+"original_meaning": "A zodiac constellation and sign.",
+"source_url": "https://en.wikipedia.org/wiki/Aquarius_(drink)",
+"pre_launch_per_million": 0.4364
+},
+{
+"word": "Arc",
+"kind": "common",
+"brand": "Arc",
+"owner": "The Browser Company",
+"launch_year": 2022,
+"original_meaning": "A segment of a curve",
+"source_url": "https://en.wikipedia.org/wiki/Arc_(web_browser)",
+"pre_launch_per_million": 7.3421
+},
+{
+"word": "Arlo",
+"kind": "name",
+"brand": "Arlo",
+"owner": "Arlo Technologies",
+"launch_year": 2014,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Arlo_Technologies",
+"pre_launch_per_million": 0.172
+},
+{
+"word": "Armada",
+"kind": "common",
+"brand": "Nissan Armada",
+"owner": "Nissan",
+"launch_year": 2004,
+"original_meaning": "A fleet of warships.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Armada",
+"pre_launch_per_million": 0.1631
+},
+{
+"word": "Arrow",
+"kind": "common",
+"brand": "Apache Arrow",
+"owner": "Apache Software Foundation",
+"launch_year": 2016,
+"original_meaning": "A pointed projectile shot from a bow",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Arrow",
+"pre_launch_per_million": 12.0772
+},
+{
+"word": "Asana",
+"kind": "common",
+"brand": "Asana",
+"owner": "Asana, Inc.",
+"launch_year": 2011,
+"original_meaning": "A yoga posture",
+"source_url": "https://en.wikipedia.org/wiki/Asana_(software)",
+"pre_launch_per_million": 0.0922
+},
+{
+"word": "Ascent",
+"kind": "common",
+"brand": "Subaru Ascent",
+"owner": "Subaru Corporation",
+"launch_year": 2018,
+"original_meaning": "An upward movement or climb.",
+"source_url": "https://en.wikipedia.org/wiki/Subaru_Ascent",
+"pre_launch_per_million": 2.6141
+},
+{
+"word": "Ask",
+"kind": "common",
+"brand": "Ask",
+"owner": "IAC",
+"launch_year": 1996,
+"original_meaning": "To request information",
+"source_url": "https://en.wikipedia.org/wiki/Ask.com",
+"pre_launch_per_million": 48.2672
+},
+{
+"word": "Aspire",
+"kind": "common",
+"brand": "Acer Aspire",
+"owner": "Acer",
+"launch_year": 1999,
+"original_meaning": "To aim for a goal",
+"source_url": "https://en.wikipedia.org/wiki/Acer_Aspire",
+"pre_launch_per_million": 1.0328
+},
+{
+"word": "Asteroids",
+"kind": "common",
+"brand": "Asteroids",
+"owner": "Atari",
+"launch_year": 1979,
+"original_meaning": "Small rocky bodies orbiting the sun",
+"source_url": "https://en.wikipedia.org/wiki/Asteroids_(video_game)",
+"pre_launch_per_million": 0.3423
+},
+{
+"word": "Atlas",
+"kind": "common",
+"brand": "Volkswagen Atlas",
+"owner": "Volkswagen",
+"launch_year": 2017,
+"original_meaning": "A book of maps.",
+"source_url": "https://en.wikipedia.org/wiki/Volkswagen_Atlas",
+"pre_launch_per_million": 1.3576
+},
+{
+"word": "Atlas",
+"kind": "name",
+"brand": "MongoDB Atlas",
+"owner": "MongoDB, Inc.",
+"launch_year": 2016,
+"original_meaning": "A collection of maps",
+"source_url": "https://en.wikipedia.org/wiki/MongoDB",
+"pre_launch_per_million": 3.3243
+},
+{
+"word": "Atom",
+"kind": "common",
+"brand": "Atom",
+"owner": "GitHub",
+"launch_year": 2014,
+"original_meaning": "A basic unit of a chemical element",
+"source_url": "https://en.wikipedia.org/wiki/Atom_(text_editor)",
+"pre_launch_per_million": 12.4253
+},
+{
+"word": "Audacity",
+"kind": "common",
+"brand": "Audacity",
+"owner": "Muse Group",
+"launch_year": 2000,
+"original_meaning": "Boldness or willingness to take risks",
+"source_url": "https://en.wikipedia.org/wiki/Audacity_(audio_editor)",
+"pre_launch_per_million": 0.3911
+},
+{
+"word": "Audible",
+"kind": "common",
+"brand": "Audible",
+"owner": "Amazon",
+"launch_year": 1997,
+"original_meaning": "Able to be heard",
+"source_url": "https://en.wikipedia.org/wiki/Audible_(service)",
+"pre_launch_per_million": 1.3622
+},
+{
+"word": "August",
+"kind": "name",
+"brand": "August",
+"owner": "Assa Abloy",
+"launch_year": 2014,
+"original_meaning": "The eighth month of the year",
+"source_url": "https://en.wikipedia.org/wiki/August_Home",
+"pre_launch_per_million": 54.9197
+},
+{
+"word": "Aurora",
+"kind": "name",
+"brand": "Aurora",
+"owner": "xAI",
+"launch_year": 2024,
+"original_meaning": "The Roman goddess of dawn; also a given name.",
+"source_url": "https://en.wikipedia.org/wiki/Text-to-image_model",
+"pre_launch_per_million": 2.3749
+},
+{
+"word": "Avalon",
+"kind": "name",
+"brand": "Toyota Avalon",
+"owner": "Toyota",
+"launch_year": 1994,
+"original_meaning": "A legendary island in Arthurian tradition.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Avalon",
+"pre_launch_per_million": 0.8086
+},
+{
+"word": "Axe",
+"kind": "common",
+"brand": "Axe",
+"owner": "Unilever",
+"launch_year": 1983,
+"original_meaning": "A tool for chopping wood.",
+"source_url": "https://en.wikipedia.org/wiki/Axe_(brand)",
+"pre_launch_per_million": 1.4426
+},
+{
+"word": "aya",
+"kind": "name",
+"brand": "Aya",
+"owner": "Cohere",
+"launch_year": 2024,
+"original_meaning": "A feminine given name.",
+"source_url": "https://www.axios.com/2024/02/13/open-source-ai-languages",
+"pre_launch_per_million": 0.3588
+},
+{
+"word": "Azure",
+"kind": "rare",
+"brand": "Microsoft Azure",
+"owner": "Microsoft",
+"launch_year": 2010,
+"original_meaning": "A bright blue color",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Azure",
+"pre_launch_per_million": 0.4692
+},
+{
+"word": "Bamboo",
+"kind": "common",
+"brand": "Bamboo",
+"owner": "Atlassian",
+"launch_year": 2007,
+"original_meaning": "A fast-growing woody grass",
+"source_url": "https://en.wikipedia.org/wiki/Bamboo_(software)",
+"pre_launch_per_million": 3.0223
+},
+{
+"word": "Bang",
+"kind": "common",
+"brand": "Bang Energy",
+"owner": "Monster Beverage",
+"launch_year": 2012,
+"original_meaning": "A sudden loud noise.",
+"source_url": "https://en.wikipedia.org/wiki/Bang_(beverage)",
+"pre_launch_per_million": 2.8739
+},
+{
+"word": "Barbie",
+"kind": "name",
+"brand": "Barbie",
+"owner": "Mattel",
+"launch_year": 1959,
+"original_meaning": "A feminine given name and diminutive of Barbara.",
+"source_url": "https://en.wikipedia.org/wiki/Barbie",
+"pre_launch_per_million": 0.1255
+},
+{
+"word": "Bard",
+"kind": "common",
+"brand": "Bard",
+"owner": "Google",
+"launch_year": 2023,
+"original_meaning": "A poet, traditionally one who recites or sings.",
+"source_url": "https://en.wikipedia.org/wiki/Gemini_%28chatbot%29",
+"pre_launch_per_million": 0.5096
+},
+{
+"word": "Battleship",
+"kind": "common",
+"brand": "Battleship",
+"owner": "Hasbro",
+"launch_year": 1967,
+"original_meaning": "A heavily armed warship.",
+"source_url": "https://en.wikipedia.org/wiki/Battleship_(game)",
+"pre_launch_per_million": 0.3736
+},
+{
+"word": "Bear",
+"kind": "common",
+"brand": "Bear",
+"owner": "Shiny Frog",
+"launch_year": 2016,
+"original_meaning": "A large fur-covered mammal",
+"source_url": "https://en.wikipedia.org/wiki/Bear_(app)",
+"pre_launch_per_million": 32.4199
+},
+{
+"word": "Beetle",
+"kind": "common",
+"brand": "Volkswagen Beetle",
+"owner": "Volkswagen",
+"launch_year": 1938,
+"original_meaning": "An insect with hard wing cases.",
+"source_url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+"pre_launch_per_million": 3.0126
+},
+{
+"word": "bell",
+"kind": "common",
+"brand": "Bell",
+"owner": "Admiral Group plc",
+"launch_year": 1997,
+"original_meaning": "A hollow object that rings when struck.",
+"source_url": "https://www.admiralgroup.co.uk/who-we-are/our-milestones",
+"pre_launch_per_million": 5.3002
+},
+{
+"word": "Benefit",
+"kind": "common",
+"brand": "Benefit Cosmetics",
+"owner": "LVMH",
+"launch_year": 1990,
+"original_meaning": "An advantage or helpful result.",
+"source_url": "https://en.wikipedia.org/wiki/Benefit_Cosmetics",
+"pre_launch_per_million": 62.6205
+},
+{
+"word": "Bing",
+"kind": "common",
+"brand": "Bing",
+"owner": "Microsoft",
+"launch_year": 2009,
+"original_meaning": "A short ringing sound",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Bing",
+"pre_launch_per_million": 0.4703
+},
+{
+"word": "Bird",
+"kind": "common",
+"brand": "Bird",
+"owner": "Third Lane Mobility",
+"launch_year": 2017,
+"original_meaning": "A feathered animal with a beak",
+"source_url": "https://en.wikipedia.org/wiki/Bird_(transportation_company)",
+"pre_launch_per_million": 16.5573
+},
+{
+"word": "bixby",
+"kind": "name",
+"brand": "Bixby",
+"owner": "Samsung",
+"launch_year": 2017,
+"original_meaning": "An English surname.",
+"source_url": "https://www.samsungmobilepress.com/articles/a-new-bixby-delivers-a-simplified-experience-with-user-requested-features",
+"pre_launch_per_million": 0.1797
+},
+{
+"word": "BlackBerry",
+"kind": "common",
+"brand": "BlackBerry",
+"owner": "BlackBerry Limited",
+"launch_year": 1999,
+"original_meaning": "A dark edible berry",
+"source_url": "https://en.wikipedia.org/wiki/BlackBerry",
+"pre_launch_per_million": 0.3918
+},
+{
+"word": "Blender",
+"kind": "common",
+"brand": "Blender",
+"owner": "Blender Foundation",
+"launch_year": 1998,
+"original_meaning": "An appliance for mixing or pur\u00e9eing food",
+"source_url": "https://en.wikipedia.org/wiki/Blender_(software)",
+"pre_launch_per_million": 0.8618
+},
+{
+"word": "Blink",
+"kind": "common",
+"brand": "Blink",
+"owner": "Amazon",
+"launch_year": 2016,
+"original_meaning": "To briefly close and open the eyes",
+"source_url": "https://en.wikipedia.org/wiki/Blink_Home",
+"pre_launch_per_million": 3.0851
+},
+{
+"word": "Bliss",
+"kind": "common",
+"brand": "Bliss",
+"owner": "Bliss World",
+"launch_year": 1996,
+"original_meaning": "Perfect happiness.",
+"source_url": "https://en.wikipedia.org/wiki/Bliss_(spa)",
+"pre_launch_per_million": 1.0907
+},
+{
+"word": "Bloom",
+"kind": "common",
+"brand": "BLOOM",
+"owner": "BigScience",
+"launch_year": 2022,
+"original_meaning": "A flower, or the state of flowering.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 2.9109
+},
+{
+"word": "Boggle",
+"kind": "common",
+"brand": "Boggle",
+"owner": "Hasbro",
+"launch_year": 1972,
+"original_meaning": "To be overwhelmed or astonished.",
+"source_url": "https://en.wikipedia.org/wiki/Boggle",
+"pre_launch_per_million": 0.0385
+},
+{
+"word": "bold",
+"kind": "common",
+"brand": "Bold",
+"owner": "Procter & Gamble",
+"launch_year": 1965,
+"original_meaning": "Confident and willing to take risks",
+"source_url": "https://www.allbookstores.com/Rising-Tide-Lessons-165-Years/9781591391470",
+"pre_launch_per_million": 4.3012
+},
+{
+"word": "Bolt",
+"kind": "common",
+"brand": "Bolt",
+"owner": "Bolt Technology",
+"launch_year": 2018,
+"original_meaning": "A threaded metal fastener",
+"source_url": "https://en.wikipedia.org/wiki/Bolt_(company)",
+"pre_launch_per_million": 5.4685
+},
+{
+"word": "Boost",
+"kind": "common",
+"brand": "Boost",
+"owner": "Mondel\u0113z International",
+"launch_year": 1985,
+"original_meaning": "An increase or helpful push.",
+"source_url": "https://en.wikipedia.org/wiki/Boost_(chocolate_bar)",
+"pre_launch_per_million": 4.0548
+},
+{
+"word": "boost",
+"kind": "common",
+"brand": "Boost Mobile",
+"owner": "Telstra",
+"launch_year": 2000,
+"original_meaning": "Increase or help raise something",
+"source_url": "https://au.linkedin.com/company/boostmobile",
+"pre_launch_per_million": 5.7034
+},
+{
+"word": "Boots",
+"kind": "common",
+"brand": "Boots",
+"owner": "Walgreens Boots Alliance",
+"launch_year": 1849,
+"original_meaning": "Footwear covering the foot and ankle.",
+"source_url": "https://en.wikipedia.org/wiki/Boots_(company)",
+"pre_launch_per_million": 2.8311
+},
+{
+"word": "Bounty",
+"kind": "common",
+"brand": "Bounty",
+"owner": "Mars, Incorporated",
+"launch_year": 1951,
+"original_meaning": "A generous supply or reward.",
+"source_url": "https://en.wikipedia.org/wiki/Bounty_(chocolate_bar)",
+"pre_launch_per_million": 0.8636
+},
+{
+"word": "Box",
+"kind": "common",
+"brand": "Box",
+"owner": "Box, Inc.",
+"launch_year": 2005,
+"original_meaning": "A container with flat sides",
+"source_url": "https://en.wikipedia.org/wiki/Box_(company)",
+"pre_launch_per_million": 53.523
+},
+{
+"word": "Brackets",
+"kind": "common",
+"brand": "Brackets",
+"owner": "Adobe",
+"launch_year": 2014,
+"original_meaning": "Paired punctuation marks",
+"source_url": "https://en.wikipedia.org/wiki/Brackets_(text_editor)",
+"pre_launch_per_million": 3.361
+},
+{
+"word": "Braid",
+"kind": "common",
+"brand": "Braid",
+"owner": "Thekla, Inc.",
+"launch_year": 2008,
+"original_meaning": "Interwoven strands of hair or material",
+"source_url": "https://en.wikipedia.org/wiki/Braid_(video_game)",
+"pre_launch_per_million": 0.9057
+},
+{
+"word": "Brave",
+"kind": "common",
+"brand": "Brave",
+"owner": "Brave Software",
+"launch_year": 2016,
+"original_meaning": "Showing courage",
+"source_url": "https://en.wikipedia.org/wiki/Brave_(web_browser)",
+"pre_launch_per_million": 9.0961
+},
+{
+"word": "bravo",
+"kind": "common",
+"brand": "Bravo",
+"owner": "NBCUniversal",
+"launch_year": 1980,
+"original_meaning": "An exclamation of approval",
+"source_url": "https://en.wikipedia.org/wiki/Bravo_%28American_TV_network%29",
+"pre_launch_per_million": 0.0506
+},
+{
+"word": "Breeze",
+"kind": "common",
+"brand": "Breeze Airways",
+"owner": "Breeze Aviation Group",
+"launch_year": 2021,
+"original_meaning": "A gentle wind.",
+"source_url": "https://en.wikipedia.org/wiki/Breeze_Airways",
+"pre_launch_per_million": 9.0428
+},
+{
+"word": "Brilliant",
+"kind": "common",
+"brand": "Brilliant",
+"owner": "Brilliant Worldwide",
+"launch_year": 2012,
+"original_meaning": "Exceptionally bright or clever",
+"source_url": "https://en.wikipedia.org/wiki/Brilliant_(website)",
+"pre_launch_per_million": 10.1848
+},
+{
+"word": "Bronco",
+"kind": "common",
+"brand": "Ford Bronco",
+"owner": "Ford Motor Company",
+"launch_year": 1965,
+"original_meaning": "An unbroken or roughly trained horse.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Bronco",
+"pre_launch_per_million": 0.0319
+},
+{
+"word": "Bugles",
+"kind": "common",
+"brand": "Bugles",
+"owner": "General Mills",
+"launch_year": 1964,
+"original_meaning": "Brass instruments resembling small trumpets.",
+"source_url": "https://en.wikipedia.org/wiki/Bugles_(snack)",
+"pre_launch_per_million": 0.0674
+},
+{
+"word": "Bulletproof",
+"kind": "common",
+"brand": "Bulletproof",
+"owner": "Bulletproof 360",
+"launch_year": 2011,
+"original_meaning": "Able to resist bullets.",
+"source_url": "https://en.wikipedia.org/wiki/Bulletproof_coffee",
+"pre_launch_per_million": 0.2656
+},
+{
+"word": "Bumble",
+"kind": "common",
+"brand": "Bumble",
+"owner": "Bumble Inc.",
+"launch_year": 2014,
+"original_meaning": "To move or act clumsily",
+"source_url": "https://en.wikipedia.org/wiki/Bumble",
+"pre_launch_per_million": 0.1357
+},
+{
+"word": "Burlington",
+"kind": "name",
+"brand": "Burlington",
+"owner": "Burlington Stores, Inc.",
+"launch_year": 1972,
+"original_meaning": "The name of several towns and cities.",
+"source_url": "https://en.wikipedia.org/wiki/Burlington_(department_store)",
+"pre_launch_per_million": 5.995
+},
+{
+"word": "Butterfly",
+"kind": "common",
+"brand": "Butterfinger",
+"owner": "Ferrero",
+"launch_year": 1923,
+"original_meaning": "An insect with broad, often colorful wings.",
+"source_url": "https://en.wikipedia.org/wiki/Butterfinger",
+"pre_launch_per_million": 1.3728
+},
+{
+"word": "Calibre",
+"kind": "common",
+"brand": "Calibre",
+"owner": "Kovid Goyal",
+"launch_year": 2006,
+"original_meaning": "The quality or standard of something",
+"source_url": "https://en.wikipedia.org/wiki/Calibre_(software)",
+"pre_launch_per_million": 0.5592
+},
+{
+"word": "Calm",
+"kind": "common",
+"brand": "Calm",
+"owner": "Calm.com, Inc.",
+"launch_year": 2012,
+"original_meaning": "Free from agitation or disturbance",
+"source_url": "https://en.wikipedia.org/wiki/Calm_(company)",
+"pre_launch_per_million": 17.0275
+},
+{
+"word": "Canvas",
+"kind": "common",
+"brand": "Canvas",
+"owner": "Instructure",
+"launch_year": 2011,
+"original_meaning": "A strong woven fabric",
+"source_url": "https://en.wikipedia.org/wiki/Canvas_(learning_management_system)",
+"pre_launch_per_million": 8.9318
+},
+{
+"word": "Carbon",
+"kind": "common",
+"brand": "Carbon",
+"owner": "Google",
+"launch_year": 2022,
+"original_meaning": "A chemical element",
+"source_url": "https://en.wikipedia.org/wiki/Carbon_(programming_language)",
+"pre_launch_per_million": 36.4562
+},
+{
+"word": "cascade",
+"kind": "common",
+"brand": "Cascade",
+"owner": "Procter & Gamble",
+"launch_year": 1955,
+"original_meaning": "A small waterfall or series of waterfalls",
+"source_url": "https://www.allbookstores.com/Rising-Tide-Lessons-165-Years/9781591391470",
+"pre_launch_per_million": 2.0034
+},
+{
+"word": "Cash",
+"kind": "common",
+"brand": "Cash App",
+"owner": "Block, Inc.",
+"launch_year": 2013,
+"original_meaning": "Money in coins or banknotes",
+"source_url": "https://en.wikipedia.org/wiki/Cash_App",
+"pre_launch_per_million": 39.3161
+},
+{
+"word": "Cassandra",
+"kind": "name",
+"brand": "Apache Cassandra",
+"owner": "Apache Software Foundation",
+"launch_year": 2008,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Cassandra",
+"pre_launch_per_million": 1.0819
+},
+{
+"word": "Cayenne",
+"kind": "common",
+"brand": "Porsche Cayenne",
+"owner": "Porsche AG",
+"launch_year": 2002,
+"original_meaning": "A hot pepper or powder made from it.",
+"source_url": "https://en.wikipedia.org/wiki/Porsche_Cayenne",
+"pre_launch_per_million": 0.3862
+},
+{
+"word": "Celebrations",
+"kind": "common",
+"brand": "Celebrations",
+"owner": "Mars, Incorporated",
+"launch_year": 1997,
+"original_meaning": "Events marking happy or significant occasions.",
+"source_url": "https://en.wikipedia.org/wiki/Celebrations_(confectionery)",
+"pre_launch_per_million": 1.9023
+},
+{
+"word": "Celeste",
+"kind": "name",
+"brand": "Celeste",
+"owner": "Extremely OK Games",
+"launch_year": 2018,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Celeste_(video_game)",
+"pre_launch_per_million": 1.6642
+},
+{
+"word": "Celia",
+"kind": "name",
+"brand": "Celia",
+"owner": "Huawei",
+"launch_year": 2020,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Celia_%28virtual_assistant%29",
+"pre_launch_per_million": 2.0935
+},
+{
+"word": "Centipede",
+"kind": "common",
+"brand": "Centipede",
+"owner": "Atari",
+"launch_year": 1981,
+"original_meaning": "A many-legged predatory arthropod",
+"source_url": "https://en.wikipedia.org/wiki/Centipede_(video_game)",
+"pre_launch_per_million": 0.0676
+},
+{
+"word": "Chai",
+"kind": "common",
+"brand": "Chai",
+"owner": "Chai",
+"launch_year": 2021,
+"original_meaning": "Tea, especially spiced tea.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_chatbots",
+"pre_launch_per_million": 0.3424
+},
+{
+"word": "Challenger",
+"kind": "common",
+"brand": "Dodge Challenger",
+"owner": "Stellantis",
+"launch_year": 1970,
+"original_meaning": "A person who contests another.",
+"source_url": "https://en.wikipedia.org/wiki/Dodge_Challenger",
+"pre_launch_per_million": 0.3664
+},
+{
+"word": "Champion",
+"kind": "common",
+"brand": "Champion",
+"owner": "Authentic Brands Group",
+"launch_year": 1919,
+"original_meaning": "A winner of a competition.",
+"source_url": "https://en.wikipedia.org/wiki/Champion_(sportswear)",
+"pre_launch_per_million": 2.7171
+},
+{
+"word": "character",
+"kind": "common",
+"brand": "Character",
+"owner": "Character Technologies",
+"launch_year": 2022,
+"original_meaning": "A person in a story or a distinctive personality.",
+"source_url": "https://blog.character.ai/introducing-character/",
+"pre_launch_per_million": 61.8626
+},
+{
+"word": "Charger",
+"kind": "common",
+"brand": "Dodge Charger",
+"owner": "Stellantis",
+"launch_year": 1966,
+"original_meaning": "A device that charges a battery.",
+"source_url": "https://en.wikipedia.org/wiki/Dodge_Charger",
+"pre_launch_per_million": 0.6507
+},
+{
+"word": "chase",
+"kind": "common",
+"brand": "Chase",
+"owner": "JPMorgan Chase",
+"launch_year": 1877,
+"original_meaning": "Pursue someone or something",
+"source_url": "https://bankingjournal.aba.com/2021/01/chasing-down-history/",
+"pre_launch_per_million": 3.8585
+},
+{
+"word": "Chef",
+"kind": "common",
+"brand": "Chef",
+"owner": "Progress Software",
+"launch_year": 2009,
+"original_meaning": "A professional cook",
+"source_url": "https://en.wikipedia.org/wiki/Chef_(software)",
+"pre_launch_per_million": 2.8514
+},
+{
+"word": "Cherokee",
+"kind": "name",
+"brand": "Jeep Cherokee",
+"owner": "Stellantis",
+"launch_year": 1974,
+"original_meaning": "An Indigenous people of North America.",
+"source_url": "https://en.wikipedia.org/wiki/Jeep_Cherokee",
+"pre_launch_per_million": 2.4552
+},
+{
+"word": "chime",
+"kind": "common",
+"brand": "Chime",
+"owner": "Chime Financial, Inc.",
+"launch_year": 2014,
+"original_meaning": "A ringing sound, especially from bells.",
+"source_url": "https://www.chime.com/about-us/",
+"pre_launch_per_million": 0.5911
+},
+{
+"word": "Chrome",
+"kind": "common",
+"brand": "Google Chrome",
+"owner": "Google",
+"launch_year": 2008,
+"original_meaning": "Chromium or a shiny chromium finish",
+"source_url": "https://en.wikipedia.org/wiki/Google_Chrome",
+"pre_launch_per_million": 1.4259
+},
+{
+"word": "Circle",
+"kind": "common",
+"brand": "CircleCI",
+"owner": "Circle Internet Services",
+"launch_year": 2011,
+"original_meaning": "A round plane figure",
+"source_url": "https://en.wikipedia.org/wiki/CircleCI",
+"pre_launch_per_million": 26.3975
+},
+{
+"word": "Civic",
+"kind": "common",
+"brand": "Honda Civic",
+"owner": "Honda",
+"launch_year": 1972,
+"original_meaning": "Relating to a city or its citizens.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Civic",
+"pre_launch_per_million": 5.0126
+},
+{
+"word": "Civilization",
+"kind": "common",
+"brand": "Civilization",
+"owner": "Take-Two Interactive",
+"launch_year": 1991,
+"original_meaning": "An organized human society",
+"source_url": "https://en.wikipedia.org/wiki/Civilization_(video_game)",
+"pre_launch_per_million": 5.7578
+},
+{
+"word": "Clarks",
+"kind": "name",
+"brand": "Clarks",
+"owner": "LionRock Capital",
+"launch_year": 1825,
+"original_meaning": "People called Clark.",
+"source_url": "https://en.wikipedia.org/wiki/Clarks",
+"pre_launch_per_million": 0.2887
+},
+{
+"word": "Claude",
+"kind": "name",
+"brand": "Claude",
+"owner": "Anthropic",
+"launch_year": 2023,
+"original_meaning": "A French given name.",
+"source_url": "https://economics.mit.edu/sites/default/files/2025-07/Pricing%20Transformative%20AI_2.pdf",
+"pre_launch_per_million": 4.1965
+},
+{
+"word": "cleo",
+"kind": "name",
+"brand": "Cleo",
+"owner": "Cleo AI",
+"launch_year": 2016,
+"original_meaning": "A given name, sometimes short for Cleopatra.",
+"source_url": "https://www.sofinagroup.com/en/portfolio/sofina-direct/cleo",
+"pre_launch_per_million": 0.938
+},
+{
+"word": "Clue",
+"kind": "common",
+"brand": "Clue",
+"owner": "Hasbro",
+"launch_year": 1949,
+"original_meaning": "A piece of evidence helping solve a mystery.",
+"source_url": "https://en.wikipedia.org/wiki/Cluedo",
+"pre_launch_per_million": 2.053
+},
+{
+"word": "Coach",
+"kind": "common",
+"brand": "Coach",
+"owner": "Tapestry, Inc.",
+"launch_year": 1941,
+"original_meaning": "A person who trains athletes.",
+"source_url": "https://en.wikipedia.org/wiki/Coach_New_York",
+"pre_launch_per_million": 5.3543
+},
+{
+"word": "codex",
+"kind": "common",
+"brand": "Codex",
+"owner": "OpenAI",
+"launch_year": 2021,
+"original_meaning": "An ancient manuscript in book form.",
+"source_url": "https://www.axios.com/2021/08/10/openai-codex-language-computer-programming",
+"pre_launch_per_million": 0.6
+},
+{
+"word": "cohere",
+"kind": "common",
+"brand": "Cohere",
+"owner": "Cohere",
+"launch_year": 2021,
+"original_meaning": "To stick together or form a consistent whole.",
+"source_url": "https://cohere.com/blog/the-cohere-platform-is-now-publicly-available-2",
+"pre_launch_per_million": 0.3318
+},
+{
+"word": "Columbia",
+"kind": "name",
+"brand": "Columbia Sportswear",
+"owner": "Columbia Sportswear Company",
+"launch_year": 1938,
+"original_meaning": "A poetic name for the United States.",
+"source_url": "https://en.wikipedia.org/wiki/Columbia_Sportswear",
+"pre_launch_per_million": 45.5008
+},
+{
+"word": "comet",
+"kind": "common",
+"brand": "Comet",
+"owner": "KIK Consumer Products",
+"launch_year": 1956,
+"original_meaning": "Icy celestial body that can develop a visible tail",
+"source_url": "https://www.sec.gov/Archives/edgar/data/1295522/000104746904032064/a2141101zs-4a.htm",
+"pre_launch_per_million": 0.7629
+},
+{
+"word": "Compass",
+"kind": "common",
+"brand": "Jeep Compass",
+"owner": "Stellantis",
+"launch_year": 2006,
+"original_meaning": "An instrument for finding directions.",
+"source_url": "https://en.wikipedia.org/wiki/Jeep_Compass",
+"pre_launch_per_million": 2.5353
+},
+{
+"word": "Compass",
+"kind": "common",
+"brand": "MongoDB Compass",
+"owner": "MongoDB, Inc.",
+"launch_year": 2015,
+"original_meaning": "An instrument for finding direction",
+"source_url": "https://www.mongodb.com/blog/post/introducing-mongodb-compass",
+"pre_launch_per_million": 3.3245
+},
+{
+"word": "Confluence",
+"kind": "common",
+"brand": "Confluence",
+"owner": "Atlassian",
+"launch_year": 2004,
+"original_meaning": "The joining of two rivers",
+"source_url": "https://en.wikipedia.org/wiki/Confluence_(software)",
+"pre_launch_per_million": 1.6325
+},
+{
+"word": "Consul",
+"kind": "common",
+"brand": "Consul",
+"owner": "IBM",
+"launch_year": 2014,
+"original_meaning": "An official representing a country abroad",
+"source_url": "https://en.wikipedia.org/wiki/Consul_(software)",
+"pre_launch_per_million": 1.2687
+},
+{
+"word": "Control",
+"kind": "common",
+"brand": "Control",
+"owner": "Remedy Entertainment",
+"launch_year": 2019,
+"original_meaning": "The power to direct something",
+"source_url": "https://en.wikipedia.org/wiki/Control_(video_game)",
+"pre_launch_per_million": 205.6538
+},
+{
+"word": "Converse",
+"kind": "common",
+"brand": "Converse",
+"owner": "Nike, Inc.",
+"launch_year": 1908,
+"original_meaning": "To talk with another person.",
+"source_url": "https://en.wikipedia.org/wiki/Converse_(shoe_company)",
+"pre_launch_per_million": 1.4775
+},
+{
+"word": "Copilot",
+"kind": "common",
+"brand": "GitHub Copilot",
+"owner": "Microsoft",
+"launch_year": 2021,
+"original_meaning": "A pilot assisting the main pilot",
+"source_url": "https://en.wikipedia.org/wiki/GitHub_Copilot",
+"pre_launch_per_million": 0.2163
+},
+{
+"word": "cora",
+"kind": "name",
+"brand": "Cora",
+"owner": "NatWest",
+"launch_year": 2017,
+"original_meaning": "A feminine given name.",
+"source_url": "https://jobs.natwestgroup.com/posts/cora-helping-more-customers-than-ever-with-no-wait-time",
+"pre_launch_per_million": 1.9947
+},
+{
+"word": "Core",
+"kind": "common",
+"brand": "Intel Core",
+"owner": "Intel",
+"launch_year": 2006,
+"original_meaning": "The central part of something",
+"source_url": "https://en.wikipedia.org/wiki/Intel_Core",
+"pre_launch_per_million": 40.3354
+},
+{
+"word": "Corolla",
+"kind": "rare",
+"brand": "Toyota Corolla",
+"owner": "Toyota",
+"launch_year": 1966,
+"original_meaning": "The collective petals of a flower.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Corolla",
+"pre_launch_per_million": 0.9047
+},
+{
+"word": "Corona",
+"kind": "common",
+"brand": "Corona",
+"owner": "Anheuser-Busch InBev",
+"launch_year": 1925,
+"original_meaning": "A crown or crownlike structure.",
+"source_url": "https://en.wikipedia.org/wiki/Corona_(beer)",
+"pre_launch_per_million": 1.3551
+},
+{
+"word": "Cortana",
+"kind": "name",
+"brand": "Cortana",
+"owner": "Microsoft",
+"launch_year": 2014,
+"original_meaning": "The name of a legendary sword",
+"source_url": "https://en.wikipedia.org/wiki/Cortana_(virtual_assistant)",
+"pre_launch_per_million": 0.0102
+},
+{
+"word": "Corvette",
+"kind": "common",
+"brand": "Chevrolet Corvette",
+"owner": "General Motors",
+"launch_year": 1953,
+"original_meaning": "A small, fast warship.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette",
+"pre_launch_per_million": 0.0477
+},
+{
+"word": "Costa",
+"kind": "name",
+"brand": "Costa Coffee",
+"owner": "The Coca-Cola Company",
+"launch_year": 1971,
+"original_meaning": "A common given name and surname.",
+"source_url": "https://en.wikipedia.org/wiki/Costa_Coffee",
+"pre_launch_per_million": 8.1187
+},
+{
+"word": "Crew",
+"kind": "common",
+"brand": "J.Crew",
+"owner": "J.Crew Group",
+"launch_year": 1983,
+"original_meaning": "A group working together on a vessel.",
+"source_url": "https://en.wikipedia.org/wiki/J.Crew",
+"pre_launch_per_million": 10.6026
+},
+{
+"word": "cricket",
+"kind": "common",
+"brand": "Cricket Wireless",
+"owner": "AT&T",
+"launch_year": 1999,
+"original_meaning": "A chirping insect or a bat-and-ball game",
+"source_url": "https://www.cricketwireless.com/the-cricket-connection/24th-anniversary.html",
+"pre_launch_per_million": 1.5717
+},
+{
+"word": "Crown",
+"kind": "common",
+"brand": "Toyota Crown",
+"owner": "Toyota",
+"launch_year": 1955,
+"original_meaning": "A ceremonial head ornament worn by a monarch.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Crown",
+"pre_launch_per_million": 7.347
+},
+{
+"word": "Crucible",
+"kind": "common",
+"brand": "Crucible",
+"owner": "Atlassian",
+"launch_year": 2007,
+"original_meaning": "A vessel for heating substances",
+"source_url": "https://en.wikipedia.org/wiki/Crucible_(software)",
+"pre_launch_per_million": 0.7728
+},
+{
+"word": "Cruise",
+"kind": "common",
+"brand": "Cruise",
+"owner": "General Motors",
+"launch_year": 2013,
+"original_meaning": "A voyage taken for pleasure",
+"source_url": "https://en.wikipedia.org/wiki/Cruise_(autonomous_vehicle)",
+"pre_launch_per_million": 4.4964
+},
+{
+"word": "Crunch",
+"kind": "common",
+"brand": "Crunch",
+"owner": "Ferrero",
+"launch_year": 1938,
+"original_meaning": "To crush with a crisp sound.",
+"source_url": "https://en.wikipedia.org/wiki/Crunch_(chocolate_bar)",
+"pre_launch_per_million": 0.8692
+},
+{
+"word": "Crush",
+"kind": "common",
+"brand": "Crush",
+"owner": "Keurig Dr Pepper",
+"launch_year": 1916,
+"original_meaning": "To press or squeeze forcefully.",
+"source_url": "https://en.wikipedia.org/wiki/Crush_(soft_drink)",
+"pre_launch_per_million": 1.5999
+},
+{
+"word": "cursor",
+"kind": "common",
+"brand": "Cursor",
+"owner": "Anysphere",
+"launch_year": 2023,
+"original_meaning": "A movable indicator marking a position on a screen.",
+"source_url": "https://research.contrary.com/report/cursor",
+"pre_launch_per_million": 1.2217
+},
+{
+"word": "dawn",
+"kind": "common",
+"brand": "Dawn",
+"owner": "Procter & Gamble",
+"launch_year": 1973,
+"original_meaning": "First light of day",
+"source_url": "https://www.scholink.org/ojs/index.php/jepf/article/download/36098/9151",
+"pre_launch_per_million": 3.5825
+},
+{
+"word": "Defender",
+"kind": "common",
+"brand": "Defender",
+"owner": "Warner Bros. Discovery",
+"launch_year": 1981,
+"original_meaning": "A person who protects or supports",
+"source_url": "https://en.wikipedia.org/wiki/Defender_(1981_video_game)",
+"pre_launch_per_million": 1.4171
+},
+{
+"word": "Degree",
+"kind": "common",
+"brand": "Degree",
+"owner": "Unilever",
+"launch_year": 1990,
+"original_meaning": "A unit of measurement or academic qualification.",
+"source_url": "https://en.wikipedia.org/wiki/Degree_(deodorant)",
+"pre_launch_per_million": 82.0293
+},
+{
+"word": "Delicious",
+"kind": "common",
+"brand": "Delicious",
+"owner": "Delicious Media",
+"launch_year": 2003,
+"original_meaning": "Pleasant to taste",
+"source_url": "https://en.wikipedia.org/wiki/Delicious_(website)",
+"pre_launch_per_million": 3.2722
+},
+{
+"word": "Delta",
+"kind": "common",
+"brand": "Delta Air Lines",
+"owner": "Delta Air Lines, Inc.",
+"launch_year": 1928,
+"original_meaning": "The triangular mouth of a river.",
+"source_url": "https://en.wikipedia.org/wiki/Delta_Air_Lines",
+"pre_launch_per_million": 4.1178
+},
+{
+"word": "Deluge",
+"kind": "common",
+"brand": "Deluge",
+"owner": "Deluge Team",
+"launch_year": 2006,
+"original_meaning": "A severe flood",
+"source_url": "https://en.wikipedia.org/wiki/Deluge_(software)",
+"pre_launch_per_million": 0.5175
+},
+{
+"word": "Destiny",
+"kind": "common",
+"brand": "Destiny",
+"owner": "Bungie",
+"launch_year": 2014,
+"original_meaning": "Events believed to be predetermined",
+"source_url": "https://en.wikipedia.org/wiki/Destiny_(video_game)",
+"pre_launch_per_million": 6.8597
+},
+{
+"word": "devin",
+"kind": "name",
+"brand": "Devin",
+"owner": "Cognition",
+"launch_year": 2024,
+"original_meaning": "A given name.",
+"source_url": "https://cognition.com/blog/devin-generally-available",
+"pre_launch_per_million": 1.2297
+},
+{
+"word": "diamond",
+"kind": "common",
+"brand": "Diamond",
+"owner": "Admiral Group plc",
+"launch_year": 1997,
+"original_meaning": "A precious crystalline form of carbon.",
+"source_url": "https://www.admiralgroup.co.uk/who-we-are/our-milestones",
+"pre_launch_per_million": 6.7527
+},
+{
+"word": "Diesel",
+"kind": "common",
+"brand": "Diesel",
+"owner": "OTB Group",
+"launch_year": 1978,
+"original_meaning": "A fuel used in diesel engines.",
+"source_url": "https://en.wikipedia.org/wiki/Diesel_(brand)",
+"pre_launch_per_million": 10.3648
+},
+{
+"word": "Discord",
+"kind": "common",
+"brand": "Discord",
+"owner": "Discord Inc.",
+"launch_year": 2015,
+"original_meaning": "Disagreement or lack of harmony",
+"source_url": "https://en.wikipedia.org/wiki/Discord",
+"pre_launch_per_million": 1.2336
+},
+{
+"word": "discovery",
+"kind": "common",
+"brand": "Discovery Channel",
+"owner": "Warner Bros. Discovery",
+"launch_year": 1985,
+"original_meaning": "The act of finding or learning something",
+"source_url": "https://courses.cs.duke.edu/fall01/cps181s/lectures/6up-11-27.pdf",
+"pre_launch_per_million": 16.3308
+},
+{
+"word": "Dishonored",
+"kind": "common",
+"brand": "Dishonored",
+"owner": "Microsoft",
+"launch_year": 2012,
+"original_meaning": "Having lost honor or respect",
+"source_url": "https://en.wikipedia.org/wiki/Dishonored",
+"pre_launch_per_million": 0.2865
+},
+{
+"word": "Django",
+"kind": "name",
+"brand": "Django",
+"owner": "Django Software Foundation",
+"launch_year": 2005,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Django_(web_framework)",
+"pre_launch_per_million": 0.1099
+},
+{
+"word": "Docker",
+"kind": "common",
+"brand": "Docker",
+"owner": "Docker, Inc.",
+"launch_year": 2013,
+"original_meaning": "A worker who loads and unloads ships",
+"source_url": "https://en.wikipedia.org/wiki/Docker_(software)",
+"pre_launch_per_million": 0.0404
+},
+{
+"word": "Dominion",
+"kind": "common",
+"brand": "Dominion",
+"owner": "Rio Grande Games",
+"launch_year": 2008,
+"original_meaning": "Control or sovereignty over a territory.",
+"source_url": "https://en.wikipedia.org/wiki/Dominion_(card_game)",
+"pre_launch_per_million": 1.9
+},
+{
+"word": "Domino",
+"kind": "common",
+"brand": "Domino's",
+"owner": "Domino's Pizza, Inc.",
+"launch_year": 1965,
+"original_meaning": "A marked tile used in a game.",
+"source_url": "https://en.wikipedia.org/wiki/Domino%27s_Pizza",
+"pre_launch_per_million": 0.3003
+},
+{
+"word": "Doom",
+"kind": "common",
+"brand": "Doom",
+"owner": "Microsoft",
+"launch_year": 1993,
+"original_meaning": "An inevitable and terrible fate",
+"source_url": "https://en.wikipedia.org/wiki/Doom_(1993_video_game)",
+"pre_launch_per_million": 1.0595
+},
+{
+"word": "Dove",
+"kind": "common",
+"brand": "Dove",
+"owner": "Unilever",
+"launch_year": 1956,
+"original_meaning": "A bird in the pigeon family.",
+"source_url": "https://en.wikipedia.org/wiki/Dove_(Unilever_brand)",
+"pre_launch_per_million": 1.1227
+},
+{
+"word": "Drive",
+"kind": "common",
+"brand": "Google Drive",
+"owner": "Google",
+"launch_year": 2012,
+"original_meaning": "To operate and steer a vehicle",
+"source_url": "https://en.wikipedia.org/wiki/Google_Drive",
+"pre_launch_per_million": 47.8055
+},
+{
+"word": "Drone",
+"kind": "common",
+"brand": "Drone",
+"owner": "Harness",
+"launch_year": 2014,
+"original_meaning": "An unmanned aircraft",
+"source_url": "https://en.wikipedia.org/wiki/Drone_(software)",
+"pre_launch_per_million": 1.17
+},
+{
+"word": "Echo",
+"kind": "common",
+"brand": "Amazon Echo",
+"owner": "Amazon",
+"launch_year": 2014,
+"original_meaning": "A sound reflected back to its listener.",
+"source_url": "https://voicebot.ai/wp-content/uploads/2021/03/voice-assistant-timeline-jan-2021-updated2pdf.pdf",
+"pre_launch_per_million": 7.5775
+},
+{
+"word": "Eclipse",
+"kind": "common",
+"brand": "Eclipse",
+"owner": "Eclipse Foundation",
+"launch_year": 2001,
+"original_meaning": "The obscuring of one celestial body by another",
+"source_url": "https://en.wikipedia.org/wiki/Eclipse_(software)",
+"pre_launch_per_million": 1.4139
+},
+{
+"word": "Edge",
+"kind": "common",
+"brand": "Ford Edge",
+"owner": "Ford Motor Company",
+"launch_year": 2006,
+"original_meaning": "The boundary of a surface or object.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Edge",
+"pre_launch_per_million": 46.9161
+},
+{
+"word": "Edge",
+"kind": "common",
+"brand": "Microsoft Edge",
+"owner": "Microsoft",
+"launch_year": 2015,
+"original_meaning": "The outer boundary of something",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Edge",
+"pre_launch_per_million": 60.3815
+},
+{
+"word": "Elastic",
+"kind": "common",
+"brand": "Elastic",
+"owner": "Elastic N.V.",
+"launch_year": 2012,
+"original_meaning": "Able to stretch and return to shape",
+"source_url": "https://en.wikipedia.org/wiki/Elastic_NV",
+"pre_launch_per_million": 8.8869
+},
+{
+"word": "elephant",
+"kind": "common",
+"brand": "Elephant",
+"owner": "Admiral Group plc",
+"launch_year": 2000,
+"original_meaning": "A large mammal with a trunk and tusks.",
+"source_url": "https://www.admiralgroup.co.uk/who-we-are/our-milestones",
+"pre_launch_per_million": 2.868
+},
+{
+"word": "Elixir",
+"kind": "common",
+"brand": "Elixir",
+"owner": "Elixir community",
+"launch_year": 2012,
+"original_meaning": "A substance thought to cure or transform",
+"source_url": "https://en.wikipedia.org/wiki/Elixir_(programming_language)",
+"pre_launch_per_million": 0.4634
+},
+{
+"word": "ella",
+"kind": "name",
+"brand": "ella",
+"owner": "HRA Pharma",
+"launch_year": 2010,
+"original_meaning": "A feminine given name",
+"source_url": "https://www.prnewswire.com/news-releases/watson-launches-ella-ulipristal-acetate-emergency-contraceptive-111109109.html",
+"pre_launch_per_million": 2.3366
+},
+{
+"word": "Emirates",
+"kind": "common",
+"brand": "Emirates",
+"owner": "The Emirates Group",
+"launch_year": 1985,
+"original_meaning": "Territories ruled by emirs.",
+"source_url": "https://en.wikipedia.org/wiki/Emirates_(airline)",
+"pre_launch_per_million": 0.09
+},
+{
+"word": "Epic",
+"kind": "common",
+"brand": "Epic Games",
+"owner": "Epic Games, Inc.",
+"launch_year": 1992,
+"original_meaning": "A long heroic narrative",
+"source_url": "https://en.wikipedia.org/wiki/Epic_Games",
+"pre_launch_per_million": 2.963
+},
+{
+"word": "Equinox",
+"kind": "common",
+"brand": "Chevrolet Equinox",
+"owner": "General Motors",
+"launch_year": 2004,
+"original_meaning": "A time when day and night are approximately equal.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Equinox",
+"pre_launch_per_million": 0.3036
+},
+{
+"word": "Erica",
+"kind": "name",
+"brand": "Erica",
+"owner": "Bank of America",
+"launch_year": 2018,
+"original_meaning": "A feminine given name.",
+"source_url": "https://www.paymentsjournal.com/bank-of-america-ai-virtual-financial-assistant/",
+"pre_launch_per_million": 2.1034
+},
+{
+"word": "Erlang",
+"kind": "name",
+"brand": "Erlang",
+"owner": "Ericsson",
+"launch_year": 1986,
+"original_meaning": "A unit of telecommunications traffic",
+"source_url": "https://en.wikipedia.org/wiki/Erlang_(programming_language)",
+"pre_launch_per_million": 0.0747
+},
+{
+"word": "Escape",
+"kind": "common",
+"brand": "Ford Escape",
+"owner": "Ford Motor Company",
+"launch_year": 2000,
+"original_meaning": "To get away from confinement or danger.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Escape",
+"pre_launch_per_million": 15.8272
+},
+{
+"word": "Evian",
+"kind": "name",
+"brand": "Evian",
+"owner": "Danone",
+"launch_year": 1826,
+"original_meaning": "A French spa town.",
+"source_url": "https://en.wikipedia.org/wiki/Evian",
+"pre_launch_per_million": 0.07
+},
+{
+"word": "Excel",
+"kind": "common",
+"brand": "Microsoft Excel",
+"owner": "Microsoft",
+"launch_year": 1985,
+"original_meaning": "To be exceptionally good at something",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Excel",
+"pre_launch_per_million": 0.5593
+},
+{
+"word": "Excite",
+"kind": "common",
+"brand": "Excite",
+"owner": "IAC",
+"launch_year": 1995,
+"original_meaning": "To stir up strong feelings",
+"source_url": "https://en.wikipedia.org/wiki/Excite",
+"pre_launch_per_million": 1.0559
+},
+{
+"word": "Expedition",
+"kind": "common",
+"brand": "Ford Expedition",
+"owner": "Ford Motor Company",
+"launch_year": 1996,
+"original_meaning": "A journey undertaken for a particular purpose.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Expedition",
+"pre_launch_per_million": 4.0528
+},
+{
+"word": "Explorer",
+"kind": "common",
+"brand": "Ford Explorer",
+"owner": "Ford Motor Company",
+"launch_year": 1990,
+"original_meaning": "A person who travels to investigate places.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Explorer",
+"pre_launch_per_million": 0.8112
+},
+{
+"word": "Explorer",
+"kind": "common",
+"brand": "Internet Explorer",
+"owner": "Microsoft",
+"launch_year": 1995,
+"original_meaning": "A person who investigates unfamiliar places",
+"source_url": "https://en.wikipedia.org/wiki/Internet_Explorer",
+"pre_launch_per_million": 0.8733
+},
+{
+"word": "Express",
+"kind": "common",
+"brand": "Express",
+"owner": "Express, Inc.",
+"launch_year": 1980,
+"original_meaning": "To communicate a thought or feeling.",
+"source_url": "https://en.wikipedia.org/wiki/Express,_Inc.",
+"pre_launch_per_million": 23.9454
+},
+{
+"word": "Falcon",
+"kind": "common",
+"brand": "Falcon",
+"owner": "Technology Innovation Institute",
+"launch_year": 2023,
+"original_meaning": "A bird of prey.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.6298
+},
+{
+"word": "Fallout",
+"kind": "common",
+"brand": "Fallout",
+"owner": "Microsoft",
+"launch_year": 1997,
+"original_meaning": "Radioactive material descending after an explosion",
+"source_url": "https://en.wikipedia.org/wiki/Fallout_(franchise)",
+"pre_launch_per_million": 0.9041
+},
+{
+"word": "Fastly",
+"kind": "rare",
+"brand": "Fastly",
+"owner": "Fastly, Inc.",
+"launch_year": 2011,
+"original_meaning": "Quickly",
+"source_url": "https://en.wikipedia.org/wiki/Fastly",
+"pre_launch_per_million": 0.0361
+},
+{
+"word": "Fez",
+"kind": "common",
+"brand": "Fez",
+"owner": "Polytron Corporation",
+"launch_year": 2012,
+"original_meaning": "A brimless felt hat",
+"source_url": "https://en.wikipedia.org/wiki/Fez_(video_game)",
+"pre_launch_per_million": 0.1148
+},
+{
+"word": "fidelity",
+"kind": "common",
+"brand": "Fidelity",
+"owner": "FMR LLC",
+"launch_year": 1946,
+"original_meaning": "Faithfulness or loyalty",
+"source_url": "https://about.fidelity.com/",
+"pre_launch_per_million": 1.9646
+},
+{
+"word": "Fiesta",
+"kind": "common",
+"brand": "Ford Fiesta",
+"owner": "Ford Motor Company",
+"launch_year": 1976,
+"original_meaning": "A festival or celebration.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Fiesta",
+"pre_launch_per_million": 0.1913
+},
+{
+"word": "Fiji",
+"kind": "name",
+"brand": "Fiji Water",
+"owner": "The Wonderful Company",
+"launch_year": 1996,
+"original_meaning": "An island country in the South Pacific.",
+"source_url": "https://en.wikipedia.org/wiki/Fiji_Water",
+"pre_launch_per_million": 2.7846
+},
+{
+"word": "Finale",
+"kind": "common",
+"brand": "Finale",
+"owner": "MakeMusic",
+"launch_year": 1988,
+"original_meaning": "The concluding part of a performance",
+"source_url": "https://en.wikipedia.org/wiki/Finale_(software)",
+"pre_launch_per_million": 0.7372
+},
+{
+"word": "Fire",
+"kind": "common",
+"brand": "Amazon Fire",
+"owner": "Amazon",
+"launch_year": 2011,
+"original_meaning": "Combustion producing heat and light",
+"source_url": "https://en.wikipedia.org/wiki/Amazon_Fire_tablet",
+"pre_launch_per_million": 77.1657
+},
+{
+"word": "Firefly",
+"kind": "common",
+"brand": "Adobe Firefly",
+"owner": "Adobe",
+"launch_year": 2023,
+"original_meaning": "A beetle that produces light.",
+"source_url": "https://en.wikipedia.org/wiki/Text-to-image_model",
+"pre_launch_per_million": 0.3545
+},
+{
+"word": "Firefly",
+"kind": "common",
+"brand": "Firefly",
+"owner": "Adobe",
+"launch_year": 2023,
+"original_meaning": "A beetle that produces light",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Firefly",
+"pre_launch_per_million": 0.3545
+},
+{
+"word": "Firefox",
+"kind": "common",
+"brand": "Firefox",
+"owner": "Mozilla",
+"launch_year": 2004,
+"original_meaning": "A red panda",
+"source_url": "https://en.wikipedia.org/wiki/Firefox",
+"pre_launch_per_million": 0.0002
+},
+{
+"word": "FishEye",
+"kind": "common",
+"brand": "Fisheye",
+"owner": "Atlassian",
+"launch_year": 2005,
+"original_meaning": "A wide-angle view with strong distortion",
+"source_url": "https://en.wikipedia.org/wiki/Fisheye_(software)",
+"pre_launch_per_million": 0.0475
+},
+{
+"word": "Fit",
+"kind": "common",
+"brand": "Honda Fit",
+"owner": "Honda",
+"launch_year": 2001,
+"original_meaning": "Suitable or in good physical condition.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Fit",
+"pre_launch_per_million": 34.7266
+},
+{
+"word": "Flake",
+"kind": "common",
+"brand": "Flake",
+"owner": "Mondel\u0113z International",
+"launch_year": 1920,
+"original_meaning": "A thin, flat piece broken off something.",
+"source_url": "https://en.wikipedia.org/wiki/Flake_(chocolate_bar)",
+"pre_launch_per_million": 1.3765
+},
+{
+"word": "Flash",
+"kind": "common",
+"brand": "Adobe Flash",
+"owner": "Adobe",
+"launch_year": 1996,
+"original_meaning": "A brief burst of light",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Flash",
+"pre_launch_per_million": 5.4231
+},
+{
+"word": "Flask",
+"kind": "common",
+"brand": "Flask",
+"owner": "Pallets Projects",
+"launch_year": 2010,
+"original_meaning": "A container for liquids",
+"source_url": "https://en.wikipedia.org/wiki/Flask_(web_framework)",
+"pre_launch_per_million": 2.5022
+},
+{
+"word": "Flock",
+"kind": "common",
+"brand": "Flock",
+"owner": "Titan",
+"launch_year": 2014,
+"original_meaning": "A group of birds or sheep",
+"source_url": "https://en.wikipedia.org/wiki/Flock_(messaging_service)",
+"pre_launch_per_million": 4.1203
+},
+{
+"word": "Flux",
+"kind": "common",
+"brand": "FLUX",
+"owner": "Black Forest Labs",
+"launch_year": 2024,
+"original_meaning": "Continuous change or flow.",
+"source_url": "https://en.wikipedia.org/wiki/Text-to-image_model",
+"pre_launch_per_million": 10.3752
+},
+{
+"word": "Fly",
+"kind": "common",
+"brand": "Fly.io",
+"owner": "Fly.io, Inc.",
+"launch_year": 2017,
+"original_meaning": "To move through the air",
+"source_url": "https://en.wikipedia.org/wiki/Fly.io",
+"pre_launch_per_million": 21.9091
+},
+{
+"word": "Focus",
+"kind": "common",
+"brand": "Ford Focus",
+"owner": "Ford Motor Company",
+"launch_year": 1998,
+"original_meaning": "The center of interest or attention.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Focus",
+"pre_launch_per_million": 55.0131
+},
+{
+"word": "Forester",
+"kind": "common",
+"brand": "Subaru Forester",
+"owner": "Subaru Corporation",
+"launch_year": 1997,
+"original_meaning": "A person responsible for managing a forest.",
+"source_url": "https://en.wikipedia.org/wiki/Subaru_Forester",
+"pre_launch_per_million": 0.3991
+},
+{
+"word": "Forte",
+"kind": "common",
+"brand": "Kia Forte",
+"owner": "Kia Corporation",
+"launch_year": 2008,
+"original_meaning": "A person's strong point.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Forte",
+"pre_launch_per_million": 0.565
+},
+{
+"word": "Fortnite",
+"kind": "common",
+"brand": "Fortnite",
+"owner": "Epic Games",
+"launch_year": 2017,
+"original_meaning": "A variant spelling of fortnight, two weeks",
+"source_url": "https://en.wikipedia.org/wiki/Fortnite",
+"pre_launch_per_million": 0.0001
+},
+{
+"word": "Fossil",
+"kind": "common",
+"brand": "Fossil",
+"owner": "Fossil Group",
+"launch_year": 1984,
+"original_meaning": "Preserved remains or traces of ancient life.",
+"source_url": "https://en.wikipedia.org/wiki/Fossil_Group",
+"pre_launch_per_million": 6.9596
+},
+{
+"word": "Framer",
+"kind": "common",
+"brand": "Framer",
+"owner": "Framer B.V.",
+"launch_year": 2014,
+"original_meaning": "A person who makes frames",
+"source_url": "https://en.wikipedia.org/wiki/Framer_(software)",
+"pre_launch_per_million": 0.0465
+},
+{
+"word": "Frontier",
+"kind": "common",
+"brand": "Nissan Frontier",
+"owner": "Nissan",
+"launch_year": 1997,
+"original_meaning": "A border or outer limit of settlement.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Navara",
+"pre_launch_per_million": 5.8708
+},
+{
+"word": "Frontier",
+"kind": "common",
+"brand": "Frontier Airlines",
+"owner": "Frontier Group Holdings",
+"launch_year": 1994,
+"original_meaning": "A border or outer limit of settlement.",
+"source_url": "https://en.wikipedia.org/wiki/Frontier_Airlines",
+"pre_launch_per_million": 5.8403
+},
+{
+"word": "Galaxy",
+"kind": "common",
+"brand": "Galaxy",
+"owner": "Mars, Incorporated",
+"launch_year": 1960,
+"original_meaning": "A vast system of stars, gas, and dust.",
+"source_url": "https://en.wikipedia.org/wiki/Galaxy_(chocolate)",
+"pre_launch_per_million": 1.6684
+},
+{
+"word": "Gap",
+"kind": "common",
+"brand": "Gap",
+"owner": "Gap Inc.",
+"launch_year": 1969,
+"original_meaning": "An opening or space between things.",
+"source_url": "https://en.wikipedia.org/wiki/Gap_Inc.",
+"pre_launch_per_million": 16.7828
+},
+{
+"word": "Gemini",
+"kind": "name",
+"brand": "Gemini",
+"owner": "Google",
+"launch_year": 2023,
+"original_meaning": "The Twins, a constellation and zodiac sign.",
+"source_url": "https://aitimeline.live/",
+"pre_launch_per_million": 0.8891
+},
+{
+"word": "Gemma",
+"kind": "name",
+"brand": "Gemma",
+"owner": "Google",
+"launch_year": 2024,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 1.9771
+},
+{
+"word": "Genesis",
+"kind": "common",
+"brand": "Genesis",
+"owner": "Hyundai Motor Group",
+"launch_year": 2015,
+"original_meaning": "The origin or beginning of something.",
+"source_url": "https://en.wikipedia.org/wiki/Genesis_Motor",
+"pre_launch_per_million": 2.451
+},
+{
+"word": "Genesis",
+"kind": "common",
+"brand": "Sega Genesis",
+"owner": "Sega",
+"launch_year": 1989,
+"original_meaning": "The origin or beginning of something",
+"source_url": "https://en.wikipedia.org/wiki/Sega_Genesis",
+"pre_launch_per_million": 2.7716
+},
+{
+"word": "Ghost",
+"kind": "common",
+"brand": "Ghost",
+"owner": "Ghost Foundation",
+"launch_year": 2013,
+"original_meaning": "The supposed spirit of a dead person",
+"source_url": "https://en.wikipedia.org/wiki/Ghost_(blogging_platform)",
+"pre_launch_per_million": 7.6726
+},
+{
+"word": "Giant",
+"kind": "common",
+"brand": "Giant",
+"owner": "Ahold Delhaize",
+"launch_year": 1936,
+"original_meaning": "An exceptionally large person or thing.",
+"source_url": "https://en.wikipedia.org/wiki/Giant_Food_(Landover)",
+"pre_launch_per_million": 7.928
+},
+{
+"word": "Gimp",
+"kind": "common",
+"brand": "GIMP",
+"owner": "GIMP Development Team",
+"launch_year": 1996,
+"original_meaning": "A decorative cord or trimming",
+"source_url": "https://en.wikipedia.org/wiki/GIMP",
+"pre_launch_per_million": 0.0346
+},
+{
+"word": "Git",
+"kind": "common",
+"brand": "Git",
+"owner": "Git project",
+"launch_year": 2005,
+"original_meaning": "An unpleasant or foolish person",
+"source_url": "https://en.wikipedia.org/wiki/Git",
+"pre_launch_per_million": 0.5863
+},
+{
+"word": "Gladiator",
+"kind": "common",
+"brand": "Jeep Gladiator",
+"owner": "Stellantis",
+"launch_year": 1962,
+"original_meaning": "An ancient Roman arena fighter.",
+"source_url": "https://en.wikipedia.org/wiki/Jeep_Gladiator_(SJ)",
+"pre_launch_per_million": 0.0614
+},
+{
+"word": "Glass",
+"kind": "common",
+"brand": "Google Glass",
+"owner": "Google",
+"launch_year": 2013,
+"original_meaning": "A hard transparent material",
+"source_url": "https://en.wikipedia.org/wiki/Google_Glass",
+"pre_launch_per_million": 53.3844
+},
+{
+"word": "Go",
+"kind": "common",
+"brand": "Go",
+"owner": "Google",
+"launch_year": 2009,
+"original_meaning": "To move or travel",
+"source_url": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+"pre_launch_per_million": 236.6078
+},
+{
+"word": "Godot",
+"kind": "name",
+"brand": "Godot",
+"owner": "Godot Foundation",
+"launch_year": 2014,
+"original_meaning": "A character awaited in a Beckett play",
+"source_url": "https://en.wikipedia.org/wiki/Godot_(game_engine)",
+"pre_launch_per_million": 0.2132
+},
+{
+"word": "Golf",
+"kind": "common",
+"brand": "Volkswagen Golf",
+"owner": "Volkswagen",
+"launch_year": 1974,
+"original_meaning": "A sport played with clubs and a ball.",
+"source_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf",
+"pre_launch_per_million": 4.3755
+},
+{
+"word": "Grab",
+"kind": "common",
+"brand": "Grab",
+"owner": "Grab Holdings",
+"launch_year": 2016,
+"original_meaning": "To seize or take quickly",
+"source_url": "https://en.wikipedia.org/wiki/Grab_(company)",
+"pre_launch_per_million": 11.4555
+},
+{
+"word": "Graphite",
+"kind": "common",
+"brand": "Graphite",
+"owner": "Graphite project",
+"launch_year": 2008,
+"original_meaning": "A soft form of carbon",
+"source_url": "https://en.wikipedia.org/wiki/Graphite_(software)",
+"pre_launch_per_million": 2.4492
+},
+{
+"word": "Guess",
+"kind": "common",
+"brand": "Guess",
+"owner": "Guess, Inc.",
+"launch_year": 1981,
+"original_meaning": "To form an answer without certainty.",
+"source_url": "https://en.wikipedia.org/wiki/Guess_(clothing)",
+"pre_launch_per_million": 8.5925
+},
+{
+"word": "gulf",
+"kind": "common",
+"brand": "Gulf",
+"owner": "Gulf Oil International",
+"launch_year": 1901,
+"original_meaning": "Large inlet of the sea",
+"source_url": "https://www.gulfoilltd.com/about-us/gulf-history",
+"pre_launch_per_million": 1.4452
+},
+{
+"word": "gusto",
+"kind": "common",
+"brand": "Gusto",
+"owner": "Gusto, Inc.",
+"launch_year": 2015,
+"original_meaning": "Enthusiasm or enjoyment in doing something.",
+"source_url": "https://techcrunch.com/2015/12/21/gusto-is-looking-for-another-50m-to-take-on-zenefits/",
+"pre_launch_per_million": 0.6105
+},
+{
+"word": "Hades",
+"kind": "name",
+"brand": "Hades",
+"owner": "Supergiant Games",
+"launch_year": 2020,
+"original_meaning": "The Greek god of the underworld",
+"source_url": "https://en.wikipedia.org/wiki/Hades_(video_game)",
+"pre_launch_per_million": 1.6228
+},
+{
+"word": "Haiku",
+"kind": "common",
+"brand": "Claude Haiku",
+"owner": "Anthropic",
+"launch_year": 2024,
+"original_meaning": "A short Japanese poetic form.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.3165
+},
+{
+"word": "Halo",
+"kind": "common",
+"brand": "Halo",
+"owner": "Microsoft",
+"launch_year": 2001,
+"original_meaning": "A ring of light around a head",
+"source_url": "https://en.wikipedia.org/wiki/Halo_(franchise)",
+"pre_launch_per_million": 1.7396
+},
+{
+"word": "Hangouts",
+"kind": "common",
+"brand": "Google Hangouts",
+"owner": "Google",
+"launch_year": 2013,
+"original_meaning": "Places where people regularly gather",
+"source_url": "https://en.wikipedia.org/wiki/Google_Hangouts",
+"pre_launch_per_million": 0.1018
+},
+{
+"word": "Harmony",
+"kind": "common",
+"brand": "Logitech Harmony",
+"owner": "Logitech",
+"launch_year": 2001,
+"original_meaning": "A pleasing combination of sounds",
+"source_url": "https://en.wikipedia.org/wiki/Logitech_Harmony",
+"pre_launch_per_million": 6.9572
+},
+{
+"word": "Headspace",
+"kind": "common",
+"brand": "Headspace",
+"owner": "Headspace Inc.",
+"launch_year": 2012,
+"original_meaning": "A person's mental state",
+"source_url": "https://en.wikipedia.org/wiki/Headspace_(company)",
+"pre_launch_per_million": 0.2936
+},
+{
+"word": "Heroes",
+"kind": "common",
+"brand": "Heroes",
+"owner": "Mondel\u0113z International",
+"launch_year": 1999,
+"original_meaning": "People admired for courage or achievements.",
+"source_url": "https://en.wikipedia.org/wiki/Heroes_(confectionery)",
+"pre_launch_per_million": 3.9304
+},
+{
+"word": "Hinge",
+"kind": "common",
+"brand": "Hinge",
+"owner": "Match Group",
+"launch_year": 2012,
+"original_meaning": "A joint that lets a door swing",
+"source_url": "https://en.wikipedia.org/wiki/Hinge_(app)",
+"pre_launch_per_million": 1.776
+},
+{
+"word": "Hive",
+"kind": "common",
+"brand": "Apache Hive",
+"owner": "Apache Software Foundation",
+"launch_year": 2010,
+"original_meaning": "A home for a colony of bees",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Hive",
+"pre_launch_per_million": 0.8668
+},
+{
+"word": "Hollister",
+"kind": "name",
+"brand": "Hollister",
+"owner": "Abercrombie & Fitch Co.",
+"launch_year": 2000,
+"original_meaning": "A California city.",
+"source_url": "https://en.wikipedia.org/wiki/Hollister_Co.",
+"pre_launch_per_million": 0.6507
+},
+{
+"word": "Honest",
+"kind": "common",
+"brand": "Honest Tea",
+"owner": "The Coca-Cola Company",
+"launch_year": 1998,
+"original_meaning": "Truthful and sincere.",
+"source_url": "https://en.wikipedia.org/wiki/Honest_Tea",
+"pre_launch_per_million": 7.3852
+},
+{
+"word": "Hoopla",
+"kind": "common",
+"brand": "Hoopla",
+"owner": "Midwest Tape",
+"launch_year": 2013,
+"original_meaning": "Excited publicity or commotion",
+"source_url": "https://en.wikipedia.org/wiki/Hoopla_(digital_media_service)",
+"pre_launch_per_million": 0.1205
+},
+{
+"word": "horizon",
+"kind": "common",
+"brand": "Horizon",
+"owner": "Horizon Blue Cross Blue Shield of New Jersey",
+"launch_year": 1998,
+"original_meaning": "Line where earth or sea appears to meet sky",
+"source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-njd-2_03-cv-04098/pdf/USCOURTS-njd-2_03-cv-04098-1.pdf",
+"pre_launch_per_million": 7.671
+},
+{
+"word": "Hound",
+"kind": "common",
+"brand": "Hound",
+"owner": "SoundHound",
+"launch_year": 2016,
+"original_meaning": "A dog bred for hunting.",
+"source_url": "https://voicebot.ai/wp-content/uploads/2021/03/voice-assistant-timeline-jan-2021-updated2pdf.pdf",
+"pre_launch_per_million": 1.2259
+},
+{
+"word": "Hue",
+"kind": "common",
+"brand": "Philips Hue",
+"owner": "Signify",
+"launch_year": 2012,
+"original_meaning": "A color or shade",
+"source_url": "https://en.wikipedia.org/wiki/Philips_Hue",
+"pre_launch_per_million": 1.8752
+},
+{
+"word": "Hush",
+"kind": "common",
+"brand": "Hush",
+"owner": "Hush Homewear",
+"launch_year": 2003,
+"original_meaning": "Silence or quiet.",
+"source_url": "https://www.womanandhome.com/fashion/high-end-high-street-brands-that-will-luxe-up-your-wardrobe/",
+"pre_launch_per_million": 0.643
+},
+{
+"word": "Iceland",
+"kind": "name",
+"brand": "Iceland",
+"owner": "Iceland Foods",
+"launch_year": 1970,
+"original_meaning": "A Nordic island country.",
+"source_url": "https://en.wikipedia.org/wiki/Iceland_Foods",
+"pre_launch_per_million": 3.2412
+},
+{
+"word": "Ideogram",
+"kind": "rare",
+"brand": "Ideogram",
+"owner": "Ideogram",
+"launch_year": 2023,
+"original_meaning": "A written symbol representing an idea or concept.",
+"source_url": "https://en.wikipedia.org/wiki/Text-to-image_model",
+"pre_launch_per_million": 0.0659
+},
+{
+"word": "Illustrator",
+"kind": "common",
+"brand": "Adobe Illustrator",
+"owner": "Adobe",
+"launch_year": 1987,
+"original_meaning": "A person who creates illustrations",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Illustrator",
+"pre_launch_per_million": 0.7309
+},
+{
+"word": "Impala",
+"kind": "common",
+"brand": "Chevrolet Impala",
+"owner": "General Motors",
+"launch_year": 1958,
+"original_meaning": "An African antelope.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+"pre_launch_per_million": 0.0727
+},
+{
+"word": "Index",
+"kind": "common",
+"brand": "Valve Index",
+"owner": "Valve",
+"launch_year": 2019,
+"original_meaning": "An alphabetical list for locating information",
+"source_url": "https://en.wikipedia.org/wiki/Valve_Index",
+"pre_launch_per_million": 35.0332
+},
+{
+"word": "Indigo",
+"kind": "common",
+"brand": "Indigo",
+"owner": "Artificial Solutions",
+"launch_year": 2013,
+"original_meaning": "A deep blue dye or color.",
+"source_url": "https://en.wikipedia.org/wiki/Lyra_%28virtual_assistant%29",
+"pre_launch_per_million": 0.888
+},
+{
+"word": "inflection",
+"kind": "common",
+"brand": "Inflection",
+"owner": "Inflection AI",
+"launch_year": 2022,
+"original_meaning": "A change in pitch, direction, or word form.",
+"source_url": "https://greylock.com/blog/a-new-paradigm-in-human-machine-interaction/",
+"pre_launch_per_million": 1.3856
+},
+{
+"word": "Innocent",
+"kind": "common",
+"brand": "Innocent",
+"owner": "The Coca-Cola Company",
+"launch_year": 1999,
+"original_meaning": "Not guilty of a wrongdoing.",
+"source_url": "https://en.wikipedia.org/wiki/Innocent_Drinks",
+"pre_launch_per_million": 7.0205
+},
+{
+"word": "Inside",
+"kind": "common",
+"brand": "Inside",
+"owner": "Playdead",
+"launch_year": 2016,
+"original_meaning": "Within something",
+"source_url": "https://en.wikipedia.org/wiki/Inside_(video_game)",
+"pre_launch_per_million": 119.2225
+},
+{
+"word": "Insight",
+"kind": "common",
+"brand": "Honda Insight",
+"owner": "Honda",
+"launch_year": 1999,
+"original_meaning": "A clear understanding of something.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Insight",
+"pre_launch_per_million": 10.0694
+},
+{
+"word": "Insomnia",
+"kind": "common",
+"brand": "Insomnia",
+"owner": "Kong Inc.",
+"launch_year": 2016,
+"original_meaning": "Persistent difficulty sleeping",
+"source_url": "https://en.wikipedia.org/wiki/Insomnia_(software)",
+"pre_launch_per_million": 2.3204
+},
+{
+"word": "intercom",
+"kind": "common",
+"brand": "Intercom",
+"owner": "Intercom, Inc.",
+"launch_year": 2011,
+"original_meaning": "A system for speaking between rooms or locations.",
+"source_url": "https://www.intercom.com/blog/intercom-turns-10",
+"pre_launch_per_million": 0.7388
+},
+{
+"word": "ivory",
+"kind": "common",
+"brand": "Ivory",
+"owner": "Procter & Gamble",
+"launch_year": 1879,
+"original_meaning": "Hard material forming elephant tusks",
+"source_url": "https://bloom-bbs.education/wp-content/uploads/wpcfto_files/adf9edb17144d1fea80568712d471e27Strategic%20Marketing.pdf",
+"pre_launch_per_million": 2.2112
+},
+{
+"word": "Jaguar",
+"kind": "common",
+"brand": "Jaguar",
+"owner": "JLR",
+"launch_year": 1935,
+"original_meaning": "A large spotted American wild cat.",
+"source_url": "https://en.wikipedia.org/wiki/Jaguar_Cars",
+"pre_launch_per_million": 0.132
+},
+{
+"word": "jasper",
+"kind": "name",
+"brand": "Jasper",
+"owner": "Jasper AI",
+"launch_year": 2022,
+"original_meaning": "A given name; also an opaque variety of quartz.",
+"source_url": "https://www.getjarvis.eu/jarvis-ai-spelling",
+"pre_launch_per_million": 3.4118
+},
+{
+"word": "Jenkins",
+"kind": "name",
+"brand": "Jenkins",
+"owner": "Jenkins project",
+"launch_year": 2011,
+"original_meaning": "A surname derived from a given name",
+"source_url": "https://en.wikipedia.org/wiki/Jenkins_(software)",
+"pre_launch_per_million": 4.868
+},
+{
+"word": "Jetta",
+"kind": "name",
+"brand": "Volkswagen Jetta",
+"owner": "Volkswagen",
+"launch_year": 1979,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Volkswagen_Jetta",
+"pre_launch_per_million": 0.0588
+},
+{
+"word": "Journey",
+"kind": "common",
+"brand": "Dodge Journey",
+"owner": "Stellantis",
+"launch_year": 2008,
+"original_meaning": "An act of traveling from one place to another.",
+"source_url": "https://en.wikipedia.org/wiki/Dodge_Journey",
+"pre_launch_per_million": 19.4187
+},
+{
+"word": "Journey",
+"kind": "common",
+"brand": "Journey",
+"owner": "Sony Interactive Entertainment",
+"launch_year": 2012,
+"original_meaning": "An act of traveling",
+"source_url": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)",
+"pre_launch_per_million": 26.1528
+},
+{
+"word": "joy",
+"kind": "common",
+"brand": "Joy",
+"owner": "JoySuds",
+"launch_year": 1949,
+"original_meaning": "A feeling of great happiness",
+"source_url": "https://www.scholink.org/ojs/index.php/jepf/article/download/36098/9151",
+"pre_launch_per_million": 7.0707
+},
+{
+"word": "Juke",
+"kind": "common",
+"brand": "Nissan Juke",
+"owner": "Nissan",
+"launch_year": 2010,
+"original_meaning": "To make a deceptive movement.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Juke",
+"pre_launch_per_million": 0.1331
+},
+{
+"word": "Julia",
+"kind": "name",
+"brand": "Julia",
+"owner": "Julia community",
+"launch_year": 2012,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Julia_(programming_language)",
+"pre_launch_per_million": 8.0693
+},
+{
+"word": "Kafka",
+"kind": "name",
+"brand": "Apache Kafka",
+"owner": "Apache Software Foundation",
+"launch_year": 2011,
+"original_meaning": "A Czech surname",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Kafka",
+"pre_launch_per_million": 0.8329
+},
+{
+"word": "Ken",
+"kind": "name",
+"brand": "Ken",
+"owner": "Mattel",
+"launch_year": 1961,
+"original_meaning": "A masculine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Ken_(doll)",
+"pre_launch_per_million": 5.6239
+},
+{
+"word": "Kettle",
+"kind": "common",
+"brand": "Kettle Brand",
+"owner": "Campbell's Company",
+"launch_year": 1982,
+"original_meaning": "A vessel for boiling water.",
+"source_url": "https://en.wikipedia.org/wiki/Kettle_Brand",
+"pre_launch_per_million": 0.8673
+},
+{
+"word": "Kind",
+"kind": "common",
+"brand": "Kind",
+"owner": "Mars, Incorporated",
+"launch_year": 2004,
+"original_meaning": "Considerate or friendly.",
+"source_url": "https://en.wikipedia.org/wiki/Kind_LLC",
+"pre_launch_per_million": 95.4014
+},
+{
+"word": "Kindle",
+"kind": "common",
+"brand": "Kindle",
+"owner": "Amazon",
+"launch_year": 2007,
+"original_meaning": "To start a fire",
+"source_url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+"pre_launch_per_million": 0.2606
+},
+{
+"word": "Kobo",
+"kind": "rare",
+"brand": "Kobo",
+"owner": "Rakuten",
+"launch_year": 2009,
+"original_meaning": "A Nigerian monetary unit",
+"source_url": "https://en.wikipedia.org/wiki/Kobo_Inc.",
+"pre_launch_per_million": 0.0386
+},
+{
+"word": "Kodi",
+"kind": "name",
+"brand": "Kodi",
+"owner": "XBMC Foundation",
+"launch_year": 2014,
+"original_meaning": "A given name",
+"source_url": "https://en.wikipedia.org/wiki/Kodi_(software)",
+"pre_launch_per_million": 0.0346
+},
+{
+"word": "Lay",
+"kind": "common",
+"brand": "Lay's",
+"owner": "PepsiCo",
+"launch_year": 1932,
+"original_meaning": "To put something down.",
+"source_url": "https://en.wikipedia.org/wiki/Lay%27s",
+"pre_launch_per_million": 22.4237
+},
+{
+"word": "Leaf",
+"kind": "common",
+"brand": "Nissan Leaf",
+"owner": "Nissan",
+"launch_year": 2010,
+"original_meaning": "A flattened green part of a plant.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+"pre_launch_per_million": 16.3552
+},
+{
+"word": "Legacy",
+"kind": "common",
+"brand": "Subaru Legacy",
+"owner": "Subaru Corporation",
+"launch_year": 1989,
+"original_meaning": "Something handed down from the past.",
+"source_url": "https://en.wikipedia.org/wiki/Subaru_Legacy",
+"pre_launch_per_million": 3.2924
+},
+{
+"word": "lemonade",
+"kind": "common",
+"brand": "Lemonade",
+"owner": "Lemonade, Inc.",
+"launch_year": 2016,
+"original_meaning": "Drink made with lemon juice",
+"source_url": "https://www.lemonade.com/pdf/reports/lemonade_solvency_2019.pdf",
+"pre_launch_per_million": 1.3409
+},
+{
+"word": "lex",
+"kind": "name",
+"brand": "Lex",
+"owner": "Amazon",
+"launch_year": 2016,
+"original_meaning": "A given name, often short for Alexander.",
+"source_url": "https://press.aboutamazon.com/2016/11/aws-announces-three-new-amazon-ai-services",
+"pre_launch_per_million": 1.2705
+},
+{
+"word": "Libby",
+"kind": "name",
+"brand": "Libby",
+"owner": "OverDrive",
+"launch_year": 2017,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/OverDrive,_Inc.",
+"pre_launch_per_million": 2.4733
+},
+{
+"word": "liberty",
+"kind": "common",
+"brand": "Liberty Mutual",
+"owner": "Liberty Mutual Holding Company",
+"launch_year": 1917,
+"original_meaning": "Freedom from constraint",
+"source_url": "https://myportal.dfs.ny.gov/companydirectory/dir_det.jsp?c=c&filekey=dir&frst=dir_srch_optiono&naic=23043&search_type=CPAT_NUM&search_value=326",
+"pre_launch_per_million": 7.2168
+},
+{
+"word": "Life",
+"kind": "common",
+"brand": "Life",
+"owner": "PepsiCo",
+"launch_year": 1961,
+"original_meaning": "The condition of being alive.",
+"source_url": "https://en.wikipedia.org/wiki/Life_(cereal)",
+"pre_launch_per_million": 222.6818
+},
+{
+"word": "Life",
+"kind": "common",
+"brand": "The Game of Life",
+"owner": "Hasbro",
+"launch_year": 1960,
+"original_meaning": "The condition of being alive.",
+"source_url": "https://en.wikipedia.org/wiki/The_Game_of_Life",
+"pre_launch_per_million": 222.6818
+},
+{
+"word": "lifetime",
+"kind": "common",
+"brand": "Lifetime",
+"owner": "A+E Global Media",
+"launch_year": 1984,
+"original_meaning": "The duration of a person's life",
+"source_url": "https://courses.cs.duke.edu/fall01/cps181s/lectures/6up-11-27.pdf",
+"pre_launch_per_million": 9.2226
+},
+{
+"word": "Limbo",
+"kind": "common",
+"brand": "Limbo",
+"owner": "Playdead",
+"launch_year": 2010,
+"original_meaning": "An uncertain or unresolved state",
+"source_url": "https://en.wikipedia.org/wiki/Limbo_(video_game)",
+"pre_launch_per_million": 0.5974
+},
+{
+"word": "Lime",
+"kind": "common",
+"brand": "Lime",
+"owner": "Neutron Holdings",
+"launch_year": 2017,
+"original_meaning": "A green citrus fruit",
+"source_url": "https://en.wikipedia.org/wiki/Lime_(transportation_company)",
+"pre_launch_per_million": 5.5429
+},
+{
+"word": "Line",
+"kind": "common",
+"brand": "LINE",
+"owner": "LY Corporation",
+"launch_year": 2011,
+"original_meaning": "A long narrow mark",
+"source_url": "https://en.wikipedia.org/wiki/Line_(software)",
+"pre_launch_per_million": 185.0032
+},
+{
+"word": "Lion",
+"kind": "common",
+"brand": "Lion",
+"owner": "Nestl\u00e9",
+"launch_year": 1976,
+"original_meaning": "A large tawny African and Asian cat.",
+"source_url": "https://en.wikipedia.org/wiki/Lion_Bar",
+"pre_launch_per_million": 7.707
+},
+{
+"word": "Lisa",
+"kind": "name",
+"brand": "Apple Lisa",
+"owner": "Apple",
+"launch_year": 1983,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Apple_Lisa",
+"pre_launch_per_million": 3.1009
+},
+{
+"word": "Llama",
+"kind": "common",
+"brand": "Llama",
+"owner": "Meta",
+"launch_year": 2023,
+"original_meaning": "A domesticated South American camelid.",
+"source_url": "https://aitimeline.live/",
+"pre_launch_per_million": 0.2247
+},
+{
+"word": "Logic",
+"kind": "common",
+"brand": "Logic Pro",
+"owner": "Apple",
+"launch_year": 1993,
+"original_meaning": "Reasoning according to valid principles",
+"source_url": "https://en.wikipedia.org/wiki/Logic_Pro",
+"pre_launch_per_million": 18.9985
+},
+{
+"word": "Loom",
+"kind": "common",
+"brand": "Loom",
+"owner": "Atlassian",
+"launch_year": 2016,
+"original_meaning": "A machine for weaving cloth",
+"source_url": "https://en.wikipedia.org/wiki/Loom_(software)",
+"pre_launch_per_million": 1.2891
+},
+{
+"word": "Lotus",
+"kind": "common",
+"brand": "Lotus",
+"owner": "Geely",
+"launch_year": 1952,
+"original_meaning": "An aquatic plant with large flowers.",
+"source_url": "https://en.wikipedia.org/wiki/Lotus_Cars",
+"pre_launch_per_million": 1.1336
+},
+{
+"word": "Lowe",
+"kind": "name",
+"brand": "Lowe's",
+"owner": "Lowe's Companies, Inc.",
+"launch_year": 1921,
+"original_meaning": "A surname.",
+"source_url": "https://en.wikipedia.org/wiki/Lowe%27s",
+"pre_launch_per_million": 2.6336
+},
+{
+"word": "Lucid",
+"kind": "common",
+"brand": "Lucid",
+"owner": "Lucid Group, Inc.",
+"launch_year": 2016,
+"original_meaning": "Clear and easy to understand.",
+"source_url": "https://en.wikipedia.org/wiki/Lucid_Motors",
+"pre_launch_per_million": 1.2452
+},
+{
+"word": "lumen",
+"kind": "rare",
+"brand": "Lumen",
+"owner": "Lumen Technologies",
+"launch_year": 2020,
+"original_meaning": "Unit of luminous flux",
+"source_url": "https://www.sec.gov/Archives/edgar/data/18926/000119312521017712/d246960d8k.htm",
+"pre_launch_per_million": 2.4087
+},
+{
+"word": "Lush",
+"kind": "common",
+"brand": "Lush",
+"owner": "Lush Retail Ltd.",
+"launch_year": 1995,
+"original_meaning": "Rich, luxuriant, or abundant.",
+"source_url": "https://en.wikipedia.org/wiki/Lush_(company)",
+"pre_launch_per_million": 1.2433
+},
+{
+"word": "Lynx",
+"kind": "common",
+"brand": "Lynx",
+"owner": "Unilever",
+"launch_year": 1985,
+"original_meaning": "A wild cat with tufted ears.",
+"source_url": "https://en.wikipedia.org/wiki/Axe_(brand)",
+"pre_launch_per_million": 0.213
+},
+{
+"word": "Lyra",
+"kind": "name",
+"brand": "Lyra",
+"owner": "Artificial Solutions",
+"launch_year": 2017,
+"original_meaning": "A constellation named for a lyre.",
+"source_url": "https://en.wikipedia.org/wiki/Lyra_%28virtual_assistant%29",
+"pre_launch_per_million": 0.3577
+},
+{
+"word": "Macintosh",
+"kind": "name",
+"brand": "Macintosh",
+"owner": "Apple",
+"launch_year": 1984,
+"original_meaning": "A type of apple",
+"source_url": "https://en.wikipedia.org/wiki/Macintosh",
+"pre_launch_per_million": 0.2041
+},
+{
+"word": "Magic",
+"kind": "common",
+"brand": "Magic: The Gathering",
+"owner": "Wizards of the Coast",
+"launch_year": 1993,
+"original_meaning": "The supposed use of supernatural powers.",
+"source_url": "https://en.wikipedia.org/wiki/Magic:_The_Gathering",
+"pre_launch_per_million": 6.6827
+},
+{
+"word": "Malibu",
+"kind": "name",
+"brand": "Chevrolet Malibu",
+"owner": "General Motors",
+"launch_year": 1964,
+"original_meaning": "A coastal city in California.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Malibu",
+"pre_launch_per_million": 0.7439
+},
+{
+"word": "Mango",
+"kind": "common",
+"brand": "Mango",
+"owner": "Mango MNG Holding",
+"launch_year": 1984,
+"original_meaning": "A tropical fruit.",
+"source_url": "https://en.wikipedia.org/wiki/Mango_(retailer)",
+"pre_launch_per_million": 0.6568
+},
+{
+"word": "Mantis",
+"kind": "common",
+"brand": "MantisBT",
+"owner": "MantisBT Team",
+"launch_year": 2000,
+"original_meaning": "A predatory insect with grasping forelegs",
+"source_url": "https://en.wikipedia.org/wiki/Mantis_Bug_Tracker",
+"pre_launch_per_million": 0.123
+},
+{
+"word": "Mars",
+"kind": "name",
+"brand": "Mars",
+"owner": "Mars, Incorporated",
+"launch_year": 1932,
+"original_meaning": "The Roman god of war.",
+"source_url": "https://en.wikipedia.org/wiki/Mars_(chocolate_bar)",
+"pre_launch_per_million": 3.4211
+},
+{
+"word": "Marshalls",
+"kind": "name",
+"brand": "Marshalls",
+"owner": "TJX Companies",
+"launch_year": 1956,
+"original_meaning": "People named Marshall.",
+"source_url": "https://en.wikipedia.org/wiki/Marshalls",
+"pre_launch_per_million": 0.1837
+},
+{
+"word": "Match",
+"kind": "common",
+"brand": "Match.com",
+"owner": "Match Group",
+"launch_year": 1995,
+"original_meaning": "A suitable counterpart or pairing",
+"source_url": "https://en.wikipedia.org/wiki/Match.com",
+"pre_launch_per_million": 16.6197
+},
+{
+"word": "Matchbox",
+"kind": "common",
+"brand": "Matchbox",
+"owner": "Mattel",
+"launch_year": 1953,
+"original_meaning": "A small box for matches.",
+"source_url": "https://en.wikipedia.org/wiki/Matchbox_(brand)",
+"pre_launch_per_million": 0.0623
+},
+{
+"word": "Maven",
+"kind": "common",
+"brand": "Apache Maven",
+"owner": "Apache Software Foundation",
+"launch_year": 2004,
+"original_meaning": "An expert in a particular field",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Maven",
+"pre_launch_per_million": 0.0581
+},
+{
+"word": "Maverick",
+"kind": "common",
+"brand": "Ford Maverick",
+"owner": "Ford Motor Company",
+"launch_year": 1969,
+"original_meaning": "An independent-minded or unconventional person.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Maverick_(Americas)",
+"pre_launch_per_million": 0.2062
+},
+{
+"word": "Medium",
+"kind": "common",
+"brand": "Medium",
+"owner": "A Medium Corporation",
+"launch_year": 2012,
+"original_meaning": "An intervening means or substance",
+"source_url": "https://en.wikipedia.org/wiki/Medium_(website)",
+"pre_launch_per_million": 41.7505
+},
+{
+"word": "Meet",
+"kind": "common",
+"brand": "Google Meet",
+"owner": "Google",
+"launch_year": 2017,
+"original_meaning": "To come together",
+"source_url": "https://en.wikipedia.org/wiki/Google_Meet",
+"pre_launch_per_million": 85.8603
+},
+{
+"word": "Mega",
+"kind": "common",
+"brand": "MEGA",
+"owner": "Mega Limited",
+"launch_year": 2013,
+"original_meaning": "Very large",
+"source_url": "https://en.wikipedia.org/wiki/Mega_(service)",
+"pre_launch_per_million": 1.3772
+},
+{
+"word": "Mercurial",
+"kind": "common",
+"brand": "Mercurial",
+"owner": "Mercurial project",
+"launch_year": 2005,
+"original_meaning": "Subject to sudden changes of mood",
+"source_url": "https://en.wikipedia.org/wiki/Mercurial",
+"pre_launch_per_million": 0.2429
+},
+{
+"word": "Mercury",
+"kind": "name",
+"brand": "Mercury",
+"owner": "Ford Motor Company",
+"launch_year": 1938,
+"original_meaning": "The Roman messenger god.",
+"source_url": "https://en.wikipedia.org/wiki/Mercury_(automobile)",
+"pre_launch_per_million": 5.0501
+},
+{
+"word": "Messenger",
+"kind": "common",
+"brand": "Messenger",
+"owner": "Meta Platforms",
+"launch_year": 2011,
+"original_meaning": "A person who carries a message",
+"source_url": "https://en.wikipedia.org/wiki/Messenger_(software)",
+"pre_launch_per_million": 3.9249
+},
+{
+"word": "meta",
+"kind": "common",
+"brand": "Meta",
+"owner": "Meta Platforms, Inc.",
+"launch_year": 2021,
+"original_meaning": "Self-referential; referring to its own form or category.",
+"source_url": "https://about.fb.com/news/2021/10/facebook-company-is-now-meta/",
+"pre_launch_per_million": 11.1747
+},
+{
+"word": "Minesweeper",
+"kind": "common",
+"brand": "Microsoft Minesweeper",
+"owner": "Microsoft",
+"launch_year": 1990,
+"original_meaning": "A vessel or device that clears explosive mines",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Minesweeper",
+"pre_launch_per_million": 0.0552
+},
+{
+"word": "Mini",
+"kind": "common",
+"brand": "Mini",
+"owner": "BMW",
+"launch_year": 1959,
+"original_meaning": "Something small or miniature.",
+"source_url": "https://en.wikipedia.org/wiki/Mini",
+"pre_launch_per_million": 4.0162
+},
+{
+"word": "mint",
+"kind": "common",
+"brand": "Mint Mobile",
+"owner": "T-Mobile US",
+"launch_year": 2016,
+"original_meaning": "Aromatic herb",
+"source_url": "https://www.mintmobile.com/about-mint-mobile/",
+"pre_launch_per_million": 3.0577
+},
+{
+"word": "Monday",
+"kind": "common",
+"brand": "monday.com",
+"owner": "monday.com Ltd.",
+"launch_year": 2014,
+"original_meaning": "The day following Sunday",
+"source_url": "https://en.wikipedia.org/wiki/Monday.com",
+"pre_launch_per_million": 0.0471
+},
+{
+"word": "Monopoly",
+"kind": "common",
+"brand": "Monopoly",
+"owner": "Hasbro",
+"launch_year": 1935,
+"original_meaning": "Exclusive control of a market or supply.",
+"source_url": "https://en.wikipedia.org/wiki/Monopoly_(game)",
+"pre_launch_per_million": 7.3514
+},
+{
+"word": "Monster",
+"kind": "common",
+"brand": "Monster Energy",
+"owner": "Monster Beverage",
+"launch_year": 2002,
+"original_meaning": "A frightening imaginary creature.",
+"source_url": "https://en.wikipedia.org/wiki/Monster_Energy",
+"pre_launch_per_million": 2.8483
+},
+{
+"word": "Murano",
+"kind": "name",
+"brand": "Nissan Murano",
+"owner": "Nissan",
+"launch_year": 2002,
+"original_meaning": "An island group in the Venetian Lagoon.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Murano",
+"pre_launch_per_million": 0.1594
+},
+{
+"word": "Muse",
+"kind": "common",
+"brand": "Muse",
+"owner": "Adobe",
+"launch_year": 2012,
+"original_meaning": "A source of artistic inspiration",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Muse",
+"pre_launch_per_million": 0.8564
+},
+{
+"word": "Mustang",
+"kind": "common",
+"brand": "Ford Mustang",
+"owner": "Ford Motor Company",
+"launch_year": 1964,
+"original_meaning": "A free-roaming horse of the American West.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Mustang",
+"pre_launch_per_million": 0.0443
+},
+{
+"word": "mya",
+"kind": "name",
+"brand": "Mya",
+"owner": "FirstJob",
+"launch_year": 2016,
+"original_meaning": "A feminine given name.",
+"source_url": "https://venturebeat.com/business/recruitment-chatbot-mya-automates-75-of-hiring-process",
+"pre_launch_per_million": 0.3308
+},
+{
+"word": "Naked",
+"kind": "common",
+"brand": "Naked Juice",
+"owner": "P wellness",
+"launch_year": 1983,
+"original_meaning": "Without clothing or covering.",
+"source_url": "https://en.wikipedia.org/wiki/Naked_Juice",
+"pre_launch_per_million": 3.7418
+},
+{
+"word": "Navigator",
+"kind": "common",
+"brand": "Netscape Navigator",
+"owner": "AOL",
+"launch_year": 1994,
+"original_meaning": "A person who plots a route",
+"source_url": "https://en.wikipedia.org/wiki/Netscape_Navigator",
+"pre_launch_per_million": 0.4643
+},
+{
+"word": "Nest",
+"kind": "common",
+"brand": "Nest",
+"owner": "Google",
+"launch_year": 2011,
+"original_meaning": "A bird's structure for holding eggs",
+"source_url": "https://en.wikipedia.org/wiki/Google_Nest_(smart_home)",
+"pre_launch_per_million": 7.1952
+},
+{
+"word": "Nest",
+"kind": "common",
+"brand": "Nest Learning Thermostat",
+"owner": "Google",
+"launch_year": 2011,
+"original_meaning": "A bird's structure for holding eggs",
+"source_url": "https://en.wikipedia.org/wiki/Nest_Learning_Thermostat",
+"pre_launch_per_million": 7.1952
+},
+{
+"word": "Newton",
+"kind": "name",
+"brand": "Apple Newton",
+"owner": "Apple",
+"launch_year": 1993,
+"original_meaning": "A unit of force",
+"source_url": "https://en.wikipedia.org/wiki/Apple_Newton",
+"pre_launch_per_million": 8.6019
+},
+{
+"word": "Next",
+"kind": "common",
+"brand": "Next",
+"owner": "Next plc",
+"launch_year": 1982,
+"original_meaning": "Immediately following in order or time.",
+"source_url": "https://en.wikipedia.org/wiki/Next_plc",
+"pre_launch_per_million": 109.9262
+},
+{
+"word": "Nike",
+"kind": "name",
+"brand": "Nike",
+"owner": "Nike, Inc.",
+"launch_year": 1971,
+"original_meaning": "The Greek goddess of victory.",
+"source_url": "https://en.wikipedia.org/wiki/Nike,_Inc.",
+"pre_launch_per_million": 0.4189
+},
+{
+"word": "nina",
+"kind": "name",
+"brand": "Nina",
+"owner": "Nuance Communications",
+"launch_year": 2012,
+"original_meaning": "A feminine given name.",
+"source_url": "https://techcrunch.com/2012/08/06/nuance-nina/",
+"pre_launch_per_million": 3.4595
+},
+{
+"word": "Niro",
+"kind": "name",
+"brand": "Kia Niro",
+"owner": "Kia Corporation",
+"launch_year": 2016,
+"original_meaning": "A given name.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Niro",
+"pre_launch_per_million": 0.2761
+},
+{
+"word": "Nomad",
+"kind": "common",
+"brand": "Nomad",
+"owner": "IBM",
+"launch_year": 2015,
+"original_meaning": "A person who moves from place to place",
+"source_url": "https://en.wikipedia.org/wiki/Nomad_(software)",
+"pre_launch_per_million": 0.3295
+},
+{
+"word": "Nook",
+"kind": "common",
+"brand": "Nook",
+"owner": "Barnes & Noble",
+"launch_year": 2009,
+"original_meaning": "A small sheltered corner",
+"source_url": "https://en.wikipedia.org/wiki/Barnes_%26_Noble_Nook",
+"pre_launch_per_million": 0.5405
+},
+{
+"word": "Notion",
+"kind": "common",
+"brand": "Notion",
+"owner": "Notion Labs",
+"launch_year": 2016,
+"original_meaning": "An idea or belief",
+"source_url": "https://en.wikipedia.org/wiki/Notion_(productivity_software)",
+"pre_launch_per_million": 32.1808
+},
+{
+"word": "Oasis",
+"kind": "common",
+"brand": "Oasis",
+"owner": "The Coca-Cola Company",
+"launch_year": 1966,
+"original_meaning": "A fertile place in a desert.",
+"source_url": "https://en.wikipedia.org/wiki/Oasis_(drink)",
+"pre_launch_per_million": 0.5354
+},
+{
+"word": "Obsidian",
+"kind": "common",
+"brand": "Obsidian",
+"owner": "Dynalist Inc.",
+"launch_year": 2020,
+"original_meaning": "A dark volcanic glass",
+"source_url": "https://en.wikipedia.org/wiki/Obsidian_(software)",
+"pre_launch_per_million": 0.6302
+},
+{
+"word": "Oculus",
+"kind": "rare",
+"brand": "Oculus",
+"owner": "Meta Platforms",
+"launch_year": 2016,
+"original_meaning": "A circular opening or eye",
+"source_url": "https://en.wikipedia.org/wiki/Oculus_Rift",
+"pre_launch_per_million": 0.0567
+},
+{
+"word": "Odyssey",
+"kind": "common",
+"brand": "Honda Odyssey",
+"owner": "Honda",
+"launch_year": 1994,
+"original_meaning": "A long, eventful journey.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Odyssey",
+"pre_launch_per_million": 0.3038
+},
+{
+"word": "olivia",
+"kind": "name",
+"brand": "Olivia",
+"owner": "Paradox",
+"launch_year": 2016,
+"original_meaning": "A feminine given name.",
+"source_url": "https://www.paradox.ai/news/ai-for-recruiting-and-the-virtual-hr-assistant",
+"pre_launch_per_million": 5.9669
+},
+{
+"word": "Opera",
+"kind": "common",
+"brand": "Opera",
+"owner": "Opera Limited",
+"launch_year": 1995,
+"original_meaning": "A staged dramatic work set to music",
+"source_url": "https://en.wikipedia.org/wiki/Opera_(web_browser)",
+"pre_launch_per_million": 6.5815
+},
+{
+"word": "Operation",
+"kind": "common",
+"brand": "Operation",
+"owner": "Hasbro",
+"launch_year": 1965,
+"original_meaning": "A surgical procedure or organized activity.",
+"source_url": "https://en.wikipedia.org/wiki/Operation_(game)",
+"pre_launch_per_million": 111.6905
+},
+{
+"word": "Opus",
+"kind": "common",
+"brand": "Claude Opus",
+"owner": "Anthropic",
+"launch_year": 2024,
+"original_meaning": "A work, especially a musical composition.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.7048
+},
+{
+"word": "Oracle",
+"kind": "common",
+"brand": "Oracle",
+"owner": "Oracle Corporation",
+"launch_year": 1979,
+"original_meaning": "A person or shrine giving prophetic answers.",
+"source_url": "https://www.oracle.com/us/corporate/profit/p27anniv-timeline-151918.pdf",
+"pre_launch_per_million": 0.5185
+},
+{
+"word": "Oracle",
+"kind": "common",
+"brand": "Oracle Database",
+"owner": "Oracle Corporation",
+"launch_year": 1979,
+"original_meaning": "A source of prophetic advice",
+"source_url": "https://en.wikipedia.org/wiki/Oracle_Database",
+"pre_launch_per_million": 0.5185
+},
+{
+"word": "orange",
+"kind": "common",
+"brand": "Orange",
+"owner": "Orange S.A.",
+"launch_year": 1994,
+"original_meaning": "Citrus fruit or its characteristic color",
+"source_url": "https://brand.orange.com/en/brand-basics/the-orange-brand-history",
+"pre_launch_per_million": 9.0556
+},
+{
+"word": "Oregon",
+"kind": "name",
+"brand": "The Oregon Trail",
+"owner": "HarperCollins Productions",
+"launch_year": 1971,
+"original_meaning": "A state in the northwestern United States",
+"source_url": "https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)",
+"pre_launch_per_million": 21.9248
+},
+{
+"word": "Origin",
+"kind": "common",
+"brand": "Origin",
+"owner": "Electronic Arts",
+"launch_year": 2011,
+"original_meaning": "The point where something begins",
+"source_url": "https://en.wikipedia.org/wiki/Origin_(service)",
+"pre_launch_per_million": 34.141
+},
+{
+"word": "Origins",
+"kind": "common",
+"brand": "Origins",
+"owner": "The Est\u00e9e Lauder Companies",
+"launch_year": 1990,
+"original_meaning": "Beginnings or sources of things.",
+"source_url": "https://en.wikipedia.org/wiki/Origins_(cosmetics)",
+"pre_launch_per_million": 8.0163
+},
+{
+"word": "oscar",
+"kind": "name",
+"brand": "Oscar Health",
+"owner": "Oscar Health, Inc.",
+"launch_year": 2013,
+"original_meaning": "A masculine given name",
+"source_url": "https://techcrunch.com/2013/10/03/oscar-insurance/",
+"pre_launch_per_million": 5.188
+},
+{
+"word": "Outback",
+"kind": "common",
+"brand": "Subaru Outback",
+"owner": "Subaru Corporation",
+"launch_year": 1994,
+"original_meaning": "Remote, sparsely populated Australian countryside.",
+"source_url": "https://en.wikipedia.org/wiki/Subaru_Outback",
+"pre_launch_per_million": 0.1589
+},
+{
+"word": "Outlook",
+"kind": "common",
+"brand": "Microsoft Outlook",
+"owner": "Microsoft",
+"launch_year": 1997,
+"original_meaning": "A perspective or expectation",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Outlook",
+"pre_launch_per_million": 5.9722
+},
+{
+"word": "Paint",
+"kind": "common",
+"brand": "Microsoft Paint",
+"owner": "Microsoft",
+"launch_year": 1985,
+"original_meaning": "A colored liquid applied to surfaces",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Paint",
+"pre_launch_per_million": 10.634
+},
+{
+"word": "palantir",
+"kind": "rare",
+"brand": "Palantir",
+"owner": "Palantir Technologies Inc.",
+"launch_year": 2003,
+"original_meaning": "A magical seeing stone in Tolkien's fiction.",
+"source_url": "https://www.palantir.com/about/",
+"pre_launch_per_million": 0.0005
+},
+{
+"word": "Palisade",
+"kind": "common",
+"brand": "Hyundai Palisade",
+"owner": "Hyundai Motor Company",
+"launch_year": 2018,
+"original_meaning": "A fence of pointed stakes.",
+"source_url": "https://en.wikipedia.org/wiki/Hyundai_Palisade",
+"pre_launch_per_million": 0.3454
+},
+{
+"word": "Palm",
+"kind": "common",
+"brand": "Palm",
+"owner": "TCL Technology",
+"launch_year": 1996,
+"original_meaning": "The inner surface of the hand",
+"source_url": "https://en.wikipedia.org/wiki/Palm,_Inc.",
+"pre_launch_per_million": 5.9837
+},
+{
+"word": "Pandemic",
+"kind": "common",
+"brand": "Pandemic",
+"owner": "Z-Man Games",
+"launch_year": 2008,
+"original_meaning": "An epidemic spreading across countries or continents.",
+"source_url": "https://en.wikipedia.org/wiki/Pandemic_(board_game)",
+"pre_launch_per_million": 1.3809
+},
+{
+"word": "Pandora",
+"kind": "name",
+"brand": "Pandora",
+"owner": "Sirius XM",
+"launch_year": 2005,
+"original_meaning": "A woman in Greek mythology",
+"source_url": "https://en.wikipedia.org/wiki/Pandora_(service)",
+"pre_launch_per_million": 0.4362
+},
+{
+"word": "paradox",
+"kind": "common",
+"brand": "Paradox",
+"owner": "Paradox",
+"launch_year": 2016,
+"original_meaning": "An apparently contradictory statement or situation.",
+"source_url": "https://www.businesswire.com/news/home/20200331005512/en/Paradox-Launches-Virtual-Hiring-Events-to-Help-Employers-Meet-Candidates-Anywhere-Anytime",
+"pre_launch_per_million": 4.9605
+},
+{
+"word": "paramount",
+"kind": "common",
+"brand": "Paramount Pictures",
+"owner": "Paramount Skydance",
+"launch_year": 1914,
+"original_meaning": "More important than anything else",
+"source_url": "https://files.eric.ed.gov/fulltext/ED106881.pdf",
+"pre_launch_per_million": 2.4705
+},
+{
+"word": "Passport",
+"kind": "common",
+"brand": "Honda Passport",
+"owner": "Honda",
+"launch_year": 1993,
+"original_meaning": "An official document used for international travel.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Passport",
+"pre_launch_per_million": 1.8896
+},
+{
+"word": "Patagonia",
+"kind": "name",
+"brand": "Patagonia",
+"owner": "Patagonia, Inc.",
+"launch_year": 1973,
+"original_meaning": "A region of southern South America.",
+"source_url": "https://en.wikipedia.org/wiki/Patagonia,_Inc.",
+"pre_launch_per_million": 0.2611
+},
+{
+"word": "Path",
+"kind": "common",
+"brand": "Path",
+"owner": "Kakao",
+"launch_year": 2010,
+"original_meaning": "A track made for walking",
+"source_url": "https://en.wikipedia.org/wiki/Path_(social_network)",
+"pre_launch_per_million": 49.0387
+},
+{
+"word": "Pathfinder",
+"kind": "common",
+"brand": "Nissan Pathfinder",
+"owner": "Nissan",
+"launch_year": 1985,
+"original_meaning": "A person who finds a route.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Pathfinder",
+"pre_launch_per_million": 0.072
+},
+{
+"word": "Peach",
+"kind": "common",
+"brand": "Peach Aviation",
+"owner": "ANA Holdings",
+"launch_year": 2012,
+"original_meaning": "A soft, fuzzy-skinned fruit.",
+"source_url": "https://en.wikipedia.org/wiki/Peach_Aviation",
+"pre_launch_per_million": 1.9533
+},
+{
+"word": "peacock",
+"kind": "common",
+"brand": "Peacock",
+"owner": "NBCUniversal",
+"launch_year": 2020,
+"original_meaning": "Male peafowl with an elaborate tail",
+"source_url": "https://corporate.comcast.com/press/releases/nbcuniversal-unveils-peacock-streaming-service-subscription-tiers",
+"pre_launch_per_million": 0.7344
+},
+{
+"word": "Pebble",
+"kind": "common",
+"brand": "Pebble",
+"owner": "Core Devices",
+"launch_year": 2013,
+"original_meaning": "A small rounded stone",
+"source_url": "https://en.wikipedia.org/wiki/Pebble_(watch)",
+"pre_launch_per_million": 0.9327
+},
+{
+"word": "Peeps",
+"kind": "common",
+"brand": "Peeps",
+"owner": "Just Born",
+"launch_year": 1953,
+"original_meaning": "Short, high-pitched sounds.",
+"source_url": "https://en.wikipedia.org/wiki/Peeps",
+"pre_launch_per_million": 0.0469
+},
+{
+"word": "Peloton",
+"kind": "common",
+"brand": "Peloton",
+"owner": "Peloton Interactive",
+"launch_year": 2014,
+"original_meaning": "The main group of riders in a bicycle race",
+"source_url": "https://en.wikipedia.org/wiki/Peloton_Interactive",
+"pre_launch_per_million": 0.0469
+},
+{
+"word": "Perfection",
+"kind": "common",
+"brand": "Perfection",
+"owner": "Hasbro",
+"launch_year": 1973,
+"original_meaning": "The state of being without flaws.",
+"source_url": "https://en.wikipedia.org/wiki/Perfection_(board_game)",
+"pre_launch_per_million": 3.4261
+},
+{
+"word": "Perplexity",
+"kind": "common",
+"brand": "Perplexity",
+"owner": "Perplexity AI",
+"launch_year": 2022,
+"original_meaning": "A state of confusion",
+"source_url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+"pre_launch_per_million": 0.6428
+},
+{
+"word": "Perrier",
+"kind": "name",
+"brand": "Perrier",
+"owner": "Nestl\u00e9",
+"launch_year": 1898,
+"original_meaning": "A French surname.",
+"source_url": "https://en.wikipedia.org/wiki/Perrier",
+"pre_launch_per_million": 0.2149
+},
+{
+"word": "Phi",
+"kind": "common",
+"brand": "Phi",
+"owner": "Microsoft",
+"launch_year": 2023,
+"original_meaning": "A letter of the Greek alphabet.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.434
+},
+{
+"word": "Philadelphia",
+"kind": "name",
+"brand": "Philadelphia",
+"owner": "Kraft Heinz",
+"launch_year": 1880,
+"original_meaning": "A city in Pennsylvania.",
+"source_url": "https://en.wikipedia.org/wiki/Philadelphia_Cream_Cheese",
+"pre_launch_per_million": 37.6212
+},
+{
+"word": "Pi",
+"kind": "common",
+"brand": "Pi",
+"owner": "Inflection AI",
+"launch_year": 2023,
+"original_meaning": "The ratio of a circle's circumference to its diameter.",
+"source_url": "https://www.forbes.com/sites/alexkonrad/2023/05/02/inflection-ai-ex-deepmind-launches-pi-chatbot/",
+"pre_launch_per_million": 2.9456
+},
+{
+"word": "Picnic",
+"kind": "common",
+"brand": "Picnic",
+"owner": "Mondel\u0113z International",
+"launch_year": 1958,
+"original_meaning": "A meal eaten outdoors.",
+"source_url": "https://en.wikipedia.org/wiki/Picnic_(chocolate_bar)",
+"pre_launch_per_million": 2.589
+},
+{
+"word": "Pilot",
+"kind": "common",
+"brand": "Honda Pilot",
+"owner": "Honda",
+"launch_year": 2002,
+"original_meaning": "A person who operates an aircraft.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Pilot",
+"pre_launch_per_million": 16.2491
+},
+{
+"word": "Pilot",
+"kind": "common",
+"brand": "PalmPilot",
+"owner": "TCL Technology",
+"launch_year": 1996,
+"original_meaning": "A person who steers an aircraft",
+"source_url": "https://en.wikipedia.org/wiki/PalmPilot",
+"pre_launch_per_million": 16.8385
+},
+{
+"word": "Pivotal",
+"kind": "common",
+"brand": "Pivotal Tracker",
+"owner": "Broadcom",
+"launch_year": 2006,
+"original_meaning": "Of central importance",
+"source_url": "https://en.wikipedia.org/wiki/Pivotal_Tracker",
+"pre_launch_per_million": 2.5379
+},
+{
+"word": "Pixel",
+"kind": "common",
+"brand": "Google Pixel",
+"owner": "Google",
+"launch_year": 2016,
+"original_meaning": "A single element of a digital image",
+"source_url": "https://en.wikipedia.org/wiki/Google_Pixel",
+"pre_launch_per_million": 4.5007
+},
+{
+"word": "Plex",
+"kind": "common",
+"brand": "Plex",
+"owner": "Plex, Inc.",
+"launch_year": 2008,
+"original_meaning": "A network or complex structure",
+"source_url": "https://en.wikipedia.org/wiki/Plex_(software)",
+"pre_launch_per_million": 2.3697
+},
+{
+"word": "Pocket",
+"kind": "common",
+"brand": "Pocket",
+"owner": "Mozilla",
+"launch_year": 2007,
+"original_meaning": "A small pouch sewn into clothing",
+"source_url": "https://en.wikipedia.org/wiki/Pocket_(service)",
+"pre_launch_per_million": 12.2406
+},
+{
+"word": "poe",
+"kind": "name",
+"brand": "Poe",
+"owner": "Quora",
+"launch_year": 2023,
+"original_meaning": "A surname, notably that of Edgar Allan Poe.",
+"source_url": "https://techcrunch.com/2023/02/06/quora-opens-its-new-ai-chatbot-app-poe-to-the-general-public/",
+"pre_launch_per_million": 1.612
+},
+{
+"word": "polly",
+"kind": "name",
+"brand": "Polly",
+"owner": "Amazon",
+"launch_year": 2016,
+"original_meaning": "A feminine given name, traditionally a nickname for Mary.",
+"source_url": "https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-amazon-polly/",
+"pre_launch_per_million": 3.0778
+},
+{
+"word": "Polo",
+"kind": "common",
+"brand": "Volkswagen Polo",
+"owner": "Volkswagen",
+"launch_year": 1975,
+"original_meaning": "A ball game played on horseback.",
+"source_url": "https://en.wikipedia.org/wiki/Volkswagen_Polo",
+"pre_launch_per_million": 0.4485
+},
+{
+"word": "Pong",
+"kind": "common",
+"brand": "Pong",
+"owner": "Atari",
+"launch_year": 1972,
+"original_meaning": "A strong unpleasant smell",
+"source_url": "https://en.wikipedia.org/wiki/Pong",
+"pre_launch_per_million": 0.2561
+},
+{
+"word": "Portal",
+"kind": "common",
+"brand": "Portal",
+"owner": "Valve",
+"launch_year": 2007,
+"original_meaning": "A doorway or gateway",
+"source_url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+"pre_launch_per_million": 4.4724
+},
+{
+"word": "Postman",
+"kind": "common",
+"brand": "Postman",
+"owner": "Postman, Inc.",
+"launch_year": 2012,
+"original_meaning": "A person who delivers mail",
+"source_url": "https://en.wikipedia.org/wiki/Postman_(software)",
+"pre_launch_per_million": 0.3669
+},
+{
+"word": "Predator",
+"kind": "common",
+"brand": "Acer Predator",
+"owner": "Acer",
+"launch_year": 2008,
+"original_meaning": "An animal that hunts other animals",
+"source_url": "https://en.wikipedia.org/wiki/Acer_Predator",
+"pre_launch_per_million": 2.4784
+},
+{
+"word": "Prelude",
+"kind": "common",
+"brand": "Honda Prelude",
+"owner": "Honda",
+"launch_year": 1978,
+"original_meaning": "An introductory event or musical piece.",
+"source_url": "https://en.wikipedia.org/wiki/Honda_Prelude",
+"pre_launch_per_million": 1.0194
+},
+{
+"word": "Premiere",
+"kind": "common",
+"brand": "Adobe Premiere",
+"owner": "Adobe",
+"launch_year": 1991,
+"original_meaning": "The first public performance of a work",
+"source_url": "https://en.wikipedia.org/wiki/Adobe_Premiere_Pro",
+"pre_launch_per_million": 0.9639
+},
+{
+"word": "President",
+"kind": "common",
+"brand": "Pr\u00e9sident",
+"owner": "Lactalis",
+"launch_year": 1968,
+"original_meaning": "The elected head of a republic or organization.",
+"source_url": "https://en.wikipedia.org/wiki/Pr%C3%A9sident_(cheese)",
+"pre_launch_per_million": 39.6665
+},
+{
+"word": "Pret",
+"kind": "rare",
+"brand": "Pret A Manger",
+"owner": "JAB Holding Company",
+"launch_year": 1986,
+"original_meaning": "Ready, in French.",
+"source_url": "https://en.wikipedia.org/wiki/Pret_a_Manger",
+"pre_launch_per_million": 0.4019
+},
+{
+"word": "Prey",
+"kind": "common",
+"brand": "Prey",
+"owner": "Microsoft",
+"launch_year": 2006,
+"original_meaning": "An animal hunted by another",
+"source_url": "https://en.wikipedia.org/wiki/Prey_(2006_video_game)",
+"pre_launch_per_million": 7.7306
+},
+{
+"word": "Prime",
+"kind": "common",
+"brand": "Prime",
+"owner": "Congo Brands",
+"launch_year": 2022,
+"original_meaning": "Of the best quality or importance.",
+"source_url": "https://en.wikipedia.org/wiki/Prime_(drink)",
+"pre_launch_per_million": 15.9898
+},
+{
+"word": "Prius",
+"kind": "rare",
+"brand": "Toyota Prius",
+"owner": "Toyota",
+"launch_year": 1997,
+"original_meaning": "Earlier or before, in Latin.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Prius",
+"pre_launch_per_million": 0.0604
+},
+{
+"word": "Processing",
+"kind": "common",
+"brand": "Processing",
+"owner": "Processing Foundation",
+"launch_year": 2001,
+"original_meaning": "Handling or transforming something",
+"source_url": "https://en.wikipedia.org/wiki/Processing_(programming_language)",
+"pre_launch_per_million": 52.2336
+},
+{
+"word": "Procreate",
+"kind": "common",
+"brand": "Procreate",
+"owner": "Savage Interactive",
+"launch_year": 2011,
+"original_meaning": "To produce offspring",
+"source_url": "https://en.wikipedia.org/wiki/Procreate_(software)",
+"pre_launch_per_million": 0.1934
+},
+{
+"word": "progressive",
+"kind": "common",
+"brand": "Progressive",
+"owner": "The Progressive Corporation",
+"launch_year": 1937,
+"original_meaning": "Favoring or involving progress",
+"source_url": "https://www.progressive.com/about/history/",
+"pre_launch_per_million": 11.8045
+},
+{
+"word": "Prometheus",
+"kind": "name",
+"brand": "Prometheus",
+"owner": "Cloud Native Computing Foundation",
+"launch_year": 2012,
+"original_meaning": "A Titan in Greek mythology",
+"source_url": "https://en.wikipedia.org/wiki/Prometheus_(software)",
+"pre_launch_per_million": 1.0588
+},
+{
+"word": "prudential",
+"kind": "common",
+"brand": "Prudential",
+"owner": "Prudential plc",
+"launch_year": 1848,
+"original_meaning": "Relating to careful judgment and foresight",
+"source_url": "https://en.wikipedia.org/wiki/Prudential_plc",
+"pre_launch_per_million": 0.2089
+},
+{
+"word": "Publisher",
+"kind": "common",
+"brand": "Microsoft Publisher",
+"owner": "Microsoft",
+"launch_year": 1991,
+"original_meaning": "A person or company that publishes works",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Publisher",
+"pre_launch_per_million": 9.5658
+},
+{
+"word": "Pulsar",
+"kind": "common",
+"brand": "Apache Pulsar",
+"owner": "Apache Software Foundation",
+"launch_year": 2016,
+"original_meaning": "A rapidly rotating neutron star",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Pulsar",
+"pre_launch_per_million": 0.3163
+},
+{
+"word": "Puma",
+"kind": "common",
+"brand": "Puma",
+"owner": "Puma SE",
+"launch_year": 1948,
+"original_meaning": "A large American wild cat.",
+"source_url": "https://en.wikipedia.org/wiki/Puma_(brand)",
+"pre_launch_per_million": 0.0643
+},
+{
+"word": "Puppet",
+"kind": "common",
+"brand": "Puppet",
+"owner": "Perforce",
+"launch_year": 2005,
+"original_meaning": "A figure manipulated to perform",
+"source_url": "https://en.wikipedia.org/wiki/Puppet_(software)",
+"pre_launch_per_million": 1.4478
+},
+{
+"word": "Pyramid",
+"kind": "common",
+"brand": "Pyramid",
+"owner": "Pylons Project",
+"launch_year": 2010,
+"original_meaning": "A solid with a polygonal base and triangular sides",
+"source_url": "https://en.wikipedia.org/wiki/Pyramid_(web_framework)",
+"pre_launch_per_million": 3.1034
+},
+{
+"word": "pythia",
+"kind": "name",
+"brand": "Pythia",
+"owner": "EleutherAI",
+"launch_year": 2023,
+"original_meaning": "The title of Apollo's priestess and oracle at Delphi.",
+"source_url": "https://proceedings.mlr.press/v202/biderman23a/biderman23a.pdf",
+"pre_launch_per_million": 0.1219
+},
+{
+"word": "Qatar",
+"kind": "name",
+"brand": "Qatar Airways",
+"owner": "Qatar Airways Group",
+"launch_year": 1994,
+"original_meaning": "A country on the Arabian Peninsula.",
+"source_url": "https://en.wikipedia.org/wiki/Qatar_Airways",
+"pre_launch_per_million": 1.1404
+},
+{
+"word": "Quake",
+"kind": "common",
+"brand": "Quake",
+"owner": "Microsoft",
+"launch_year": 1996,
+"original_meaning": "To shake or tremble",
+"source_url": "https://en.wikipedia.org/wiki/Quake_(video_game)",
+"pre_launch_per_million": 0.9794
+},
+{
+"word": "Quavers",
+"kind": "common",
+"brand": "Quavers",
+"owner": "PepsiCo",
+"launch_year": 1968,
+"original_meaning": "Eighth notes in music.",
+"source_url": "https://en.wikipedia.org/wiki/Quavers",
+"pre_launch_per_million": 0.0434
+},
+{
+"word": "Quest",
+"kind": "common",
+"brand": "Meta Quest",
+"owner": "Meta Platforms",
+"launch_year": 2019,
+"original_meaning": "A search or pursuit",
+"source_url": "https://en.wikipedia.org/wiki/Meta_Quest",
+"pre_launch_per_million": 8.6532
+},
+{
+"word": "Quill",
+"kind": "common",
+"brand": "Quill",
+"owner": "Salesforce",
+"launch_year": 2021,
+"original_meaning": "A large feather used as a pen",
+"source_url": "https://techcrunch.com/2021/02/09/quill-launches-a-better-messaging-app-for-teams/",
+"pre_launch_per_million": 0.5884
+},
+{
+"word": "Ram",
+"kind": "common",
+"brand": "Ram",
+"owner": "Stellantis",
+"launch_year": 1981,
+"original_meaning": "An adult male sheep.",
+"source_url": "https://en.wikipedia.org/wiki/Ram_pickup",
+"pre_launch_per_million": 2.3344
+},
+{
+"word": "ramp",
+"kind": "common",
+"brand": "Ramp",
+"owner": "Ramp Business Corporation",
+"launch_year": 2020,
+"original_meaning": "A sloping surface joining different levels.",
+"source_url": "https://techcrunch.com/2020/02/12/ramp-is-a-corporate-card-focused-on-helping-you-spend-less/",
+"pre_launch_per_million": 3.7093
+},
+{
+"word": "Ranger",
+"kind": "common",
+"brand": "Ford Ranger",
+"owner": "Ford Motor Company",
+"launch_year": 1982,
+"original_meaning": "A person who patrols or protects an area.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)",
+"pre_launch_per_million": 0.4342
+},
+{
+"word": "Reaper",
+"kind": "common",
+"brand": "REAPER",
+"owner": "Cockos",
+"launch_year": 2006,
+"original_meaning": "A person or machine that harvests crops",
+"source_url": "https://en.wikipedia.org/wiki/REAPER",
+"pre_launch_per_million": 0.1365
+},
+{
+"word": "Reason",
+"kind": "common",
+"brand": "Reason",
+"owner": "Reason Studios",
+"launch_year": 2000,
+"original_meaning": "A cause or explanation",
+"source_url": "https://en.wikipedia.org/wiki/Reason_(software)",
+"pre_launch_per_million": 83.3807
+},
+{
+"word": "redshift",
+"kind": "common",
+"brand": "Redshift",
+"owner": "Amazon Web Services, Inc.",
+"launch_year": 2012,
+"original_meaning": "A shift of light toward longer wavelengths.",
+"source_url": "https://press.aboutamazon.com/2012/11/amazon-web-services-announces-amazon-redshift",
+"pre_launch_per_million": 0.5385
+},
+{
+"word": "Render",
+"kind": "common",
+"brand": "Render",
+"owner": "Render Services, Inc.",
+"launch_year": 2019,
+"original_meaning": "To produce or provide",
+"source_url": "https://en.wikipedia.org/wiki/Render_(cloud_provider)",
+"pre_launch_per_million": 8.4141
+},
+{
+"word": "Renegade",
+"kind": "common",
+"brand": "Jeep Renegade",
+"owner": "Stellantis",
+"launch_year": 2014,
+"original_meaning": "A person who abandons a group or cause.",
+"source_url": "https://en.wikipedia.org/wiki/Jeep_Renegade_(BU)",
+"pre_launch_per_million": 0.5316
+},
+{
+"word": "Ring",
+"kind": "common",
+"brand": "Ring",
+"owner": "Amazon",
+"launch_year": 2014,
+"original_meaning": "A circular band",
+"source_url": "https://en.wikipedia.org/wiki/Ring_(company)",
+"pre_launch_per_million": 38.8708
+},
+{
+"word": "Rio",
+"kind": "name",
+"brand": "Kia Rio",
+"owner": "Kia Corporation",
+"launch_year": 1999,
+"original_meaning": "A given name.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Rio",
+"pre_launch_per_million": 10.4249
+},
+{
+"word": "Riot",
+"kind": "common",
+"brand": "Riot Games",
+"owner": "Tencent",
+"launch_year": 2006,
+"original_meaning": "A violent public disturbance",
+"source_url": "https://en.wikipedia.org/wiki/Riot_Games",
+"pre_launch_per_million": 2.1852
+},
+{
+"word": "rippling",
+"kind": "common",
+"brand": "Rippling",
+"owner": "Rippling People Center Inc.",
+"launch_year": 2017,
+"original_meaning": "Moving in small waves.",
+"source_url": "https://techcrunch.com/2017/03/14/zenefits-founder-parker-conrad-takes-another-crack-at-hr-onboarding/",
+"pre_launch_per_million": 1.1582
+},
+{
+"word": "Risk",
+"kind": "common",
+"brand": "Risk",
+"owner": "Hasbro",
+"launch_year": 1957,
+"original_meaning": "The possibility of loss or harm.",
+"source_url": "https://en.wikipedia.org/wiki/Risk_(game)",
+"pre_launch_per_million": 53.4102
+},
+{
+"word": "Roam",
+"kind": "common",
+"brand": "Roam Research",
+"owner": "Roam Research, Inc.",
+"launch_year": 2019,
+"original_meaning": "To wander without a fixed route",
+"source_url": "https://en.wikipedia.org/wiki/Roam_Research",
+"pre_launch_per_million": 1.6303
+},
+{
+"word": "robin",
+"kind": "name",
+"brand": "Robin",
+"owner": "Robin AI",
+"launch_year": 2019,
+"original_meaning": "A given name; also a small songbird.",
+"source_url": "https://robinai.com/news-and-resources/news/robin-ai-raises-26-million-series-b",
+"pre_launch_per_million": 8.0682
+},
+{
+"word": "Rogue",
+"kind": "common",
+"brand": "Nissan Rogue",
+"owner": "Nissan",
+"launch_year": 2007,
+"original_meaning": "A dishonest or mischievous person.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Rogue",
+"pre_launch_per_million": 1.2722
+},
+{
+"word": "Roku",
+"kind": "rare",
+"brand": "Roku",
+"owner": "Roku, Inc.",
+"launch_year": 2008,
+"original_meaning": "Japanese for six",
+"source_url": "https://en.wikipedia.org/wiki/Roku",
+"pre_launch_per_million": 0.0621
+},
+{
+"word": "root",
+"kind": "common",
+"brand": "Root",
+"owner": "Root, Inc.",
+"launch_year": 2016,
+"original_meaning": "Part of a plant that absorbs water",
+"source_url": "https://www.prweb.com/releases/root_launches_mobile_first_platform_to_bring_fair_pricing_to_car_insurance/prweb13792734.htm",
+"pre_launch_per_million": 32.1333
+},
+{
+"word": "Roses",
+"kind": "common",
+"brand": "Roses",
+"owner": "Mondel\u0113z International",
+"launch_year": 1938,
+"original_meaning": "Flowers of plants in the genus Rosa.",
+"source_url": "https://en.wikipedia.org/wiki/Cadbury_Roses",
+"pre_launch_per_million": 2.0684
+},
+{
+"word": "Ross",
+"kind": "name",
+"brand": "Ross Dress for Less",
+"owner": "Ross Stores, Inc.",
+"launch_year": 1982,
+"original_meaning": "A masculine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Ross_Stores",
+"pre_launch_per_million": 16.7219
+},
+{
+"word": "Ruby",
+"kind": "common",
+"brand": "Ruby",
+"owner": "Ruby community",
+"launch_year": 1995,
+"original_meaning": "A red precious stone",
+"source_url": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
+"pre_launch_per_million": 0.6917
+},
+{
+"word": "Ruffles",
+"kind": "common",
+"brand": "Ruffles",
+"owner": "PepsiCo",
+"launch_year": 1958,
+"original_meaning": "Gathered or pleated strips of fabric.",
+"source_url": "https://en.wikipedia.org/wiki/Ruffles",
+"pre_launch_per_million": 0.1652
+},
+{
+"word": "runway",
+"kind": "common",
+"brand": "Runway",
+"owner": "Runway",
+"launch_year": 2018,
+"original_meaning": "A strip used for aircraft takeoffs and landings.",
+"source_url": "https://salesforceventures.com/perspectives/welcome-runway/",
+"pre_launch_per_million": 2.5751
+},
+{
+"word": "Rust",
+"kind": "common",
+"brand": "Rust",
+"owner": "Rust Foundation",
+"launch_year": 2010,
+"original_meaning": "A reddish coating formed on iron",
+"source_url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+"pre_launch_per_million": 2.246
+},
+{
+"word": "Safari",
+"kind": "common",
+"brand": "Safari",
+"owner": "Apple",
+"launch_year": 2003,
+"original_meaning": "An expedition to observe or hunt wildlife",
+"source_url": "https://en.wikipedia.org/wiki/Safari_(web_browser)",
+"pre_launch_per_million": 0.4625
+},
+{
+"word": "sage",
+"kind": "common",
+"brand": "Sage",
+"owner": "The Sage Group plc",
+"launch_year": 1981,
+"original_meaning": "A wise person, or an aromatic herb.",
+"source_url": "https://www.sage.com/en-ie/company/about-sage/how-we-started/",
+"pre_launch_per_million": 2.8995
+},
+{
+"word": "Saturn",
+"kind": "name",
+"brand": "Saturn",
+"owner": "General Motors",
+"launch_year": 1985,
+"original_meaning": "A planet in the Solar System.",
+"source_url": "https://en.wikipedia.org/wiki/Saturn_Corporation",
+"pre_launch_per_million": 1.7023
+},
+{
+"word": "Saturn",
+"kind": "name",
+"brand": "Sega Saturn",
+"owner": "Sega",
+"launch_year": 1994,
+"original_meaning": "A planet in the solar system",
+"source_url": "https://en.wikipedia.org/wiki/Sega_Saturn",
+"pre_launch_per_million": 1.7653
+},
+{
+"word": "Scoot",
+"kind": "common",
+"brand": "Scoot",
+"owner": "Singapore Airlines",
+"launch_year": 2012,
+"original_meaning": "To move quickly.",
+"source_url": "https://en.wikipedia.org/wiki/Scoot",
+"pre_launch_per_million": 0.2277
+},
+{
+"word": "Scrabble",
+"kind": "common",
+"brand": "Scrabble",
+"owner": "Hasbro and Mattel",
+"launch_year": 1948,
+"original_meaning": "To scratch or grope about hurriedly.",
+"source_url": "https://en.wikipedia.org/wiki/Scrabble",
+"pre_launch_per_million": 0.0322
+},
+{
+"word": "Scratch",
+"kind": "common",
+"brand": "Scratch",
+"owner": "Scratch Foundation",
+"launch_year": 2007,
+"original_meaning": "To scrape a surface",
+"source_url": "https://en.wikipedia.org/wiki/Scratch_(programming_language)",
+"pre_launch_per_million": 3.6805
+},
+{
+"word": "Secret",
+"kind": "common",
+"brand": "Secret",
+"owner": "Procter & Gamble",
+"launch_year": 1956,
+"original_meaning": "Something kept hidden from others.",
+"source_url": "https://en.wikipedia.org/wiki/Secret_(deodorant)",
+"pre_launch_per_million": 13.0295
+},
+{
+"word": "Sentry",
+"kind": "common",
+"brand": "Sentry",
+"owner": "Functional Software, Inc.",
+"launch_year": 2012,
+"original_meaning": "A guard stationed to keep watch",
+"source_url": "https://en.wikipedia.org/wiki/Sentry_(software)",
+"pre_launch_per_million": 0.7283
+},
+{
+"word": "Sequence",
+"kind": "common",
+"brand": "Sequence",
+"owner": "Goliath Games",
+"launch_year": 1982,
+"original_meaning": "An ordered series of things.",
+"source_url": "https://en.wikipedia.org/wiki/Sequence_(game)",
+"pre_launch_per_million": 36.1097
+},
+{
+"word": "Sequoia",
+"kind": "common",
+"brand": "Toyota Sequoia",
+"owner": "Toyota",
+"launch_year": 2000,
+"original_meaning": "A giant conifer native to California.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Sequoia",
+"pre_launch_per_million": 0.1245
+},
+{
+"word": "Shell",
+"kind": "common",
+"brand": "Shell",
+"owner": "Shell plc",
+"launch_year": 1907,
+"original_meaning": "A hard outer covering.",
+"source_url": "https://en.wikipedia.org/wiki/Shell_plc",
+"pre_launch_per_million": 16.4374
+},
+{
+"word": "Sibelius",
+"kind": "name",
+"brand": "Sibelius",
+"owner": "Avid Technology",
+"launch_year": 1993,
+"original_meaning": "A Finnish surname",
+"source_url": "https://en.wikipedia.org/wiki/Sibelius_(scorewriter)",
+"pre_launch_per_million": 0.3726
+},
+{
+"word": "Sienna",
+"kind": "common",
+"brand": "Toyota Sienna",
+"owner": "Toyota",
+"launch_year": 1997,
+"original_meaning": "A reddish-brown earth pigment.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Sienna",
+"pre_launch_per_million": 0.0652
+},
+{
+"word": "sierra",
+"kind": "name",
+"brand": "Sierra",
+"owner": "Sierra",
+"launch_year": 2024,
+"original_meaning": "A given name; also a mountain range.",
+"source_url": "https://techcrunch.com/2024/02/13/bret-taylors-new-company-aims-to-connect-conversational-ai-to-enterprise-workflows/",
+"pre_launch_per_million": 5.2987
+},
+{
+"word": "Signal",
+"kind": "common",
+"brand": "Signal",
+"owner": "Signal Foundation",
+"launch_year": 2014,
+"original_meaning": "A sign conveying information",
+"source_url": "https://en.wikipedia.org/wiki/Signal_(software)",
+"pre_launch_per_million": 48.9391
+},
+{
+"word": "Silverado",
+"kind": "name",
+"brand": "Chevrolet Silverado",
+"owner": "General Motors",
+"launch_year": 1998,
+"original_meaning": "The name of several places in California.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado",
+"pre_launch_per_million": 0.19
+},
+{
+"word": "Simple",
+"kind": "common",
+"brand": "Simple",
+"owner": "Unilever",
+"launch_year": 1960,
+"original_meaning": "Easy to understand or uncomplicated.",
+"source_url": "https://en.wikipedia.org/wiki/Simple_(skincare)",
+"pre_launch_per_million": 68.0426
+},
+{
+"word": "Simply",
+"kind": "common",
+"brand": "Simply",
+"owner": "The Coca-Cola Company",
+"launch_year": 2001,
+"original_meaning": "In a simple or uncomplicated way.",
+"source_url": "https://en.wikipedia.org/wiki/Simply_Orange_Juice_Company",
+"pre_launch_per_million": 70.7695
+},
+{
+"word": "Siri",
+"kind": "name",
+"brand": "Siri",
+"owner": "Apple",
+"launch_year": 2010,
+"original_meaning": "A Scandinavian feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Siri",
+"pre_launch_per_million": 0.2139
+},
+{
+"word": "Sketch",
+"kind": "common",
+"brand": "Sketch",
+"owner": "Sketch B.V.",
+"launch_year": 2010,
+"original_meaning": "A rough drawing",
+"source_url": "https://en.wikipedia.org/wiki/Sketch_(software)",
+"pre_launch_per_million": 8.3563
+},
+{
+"word": "Slack",
+"kind": "common",
+"brand": "Slack",
+"owner": "Salesforce",
+"launch_year": 2013,
+"original_meaning": "Loose or not taut",
+"source_url": "https://techcrunch.com/2014/02/12/slack-exits-beta/",
+"pre_launch_per_million": 2.4936
+},
+{
+"word": "Smart",
+"kind": "common",
+"brand": "Smart",
+"owner": "Mercedes-Benz Group and Geely",
+"launch_year": 1998,
+"original_meaning": "Intelligent or quick-witted.",
+"source_url": "https://en.wikipedia.org/wiki/Smart_(marque)",
+"pre_launch_per_million": 5.6356
+},
+{
+"word": "Snake",
+"kind": "common",
+"brand": "Snake",
+"owner": "Nokia",
+"launch_year": 1997,
+"original_meaning": "A legless reptile",
+"source_url": "https://en.wikipedia.org/wiki/Snake_(video_game_genre)",
+"pre_launch_per_million": 3.8082
+},
+{
+"word": "Snapdragon",
+"kind": "common",
+"brand": "Snapdragon",
+"owner": "Qualcomm",
+"launch_year": 2007,
+"original_meaning": "A flowering plant",
+"source_url": "https://en.wikipedia.org/wiki/Snapdragon",
+"pre_launch_per_million": 0.041
+},
+{
+"word": "snowflake",
+"kind": "common",
+"brand": "Snowflake",
+"owner": "Snowflake Inc.",
+"launch_year": 2014,
+"original_meaning": "A small cluster of ice crystals falling as snow.",
+"source_url": "https://www.globenewswire.com/news-release/2014/10/21/1186813/0/en/snowflake-reinvents-the-data-warehouse-for-the-cloud.html",
+"pre_launch_per_million": 0.2874
+},
+{
+"word": "Solitaire",
+"kind": "common",
+"brand": "Microsoft Solitaire",
+"owner": "Microsoft",
+"launch_year": 1990,
+"original_meaning": "A card game played by one person",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Solitaire",
+"pre_launch_per_million": 0.0984
+},
+{
+"word": "Sonata",
+"kind": "common",
+"brand": "Hyundai Sonata",
+"owner": "Hyundai Motor Company",
+"launch_year": 1985,
+"original_meaning": "A musical composition for instruments.",
+"source_url": "https://en.wikipedia.org/wiki/Hyundai_Sonata",
+"pre_launch_per_million": 0.6802
+},
+{
+"word": "Sonnet",
+"kind": "common",
+"brand": "Claude Sonnet",
+"owner": "Anthropic",
+"launch_year": 2024,
+"original_meaning": "A poem traditionally consisting of fourteen lines.",
+"source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+"pre_launch_per_million": 0.8644
+},
+{
+"word": "Sorry",
+"kind": "common",
+"brand": "Sorry!",
+"owner": "Hasbro",
+"launch_year": 1934,
+"original_meaning": "Expressing regret or apology.",
+"source_url": "https://en.wikipedia.org/wiki/Sorry!_(game)",
+"pre_launch_per_million": 6.0199
+},
+{
+"word": "Soul",
+"kind": "common",
+"brand": "Kia Soul",
+"owner": "Kia Corporation",
+"launch_year": 2008,
+"original_meaning": "A person's spiritual or immaterial essence.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Soul",
+"pre_launch_per_million": 31.5312
+},
+{
+"word": "Source",
+"kind": "common",
+"brand": "Source",
+"owner": "Valve",
+"launch_year": 2004,
+"original_meaning": "The place where something originates",
+"source_url": "https://en.wikipedia.org/wiki/Source_(game_engine)",
+"pre_launch_per_million": 98.1459
+},
+{
+"word": "Southwest",
+"kind": "common",
+"brand": "Southwest Airlines",
+"owner": "Southwest Airlines Co.",
+"launch_year": 1971,
+"original_meaning": "The direction between south and west.",
+"source_url": "https://en.wikipedia.org/wiki/Southwest_Airlines",
+"pre_launch_per_million": 5.8008
+},
+{
+"word": "spanner",
+"kind": "common",
+"brand": "Spanner",
+"owner": "Google LLC",
+"launch_year": 2017,
+"original_meaning": "A tool for turning nuts and bolts.",
+"source_url": "https://cloud.google.com/blog/products/databases/reflecting-on-spanner-papers-sigops-hall-of-fame-award",
+"pre_launch_per_million": 0.1981
+},
+{
+"word": "Spar",
+"kind": "common",
+"brand": "Spar",
+"owner": "Spar International",
+"launch_year": 1932,
+"original_meaning": "A pole used to support a sail.",
+"source_url": "https://en.wikipedia.org/wiki/Spar_(retailer)",
+"pre_launch_per_million": 0.7708
+},
+{
+"word": "Spark",
+"kind": "common",
+"brand": "Chevrolet Spark",
+"owner": "General Motors",
+"launch_year": 2005,
+"original_meaning": "A small fiery or electrical particle.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Spark",
+"pre_launch_per_million": 3.4512
+},
+{
+"word": "Spark",
+"kind": "common",
+"brand": "Apache Spark",
+"owner": "Apache Software Foundation",
+"launch_year": 2010,
+"original_meaning": "A small fiery particle",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Spark",
+"pre_launch_per_million": 3.5277
+},
+{
+"word": "Spirit",
+"kind": "common",
+"brand": "Spirit Airlines",
+"owner": "Spirit Airlines, Inc.",
+"launch_year": 1992,
+"original_meaning": "A supernatural being or animating essence.",
+"source_url": "https://en.wikipedia.org/wiki/Spirit_Airlines",
+"pre_launch_per_million": 25.1964
+},
+{
+"word": "split",
+"kind": "common",
+"brand": "Split",
+"owner": "Harness Inc.",
+"launch_year": 2015,
+"original_meaning": "To divide or separate into parts.",
+"source_url": "https://confidence.spotify.com/comparisons/what-is-split",
+"pre_launch_per_million": 21.8136
+},
+{
+"word": "Sprite",
+"kind": "common",
+"brand": "Sprite",
+"owner": "The Coca-Cola Company",
+"launch_year": 1961,
+"original_meaning": "A small supernatural being.",
+"source_url": "https://en.wikipedia.org/wiki/Sprite_(drink)",
+"pre_launch_per_million": 0.0461
+},
+{
+"word": "square",
+"kind": "common",
+"brand": "Square",
+"owner": "Block, Inc.",
+"launch_year": 2009,
+"original_meaning": "Shape with four equal sides and right angles",
+"source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828022003825/sq-20211231.htm",
+"pre_launch_per_million": 39.9091
+},
+{
+"word": "Squirt",
+"kind": "common",
+"brand": "Squirt",
+"owner": "Keurig Dr Pepper",
+"launch_year": 1938,
+"original_meaning": "To spray liquid in a narrow stream.",
+"source_url": "https://en.wikipedia.org/wiki/Squirt_(drink)",
+"pre_launch_per_million": 0.1143
+},
+{
+"word": "Stadia",
+"kind": "common",
+"brand": "Google Stadia",
+"owner": "Google",
+"launch_year": 2019,
+"original_meaning": "Plural of stadium",
+"source_url": "https://en.wikipedia.org/wiki/Google_Stadia",
+"pre_launch_per_million": 0.2156
+},
+{
+"word": "Staples",
+"kind": "common",
+"brand": "Staples",
+"owner": "Sycamore Partners",
+"launch_year": 1986,
+"original_meaning": "Small metal fasteners or basic necessities.",
+"source_url": "https://en.wikipedia.org/wiki/Staples_Inc.",
+"pre_launch_per_million": 0.7844
+},
+{
+"word": "starling",
+"kind": "common",
+"brand": "Starling",
+"owner": "Starling Bank Limited",
+"launch_year": 2016,
+"original_meaning": "A small to medium-sized songbird.",
+"source_url": "https://www.starlingbank.com/news/starling-bank-born/",
+"pre_launch_per_million": 0.1171
+},
+{
+"word": "Steam",
+"kind": "common",
+"brand": "Steam",
+"owner": "Valve",
+"launch_year": 2003,
+"original_meaning": "Water vapor produced by boiling",
+"source_url": "https://en.wikipedia.org/wiki/Steam_(service)",
+"pre_launch_per_million": 10.2328
+},
+{
+"word": "Stinger",
+"kind": "common",
+"brand": "Kia Stinger",
+"owner": "Kia Corporation",
+"launch_year": 2017,
+"original_meaning": "An organ that delivers a sting.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Stinger",
+"pre_launch_per_million": 0.1811
+},
+{
+"word": "Stray",
+"kind": "common",
+"brand": "Stray",
+"owner": "Annapurna Interactive",
+"launch_year": 2022,
+"original_meaning": "To wander away from a place",
+"source_url": "https://en.wikipedia.org/wiki/Stray_(video_game)",
+"pre_launch_per_million": 3.5576
+},
+{
+"word": "Stripe",
+"kind": "common",
+"brand": "Stripe",
+"owner": "Stripe, Inc.",
+"launch_year": 2011,
+"original_meaning": "A long narrow band of color",
+"source_url": "https://en.wikipedia.org/wiki/Stripe,_Inc.",
+"pre_launch_per_million": 1.9435
+},
+{
+"word": "Sublime",
+"kind": "common",
+"brand": "Sublime Text",
+"owner": "Sublime HQ",
+"launch_year": 2008,
+"original_meaning": "Of outstanding beauty or excellence",
+"source_url": "https://en.wikipedia.org/wiki/Sublime_Text",
+"pre_launch_per_million": 2.3935
+},
+{
+"word": "Suburban",
+"kind": "common",
+"brand": "Chevrolet Suburban",
+"owner": "General Motors",
+"launch_year": 1935,
+"original_meaning": "Relating to a residential area outside a city.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Suburban",
+"pre_launch_per_million": 4.2153
+},
+{
+"word": "Subversion",
+"kind": "common",
+"brand": "Apache Subversion",
+"owner": "Apache Software Foundation",
+"launch_year": 2000,
+"original_meaning": "The undermining of authority",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Subversion",
+"pre_launch_per_million": 0.8079
+},
+{
+"word": "Subway",
+"kind": "common",
+"brand": "Subway",
+"owner": "Roark Capital",
+"launch_year": 1968,
+"original_meaning": "An underground railway or pedestrian passage.",
+"source_url": "https://en.wikipedia.org/wiki/Subway_(restaurant)",
+"pre_launch_per_million": 1.174
+},
+{
+"word": "Supreme",
+"kind": "common",
+"brand": "Supreme",
+"owner": "EssilorLuxottica",
+"launch_year": 1994,
+"original_meaning": "Highest in rank or degree.",
+"source_url": "https://en.wikipedia.org/wiki/Supreme_(brand)",
+"pre_launch_per_million": 5.6882
+},
+{
+"word": "Surface",
+"kind": "common",
+"brand": "Microsoft Surface",
+"owner": "Microsoft",
+"launch_year": 2012,
+"original_meaning": "The outer layer of something",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Surface",
+"pre_launch_per_million": 113.7309
+},
+{
+"word": "Surge",
+"kind": "common",
+"brand": "Surge",
+"owner": "The Coca-Cola Company",
+"launch_year": 1996,
+"original_meaning": "A sudden powerful movement or increase.",
+"source_url": "https://en.wikipedia.org/wiki/Surge_(drink)",
+"pre_launch_per_million": 3.8858
+},
+{
+"word": "Swagger",
+"kind": "common",
+"brand": "Swagger",
+"owner": "SmartBear",
+"launch_year": 2011,
+"original_meaning": "To walk with exaggerated confidence",
+"source_url": "https://en.wikipedia.org/wiki/Swagger_(software)",
+"pre_launch_per_million": 0.3772
+},
+{
+"word": "Swatch",
+"kind": "common",
+"brand": "Swatch",
+"owner": "Swatch Group",
+"launch_year": 1983,
+"original_meaning": "A small sample of fabric or color.",
+"source_url": "https://en.wikipedia.org/wiki/Swatch",
+"pre_launch_per_million": 0.0739
+},
+{
+"word": "Swift",
+"kind": "common",
+"brand": "Swift",
+"owner": "Apple",
+"launch_year": 2014,
+"original_meaning": "Moving quickly",
+"source_url": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
+"pre_launch_per_million": 4.5647
+},
+{
+"word": "Switch",
+"kind": "common",
+"brand": "Nintendo Switch",
+"owner": "Nintendo",
+"launch_year": 2017,
+"original_meaning": "A device for opening or closing a circuit",
+"source_url": "https://en.wikipedia.org/wiki/Nintendo_Switch",
+"pre_launch_per_million": 17.6215
+},
+{
+"word": "Tab",
+"kind": "common",
+"brand": "Tab",
+"owner": "The Coca-Cola Company",
+"launch_year": 1963,
+"original_meaning": "A small projecting strip or flap.",
+"source_url": "https://en.wikipedia.org/wiki/Tab_(drink)",
+"pre_launch_per_million": 4.0903
+},
+{
+"word": "Taboo",
+"kind": "common",
+"brand": "Taboo",
+"owner": "Hasbro",
+"launch_year": 1989,
+"original_meaning": "A social or religious prohibition.",
+"source_url": "https://en.wikipedia.org/wiki/Taboo_(game)",
+"pre_launch_per_million": 0.8422
+},
+{
+"word": "Tacoma",
+"kind": "name",
+"brand": "Toyota Tacoma",
+"owner": "Toyota",
+"launch_year": 1995,
+"original_meaning": "A city in Washington State.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Tacoma",
+"pre_launch_per_million": 2.4133
+},
+{
+"word": "Tahoe",
+"kind": "name",
+"brand": "Chevrolet Tahoe",
+"owner": "General Motors",
+"launch_year": 1995,
+"original_meaning": "A lake on the California\u2013Nevada border.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Tahoe",
+"pre_launch_per_million": 1.2418
+},
+{
+"word": "Tango",
+"kind": "common",
+"brand": "Tango",
+"owner": "Britvic",
+"launch_year": 1950,
+"original_meaning": "An Argentine dance and its music.",
+"source_url": "https://en.wikipedia.org/wiki/Tango_(drink)",
+"pre_launch_per_million": 0.1852
+},
+{
+"word": "Target",
+"kind": "common",
+"brand": "Target",
+"owner": "Target Corporation",
+"launch_year": 1962,
+"original_meaning": "An object aimed at.",
+"source_url": "https://en.wikipedia.org/wiki/Target_Corporation",
+"pre_launch_per_million": 30.4356
+},
+{
+"word": "Taurus",
+"kind": "name",
+"brand": "Ford Taurus",
+"owner": "Ford Motor Company",
+"launch_year": 1985,
+"original_meaning": "A zodiac constellation and sign.",
+"source_url": "https://en.wikipedia.org/wiki/Ford_Taurus",
+"pre_launch_per_million": 0.5148
+},
+{
+"word": "tay",
+"kind": "name",
+"brand": "Tay",
+"owner": "Microsoft",
+"launch_year": 2016,
+"original_meaning": "A given name or nickname.",
+"source_url": "https://www.wired.com/story/tay-tweet-microsoft-artificial-intelligence-answers/",
+"pre_launch_per_million": 0.8533
+},
+{
+"word": "Teams",
+"kind": "common",
+"brand": "Microsoft Teams",
+"owner": "Microsoft",
+"launch_year": 2017,
+"original_meaning": "Groups working together",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Teams",
+"pre_launch_per_million": 18.7368
+},
+{
+"word": "Telegram",
+"kind": "common",
+"brand": "Telegram",
+"owner": "Telegram FZ-LLC",
+"launch_year": 2013,
+"original_meaning": "A message sent by telegraph",
+"source_url": "https://en.wikipedia.org/wiki/Telegram_(software)",
+"pre_launch_per_million": 1.9052
+},
+{
+"word": "Telluride",
+"kind": "name",
+"brand": "Kia Telluride",
+"owner": "Kia Corporation",
+"launch_year": 2019,
+"original_meaning": "A town in Colorado.",
+"source_url": "https://en.wikipedia.org/wiki/Kia_Telluride",
+"pre_launch_per_million": 0.1005
+},
+{
+"word": "Temu",
+"kind": "rare",
+"brand": "Temu",
+"owner": "PDD Holdings",
+"launch_year": 2022,
+"original_meaning": "A tree native to southern South America",
+"source_url": "https://en.wikipedia.org/wiki/Temu",
+"pre_launch_per_million": 0.0319
+},
+{
+"word": "Tesla",
+"kind": "common",
+"brand": "Tesla",
+"owner": "Tesla, Inc.",
+"launch_year": 2003,
+"original_meaning": "A unit of magnetic flux density.",
+"source_url": "https://en.wikipedia.org/wiki/Tesla%2C_Inc.",
+"pre_launch_per_million": 0.0744
+},
+{
+"word": "Things",
+"kind": "common",
+"brand": "Things",
+"owner": "Cultured Code",
+"launch_year": 2007,
+"original_meaning": "Objects or items",
+"source_url": "https://en.wikipedia.org/wiki/Things_(software)",
+"pre_launch_per_million": 149.4923
+},
+{
+"word": "Threads",
+"kind": "common",
+"brand": "Threads",
+"owner": "Meta Platforms",
+"launch_year": 2023,
+"original_meaning": "Fine strands of spun fiber",
+"source_url": "https://en.wikipedia.org/wiki/Threads_(social_network)",
+"pre_launch_per_million": 5.2215
+},
+{
+"word": "three",
+"kind": "common",
+"brand": "Three",
+"owner": "VodafoneThree",
+"launch_year": 2003,
+"original_meaning": "The number following two",
+"source_url": "https://www.threemediacentre.co.uk/about-us/",
+"pre_launch_per_million": 317.0553
+},
+{
+"word": "Tidal",
+"kind": "common",
+"brand": "Tidal",
+"owner": "Block, Inc.",
+"launch_year": 2014,
+"original_meaning": "Relating to ocean tides",
+"source_url": "https://en.wikipedia.org/wiki/Tidal_(service)",
+"pre_launch_per_million": 4.6103
+},
+{
+"word": "Tide",
+"kind": "common",
+"brand": "Tide",
+"owner": "Procter & Gamble",
+"launch_year": 1946,
+"original_meaning": "The periodic rise and fall of the sea.",
+"source_url": "https://en.wikipedia.org/wiki/Tide_(brand)",
+"pre_launch_per_million": 6.0129
+},
+{
+"word": "Timberland",
+"kind": "common",
+"brand": "Timberland",
+"owner": "VF Corporation",
+"launch_year": 1973,
+"original_meaning": "Land covered with trees suitable for timber.",
+"source_url": "https://en.wikipedia.org/wiki/Timberland_(company)",
+"pre_launch_per_million": 0.4187
+},
+{
+"word": "Tinder",
+"kind": "common",
+"brand": "Tinder",
+"owner": "Match Group",
+"launch_year": 2012,
+"original_meaning": "Dry material used to start a fire",
+"source_url": "https://en.wikipedia.org/wiki/Tinder_(app)",
+"pre_launch_per_million": 0.218
+},
+{
+"word": "Titan",
+"kind": "name",
+"brand": "Nissan Titan",
+"owner": "Nissan",
+"launch_year": 2003,
+"original_meaning": "A member of a race of Greek deities.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Titan",
+"pre_launch_per_million": 1.0581
+},
+{
+"word": "Toast",
+"kind": "common",
+"brand": "Toast",
+"owner": "Bestseller",
+"launch_year": 1997,
+"original_meaning": "Bread browned by heat.",
+"source_url": "https://en.wikipedia.org/wiki/Toast_(clothing_retailer)",
+"pre_launch_per_million": 1.3924
+},
+{
+"word": "Tomcat",
+"kind": "common",
+"brand": "Apache Tomcat",
+"owner": "Apache Software Foundation",
+"launch_year": 1999,
+"original_meaning": "A male cat",
+"source_url": "https://en.wikipedia.org/wiki/Apache_Tomcat",
+"pre_launch_per_million": 0.0387
+},
+{
+"word": "Tor",
+"kind": "common",
+"brand": "Tor",
+"owner": "The Tor Project",
+"launch_year": 2002,
+"original_meaning": "A rocky hill or outcrop",
+"source_url": "https://en.wikipedia.org/wiki/Tor_(network)",
+"pre_launch_per_million": 12.8755
+},
+{
+"word": "Torrent",
+"kind": "common",
+"brand": "BitTorrent",
+"owner": "Rainberry, Inc.",
+"launch_year": 2001,
+"original_meaning": "A fast-flowing stream",
+"source_url": "https://en.wikipedia.org/wiki/BitTorrent",
+"pre_launch_per_million": 0.5808
+},
+{
+"word": "total",
+"kind": "common",
+"brand": "Total",
+"owner": "TotalEnergies SE",
+"launch_year": 1954,
+"original_meaning": "The whole amount; complete.",
+"source_url": "https://www.lemonde.fr/en/economy/article/2024/05/28/the-fuel-and-the-controversies-that-built-totalenergies_6672862_19.html",
+"pre_launch_per_million": 217.7224
+},
+{
+"word": "Trac",
+"kind": "rare",
+"brand": "Trac",
+"owner": "Edgewall Software",
+"launch_year": 2004,
+"original_meaning": "A variant spelling of track",
+"source_url": "https://en.wikipedia.org/wiki/Trac",
+"pre_launch_per_million": 0.0476
+},
+{
+"word": "Transformers",
+"kind": "common",
+"brand": "Transformers",
+"owner": "Hasbro and Takara Tomy",
+"launch_year": 1984,
+"original_meaning": "Things that change form or electrical voltage.",
+"source_url": "https://en.wikipedia.org/wiki/Transformers",
+"pre_launch_per_million": 1.735
+},
+{
+"word": "Transit",
+"kind": "common",
+"brand": "Transit",
+"owner": "Transit App, Inc.",
+"launch_year": 2012,
+"original_meaning": "The act of passing through or across",
+"source_url": "https://en.wikipedia.org/wiki/Transit_(app)",
+"pre_launch_per_million": 7.939
+},
+{
+"word": "Transmission",
+"kind": "common",
+"brand": "Transmission",
+"owner": "Transmission Project",
+"launch_year": 2005,
+"original_meaning": "The act of sending or passing something on",
+"source_url": "https://en.wikipedia.org/wiki/Transmission_(BitTorrent_client)",
+"pre_launch_per_million": 29.1334
+},
+{
+"word": "travelers",
+"kind": "common",
+"brand": "Travelers",
+"owner": "The Travelers Companies",
+"launch_year": 1864,
+"original_meaning": "People who travel",
+"source_url": "https://www.travelers.com/about-travelers/travelers-history",
+"pre_launch_per_million": 2.2241
+},
+{
+"word": "Traverse",
+"kind": "common",
+"brand": "Chevrolet Traverse",
+"owner": "General Motors",
+"launch_year": 2008,
+"original_meaning": "To travel across an area.",
+"source_url": "https://en.wikipedia.org/wiki/Chevrolet_Traverse",
+"pre_launch_per_million": 1.6872
+},
+{
+"word": "Travis",
+"kind": "name",
+"brand": "Travis CI",
+"owner": "Idera, Inc.",
+"launch_year": 2011,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Travis_CI",
+"pre_launch_per_million": 3.2771
+},
+{
+"word": "Trouble",
+"kind": "common",
+"brand": "Trouble",
+"owner": "Hasbro",
+"launch_year": 1965,
+"original_meaning": "Difficulty or problems.",
+"source_url": "https://en.wikipedia.org/wiki/Trouble_(board_game)",
+"pre_launch_per_million": 17.3638
+},
+{
+"word": "Tucson",
+"kind": "name",
+"brand": "Hyundai Tucson",
+"owner": "Hyundai Motor Company",
+"launch_year": 2004,
+"original_meaning": "A city in Arizona.",
+"source_url": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+"pre_launch_per_million": 4.4398
+},
+{
+"word": "Tundra",
+"kind": "common",
+"brand": "Toyota Tundra",
+"owner": "Toyota",
+"launch_year": 1999,
+"original_meaning": "A cold, treeless region.",
+"source_url": "https://en.wikipedia.org/wiki/Toyota_Tundra",
+"pre_launch_per_million": 0.984
+},
+{
+"word": "Twister",
+"kind": "common",
+"brand": "Twister",
+"owner": "Hasbro",
+"launch_year": 1966,
+"original_meaning": "A tornado.",
+"source_url": "https://en.wikipedia.org/wiki/Twister_(game)",
+"pre_launch_per_million": 0.128
+},
+{
+"word": "Twitch",
+"kind": "common",
+"brand": "Twitch",
+"owner": "Amazon",
+"launch_year": 2011,
+"original_meaning": "A sudden small involuntary movement",
+"source_url": "https://en.wikipedia.org/wiki/Twitch_(service)",
+"pre_launch_per_million": 0.993
+},
+{
+"word": "Uber",
+"kind": "common",
+"brand": "Uber",
+"owner": "Uber Technologies",
+"launch_year": 2011,
+"original_meaning": "An outstanding or extreme example",
+"source_url": "https://en.wikipedia.org/wiki/Uber",
+"pre_launch_per_million": 0.1109
+},
+{
+"word": "United",
+"kind": "common",
+"brand": "United Airlines",
+"owner": "United Airlines Holdings",
+"launch_year": 1931,
+"original_meaning": "Joined together.",
+"source_url": "https://en.wikipedia.org/wiki/United_Airlines",
+"pre_launch_per_million": 6.6276
+},
+{
+"word": "Unity",
+"kind": "common",
+"brand": "Unity",
+"owner": "Unity Technologies",
+"launch_year": 2005,
+"original_meaning": "The state of being joined together",
+"source_url": "https://en.wikipedia.org/wiki/Unity_(game_engine)",
+"pre_launch_per_million": 15.4427
+},
+{
+"word": "Uno",
+"kind": "rare",
+"brand": "Uno",
+"owner": "Mattel",
+"launch_year": 1971,
+"original_meaning": "One, in Spanish and Italian.",
+"source_url": "https://en.wikipedia.org/wiki/Uno_(card_game)",
+"pre_launch_per_million": 0.2707
+},
+{
+"word": "Unreal",
+"kind": "common",
+"brand": "Unreal",
+"owner": "Epic Games",
+"launch_year": 1998,
+"original_meaning": "Not real or actual",
+"source_url": "https://en.wikipedia.org/wiki/Unreal_(1998_video_game)",
+"pre_launch_per_million": 0.9132
+},
+{
+"word": "Vagrant",
+"kind": "common",
+"brand": "Vagrant",
+"owner": "IBM",
+"launch_year": 2010,
+"original_meaning": "A person without a settled home",
+"source_url": "https://en.wikipedia.org/wiki/Vagrant_(software)",
+"pre_launch_per_million": 0.3122
+},
+{
+"word": "Valve",
+"kind": "common",
+"brand": "Valve",
+"owner": "Valve Corporation",
+"launch_year": 1996,
+"original_meaning": "A device controlling the flow of fluid",
+"source_url": "https://en.wikipedia.org/wiki/Valve_Corporation",
+"pre_launch_per_million": 15.3517
+},
+{
+"word": "vanguard",
+"kind": "common",
+"brand": "Vanguard",
+"owner": "The Vanguard Group",
+"launch_year": 1975,
+"original_meaning": "Leading part of an advancing force",
+"source_url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/facts-and-figures.html",
+"pre_launch_per_million": 0.8968
+},
+{
+"word": "Vans",
+"kind": "common",
+"brand": "Vans",
+"owner": "VF Corporation",
+"launch_year": 1966,
+"original_meaning": "Vehicles used to carry goods or passengers.",
+"source_url": "https://en.wikipedia.org/wiki/Vans",
+"pre_launch_per_million": 1.4906
+},
+{
+"word": "Vaseline",
+"kind": "rare",
+"brand": "Vaseline",
+"owner": "Unilever",
+"launch_year": 1872,
+"original_meaning": "Petroleum jelly.",
+"source_url": "https://en.wikipedia.org/wiki/Vaseline",
+"pre_launch_per_million": 0.0736
+},
+{
+"word": "Vault",
+"kind": "common",
+"brand": "Vault",
+"owner": "IBM",
+"launch_year": 2015,
+"original_meaning": "A secure room for valuables",
+"source_url": "https://en.wikipedia.org/wiki/Vault_(software)",
+"pre_launch_per_million": 2.4167
+},
+{
+"word": "Versa",
+"kind": "rare",
+"brand": "Nissan Versa",
+"owner": "Nissan",
+"launch_year": 2006,
+"original_meaning": "Turned around, in the phrase vice versa.",
+"source_url": "https://en.wikipedia.org/wiki/Nissan_Versa",
+"pre_launch_per_million": 4.6996
+},
+{
+"word": "Vim",
+"kind": "common",
+"brand": "Vim",
+"owner": "Vim project",
+"launch_year": 1991,
+"original_meaning": "Energy and enthusiasm",
+"source_url": "https://en.wikipedia.org/wiki/Vim_(text_editor)",
+"pre_launch_per_million": 0.0546
+},
+{
+"word": "Vine",
+"kind": "common",
+"brand": "Vine",
+"owner": "X Corp.",
+"launch_year": 2013,
+"original_meaning": "A climbing or trailing plant",
+"source_url": "https://en.wikipedia.org/wiki/Vine_(service)",
+"pre_launch_per_million": 2.935
+},
+{
+"word": "Viper",
+"kind": "common",
+"brand": "Dodge Viper",
+"owner": "Stellantis",
+"launch_year": 1992,
+"original_meaning": "A venomous snake.",
+"source_url": "https://en.wikipedia.org/wiki/Dodge_Viper",
+"pre_launch_per_million": 0.184
+},
+{
+"word": "Virgin",
+"kind": "common",
+"brand": "Virgin",
+"owner": "Virgin Group",
+"launch_year": 1970,
+"original_meaning": "A person who has never had sexual intercourse.",
+"source_url": "https://en.wikipedia.org/wiki/Virgin_Group",
+"pre_launch_per_million": 2.3716
+},
+{
+"word": "visa",
+"kind": "common",
+"brand": "Visa",
+"owner": "Visa Inc.",
+"launch_year": 1976,
+"original_meaning": "Authorization to enter or stay in a country",
+"source_url": "https://www.federalreservehistory.org/essays/electronic-point-of-sale-payments",
+"pre_launch_per_million": 1.5788
+},
+{
+"word": "Vision",
+"kind": "common",
+"brand": "Apple Vision Pro",
+"owner": "Apple",
+"launch_year": 2024,
+"original_meaning": "The ability to see",
+"source_url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+"pre_launch_per_million": 49.0546
+},
+{
+"word": "Vivaldi",
+"kind": "name",
+"brand": "Vivaldi",
+"owner": "Vivaldi Technologies",
+"launch_year": 2016,
+"original_meaning": "An Italian surname",
+"source_url": "https://en.wikipedia.org/wiki/Vivaldi_(web_browser)",
+"pre_launch_per_million": 0.1743
+},
+{
+"word": "Vive",
+"kind": "rare",
+"brand": "HTC Vive",
+"owner": "HTC",
+"launch_year": 2016,
+"original_meaning": "French for long live",
+"source_url": "https://en.wikipedia.org/wiki/HTC_Vive",
+"pre_launch_per_million": 0.2955
+},
+{
+"word": "VLC",
+"kind": "rare",
+"brand": "VLC",
+"owner": "VideoLAN",
+"launch_year": 2001,
+"original_meaning": "Abbreviation for visible light communication",
+"source_url": "https://en.wikipedia.org/wiki/VLC_media_player",
+"pre_launch_per_million": 0.03
+},
+{
+"word": "Voss",
+"kind": "name",
+"brand": "Voss",
+"owner": "Reignwood Group",
+"launch_year": 1998,
+"original_meaning": "A municipality in Norway.",
+"source_url": "https://en.wikipedia.org/wiki/Voss_(water)",
+"pre_launch_per_million": 0.9913
+},
+{
+"word": "Walkers",
+"kind": "common",
+"brand": "Walkers",
+"owner": "PepsiCo",
+"launch_year": 1948,
+"original_meaning": "People who walk.",
+"source_url": "https://en.wikipedia.org/wiki/Walkers_(snack_foods)",
+"pre_launch_per_million": 0.2515
+},
+{
+"word": "Watson",
+"kind": "name",
+"brand": "Watson",
+"owner": "IBM",
+"launch_year": 2011,
+"original_meaning": "A masculine given name and surname",
+"source_url": "https://en.wikipedia.org/wiki/Watson_(computer)",
+"pre_launch_per_million": 8.6068
+},
+{
+"word": "Wave",
+"kind": "common",
+"brand": "Google Wave",
+"owner": "Google",
+"launch_year": 2009,
+"original_meaning": "A moving ridge on water",
+"source_url": "https://en.wikipedia.org/wiki/Google_Wave",
+"pre_launch_per_million": 39.9699
+},
+{
+"word": "Wendy",
+"kind": "name",
+"brand": "Wendy's",
+"owner": "The Wendy's Company",
+"launch_year": 1969,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Wendy%27s",
+"pre_launch_per_million": 1.802
+},
+{
+"word": "whisper",
+"kind": "common",
+"brand": "Whisper",
+"owner": "OpenAI",
+"launch_year": 2022,
+"original_meaning": "To speak very softly.",
+"source_url": "https://openai.com/index/whisper/",
+"pre_launch_per_million": 10.4684
+},
+{
+"word": "Windows",
+"kind": "common",
+"brand": "Microsoft Windows",
+"owner": "Microsoft",
+"launch_year": 1985,
+"original_meaning": "Openings that admit light into buildings",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Windows",
+"pre_launch_per_million": 10.7733
+},
+{
+"word": "Wise",
+"kind": "common",
+"brand": "Wise",
+"owner": "Wise plc",
+"launch_year": 2021,
+"original_meaning": "Having sound judgment",
+"source_url": "https://en.wikipedia.org/wiki/Wise_(company)",
+"pre_launch_per_million": 21.284
+},
+{
+"word": "Wish",
+"kind": "common",
+"brand": "Wish",
+"owner": "Qoo10",
+"launch_year": 2011,
+"original_meaning": "A desire or hope",
+"source_url": "https://en.wikipedia.org/wiki/Wish_(platform)",
+"pre_launch_per_million": 43.9116
+},
+{
+"word": "Word",
+"kind": "common",
+"brand": "Microsoft Word",
+"owner": "Microsoft",
+"launch_year": 1983,
+"original_meaning": "A unit of language",
+"source_url": "https://en.wikipedia.org/wiki/Microsoft_Word",
+"pre_launch_per_million": 67.2799
+},
+{
+"word": "Wrangler",
+"kind": "common",
+"brand": "Jeep Wrangler",
+"owner": "Stellantis",
+"launch_year": 1986,
+"original_meaning": "A person who herds or handles horses.",
+"source_url": "https://en.wikipedia.org/wiki/Jeep_Wrangler",
+"pre_launch_per_million": 0.0302
+},
+{
+"word": "Zara",
+"kind": "name",
+"brand": "Zara",
+"owner": "Inditex",
+"launch_year": 1975,
+"original_meaning": "A feminine given name.",
+"source_url": "https://en.wikipedia.org/wiki/Zara_(retailer)",
+"pre_launch_per_million": 0.1489
+},
+{
+"word": "Zen",
+"kind": "common",
+"brand": "Zen",
+"owner": "AMD",
+"launch_year": 2017,
+"original_meaning": "A school of Buddhism emphasizing meditation",
+"source_url": "https://en.wikipedia.org/wiki/Zen_(microarchitecture)",
+"pre_launch_per_million": 0.3072
+},
+{
+"word": "Zip",
+"kind": "common",
+"brand": "Zipair Tokyo",
+"owner": "Japan Airlines",
+"launch_year": 2020,
+"original_meaning": "To move quickly or fasten with a zipper.",
+"source_url": "https://en.wikipedia.org/wiki/Zipair_Tokyo",
+"pre_launch_per_million": 2.019
+},
+{
+"word": "Zo",
+"kind": "name",
+"brand": "Zo",
+"owner": "Microsoft",
+"launch_year": 2016,
+"original_meaning": "A given name, including a form of Zoe.",
+"source_url": "https://blogs.microsoft.com/blog/2016/12/13/microsoft-ai-introducing-social-chatbot-zo-cortana-takes-new-roles/",
+"pre_launch_per_million": 1.3328
+},
+{
+"word": "Zoom",
+"kind": "common",
+"brand": "Zoom",
+"owner": "Zoom Communications",
+"launch_year": 2013,
+"original_meaning": "To move rapidly",
+"source_url": "https://en.wikipedia.org/wiki/Zoom_(software)",
+"pre_launch_per_million": 2.014
+}
+]
