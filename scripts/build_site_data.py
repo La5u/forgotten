@@ -21,13 +21,13 @@ rows = json.load(open('data/judged.json'))
 # hand-checked English proper noun/compound. Hand-checked foreign words override.
 import sys; sys.path.insert(0, 'scripts'); from english import LOWER, stems  # Hunspell en_US/GB/AU/CA common words
 DICT = None
-ENGLISH = set('beeper bing detour discord dishonored fisheye galactica houseparty oculus odeon overwatch pythia shazam solvate tatler terraria transformers amazon bandcamp basecamp burlington firefox inbox houseparty meetup mega macintosh oregon patagonia fiji qatar kathmandu tahoe telluride robinhood rockstar starburst photoshop pegasus kafka vivaldi sibelius godot bacchus aztec hypnos eos pythia galactica grok fortnite uber dodgeball digg wizz terraform midjourney chipotle greggs silverado wotsits nerf uno butterfinger tums'.split())
+ENGLISH = set('atlantic hitman uncharted thunderbird halifax ledger kraken gushers hartford plymouth celsius tesla zen brut pontiac beeper bing detour discord dishonored fisheye galactica houseparty oculus odeon overwatch pythia shazam solvate tatler terraria transformers amazon bandcamp basecamp burlington firefox inbox houseparty meetup mega macintosh oregon patagonia fiji qatar kathmandu tahoe telluride robinhood rockstar starburst photoshop pegasus kafka vivaldi sibelius godot bacchus aztec hypnos eos pythia galactica grok fortnite uber dodgeball digg wizz terraform midjourney chipotle greggs silverado wotsits nerf uno butterfinger tums'.split())
 FOREIGN = set('nokia subaru cortina torino voss carrefour dacia diablo evian glenlivet hulu macallan macan pret prius reebok sephora wawa creta prado akamai altezza doxa gladius zo aya ghibli'.split())  # hand-checked: not English before the brand
 ngrams = json.load(open('data/raw/ngrams.json'))
 def prefreq(r):
     s = ngrams.get(r['word'].capitalize() if r['kind'] == 'name' else r['word'].lower())
     y = min(r['launch_year'], 2022) - 1980
-    p = s[max(0, y-5):max(1, y)] if s else None
+    p = s[max(0, y-5):max(0, y)] if s else None
     return round(sum(p)/len(p)*1e6, 4) if p else None
 names = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))
 for r in csv.DictReader(open('data/raw/names_unified.csv')):
@@ -63,14 +63,15 @@ LAST12 = [f'{y}{m:02d}' for y in (2025, 2026) for m in range(1, 13) if '202511' 
 def med12(t):
     v = VIEWS.get(t)
     return statistics.median(v.get(k, 0) for k in LAST12) if v else None
+from merge_preferences import PREFERRED
 for r in rows:
-    if r['word'].lower() in NOT_BARE: continue
+    if r['word'].lower() in NOT_BARE and r['brand'].lower() != PREFERRED.get(r['word'].lower(), '').lower(): continue
     r.update(FIX.get(r['word'].lower(), {}))
     for side in ('brand', 'original'):
-        if r.get(side + '_article') and med12(r[side + '_article']) is not None: r[side + '_views'] = med12(r[side + '_article'])
-    for t in r.get('extra_brand_articles', []): r['brand_views'] = (r.get('brand_views') or 0) + (med12(t) or 0)  # brand split over several articles
+        if side + '_views' not in FIX.get(r['word'].lower(), {}) and r.get(side + '_article') and med12(r[side + '_article']) is not None: r[side + '_views'] = med12(r[side + '_article'])
+    for t in r.get('extra_brand_articles', []) if 'brand_views' not in FIX.get(r['word'].lower(), {}) else []: r['brand_views'] = (r.get('brand_views') or 0) + (med12(t) or 0)  # brand split over several articles
     if r['word'].lower() in FIX and 'group' in FIX[r['word'].lower()]: OVERRIDES[r['word'].lower()] = FIX[r['word'].lower()]['group']
-    if not r.get('original_views') and r['word'].lower() in FILL: r['original_views'] = FILL[r['word'].lower()][1]; r['original_article'] = FILL[r['word'].lower()][0]
+    if 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('original_views') and r['word'].lower() in FILL: r['original_views'] = FILL[r['word'].lower()][1]; r['original_article'] = FILL[r['word'].lower()][0]
     if not r.get('brand_views') and r.get('original_views'): r['brand_views'] = 0; r['no_brand_article'] = True  # brand never got a Wikipedia article
     if 'original_views' in FIX.get(r['word'].lower(), {}) and FIX[r['word'].lower()]['original_views'] is None: r['brand_share'] = None
     if r.get('brand_views') is not None and r.get('original_views'): r['brand_share'] = r['brand_views']/(r['brand_views']+r['original_views'])

@@ -352,6 +352,15 @@
 "source_url": "https://en.wikipedia.org/wiki/AllTrails"
 },
 {
+"word": "Allure",
+"kind": "common",
+"brand": "Allure magazine",
+"owner": "Cond\u00e9 Nast",
+"launch_year": 1991,
+"original_meaning": "The power to attract or tempt",
+"source_url": "https://en.wikipedia.org/wiki/Allure_(magazine)"
+},
+{
 "word": "Ally",
 "kind": "common",
 "brand": "Ally",
@@ -690,6 +699,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Ardbeg_distillery"
 },
 {
+"word": "Argos",
+"kind": "name",
+"brand": "Argos retailer",
+"owner": "Sainsbury's",
+"launch_year": 1973,
+"original_meaning": "An ancient city in Greece",
+"source_url": "https://en.wikipedia.org/wiki/Argos_%28retailer%29"
+},
+{
 "word": "aria",
 "kind": "common",
 "brand": "Aria",
@@ -793,6 +811,15 @@
 "source_url": "https://www.artemisfunds.com/en-gb/individual/about/about-artemis/"
 },
 {
+"word": "Arthur",
+"kind": "name",
+"brand": "Arthur television series",
+"owner": "WGBH Educational Foundation",
+"launch_year": 1996,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Arthur_(TV_series)"
+},
+{
 "word": "asahi",
 "kind": "common",
 "brand": "Asahi Beer",
@@ -876,6 +903,15 @@
 "original_meaning": "Japanese: a position in Go threatened with capture",
 "group_guess": "taken",
 "source_url": "https://en.wikipedia.org/wiki/Atari%2C_Inc."
+},
+{
+"word": "Atlantic",
+"kind": "common",
+"brand": "The Atlantic",
+"owner": "Emerson Collective",
+"launch_year": 1857,
+"original_meaning": "Relating to the Atlantic Ocean",
+"source_url": "https://en.wikipedia.org/wiki/The_Atlantic"
 },
 {
 "word": "Atlas",
@@ -1007,6 +1043,15 @@
 "source_url": "https://unicornburn.com/autopsy/avocado-app"
 },
 {
+"word": "Avon",
+"kind": "name",
+"brand": "Avon cosmetics",
+"owner": "Natura",
+"launch_year": 1928,
+"original_meaning": "The name of several British rivers",
+"source_url": "https://en.wikipedia.org/wiki/Avon_Products"
+},
+{
 "word": "Axe",
 "kind": "common",
 "brand": "Axe",
@@ -1102,6 +1147,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Balatro"
 },
 {
+"word": "Bambi",
+"kind": "name",
+"brand": "Bambi character",
+"owner": "Disney",
+"launch_year": 1923,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Bambi"
+},
+{
 "word": "Bamboo",
 "kind": "common",
 "brand": "Bamboo",
@@ -1155,6 +1209,15 @@
 "original_meaning": "Male given name, often short for Bernard",
 "group_guess": "contested",
 "source_url": "https://en.wikipedia.org/wiki/Barney_%26_the_Backyard_Gang"
+},
+{
+"word": "Bart",
+"kind": "name",
+"brand": "Bart Simpson character",
+"owner": "Disney",
+"launch_year": 1987,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Bart_Simpson"
 },
 {
 "word": "Basecamp",
@@ -1211,6 +1274,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Bazooka_(chewing_gum)"
 },
 {
+"word": "Beaker",
+"kind": "common",
+"brand": "Beaker Muppet character",
+"owner": "Disney",
+"launch_year": 1977,
+"original_meaning": "A cylindrical laboratory vessel",
+"source_url": "https://en.wikipedia.org/wiki/Beaker_(Muppet)"
+},
+{
 "word": "Bear",
 "kind": "common",
 "brand": "Bear",
@@ -1236,6 +1308,15 @@
 "launch_year": 2024,
 "original_meaning": "A flying insect that collects nectar and pollen.",
 "source_url": null
+},
+{
+"word": "Beefeater",
+"kind": "common",
+"brand": "Beefeater gin",
+"owner": "Pernod Ricard",
+"launch_year": 1876,
+"original_meaning": "A Yeoman Warder at the Tower of London",
+"source_url": "https://en.wikipedia.org/wiki/Beefeater_Gin"
 },
 {
 "word": "beeper",
@@ -1301,6 +1382,15 @@
 "launch_year": 1973,
 "original_meaning": "A billabong is a body of water left behind when a river changes course.",
 "source_url": "https://www.billabong.com.au/pages/llm-info"
+},
+{
+"word": "Billboard",
+"kind": "common",
+"brand": "Billboard magazine",
+"owner": "Billboard Global Media",
+"launch_year": 1894,
+"original_meaning": "A large outdoor advertising board",
+"source_url": "https://en.wikipedia.org/wiki/Billboard_(magazine)"
 },
 {
 "word": "Bing",
@@ -1419,6 +1509,42 @@
 "launch_year": 2022,
 "original_meaning": "A flower, or the state of flowering.",
 "source_url": "https://en.wikipedia.org/wiki/List_of_large_language_models"
+},
+{
+"word": "Blue",
+"kind": "common",
+"brand": "Blue character from Blue's Clues",
+"owner": "Paramount Global",
+"launch_year": 1996,
+"original_meaning": "The color of a clear daytime sky",
+"source_url": "https://en.wikipedia.org/wiki/Blue%27s_Clues"
+},
+{
+"word": "Bluey",
+"kind": "rare",
+"brand": "Bluey television series",
+"owner": "Ludo Studio",
+"launch_year": 2018,
+"original_meaning": "A nickname for a red-haired person",
+"source_url": "https://en.wikipedia.org/wiki/Bluey_(2018_TV_series)"
+},
+{
+"word": "Blur",
+"kind": "common",
+"brand": "Blur rock band",
+"owner": "Blur",
+"launch_year": 1990,
+"original_meaning": "Something indistinct or out of focus",
+"source_url": "https://en.wikipedia.org/wiki/Blur_(band)"
+},
+{
+"word": "Bobcat",
+"kind": "common",
+"brand": "Bobcat construction equipment",
+"owner": "Doosan Bobcat",
+"launch_year": 1962,
+"original_meaning": "A North American wild cat",
+"source_url": "https://en.wikipedia.org/wiki/Bobcat_Company"
 },
 {
 "word": "Boggle",
@@ -1541,6 +1667,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Bounty_(chocolate_bar)"
 },
 {
+"word": "Bournville",
+"kind": "name",
+"brand": "Bournville chocolate",
+"owner": "Mondelez International",
+"launch_year": 1906,
+"original_meaning": "A model village in Birmingham, England",
+"source_url": "https://en.wikipedia.org/wiki/Bournville_%28chocolate%29"
+},
+{
 "word": "Bovril",
 "kind": "rare",
 "brand": "Bovril",
@@ -1548,6 +1683,15 @@
 "launch_year": 1886,
 "original_meaning": "Beef extract used as a drink or spread.",
 "source_url": "https://en.wikipedia.org/wiki/Bovril"
+},
+{
+"word": "Bowser",
+"kind": "common",
+"brand": "Bowser character",
+"owner": "Nintendo",
+"launch_year": 1985,
+"original_meaning": "A fuel or water tanker",
+"source_url": "https://en.wikipedia.org/wiki/Bowser"
 },
 {
 "word": "Box",
@@ -1810,6 +1954,15 @@
 "source_url": "https://www.fastcompany.com/91147992/live-streaming-platform-caffeine-closes-despite-big-media-support"
 },
 {
+"word": "Caillou",
+"kind": "common",
+"brand": "Caillou character",
+"owner": "WildBrain",
+"launch_year": 1989,
+"original_meaning": "Pebble in French",
+"source_url": "https://en.wikipedia.org/wiki/Caillou"
+},
+{
 "word": "Calibre",
 "kind": "common",
 "brand": "Calibre",
@@ -2061,6 +2214,15 @@
 "source_url": "https://www.toyota-global.com/company/history_of_toyota/75years/data/automotive_business/products_technology/vehicle_lineage_chart/origin/index.html"
 },
 {
+"word": "Cell",
+"kind": "common",
+"brand": "Cell journal",
+"owner": "Elsevier",
+"launch_year": 1974,
+"original_meaning": "The basic structural unit of an organism",
+"source_url": "https://en.wikipedia.org/wiki/Cell_(journal)"
+},
+{
 "word": "celsius",
 "kind": "name",
 "brand": "Celsius",
@@ -2124,6 +2286,15 @@
 "launch_year": 1919,
 "original_meaning": "A winner of a competition.",
 "source_url": "https://en.wikipedia.org/wiki/Champion_(sportswear)"
+},
+{
+"word": "Chandler",
+"kind": "name",
+"brand": "Chandler Bing character",
+"owner": "Warner Bros. Television",
+"launch_year": 1994,
+"original_meaning": "A given name",
+"source_url": "https://en.wikipedia.org/wiki/Chandler_Bing"
 },
 {
 "word": "character",
@@ -2306,6 +2477,15 @@
 "launch_year": 1970,
 "original_meaning": "Containing large pieces or having a thick, solid shape.",
 "source_url": "https://en.wikipedia.org/wiki/Campbell%27s_Chunky"
+},
+{
+"word": "Cinderella",
+"kind": "name",
+"brand": "Cinderella fairy-tale character",
+"owner": "Public domain",
+"launch_year": 1697,
+"original_meaning": "A girl who tends cinders",
+"source_url": "https://en.wikipedia.org/wiki/Cinderella"
 },
 {
 "word": "Circle",
@@ -2634,6 +2814,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Cohere"
 },
 {
+"word": "Commodore",
+"kind": "common",
+"brand": "Commodore computers",
+"owner": "Commodore",
+"launch_year": 1956,
+"original_meaning": "A naval rank or yacht club officer",
+"source_url": "https://en.wikipedia.org/wiki/Commodore_International"
+},
+{
 "word": "Compass",
 "kind": "common",
 "brand": "Jeep Compass",
@@ -2734,6 +2923,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Intel_Core"
 },
 {
+"word": "Corgi",
+"kind": "common",
+"brand": "Corgi toy vehicles",
+"owner": "Hornby",
+"launch_year": 1956,
+"original_meaning": "A short-legged Welsh dog breed",
+"source_url": "https://en.wikipedia.org/wiki/Corgi_Toys"
+},
+{
 "word": "cornetto",
 "kind": "rare",
 "brand": "Cornetto",
@@ -2809,6 +3007,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette"
 },
 {
+"word": "Cosmopolitan",
+"kind": "common",
+"brand": "Cosmopolitan magazine",
+"owner": "Hearst Communications",
+"launch_year": 1886,
+"original_meaning": "Familiar with cultures from many countries",
+"source_url": "https://en.wikipedia.org/wiki/Cosmopolitan_(magazine)"
+},
+{
 "word": "Costa",
 "kind": "name",
 "brand": "Costa Coffee",
@@ -2854,6 +3061,15 @@
 "launch_year": 2012,
 "original_meaning": "A feminine given name",
 "source_url": "https://en.wikipedia.org/wiki/Coursera"
+},
+{
+"word": "Cream",
+"kind": "common",
+"brand": "Cream rock band",
+"owner": "Cream",
+"launch_year": 1966,
+"original_meaning": "The fatty part of milk",
+"source_url": "https://en.wikipedia.org/wiki/Cream_(band)"
 },
 {
 "word": "crest",
@@ -3178,6 +3394,15 @@
 "source_url": "https://cognition.com/blog/devin-generally-available"
 },
 {
+"word": "Dexter",
+"kind": "name",
+"brand": "Dexter television series",
+"owner": "Paramount Global",
+"launch_year": 2006,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Dexter_(TV_series)"
+},
+{
 "word": "Diablo",
 "kind": "common",
 "brand": "Diablo",
@@ -3270,6 +3495,15 @@
 "source_url": "https://courses.cs.duke.edu/fall01/cps181s/lectures/6up-11-27.pdf"
 },
 {
+"word": "Dish",
+"kind": "common",
+"brand": "DISH satellite television",
+"owner": "EchoStar",
+"launch_year": 1996,
+"original_meaning": "A shallow container for food",
+"source_url": "https://en.wikipedia.org/wiki/Dish_Network"
+},
+{
 "word": "Dishonored",
 "kind": "common",
 "brand": "Dishonored",
@@ -3350,6 +3584,15 @@
 "launch_year": 1993,
 "original_meaning": "An inevitable and terrible fate",
 "source_url": "https://en.wikipedia.org/wiki/Doom_(1993_video_game)"
+},
+{
+"word": "Doomguy",
+"kind": "rare",
+"brand": "Doomguy character",
+"owner": "Bethesda Softworks",
+"launch_year": 1993,
+"original_meaning": "A man associated with doom",
+"source_url": "https://en.wikipedia.org/wiki/Doomguy"
 },
 {
 "word": "dora",
@@ -3473,6 +3716,15 @@
 "source_url": "https://en.wikipedia.org/wiki/DuckDuckGo"
 },
 {
+"word": "Dune",
+"kind": "common",
+"brand": "Dune film",
+"owner": "Universal Pictures",
+"launch_year": 1984,
+"original_meaning": "A mound or ridge of sand",
+"source_url": "https://en.wikipedia.org/wiki/Dune_(1984_film)"
+},
+{
 "word": "Duolingo",
 "kind": "rare",
 "brand": "Duolingo",
@@ -3519,6 +3771,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Eclipse_(software)"
 },
 {
+"word": "Economist",
+"kind": "common",
+"brand": "The Economist",
+"owner": "The Economist Group",
+"launch_year": 1843,
+"original_meaning": "A person who studies economics",
+"source_url": "https://en.wikipedia.org/wiki/The_Economist"
+},
+{
 "word": "eden",
 "kind": "name",
 "brand": "Eden",
@@ -3545,6 +3806,15 @@
 "launch_year": 2015,
 "original_meaning": "The outer boundary of something",
 "source_url": "https://en.wikipedia.org/wiki/Microsoft_Edge"
+},
+{
+"word": "Eeyore",
+"kind": "rare",
+"brand": "Eeyore character",
+"owner": "Disney",
+"launch_year": 1926,
+"original_meaning": "An imitation of a donkey's bray",
+"source_url": "https://en.wikipedia.org/wiki/Eeyore"
 },
 {
 "word": "Elastic",
@@ -3631,6 +3901,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Emirates_(airline)"
 },
 {
+"word": "Emmy",
+"kind": "name",
+"brand": "Emmy Awards",
+"owner": "Television Academy and partner academies",
+"launch_year": 1949,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Emmy_Awards"
+},
+{
 "word": "energizer",
 "kind": "common",
 "brand": "Energizer",
@@ -3712,6 +3991,24 @@
 "launch_year": 2000,
 "original_meaning": "To get away from confinement or danger.",
 "source_url": "https://en.wikipedia.org/wiki/Ford_Escape"
+},
+{
+"word": "Esquire",
+"kind": "common",
+"brand": "Esquire magazine",
+"owner": "Hearst Communications",
+"launch_year": 1933,
+"original_meaning": "A title of courtesy for a man",
+"source_url": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
+},
+{
+"word": "Essence",
+"kind": "common",
+"brand": "Essence magazine",
+"owner": "Essence Ventures",
+"launch_year": 1970,
+"original_meaning": "The fundamental nature of something",
+"source_url": "https://en.wikipedia.org/wiki/Essence_(magazine)"
 },
 {
 "word": "essie",
@@ -4029,6 +4326,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Amazon_Fire_tablet"
 },
 {
+"word": "Fireball",
+"kind": "common",
+"brand": "Fireball cinnamon whisky",
+"owner": "Sazerac Company",
+"launch_year": 2007,
+"original_meaning": "A ball of fire",
+"source_url": "https://en.wikipedia.org/wiki/Fireball_Cinnamon_Whisky"
+},
+{
 "word": "firebird",
 "kind": "common",
 "brand": "Pontiac Firebird",
@@ -4237,6 +4543,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Fortnite"
 },
 {
+"word": "Fortune",
+"kind": "common",
+"brand": "Fortune magazine",
+"owner": "Fortune Media Group Holdings",
+"launch_year": 1930,
+"original_meaning": "Luck or a large amount of wealth",
+"source_url": "https://en.wikipedia.org/wiki/Fortune_(magazine)"
+},
+{
 "word": "Fossil",
 "kind": "common",
 "brand": "Fossil",
@@ -4244,6 +4559,15 @@
 "launch_year": 1984,
 "original_meaning": "Preserved remains or traces of ancient life.",
 "source_url": "https://en.wikipedia.org/wiki/Fossil_Group"
+},
+{
+"word": "Fox",
+"kind": "common",
+"brand": "Fox television network",
+"owner": "Fox Corporation",
+"launch_year": 1986,
+"original_meaning": "A small wild canine with a bushy tail",
+"source_url": "https://en.wikipedia.org/wiki/Fox_Broadcasting_Company"
 },
 {
 "word": "Framer",
@@ -4281,6 +4605,15 @@
 "launch_year": 2024,
 "original_meaning": "A person with whom one has a bond of affection and trust.",
 "source_url": "https://en.wikipedia.org/wiki/Friend_(product)"
+},
+{
+"word": "Friends",
+"kind": "common",
+"brand": "Friends television series",
+"owner": "Warner Bros. Television",
+"launch_year": 1994,
+"original_meaning": "People who like and support one another",
+"source_url": "https://en.wikipedia.org/wiki/Friends"
 },
 {
 "word": "friskies",
@@ -4431,6 +4764,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Gap_Inc."
 },
 {
+"word": "Garbage",
+"kind": "common",
+"brand": "Garbage rock band",
+"owner": "Garbage",
+"launch_year": 1993,
+"original_meaning": "Discarded waste",
+"source_url": "https://en.wikipedia.org/wiki/Garbage_(band)"
+},
+{
 "word": "garfield",
 "kind": "name",
 "brand": "Garfield",
@@ -4551,6 +4893,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Ghost_(blogging_platform)"
 },
 {
+"word": "Ghostbusters",
+"kind": "rare",
+"brand": "Ghostbusters film",
+"owner": "Sony Pictures",
+"launch_year": 1984,
+"original_meaning": "People who catch or eliminate ghosts",
+"source_url": "https://en.wikipedia.org/wiki/Ghostbusters"
+},
+{
 "word": "Giant",
 "kind": "common",
 "brand": "Giant",
@@ -4614,6 +4965,15 @@
 "original_meaning": "Latin: sword used in ancient Rome",
 "group_guess": "taken",
 "source_url": "https://www.suzuki.co.jp/corporate/faq/motor/name.html"
+},
+{
+"word": "Glamour",
+"kind": "common",
+"brand": "Glamour magazine",
+"owner": "Cond\u00e9 Nast",
+"launch_year": 1939,
+"original_meaning": "An attractive or exciting quality",
+"source_url": "https://en.wikipedia.org/wiki/Glamour_(magazine)"
 },
 {
 "word": "Glass",
@@ -4703,6 +5063,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Godot_(game_engine)"
 },
 {
+"word": "Goldfish",
+"kind": "common",
+"brand": "Goldfish crackers",
+"owner": "Pepperidge Farm",
+"launch_year": 1962,
+"original_meaning": "A small ornamental freshwater fish",
+"source_url": "https://en.wikipedia.org/wiki/Goldfish_%28cracker%29"
+},
+{
 "word": "Golf",
 "kind": "common",
 "brand": "Volkswagen Golf",
@@ -4710,6 +5079,24 @@
 "launch_year": 1974,
 "original_meaning": "A sport played with clubs and a ball.",
 "source_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf"
+},
+{
+"word": "Gonzo",
+"kind": "common",
+"brand": "Gonzo Muppet character",
+"owner": "Disney",
+"launch_year": 1970,
+"original_meaning": "Wild, unconventional, or bizarre",
+"source_url": "https://en.wikipedia.org/wiki/Gonzo_(Muppet)"
+},
+{
+"word": "Gopher",
+"kind": "common",
+"brand": "Gopher internet system",
+"owner": "University of Minnesota",
+"launch_year": 1991,
+"original_meaning": "A burrowing rodent",
+"source_url": "https://en.wikipedia.org/wiki/Gopher_%28protocol%29"
 },
 {
 "word": "gorilla",
@@ -4765,6 +5152,15 @@
 "launch_year": 2008,
 "original_meaning": "A soft form of carbon",
 "source_url": "https://en.wikipedia.org/wiki/Graphite_(software)"
+},
+{
+"word": "Grease",
+"kind": "common",
+"brand": "Grease musical",
+"owner": "Concord Theatricals",
+"launch_year": 1971,
+"original_meaning": "Thick oily or fatty matter",
+"source_url": "https://en.wikipedia.org/wiki/Grease_(musical)"
 },
 {
 "word": "Greggs",
@@ -4848,6 +5244,15 @@
 "source_url": "https://techcrunch.com/2015/12/21/gusto-is-looking-for-another-50m-to-take-on-zenefits/"
 },
 {
+"word": "Habitat",
+"kind": "common",
+"brand": "Habitat home furnishings",
+"owner": "Sainsbury's",
+"launch_year": 1964,
+"original_meaning": "An organism's natural living environment",
+"source_url": "https://en.wikipedia.org/wiki/Habitat_%28brand%29"
+},
+{
 "word": "Hades",
 "kind": "name",
 "brand": "Hades",
@@ -4882,6 +5287,15 @@
 "launch_year": 2025,
 "original_meaning": "The visible half of the moon's illuminated disk.",
 "source_url": "https://en.wikipedia.org/wiki/Text-to-image_model"
+},
+{
+"word": "Halifax",
+"kind": "name",
+"brand": "Halifax banking",
+"owner": "Bank of Scotland",
+"launch_year": 1853,
+"original_meaning": "A town in West Yorkshire, England",
+"source_url": "https://en.wikipedia.org/wiki/Halifax_%28bank%29"
 },
 {
 "word": "halls",
@@ -5095,6 +5509,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Hinge_(app)"
 },
 {
+"word": "History",
+"kind": "common",
+"brand": "History television channel",
+"owner": "A&E Networks",
+"launch_year": 1995,
+"original_meaning": "The study or record of past events",
+"source_url": "https://en.wikipedia.org/wiki/History_(American_TV_network)"
+},
+{
 "word": "hit",
 "kind": "common",
 "brand": "Hit",
@@ -5102,6 +5525,15 @@
 "launch_year": 1962,
 "original_meaning": "To strike someone or something.",
 "source_url": "https://en.wikipedia.org/wiki/Hit_(biscuit)"
+},
+{
+"word": "Hitman",
+"kind": "common",
+"brand": "Hitman video game series",
+"owner": "IO Interactive",
+"launch_year": 2000,
+"original_meaning": "A hired killer",
+"source_url": "https://en.wikipedia.org/wiki/Hitman_(franchise)"
 },
 {
 "word": "Hive",
@@ -5123,6 +5555,15 @@
 "source_url": "https://mcvities.com/en-gb/about-us/our-heritage"
 },
 {
+"word": "Holden",
+"kind": "name",
+"brand": "Holden cars",
+"owner": "General Motors",
+"launch_year": 1948,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Holden"
+},
+{
 "word": "Hollister",
 "kind": "name",
 "brand": "Hollister",
@@ -5130,6 +5571,15 @@
 "launch_year": 2000,
 "original_meaning": "A California city.",
 "source_url": "https://en.wikipedia.org/wiki/Hollister_Co."
+},
+{
+"word": "Homer",
+"kind": "name",
+"brand": "Homer Simpson character",
+"owner": "Disney",
+"launch_year": 1987,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Homer_Simpson"
 },
 {
 "word": "Honest",
@@ -5149,6 +5599,15 @@
 "original_meaning": "A sweet substance made by bees.",
 "group_guess": "contested",
 "source_url": "https://en.wikipedia.org/wiki/PayPal_Honey"
+},
+{
+"word": "Honor",
+"kind": "common",
+"brand": "Honor smartphones",
+"owner": "Shenzhen Zhixin New Information Technology",
+"launch_year": 2013,
+"original_meaning": "Esteem or moral integrity",
+"source_url": "https://en.wikipedia.org/wiki/Honor_%28company%29"
 },
 {
 "word": "Hoopla",
@@ -5212,6 +5671,15 @@
 "launch_year": 2016,
 "original_meaning": "A dog bred for hunting.",
 "source_url": "https://voicebot.ai/wp-content/uploads/2021/03/voice-assistant-timeline-jan-2021-updated2pdf.pdf"
+},
+{
+"word": "House",
+"kind": "common",
+"brand": "House television series",
+"owner": "Universal Television",
+"launch_year": 2004,
+"original_meaning": "A building used as a home",
+"source_url": "https://en.wikipedia.org/wiki/House_(TV_series)"
 },
 {
 "word": "houseparty",
@@ -5441,6 +5909,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Indeed"
 },
 {
+"word": "Independent",
+"kind": "common",
+"brand": "The Independent",
+"owner": "Independent Digital News & Media",
+"launch_year": 1986,
+"original_meaning": "Free from outside control",
+"source_url": "https://en.wikipedia.org/wiki/The_Independent"
+},
+{
 "word": "Index",
 "kind": "common",
 "brand": "Valve Index",
@@ -5550,6 +6027,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Intel"
 },
 {
+"word": "Intercept",
+"kind": "common",
+"brand": "The Intercept",
+"owner": "First Look Media",
+"launch_year": 2014,
+"original_meaning": "To stop or seize something in transit",
+"source_url": "https://en.wikipedia.org/wiki/The_Intercept"
+},
+{
 "word": "intercom",
 "kind": "common",
 "brand": "Intercom",
@@ -5557,6 +6043,15 @@
 "launch_year": 2011,
 "original_meaning": "A system for speaking between rooms or locations.",
 "source_url": "https://www.intercom.com/blog/intercom-turns-10"
+},
+{
+"word": "Interview",
+"kind": "common",
+"brand": "Interview magazine",
+"owner": "Crystal Ball Media",
+"launch_year": 1969,
+"original_meaning": "A formal conversation involving questions and answers",
+"source_url": "https://en.wikipedia.org/wiki/Interview_(magazine)"
 },
 {
 "word": "intuit",
@@ -5631,6 +6126,24 @@
 "launch_year": 1995,
 "original_meaning": "An island of Indonesia.",
 "source_url": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+},
+{
+"word": "Jaws",
+"kind": "common",
+"brand": "Jaws film",
+"owner": "Universal Pictures",
+"launch_year": 1975,
+"original_meaning": "Bones forming the framework of the mouth",
+"source_url": "https://en.wikipedia.org/wiki/Jaws_(film)"
+},
+{
+"word": "Jeep",
+"kind": "common",
+"brand": "Jeep vehicles",
+"owner": "Stellantis",
+"launch_year": 1945,
+"original_meaning": "A small military utility vehicle",
+"source_url": "https://en.wikipedia.org/wiki/Jeep"
 },
 {
 "word": "jelly",
@@ -5957,6 +6470,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Amazon_Kindle"
 },
 {
+"word": "Kingfisher",
+"kind": "common",
+"brand": "Kingfisher beer",
+"owner": "United Breweries",
+"launch_year": 1857,
+"original_meaning": "A fish-eating bird",
+"source_url": "https://en.wikipedia.org/wiki/Kingfisher_%28beer%29"
+},
+{
 "word": "kirby",
 "kind": "name",
 "brand": "Kirby",
@@ -5985,6 +6507,15 @@
 "original_meaning": "A city in Washington state",
 "group_guess": "taken",
 "source_url": "https://en.wikipedia.org/wiki/Costco"
+},
+{
+"word": "Kiss",
+"kind": "common",
+"brand": "Kiss rock band",
+"owner": "Pophouse Entertainment",
+"launch_year": 1973,
+"original_meaning": "A touch with the lips",
+"source_url": "https://en.wikipedia.org/wiki/Kiss_(band)"
 },
 {
 "word": "kiwi",
@@ -6118,6 +6649,15 @@
 "original_meaning": "A bay and settlement on Islay, Scotland",
 "group_guess": "taken",
 "source_url": "https://www.diageobaracademy.com/en-zz/home/our-brands/lagavulin"
+},
+{
+"word": "Lancet",
+"kind": "common",
+"brand": "The Lancet",
+"owner": "Elsevier",
+"launch_year": 1823,
+"original_meaning": "A small surgical cutting instrument",
+"source_url": "https://en.wikipedia.org/wiki/The_Lancet"
 },
 {
 "word": "Laphroaig",
@@ -6378,6 +6918,15 @@
 "source_url": null
 },
 {
+"word": "Link",
+"kind": "common",
+"brand": "Link character",
+"owner": "Nintendo",
+"launch_year": 1986,
+"original_meaning": "A connection between things",
+"source_url": "https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)"
+},
+{
 "word": "Linode",
 "kind": "rare",
 "brand": "Linode",
@@ -6449,6 +6998,15 @@
 "original_meaning": "A curve that crosses or joins itself",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Curly_Wurly"
+},
+{
+"word": "Lost",
+"kind": "common",
+"brand": "Lost television series",
+"owner": "Disney",
+"launch_year": 2004,
+"original_meaning": "Unable to find the way",
+"source_url": "https://en.wikipedia.org/wiki/Lost_(2004_TV_series)"
 },
 {
 "word": "Lotus",
@@ -6663,6 +7221,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Macintosh"
 },
 {
+"word": "Maestro",
+"kind": "common",
+"brand": "Maestro debit cards",
+"owner": "Mastercard",
+"launch_year": 1991,
+"original_meaning": "A distinguished musician or conductor",
+"source_url": "https://en.wikipedia.org/wiki/Maestro_%28debit_card%29"
+},
+{
 "word": "Magento",
 "kind": "rare",
 "brand": "Magento",
@@ -6670,6 +7237,15 @@
 "launch_year": 2008,
 "original_meaning": "An Italian town",
 "source_url": "https://en.wikipedia.org/wiki/Magento"
+},
+{
+"word": "Maggie",
+"kind": "name",
+"brand": "Maggie Simpson character",
+"owner": "Disney",
+"launch_year": 1987,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Maggie_Simpson"
 },
 {
 "word": "Magic",
@@ -6709,6 +7285,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Chevrolet_Malibu"
 },
 {
+"word": "malibu",
+"kind": "name",
+"brand": "Malibu",
+"owner": "Pernod Ricard",
+"launch_year": 1978,
+"original_meaning": "Malibu is a place name associated with the coastal city in California.",
+"source_url": "https://en.wikipedia.org/wiki/Malibu_(rum)"
+},
+{
 "word": "Mango",
 "kind": "common",
 "brand": "Mango",
@@ -6743,6 +7328,15 @@
 "launch_year": 1930,
 "original_meaning": "A long-distance race of 26 miles and 385 yards.",
 "source_url": "https://en.wikipedia.org/wiki/Marathon_Petroleum"
+},
+{
+"word": "Marge",
+"kind": "name",
+"brand": "Marge Simpson character",
+"owner": "Disney",
+"launch_year": 1987,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Marge_Simpson"
 },
 {
 "word": "mario",
@@ -6799,6 +7393,24 @@
 "launch_year": 1939,
 "original_meaning": "Something that causes wonder or astonishment.",
 "source_url": "https://en.wikipedia.org/wiki/Marvel_Comics"
+},
+{
+"word": "Mastermind",
+"kind": "common",
+"brand": "Mastermind board game",
+"owner": "Pressman Toy Corporation",
+"launch_year": 1971,
+"original_meaning": "A person with exceptional intellect",
+"source_url": "https://en.wikipedia.org/wiki/Mastermind_(board_game)"
+},
+{
+"word": "Mastodon",
+"kind": "common",
+"brand": "Mastodon social network",
+"owner": "Mastodon gGmbH",
+"launch_year": 2016,
+"original_meaning": "An extinct elephant-like mammal",
+"source_url": "https://en.wikipedia.org/wiki/Mastodon_%28social_network%29"
 },
 {
 "word": "Match",
@@ -7134,6 +7746,24 @@
 "source_url": "https://www.mintmobile.com/about-mint-mobile/"
 },
 {
+"word": "mint",
+"kind": "common",
+"brand": "Mint",
+"owner": "Intuit",
+"launch_year": 2007,
+"original_meaning": "Mint is an aromatic herb commonly used in food and drinks.",
+"source_url": "https://en.wikipedia.org/wiki/Intuit_Mint"
+},
+{
+"word": "Mirage",
+"kind": "common",
+"brand": "Mirage chocolate bar",
+"owner": "Nestl\u00e9",
+"launch_year": 1983,
+"original_meaning": "An optical illusion caused by atmospheric conditions",
+"source_url": "https://en.wikipedia.org/wiki/Mirage_%28chocolate_bar%29"
+},
+{
 "word": "mirai",
 "kind": "common",
 "brand": "Toyota Mirai",
@@ -7151,6 +7781,15 @@
 "launch_year": 1959,
 "original_meaning": "Wonderful, in Esperanto.",
 "source_url": "https://en.wikipedia.org/wiki/Mirinda"
+},
+{
+"word": "Mirror",
+"kind": "common",
+"brand": "Daily Mirror",
+"owner": "Reach plc",
+"launch_year": 1903,
+"original_meaning": "A surface that reflects an image",
+"source_url": "https://en.wikipedia.org/wiki/Daily_Mirror"
 },
 {
 "word": "Mistral",
@@ -7209,6 +7848,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Monopoly_(game)"
 },
 {
+"word": "Monsoon",
+"kind": "common",
+"brand": "Monsoon clothing",
+"owner": "Monsoon Accessorize",
+"launch_year": 1973,
+"original_meaning": "A seasonal wind and associated rains",
+"source_url": "https://en.wikipedia.org/wiki/Monsoon_Accessorize"
+},
+{
 "word": "Monster",
 "kind": "common",
 "brand": "Monster Energy",
@@ -7264,6 +7912,15 @@
 "original_meaning": "Changes of position or location.",
 "group_guess": "failed",
 "source_url": "https://www.theguardian.com/technology/2014/apr/24/facebook-buys-moves-fitness-tracking-health-data"
+},
+{
+"word": "Mulberry",
+"kind": "common",
+"brand": "Mulberry fashion",
+"owner": "Mulberry Group",
+"launch_year": 1971,
+"original_meaning": "A fruit-bearing tree or its fruit",
+"source_url": "https://en.wikipedia.org/wiki/Mulberry_Group"
 },
 {
 "word": "Murano",
@@ -7339,6 +7996,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Naked_Juice"
 },
 {
+"word": "Nala",
+"kind": "name",
+"brand": "Nala character",
+"owner": "Disney",
+"launch_year": 1994,
+"original_meaning": "A given name",
+"source_url": "https://en.wikipedia.org/wiki/Nala_(The_Lion_King)"
+},
+{
 "word": "Napster",
 "kind": "rare",
 "brand": "Napster",
@@ -7346,6 +8012,24 @@
 "launch_year": 1999,
 "original_meaning": "A person who naps",
 "source_url": "https://en.wikipedia.org/wiki/Napster"
+},
+{
+"word": "Nation",
+"kind": "common",
+"brand": "The Nation",
+"owner": "The Nation Company",
+"launch_year": 1865,
+"original_meaning": "A people forming a political community",
+"source_url": "https://en.wikipedia.org/wiki/The_Nation"
+},
+{
+"word": "Nationwide",
+"kind": "common",
+"brand": "Nationwide building society",
+"owner": "Nationwide Building Society",
+"launch_year": 1970,
+"original_meaning": "Extending throughout a nation",
+"source_url": "https://en.wikipedia.org/wiki/Nationwide_Building_Society"
 },
 {
 "word": "natter",
@@ -7356,6 +8040,15 @@
 "original_meaning": "To chat casually or at length.",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Natter_%28social_network%29"
+},
+{
+"word": "Nature",
+"kind": "common",
+"brand": "Nature journal",
+"owner": "Springer Nature",
+"launch_year": 1869,
+"original_meaning": "The physical world and its living things",
+"source_url": "https://en.wikipedia.org/wiki/Nature_(journal)"
 },
 {
 "word": "Nautica",
@@ -7516,6 +8209,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Kia_Niro"
 },
 {
+"word": "Nirvana",
+"kind": "common",
+"brand": "Nirvana rock band",
+"owner": "Nirvana LLC",
+"launch_year": 1987,
+"original_meaning": "Liberation from suffering and rebirth in Buddhism",
+"source_url": "https://en.wikipedia.org/wiki/Nirvana_(band)"
+},
+{
 "word": "nivea",
 "kind": "common",
 "brand": "Nivea",
@@ -7639,6 +8341,24 @@
 "source_url": "https://en.wikipedia.org/wiki/Oasis_(drink)"
 },
 {
+"word": "Oblivion",
+"kind": "common",
+"brand": "The Elder Scrolls IV: Oblivion",
+"owner": "Bethesda Softworks",
+"launch_year": 2006,
+"original_meaning": "The state of being forgotten or unaware",
+"source_url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_IV:_Oblivion"
+},
+{
+"word": "Observer",
+"kind": "common",
+"brand": "The Observer",
+"owner": "Tortoise Media",
+"launch_year": 1791,
+"original_meaning": "A person who watches or notices",
+"source_url": "https://en.wikipedia.org/wiki/The_Observer"
+},
+{
 "word": "Obsidian",
 "kind": "common",
 "brand": "Obsidian",
@@ -7723,6 +8443,15 @@
 "source_url": "https://www.globenewswire.com/news-release/2012/02/01/1204175/0/en/Okta-Caps-Incredible-First-Year-by-Tripling-Their-Customer-Base-and-Adding-Key-New-Executives-to-Their-Leadership-Team.html"
 },
 {
+"word": "Ola",
+"kind": "name",
+"brand": "Ola ride-hailing",
+"owner": "Ola Consumer",
+"launch_year": 2011,
+"original_meaning": "A given name used in several cultures",
+"source_url": "https://en.wikipedia.org/wiki/Ola_Consumer"
+},
+{
 "word": "olaf",
 "kind": "name",
 "brand": "Olaf from Frozen",
@@ -7759,6 +8488,15 @@
 "launch_year": 1894,
 "original_meaning": "The last letter of the Greek alphabet.",
 "source_url": "https://en.wikipedia.org/wiki/Omega_SA"
+},
+{
+"word": "Onion",
+"kind": "common",
+"brand": "The Onion",
+"owner": "Global Tetrahedron",
+"launch_year": 1988,
+"original_meaning": "A pungent edible bulb",
+"source_url": "https://en.wikipedia.org/wiki/The_Onion"
 },
 {
 "word": "onkyo",
@@ -7938,6 +8676,15 @@
 "source_url": "https://services.israelpost.co.il/postboolaee.nsf/all/4BDC2D52F84627E8C2258916003E3AC8/%24file/%D7%A2%D7%9C%D7%95%D7%9F%20%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%96%D7%95%D7%9F.pdf"
 },
 {
+"word": "Othello",
+"kind": "name",
+"brand": "Othello board game",
+"owner": "MegaHouse",
+"launch_year": 1973,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Reversi"
+},
+{
 "word": "otter",
 "kind": "common",
 "brand": "Otter",
@@ -7973,6 +8720,42 @@
 "launch_year": 2016,
 "original_meaning": "Protective surveillance of an area",
 "source_url": "https://en.wikipedia.org/wiki/Overwatch_(video_game)"
+},
+{
+"word": "Oxygen",
+"kind": "common",
+"brand": "Oxygen television channel",
+"owner": "NBCUniversal",
+"launch_year": 2000,
+"original_meaning": "A chemical element essential to most animal life",
+"source_url": "https://en.wikipedia.org/wiki/Oxygen_(TV_channel)"
+},
+{
+"word": "Oyster",
+"kind": "common",
+"brand": "Oyster transport card",
+"owner": "Transport for London",
+"launch_year": 2003,
+"original_meaning": "A marine mollusc with a hinged shell",
+"source_url": "https://en.wikipedia.org/wiki/Oyster_card"
+},
+{
+"word": "Pacman",
+"kind": "rare",
+"brand": "Pac-Man video game",
+"owner": "Bandai Namco Entertainment",
+"launch_year": 1980,
+"original_meaning": "A man who packs things",
+"source_url": "https://en.wikipedia.org/wiki/Pac-Man"
+},
+{
+"word": "Paddington",
+"kind": "name",
+"brand": "Paddington Bear character",
+"owner": "StudioCanal",
+"launch_year": 1958,
+"original_meaning": "A London place name",
+"source_url": "https://en.wikipedia.org/wiki/Paddington_Bear"
 },
 {
 "word": "Paint",
@@ -8131,6 +8914,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Nissan_Pathfinder"
 },
 {
+"word": "Patron",
+"kind": "common",
+"brand": "Patr\u00f3n tequila",
+"owner": "Bacardi",
+"launch_year": 1989,
+"original_meaning": "A customer, supporter, or sponsor",
+"source_url": "https://en.wikipedia.org/wiki/Patr%C3%B3n"
+},
+{
 "word": "payday",
 "kind": "common",
 "brand": "PayDay",
@@ -8252,6 +9044,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Pentium"
 },
 {
+"word": "People",
+"kind": "common",
+"brand": "People magazine",
+"owner": "People Inc.",
+"launch_year": 1974,
+"original_meaning": "Human beings collectively",
+"source_url": "https://en.wikipedia.org/wiki/People_(magazine)"
+},
+{
 "word": "Perfection",
 "kind": "common",
 "brand": "Perfection",
@@ -8299,6 +9100,15 @@
 "source_url": "https://persephonebooks.co.uk/pages/about-us"
 },
 {
+"word": "Persona",
+"kind": "common",
+"brand": "Persona video game series",
+"owner": "Atlus",
+"launch_year": 1996,
+"original_meaning": "A public image or assumed character",
+"source_url": "https://en.wikipedia.org/wiki/Persona_(series)"
+},
+{
 "word": "pesa",
 "kind": "common",
 "brand": "M-PESA",
@@ -8335,6 +9145,15 @@
 "launch_year": 1880,
 "original_meaning": "A city in Pennsylvania.",
 "source_url": "https://en.wikipedia.org/wiki/Philadelphia_Cream_Cheese"
+},
+{
+"word": "Phoebe",
+"kind": "name",
+"brand": "Phoebe Buffay character",
+"owner": "Warner Bros. Television",
+"launch_year": 1994,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Phoebe_Buffay"
 },
 {
 "word": "phoenix",
@@ -8410,6 +9229,15 @@
 "source_url": "https://en.wikipedia.org/wiki/PalmPilot"
 },
 {
+"word": "Pinocchio",
+"kind": "name",
+"brand": "Pinocchio character",
+"owner": "Public domain",
+"launch_year": 1881,
+"original_meaning": "A Tuscan given name",
+"source_url": "https://en.wikipedia.org/wiki/Pinocchio"
+},
+{
 "word": "Pinterest",
 "kind": "rare",
 "brand": "Pinterest",
@@ -8436,6 +9264,15 @@
 "original_meaning": "People who play pipes",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Pipers_Crisps"
+},
+{
+"word": "Pitchfork",
+"kind": "common",
+"brand": "Pitchfork",
+"owner": "Cond\u00e9 Nast",
+"launch_year": 1996,
+"original_meaning": "A forked tool for lifting hay",
+"source_url": "https://en.wikipedia.org/wiki/Pitchfork_(website)"
 },
 {
 "word": "Pivotal",
@@ -8577,6 +9414,15 @@
 "source_url": "https://techcrunch.com/2023/02/06/quora-opens-its-new-ai-chatbot-app-poe-to-the-general-public/"
 },
 {
+"word": "Poetry",
+"kind": "common",
+"brand": "Poetry magazine",
+"owner": "Poetry Foundation",
+"launch_year": 1912,
+"original_meaning": "Literary writing using verse",
+"source_url": "https://en.wikipedia.org/wiki/Poetry_(magazine)"
+},
+{
 "word": "poise",
 "kind": "common",
 "brand": "Poise",
@@ -8622,6 +9468,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Volkswagen_Polo"
 },
 {
+"word": "polo",
+"kind": "common",
+"brand": "Polo Ralph Lauren",
+"owner": "Ralph Lauren Corporation",
+"launch_year": 1968,
+"original_meaning": "Polo is a team sport played on horseback in which players strike a ball with mallets.",
+"source_url": "https://en.wikipedia.org/wiki/Ralph_Lauren_Corporation"
+},
+{
 "word": "Pong",
 "kind": "common",
 "brand": "Pong",
@@ -8638,6 +9493,15 @@
 "launch_year": 1926,
 "original_meaning": "The name of an eighteenth-century Odawa leader.",
 "source_url": "https://en.wikipedia.org/wiki/Pontiac"
+},
+{
+"word": "Pooh",
+"kind": "common",
+"brand": "Winnie-the-Pooh character",
+"owner": "Disney",
+"launch_year": 1926,
+"original_meaning": "An exclamation of contempt or disgust",
+"source_url": "https://en.wikipedia.org/wiki/Winnie-the-Pooh"
 },
 {
 "word": "pop",
@@ -8657,6 +9521,15 @@
 "launch_year": 2007,
 "original_meaning": "Chips made by popping.",
 "source_url": "https://en.wikipedia.org/wiki/Popchips"
+},
+{
+"word": "Popeye",
+"kind": "common",
+"brand": "Popeye character",
+"owner": "King Features Syndicate",
+"launch_year": 1929,
+"original_meaning": "A bulging eye",
+"source_url": "https://en.wikipedia.org/wiki/Popeye"
 },
 {
 "word": "Popeyes",
@@ -8915,6 +9788,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Prudential_plc"
 },
 {
+"word": "Psycho",
+"kind": "common",
+"brand": "Psycho film",
+"owner": "Universal Pictures",
+"launch_year": 1960,
+"original_meaning": "A person considered mentally unstable or violent",
+"source_url": "https://en.wikipedia.org/wiki/Psycho_(1960_film)"
+},
+{
 "word": "Publisher",
 "kind": "common",
 "brand": "Microsoft Publisher",
@@ -8941,6 +9823,15 @@
 "launch_year": 1960,
 "original_meaning": "Short bursts of air or breath.",
 "source_url": "https://en.wikipedia.org/wiki/Puffs"
+},
+{
+"word": "Pulp",
+"kind": "common",
+"brand": "Pulp rock band",
+"owner": "Pulp",
+"launch_year": 1978,
+"original_meaning": "Soft, moist, shapeless material",
+"source_url": "https://en.wikipedia.org/wiki/Pulp_(band)"
 },
 {
 "word": "Pulsar",
@@ -9080,6 +9971,15 @@
 "launch_year": 1968,
 "original_meaning": "Eighth notes in music.",
 "source_url": "https://en.wikipedia.org/wiki/Quavers"
+},
+{
+"word": "Queen",
+"kind": "common",
+"brand": "Queen rock band",
+"owner": "Queen Productions",
+"launch_year": 1970,
+"original_meaning": "A female monarch",
+"source_url": "https://en.wikipedia.org/wiki/Queen_(band)"
 },
 {
 "word": "Quest",
@@ -9241,6 +10141,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)"
 },
 {
+"word": "Rapunzel",
+"kind": "common",
+"brand": "Rapunzel fairy-tale character",
+"owner": "Public domain",
+"launch_year": 1812,
+"original_meaning": "A plant with edible leaves or roots",
+"source_url": "https://en.wikipedia.org/wiki/Rapunzel"
+},
+{
 "word": "Razer",
 "kind": "rare",
 "brand": "Razer",
@@ -9294,6 +10203,15 @@
 "original_meaning": "A southern African antelope.",
 "group_guess": "taken",
 "source_url": "https://www.footasylum.com/the-lowdown/lowdown-brand-history-reebok/"
+},
+{
+"word": "Regal",
+"kind": "common",
+"brand": "Regal cinemas",
+"owner": "Cineworld",
+"launch_year": 1989,
+"original_meaning": "Royal or fit for a monarch",
+"source_url": "https://en.wikipedia.org/wiki/Regal_Cinemas"
 },
 {
 "word": "regions",
@@ -9525,6 +10443,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Rockstar_(drink)"
 },
 {
+"word": "Rocky",
+"kind": "common",
+"brand": "Rocky film series",
+"owner": "Amazon MGM Studios",
+"launch_year": 1976,
+"original_meaning": "Covered with rocks",
+"source_url": "https://en.wikipedia.org/wiki/Rocky"
+},
+{
 "word": "Rogue",
 "kind": "common",
 "brand": "Nissan Rogue",
@@ -9598,6 +10525,24 @@
 "source_url": "https://en.wikipedia.org/wiki/Roundup_(herbicide)"
 },
 {
+"word": "Rover",
+"kind": "common",
+"brand": "Rover character in Animal Crossing",
+"owner": "Nintendo",
+"launch_year": 2001,
+"original_meaning": "A person or animal that wanders",
+"source_url": "https://en.wikipedia.org/wiki/Animal_Crossing_(video_game)"
+},
+{
+"word": "Rover",
+"kind": "common",
+"brand": "Rover vehicles",
+"owner": "Jaguar Land Rover",
+"launch_year": 1885,
+"original_meaning": "A person or thing that wanders",
+"source_url": "https://en.wikipedia.org/wiki/Rover_%28marque%29"
+},
+{
 "word": "Ruby",
 "kind": "common",
 "brand": "Ruby",
@@ -9623,6 +10568,15 @@
 "launch_year": 2018,
 "original_meaning": "A strip used for aircraft takeoffs and landings.",
 "source_url": "https://salesforceventures.com/perspectives/welcome-runway/"
+},
+{
+"word": "Rush",
+"kind": "common",
+"brand": "Rush rock band",
+"owner": "Rush",
+"launch_year": 1968,
+"original_meaning": "To move with great speed",
+"source_url": "https://en.wikipedia.org/wiki/Rush_(band)"
 },
 {
 "word": "Rust",
@@ -9689,6 +10643,15 @@
 "source_url": "https://www.sage.com/en-ie/company/about-sage/how-we-started/"
 },
 {
+"word": "Salon",
+"kind": "common",
+"brand": "Salon",
+"owner": "Salon.com, LLC",
+"launch_year": 1995,
+"original_meaning": "A gathering or establishment for social or artistic activity",
+"source_url": "https://en.wikipedia.org/wiki/Salon.com"
+},
+{
 "word": "samba",
 "kind": "common",
 "brand": "Samba",
@@ -9707,6 +10670,15 @@
 "original_meaning": "Korean for three stars",
 "group_guess": "taken",
 "source_url": "https://www.samsung.com/in/business/about-us/brand-identity/heritage/"
+},
+{
+"word": "Samus",
+"kind": "name",
+"brand": "Samus Aran character",
+"owner": "Nintendo",
+"launch_year": 1986,
+"original_meaning": "A variant of the given name Seamus",
+"source_url": "https://en.wikipedia.org/wiki/Samus_Aran"
 },
 {
 "word": "santander",
@@ -9766,6 +10738,15 @@
 "source_url": "https://en.wikipedia.org/wiki/List_of_Plymouth_vehicles"
 },
 {
+"word": "Science",
+"kind": "common",
+"brand": "Science journal",
+"owner": "American Association for the Advancement of Science",
+"launch_year": 1880,
+"original_meaning": "Systematic study of the natural world",
+"source_url": "https://en.wikipedia.org/wiki/Science_(journal)"
+},
+{
 "word": "scion",
 "kind": "common",
 "brand": "Scion",
@@ -9792,6 +10773,15 @@
 "launch_year": 2012,
 "original_meaning": "To move quickly.",
 "source_url": "https://en.wikipedia.org/wiki/Scoot"
+},
+{
+"word": "Scooter",
+"kind": "common",
+"brand": "Scooter Muppet character",
+"owner": "Disney",
+"launch_year": 1976,
+"original_meaning": "A small two-wheeled vehicle",
+"source_url": "https://en.wikipedia.org/wiki/Scooter_(Muppet)"
 },
 {
 "word": "scott",
@@ -9830,6 +10820,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Sears"
 },
 {
+"word": "Seat",
+"kind": "common",
+"brand": "SEAT cars",
+"owner": "Volkswagen Group",
+"launch_year": 1953,
+"original_meaning": "Something to sit on",
+"source_url": "https://en.wikipedia.org/wiki/SEAT"
+},
+{
 "word": "Secret",
 "kind": "common",
 "brand": "Secret",
@@ -9857,6 +10856,15 @@
 "original_meaning": "Japanese: precision or exquisite workmanship",
 "group_guess": "taken",
 "source_url": "https://www.seikowatches.com/global-en/special/heritage/index.html"
+},
+{
+"word": "Seinfeld",
+"kind": "name",
+"brand": "Seinfeld television series",
+"owner": "Sony Pictures Television",
+"launch_year": 1989,
+"original_meaning": "A surname",
+"source_url": "https://en.wikipedia.org/wiki/Seinfeld"
 },
 {
 "word": "Sentra",
@@ -9951,6 +10959,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Shazam_(application)"
 },
 {
+"word": "Sheldon",
+"kind": "name",
+"brand": "Sheldon Cooper character",
+"owner": "Warner Bros. Television",
+"launch_year": 2007,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Sheldon_Cooper"
+},
+{
 "word": "Shell",
 "kind": "common",
 "brand": "Shell",
@@ -9958,6 +10975,15 @@
 "launch_year": 1907,
 "original_meaning": "A hard outer covering.",
 "source_url": "https://en.wikipedia.org/wiki/Shell_plc"
+},
+{
+"word": "Sherlock",
+"kind": "name",
+"brand": "Sherlock Holmes character",
+"owner": "Public domain",
+"launch_year": 1887,
+"original_meaning": "A surname",
+"source_url": "https://en.wikipedia.org/wiki/Sherlock_Holmes"
 },
 {
 "word": "Shopify",
@@ -10062,6 +11088,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Chevrolet_Silverado"
 },
 {
+"word": "Simba",
+"kind": "common",
+"brand": "Simba character",
+"owner": "Disney",
+"launch_year": 1994,
+"original_meaning": "Lion in Swahili",
+"source_url": "https://en.wikipedia.org/wiki/Simba"
+},
+{
 "word": "Simple",
 "kind": "common",
 "brand": "Simple",
@@ -10135,6 +11170,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Skip_(detergent)"
 },
 {
+"word": "Skippy",
+"kind": "name",
+"brand": "Skippy peanut butter",
+"owner": "Hormel Foods",
+"launch_year": 1932,
+"original_meaning": "A nickname or given name",
+"source_url": "https://en.wikipedia.org/wiki/Skippy_%28peanut_butter%29"
+},
+{
 "word": "Skittles",
 "kind": "common",
 "brand": "Skittles",
@@ -10169,6 +11213,15 @@
 "launch_year": 1996,
 "original_meaning": "A fine-grained rock that splits into thin sheets.",
 "source_url": "https://en.wikipedia.org/wiki/Slate_(magazine)"
+},
+{
+"word": "Slice",
+"kind": "common",
+"brand": "Slice fruit drinks",
+"owner": "Suja Life and PepsiCo",
+"launch_year": 1984,
+"original_meaning": "A thin piece cut from something",
+"source_url": "https://en.wikipedia.org/wiki/Slice_%28drink%29"
 },
 {
 "word": "slingshot",
@@ -10252,6 +11305,15 @@
 "original_meaning": "Quiet, often disrespectful laughs.",
 "group_guess": "taken",
 "source_url": "https://www.snickers.com/our-story"
+},
+{
+"word": "Snoopy",
+"kind": "common",
+"brand": "Snoopy character",
+"owner": "Peanuts Worldwide",
+"launch_year": 1950,
+"original_meaning": "Inclined to pry into others' affairs",
+"source_url": "https://en.wikipedia.org/wiki/Snoopy"
 },
 {
 "word": "snowflake",
@@ -10465,6 +11527,24 @@
 "source_url": "https://en.wikipedia.org/wiki/Apache_Spark"
 },
 {
+"word": "Spectator",
+"kind": "common",
+"brand": "The Spectator",
+"owner": "Old Queen Street Ventures",
+"launch_year": 1828,
+"original_meaning": "A person watching an event",
+"source_url": "https://en.wikipedia.org/wiki/The_Spectator"
+},
+{
+"word": "Spin",
+"kind": "common",
+"brand": "Spin magazine",
+"owner": "Next Management Partners",
+"launch_year": 1985,
+"original_meaning": "To turn rapidly around an axis",
+"source_url": "https://en.wikipedia.org/wiki/Spin_(magazine)"
+},
+{
 "word": "Spirit",
 "kind": "common",
 "brand": "Spirit Airlines",
@@ -10508,6 +11588,15 @@
 "launch_year": 2006,
 "original_meaning": "A variant of spelunk",
 "source_url": "https://en.wikipedia.org/wiki/Splunk"
+},
+{
+"word": "SpongeBob",
+"kind": "rare",
+"brand": "SpongeBob SquarePants character",
+"owner": "Paramount Global",
+"launch_year": 1999,
+"original_meaning": "A person named Bob associated with a sponge",
+"source_url": "https://en.wikipedia.org/wiki/SpongeBob_SquarePants_(character)"
 },
 {
 "word": "spore",
@@ -10555,6 +11644,15 @@
 "original_meaning": "A small shoot or twig.",
 "group_guess": "failed",
 "source_url": "https://www.failory.com/cemetery/sprig"
+},
+{
+"word": "Spring",
+"kind": "common",
+"brand": "Spring software framework",
+"owner": "Broadcom",
+"launch_year": 2002,
+"original_meaning": "The season between winter and summer",
+"source_url": "https://en.wikipedia.org/wiki/Spring_Framework"
 },
 {
 "word": "sprint",
@@ -10685,6 +11783,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Stella_Artois"
 },
 {
+"word": "Sting",
+"kind": "common",
+"brand": "Sting energy drink",
+"owner": "PepsiCo",
+"launch_year": 2002,
+"original_meaning": "A sharp prick or painful sensation",
+"source_url": "https://en.wikipedia.org/wiki/Sting_Energy"
+},
+{
 "word": "Stinger",
 "kind": "common",
 "brand": "Kia Stinger",
@@ -10692,6 +11799,15 @@
 "launch_year": 2017,
 "original_meaning": "An organ that delivers a sting.",
 "source_url": "https://en.wikipedia.org/wiki/Kia_Stinger"
+},
+{
+"word": "Stitch",
+"kind": "common",
+"brand": "Stitch character",
+"owner": "Disney",
+"launch_year": 2002,
+"original_meaning": "A loop of thread made with a needle",
+"source_url": "https://en.wikipedia.org/wiki/Stitch_(Lilo_%26_Stitch)"
 },
 {
 "word": "Strava",
@@ -10954,6 +12070,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Surge_(drink)"
 },
 {
+"word": "Survivor",
+"kind": "common",
+"brand": "Survivor television franchise",
+"owner": "Banijay Entertainment",
+"launch_year": 1997,
+"original_meaning": "A person who remains alive after danger",
+"source_url": "https://en.wikipedia.org/wiki/Survivor_(franchise)"
+},
+{
 "word": "Swagger",
 "kind": "common",
 "brand": "Swagger",
@@ -11121,6 +12246,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Target_Corporation"
 },
 {
+"word": "Tarzan",
+"kind": "rare",
+"brand": "Tarzan character",
+"owner": "Edgar Rice Burroughs, Inc.",
+"launch_year": 1912,
+"original_meaning": "White skin in the character's fictional language",
+"source_url": "https://en.wikipedia.org/wiki/Tarzan"
+},
+{
 "word": "tatler",
 "kind": "rare",
 "brand": "Tatler",
@@ -11252,6 +12386,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Tesla%2C_Inc."
 },
 {
+"word": "Tetris",
+"kind": "rare",
+"brand": "Tetris video game",
+"owner": "The Tetris Company",
+"launch_year": 1984,
+"original_meaning": "Plural of the Greek-derived prefix tetra",
+"source_url": "https://en.wikipedia.org/wiki/Tetris"
+},
+{
 "word": "Teva",
 "kind": "common",
 "brand": "Teva sandals",
@@ -11289,6 +12432,15 @@
 "source_url": "https://en.wikipedia.org/wiki/ThinkPad"
 },
 {
+"word": "Thomas",
+"kind": "name",
+"brand": "Thomas the Tank Engine character",
+"owner": "Mattel",
+"launch_year": 1946,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Thomas_the_Tank_Engine"
+},
+{
 "word": "Threads",
 "kind": "common",
 "brand": "Threads",
@@ -11316,6 +12468,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Ford_Thunderbird"
 },
 {
+"word": "thunderbird",
+"kind": "rare",
+"brand": "Mozilla Thunderbird",
+"owner": "Mozilla Foundation",
+"launch_year": 2003,
+"original_meaning": "A thunderbird is a powerful supernatural bird in the traditions of several Indigenous peoples of North America.",
+"source_url": "https://en.wikipedia.org/wiki/Mozilla_Thunderbird"
+},
+{
 "word": "Tidal",
 "kind": "common",
 "brand": "Tidal",
@@ -11334,6 +12495,33 @@
 "source_url": "https://en.wikipedia.org/wiki/Tide_(brand)"
 },
 {
+"word": "Tiffany",
+"kind": "name",
+"brand": "Tiffany jewelry",
+"owner": "LVMH",
+"launch_year": 1853,
+"original_meaning": "A feminine given name",
+"source_url": "https://en.wikipedia.org/wiki/Tiffany_%26_Co."
+},
+{
+"word": "Tiger",
+"kind": "common",
+"brand": "Tiger beer",
+"owner": "Heineken Asia Pacific",
+"launch_year": 1932,
+"original_meaning": "A large striped wild cat",
+"source_url": "https://en.wikipedia.org/wiki/Tiger_Beer"
+},
+{
+"word": "Tigger",
+"kind": "rare",
+"brand": "Tigger character",
+"owner": "Disney",
+"launch_year": 1928,
+"original_meaning": "A person or thing that tigs",
+"source_url": "https://en.wikipedia.org/wiki/Tigger"
+},
+{
 "word": "tile",
 "kind": "common",
 "brand": "Tile",
@@ -11350,6 +12538,15 @@
 "launch_year": 1973,
 "original_meaning": "Land covered with trees suitable for timber.",
 "source_url": "https://en.wikipedia.org/wiki/Timberland_(company)"
+},
+{
+"word": "Time",
+"kind": "common",
+"brand": "Time magazine",
+"owner": "Marc and Lynne Benioff",
+"launch_year": 1923,
+"original_meaning": "The progression of events and duration",
+"source_url": "https://en.wikipedia.org/wiki/Time_(magazine)"
 },
 {
 "word": "Tinder",
@@ -11380,6 +12577,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Nissan_Titan"
 },
 {
+"word": "Titanic",
+"kind": "common",
+"brand": "Titanic film",
+"owner": "Paramount Pictures and 20th Century Studios",
+"launch_year": 1997,
+"original_meaning": "Of enormous size, strength, or power",
+"source_url": "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+},
+{
 "word": "titanium",
 "kind": "common",
 "brand": "Titanium SDK",
@@ -11388,6 +12594,15 @@
 "original_meaning": "A strong, lightweight metallic element.",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Titanium_SDK"
+},
+{
+"word": "Toad",
+"kind": "common",
+"brand": "Toad character",
+"owner": "Nintendo",
+"launch_year": 1985,
+"original_meaning": "A short-legged amphibian",
+"source_url": "https://en.wikipedia.org/wiki/Toad_(Nintendo)"
 },
 {
 "word": "Toast",
@@ -11433,6 +12648,24 @@
 "launch_year": 1947,
 "original_meaning": "A tropical tree or its fragrant seed.",
 "source_url": "https://en.wikipedia.org/wiki/Tonka"
+},
+{
+"word": "Tony",
+"kind": "name",
+"brand": "Tony Awards",
+"owner": "American Theatre Wing and The Broadway League",
+"launch_year": 1947,
+"original_meaning": "A masculine given name",
+"source_url": "https://en.wikipedia.org/wiki/Tony_Awards"
+},
+{
+"word": "Topic",
+"kind": "common",
+"brand": "Topic chocolate bar",
+"owner": "Mars",
+"launch_year": 1962,
+"original_meaning": "A subject of discussion",
+"source_url": "https://en.wikipedia.org/wiki/Topic_%28chocolate_bar%29"
 },
 {
 "word": "Tor",
@@ -11584,6 +12817,15 @@
 "source_url": "https://www.mondelezinternational.com/about-us/who-we-are/our-history/"
 },
 {
+"word": "Triumph",
+"kind": "common",
+"brand": "Triumph vehicles",
+"owner": "BMW",
+"launch_year": 1886,
+"original_meaning": "A great victory or achievement",
+"source_url": "https://en.wikipedia.org/wiki/Triumph_Motor_Company"
+},
+{
 "word": "Trojan",
 "kind": "common",
 "brand": "Trojan",
@@ -11666,6 +12908,24 @@
 "launch_year": 1999,
 "original_meaning": "A cold, treeless region.",
 "source_url": "https://en.wikipedia.org/wiki/Toyota_Tundra"
+},
+{
+"word": "Turtles",
+"kind": "common",
+"brand": "Turtles chocolates",
+"owner": "Y\u0131ld\u0131z Holding and Nestl\u00e9",
+"launch_year": 1918,
+"original_meaning": "Shelled reptiles",
+"source_url": "https://en.wikipedia.org/wiki/Turtles_%28chocolate%29"
+},
+{
+"word": "Twilight",
+"kind": "common",
+"brand": "Twilight film series",
+"owner": "Lionsgate",
+"launch_year": 2008,
+"original_meaning": "Dim light between daylight and darkness",
+"source_url": "https://en.wikipedia.org/wiki/The_Twilight_Saga_(film_series)"
 },
 {
 "word": "twirl",
@@ -11752,6 +13012,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Udemy"
 },
 {
+"word": "Uncharted",
+"kind": "common",
+"brand": "Uncharted video game series",
+"owner": "Sony Interactive Entertainment",
+"launch_year": 2007,
+"original_meaning": "Not mapped or explored",
+"source_url": "https://en.wikipedia.org/wiki/Uncharted"
+},
+{
 "word": "Undertale",
 "kind": "rare",
 "brand": "Undertale",
@@ -11777,6 +13046,15 @@
 "launch_year": 2005,
 "original_meaning": "The state of being joined together",
 "source_url": "https://en.wikipedia.org/wiki/Unity_(game_engine)"
+},
+{
+"word": "Universal",
+"kind": "common",
+"brand": "Universal Pictures",
+"owner": "Comcast",
+"launch_year": 1912,
+"original_meaning": "Applicable to all things or people",
+"source_url": "https://en.wikipedia.org/wiki/Universal_Pictures"
 },
 {
 "word": "Uno",
@@ -11851,6 +13129,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Vans"
 },
 {
+"word": "Variety",
+"kind": "common",
+"brand": "Variety magazine",
+"owner": "Penske Media Corporation",
+"launch_year": 1905,
+"original_meaning": "A range of different things",
+"source_url": "https://en.wikipedia.org/wiki/Variety_(magazine)"
+},
+{
 "word": "Vaseline",
 "kind": "rare",
 "brand": "Vaseline",
@@ -11916,6 +13203,15 @@
 "launch_year": 2020,
 "original_meaning": "A French place name",
 "source_url": "https://en.wikipedia.org/wiki/Vercel"
+},
+{
+"word": "Verge",
+"kind": "common",
+"brand": "The Verge",
+"owner": "Vox Media",
+"launch_year": 2011,
+"original_meaning": "The edge or brink of something",
+"source_url": "https://en.wikipedia.org/wiki/The_Verge"
 },
 {
 "word": "Versa",
@@ -12227,6 +13523,15 @@
 "source_url": "https://en.wikipedia.org/wiki/Walkers_(snack_foods)"
 },
 {
+"word": "Wallpaper",
+"kind": "common",
+"brand": "Wallpaper magazine",
+"owner": "Future plc",
+"launch_year": 1996,
+"original_meaning": "Decorative paper used to cover walls",
+"source_url": "https://en.wikipedia.org/wiki/Wallpaper*"
+},
+{
 "word": "warehouse",
 "kind": "common",
 "brand": "Warehouse",
@@ -12298,6 +13603,24 @@
 "launch_year": 2013,
 "original_meaning": "The movement of material through a web",
 "source_url": "https://en.wikipedia.org/wiki/Webflow"
+},
+{
+"word": "Wednesday",
+"kind": "common",
+"brand": "Wednesday television series",
+"owner": "Amazon MGM Studios",
+"launch_year": 2022,
+"original_meaning": "The day between Tuesday and Thursday",
+"source_url": "https://en.wikipedia.org/wiki/Wednesday_(TV_series)"
+},
+{
+"word": "Wednesday",
+"kind": "common",
+"brand": "Wednesday Addams character",
+"owner": "Tee and Charles Addams Foundation",
+"launch_year": 1938,
+"original_meaning": "The day between Tuesday and Thursday",
+"source_url": "https://en.wikipedia.org/wiki/Wednesday_Addams"
 },
 {
 "word": "Weebly",
@@ -12437,6 +13760,15 @@
 "launch_year": 2024,
 "original_meaning": "To sail on a board propelled by a sail.",
 "source_url": "https://en.wikipedia.org/wiki/Windsurf_(software)"
+},
+{
+"word": "Winnie",
+"kind": "name",
+"brand": "Winnie-the-Pooh character",
+"owner": "Disney",
+"launch_year": 1926,
+"original_meaning": "A given name",
+"source_url": "https://en.wikipedia.org/wiki/Winnie-the-Pooh"
 },
 {
 "word": "wired",
@@ -12614,6 +13946,15 @@
 "source_url": "https://www.yeti.com/stories/our-story.html"
 },
 {
+"word": "Yoshi",
+"kind": "name",
+"brand": "Yoshi character",
+"owner": "Nintendo",
+"launch_year": 1990,
+"original_meaning": "A Japanese given name",
+"source_url": "https://en.wikipedia.org/wiki/Yoshi"
+},
+{
 "word": "yup",
 "kind": "common",
 "brand": "YUP",
@@ -12668,6 +14009,15 @@
 "launch_year": 2017,
 "original_meaning": "A school of Buddhism emphasizing meditation",
 "source_url": "https://en.wikipedia.org/wiki/Zen_(microarchitecture)"
+},
+{
+"word": "Zenith",
+"kind": "common",
+"brand": "Zenith electronics",
+"owner": "LG Electronics",
+"launch_year": 1923,
+"original_meaning": "The highest point",
+"source_url": "https://en.wikipedia.org/wiki/Zenith_Electronics"
 },
 {
 "word": "zephyr",

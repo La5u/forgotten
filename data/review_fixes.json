@@ -667,6 +667,261 @@
    "source_url": "https://en.wikipedia.org/wiki/AFC_Ajax",
    "winner": "brand",
    "reason": "The Amsterdam club is the best-known Ajax today, ahead of the Greek hero."
+  },
+  "nationwide": {
+   "brand": "Nationwide"
+  },
+  "emmy": {
+   "brand": "Emmy"
+  },
+  "corgi": {
+   "brand": "Corgi"
+  },
+  "house": {
+   "brand": "House"
+  },
+  "halifax": {
+   "brand": "Halifax"
+  },
+  "bobcat": {
+   "brand": "Bobcat"
+  },
+  "mirage": {
+   "brand": "Mirage"
+  },
+  "turtles": {
+   "brand": "Turtles"
+  },
+  "argos": {
+   "brand": "Argos"
+  },
+  "uncharted": {
+   "brand": "Uncharted"
+  },
+  "jeep": {
+   "brand": "Jeep"
+  },
+  "friends": {
+   "brand": "Friends"
+  },
+  "tiger": {
+   "brand": "Tiger"
+  },
+  "cosmopolitan": {
+   "brand": "Cosmopolitan"
+  },
+  "arthur": {
+   "brand": "Arthur"
+  },
+  "cell": {
+   "brand": "Cell"
+  },
+  "monsoon": {
+   "brand": "Monsoon"
+  },
+  "nature": {
+   "brand": "Nature"
+  },
+  "fox": {
+   "brand": "Fox"
+  },
+  "esquire": {
+   "brand": "Esquire"
+  },
+  "commodore": {
+   "brand": "Commodore"
+  },
+  "mastodon": {
+   "brand": "Mastodon"
+  },
+  "people": {
+   "brand": "People"
+  },
+  "essence": {
+   "brand": "Essence"
+  },
+  "dish": {
+   "brand": "DISH"
+  },
+  "twilight": {
+   "brand": "Twilight"
+  },
+  "fortune": {
+   "brand": "Fortune"
+  },
+  "spin": {
+   "brand": "Spin"
+  },
+  "mastermind": {
+   "brand": "Mastermind"
+  },
+  "triumph": {
+   "brand": "Triumph"
+  },
+  "holden": {
+   "brand": "Holden"
+  },
+  "nala": {
+   "brand": "Nala"
+  },
+  "slice": {
+   "brand": "Slice"
+  },
+  "fireball": {
+   "brand": "Fireball"
+  },
+  "spring": {
+   "brand": "Spring"
+  },
+  "thunderbird": {
+   "brand": "Thunderbird"
+  },
+  "caillou": {
+   "brand": "Caillou"
+  },
+  "interview": {
+   "brand": "Interview"
+  },
+  "skippy": {
+   "brand": "Skippy"
+  },
+  "oxygen": {
+   "brand": "Oxygen"
+  },
+  "dune": {
+   "brand": "Dune"
+  },
+  "zenith": {
+   "brand": "Zenith"
+  },
+  "regal": {
+   "brand": "Regal"
+  },
+  "science": {
+   "brand": "Science"
+  },
+  "mulberry": {
+   "brand": "Mulberry"
+  },
+  "billboard": {
+   "brand": "Billboard"
+  },
+  "goldfish": {
+   "brand": "Goldfish"
+  },
+  "patron": {
+   "brand": "Patrón"
+  },
+  "glamour": {
+   "brand": "Glamour"
+  },
+  "bowser": {
+   "brand": "Bowser"
+  },
+  "hitman": {
+   "brand": "Hitman"
+  },
+  "variety": {
+   "brand": "Variety"
+  },
+  "link": {
+   "brand": "Link"
+  },
+  "topic": {
+   "brand": "Topic"
+  },
+  "seat": {
+   "brand": "SEAT"
+  },
+  "bournville": {
+   "brand": "Bournville"
+  },
+  "persona": {
+   "brand": "Persona"
+  },
+  "othello": {
+   "brand": "Othello"
+  },
+  "avon": {
+   "brand": "Avon"
+  },
+  "wallpaper": {
+   "brand": "Wallpaper"
+  },
+  "gopher": {
+   "brand": "Gopher"
+  },
+  "lost": {
+   "brand": "Lost"
+  },
+  "jaws": {
+   "brand": "Jaws"
+  },
+  "history": {
+   "brand": "History"
+  },
+  "habitat": {
+   "brand": "Habitat"
+  },
+  "honor": {
+   "brand": "Honor"
+  },
+  "ola": {
+   "brand": "Ola"
+  },
+  "allure": {
+   "brand": "Allure"
+  },
+  "polo": {
+   "brand": "Polo"
+  },
+  "maestro": {
+   "brand": "Maestro"
+  },
+  "dexter": {
+   "brand": "Dexter"
+  },
+  "bluey": {
+   "brand": "Bluey"
+  },
+  "beefeater": {
+   "brand": "Beefeater"
+  },
+  "poetry": {
+   "brand": "Poetry"
+  },
+  "kingfisher": {
+   "brand": "Kingfisher"
+  },
+  "sting": {
+   "brand": "Sting"
+  },
+  "tony": {
+   "brand": "Tony"
+  },
+  "tiffany": {
+   "brand": "Tiffany & Co."
+  },
+  "time": {
+   "brand": "Time"
+  },
+  "oblivion": {
+   "brand": "Oblivion"
+  },
+  "bambi": {
+   "brand": "Bambi"
+  },
+  "survivor": {
+   "brand": "Survivor"
+  },
+  "grease": {
+   "brand": "Grease"
+  },
+  "rover": {
+   "brand": "Rover"
+  },
+  "oyster": {
+   "brand": "Oyster"
   }
  },
  "reject": [

@@ -5,6 +5,7 @@ import json, os, time, urllib.parse
 import requests
 UA = {'User-Agent': 'forgotten-research/0.1 (https://github.com/la5u/forgotten)'}
 V = json.load(open('data/raw/pageviews.json'))
+short = json.load(open('data/raw/short_redirects.json')) if os.path.exists('data/raw/short_redirects.json') else {}
 C = 'data/raw/redirect_views.json'; cache = json.load(open(C)) if os.path.exists(C) else {}
 def flagged(s):
     xs = [s[k] for k in sorted(s)]
@@ -32,7 +33,8 @@ json.dump(cache, open(C, 'w'))
 out = {}
 for t, s in V.items():
     m = dict(s)
-    for rs in cache.get(t, {}).values():
+    for rt, rs in cache.get(t, {}).items():
+        if rt in short.get(t, {}).get('redirects', []): continue
         for k, x in rs.items(): m[k] = m.get(k, 0) + x
     out[t] = m
 json.dump(out, open('data/raw/pageviews_merged.json', 'w'))

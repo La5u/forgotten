@@ -3,6 +3,7 @@ import glob, json, collections, re
 rows = {(r['word'].lower(), r['brand'].lower()): r for r in json.load(open('data/classified.json'))}
 bad = 0
 # Eponyms the judge rejected but whose word has its own everyday meaning that the brand now competes with (2026-11-09).
+import sys; sys.path.insert(0, 'scripts'); from merge_preferences import PREFERRED
 KEEP_EPONYM = {'ford', 'dodge', 'dell', 'miller'}
 for p in sorted(glob.glob('data/raw/judge/*.jsonl')):
     for l in open(p):
@@ -19,7 +20,7 @@ best = {}
 for r in rows.values():
     if r.get('judged') and r['group'] != 'reject':
         w = r['word'].lower()
-        if w not in best or (r['brand_views'] or 0) > (best[w]['brand_views'] or 0):
+        if w not in best or (r['brand'].lower() == PREFERRED.get(w, '').lower(), r['brand_views'] or 0) > (best[w]['brand'].lower() == PREFERRED.get(w, '').lower(), best[w]['brand_views'] or 0):
             best[w] = r
 out = sorted(best.values(), key=lambda r: r['word'].lower())
 json.dump(out, open('data/judged.json', 'w'), indent=0)

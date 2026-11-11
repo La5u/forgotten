@@ -1,6 +1,7 @@
 """Join mapped pairs with pageviews and assign taken / contested / failed / unknown. Writes data/classified.json."""
 # 2026-11-09: no longer requires the brand to be named after the word (Python, Mac, Hummer still take it).
-import glob, json, statistics as st
+import json, statistics as st, sys
+sys.path.insert(0, 'scripts'); from wiki_mappings import mappings
 OWNER_KEEP = {'slack', 'fortnite'}  # from the original README
 FAME = 4000          # median monthly brand views over the last 24 months
 TAKEN = 0.70         # brand share of brand + original views
@@ -12,28 +13,24 @@ def med(t):
     v = views.get(t) if t else None
     return st.median(v.get(m, 0) for m in recent) if v else None
 out = {}
-for p in glob.glob('data/raw/wiki_map/*.jsonl'):
-    for l in open(p):
-        if not l.startswith('{'):
-            continue
-        m = json.loads(l); k = (m['word'].lower(), m['brand'].lower())
-        c = cand.get(k)
-        if not c or (m['word'].lower() not in OWNER_KEEP and not m.get('is_real_prior_word')):
-            continue
-        b, o = med(m.get('brand_article')), med(m.get('original_article'))
-        share = b/(b+o) if b is not None and o is not None and b+o else None
-        if b is None:
-            g = 'unknown'
-        elif b < FAME:
-            g = 'failed'
-        elif share is None:
-            g = 'unknown'
-        elif share >= TAKEN:
-            g = 'taken'
-        else:
-            g = 'contested'
-        out[k] = {**c, 'brand_article': titles.get(m.get('brand_article')), 'original_article': titles.get(m.get('original_article')),
-                  'brand_views': b, 'original_views': o, 'brand_share': share, 'group': g}
+for k, m in mappings().items():
+    c = cand.get(k)
+    if not c or (m['word'].lower() not in OWNER_KEEP and not m.get('is_real_prior_word')):
+        continue
+    b, o = med(m.get('brand_article')), med(m.get('original_article'))
+    share = b/(b+o) if b is not None and o is not None and b+o else None
+    if b is None:
+        g = 'unknown'
+    elif b < FAME:
+        g = 'failed'
+    elif share is None:
+        g = 'unknown'
+    elif share >= TAKEN:
+        g = 'taken'
+    else:
+        g = 'contested'
+    out[k] = {**c, 'brand_article': titles.get(m.get('brand_article')), 'original_article': titles.get(m.get('original_article')),
+              'brand_views': b, 'original_views': o, 'brand_share': share, 'group': g}
 rows = sorted(out.values(), key=lambda r: r['word'].lower())
 json.dump(rows, open('data/classified.json', 'w'), indent=0)
 import collections

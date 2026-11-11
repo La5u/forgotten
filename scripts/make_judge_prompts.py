@@ -19,11 +19,12 @@ for p in glob.glob('data/raw/judge/*.jsonl'):
 rows = [r for r in rows if (r['word'].lower(), r['brand'].lower()) not in done]
 P = '''You are the final editor of a dataset of real words and names claimed by companies. Decide each entry using the signals and your knowledge.
 Groups:
-taken: an ordinary English speaker today thinks of the brand first and the old meaning has become rare or niche (Alexa, Tinder as a word for kindling, Fortnite).
-contested: both meanings stay in heavy everyday use (apple, amazon, target, meta). Say who is winning.
-failed: a genuine company or product claimed the word but never became what people think of first, including dead, faded or obscure ones (Echo-scale fame does not belong here, that is contested with original winning).
-watching: launched 2021 or later, too early to judge.
-reject: fictional characters with no company behind the name, coincidences, invented coinages that were never a word or name in any language (Canva, Bitbucket, Moodle), founder surnames, or anything where you cannot name a real company or product.
+taken: the brand or character comes to mind first for the general public, ahead of the original meaning.
+contested: neither the brand or character nor the original meaning clearly comes first. Say who is winning.
+failed: the brand or character claimed the word but the original meaning still clearly comes first, whether the brand is alive or dead.
+watching: too new to judge.
+Include fictional characters (such as Batman, Chucky, Elmo and Kermit) even without a company behind the name. Include a brand only if the public calls it by the bare word; choose the most popular eligible brand per word.
+reject: coincidences, invented coinages that were never a word or name in any language (Canva, Bitbucket, Moodle), founder surnames, or entries that are neither a character nor a real company or product.
 Traffic reflects what people look up, so companies are over-counted against everyday words: never mark a common everyday word as taken on traffic alone.
 Signals: bv = median monthly Wikipedia views of the brand page, ov = of the original meaning page, share = bv/(bv+ov), caps = share of the capitalized form in Google Books before launch and in 2020-22.
 Output only JSON Lines, one object per input, no prose, keys: word, brand, group, winner (brand|original|even), confidence (high|medium|low), reason (under 20 words, plain and specific, no jokes).
