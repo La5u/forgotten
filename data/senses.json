@@ -1,0 +1,180 @@
+{
+  "ada": [
+    {
+      "brand": "Ada",
+      "owner": "Jean Ichbiah and the U.S. Department of Defense",
+      "launch_year": 1980,
+      "what": "a programming language",
+      "views": 14161,
+      "article": "Ada (programming language)"
+    }
+  ],
+  "arrow": [
+    {
+      "brand": "Arrow",
+      "owner": "Warner Bros. Television",
+      "launch_year": 2012,
+      "what": "a superhero television series",
+      "views": 42795.0,
+      "article": "Arrow (TV series)"
+    }
+  ],
+  "boost": [
+    {
+      "brand": "Boost Mobile",
+      "owner": "EchoStar",
+      "launch_year": 2000,
+      "what": "a mobile phone service",
+      "views": 8885.0,
+      "article": "Boost Mobile"
+    }
+  ],
+  "copilot": [
+    {
+      "brand": "Microsoft Copilot",
+      "owner": "Microsoft",
+      "launch_year": 2023,
+      "what": "an artificial intelligence assistant",
+      "views": 53275,
+      "article": "Microsoft Copilot"
+    }
+  ],
+  "flash": [
+    {
+      "brand": "Adobe Flash",
+      "owner": "Adobe",
+      "launch_year": 1996,
+      "what": "a multimedia software platform",
+      "views": 17318.0,
+      "article": "Adobe Flash"
+    }
+  ],
+  "genesis": [
+    {
+      "brand": "Genesis",
+      "owner": "Genesis",
+      "launch_year": 1967,
+      "what": "an English rock band",
+      "views": 101590,
+      "article": "Genesis (band)"
+    },
+    {
+      "brand": "Genesis",
+      "owner": "Hyundai Motor Company",
+      "launch_year": 2015,
+      "what": "a luxury car brand",
+      "views": 29005.5,
+      "article": "Genesis Motor"
+    }
+  ],
+  "lex": [
+    {
+      "brand": "Lex Luthor",
+      "owner": "DC Comics",
+      "launch_year": 1940,
+      "what": "a comic-book supervillain",
+      "views": 27166.0,
+      "article": "Lex Luthor"
+    }
+  ],
+  "mint": [
+    {
+      "brand": "Mint Mobile",
+      "owner": "T-Mobile US",
+      "launch_year": 2016,
+      "what": "a mobile phone service",
+      "views": 9789.0,
+      "article": "Mint Mobile"
+    }
+  ],
+  "nova": [
+    {
+      "brand": "Nova",
+      "owner": "GBH",
+      "launch_year": 1974,
+      "what": "a science documentary television series",
+      "views": 4218.5,
+      "article": "Nova (American TV program)"
+    }
+  ],
+  "pilot": [
+    {
+      "brand": "Pilot",
+      "owner": "Pilot Corporation",
+      "launch_year": 1918,
+      "what": "a Japanese pen manufacturer",
+      "views": 3663.5,
+      "article": "Pilot (pen company)"
+    }
+  ],
+  "prado": [
+    {
+      "brand": "Prado Museum",
+      "owner": "Spanish state",
+      "launch_year": 1819,
+      "what": "an art museum in Madrid",
+      "views": 14179.0,
+      "article": "Museo del Prado"
+    }
+  ],
+  "prodigy": [
+    {
+      "brand": "The Prodigy",
+      "owner": "The Prodigy",
+      "launch_year": 1990,
+      "what": "an English electronic music group",
+      "views": 92278.0,
+      "article": "The Prodigy"
+    }
+  ],
+  "saturn": [
+    {
+      "brand": "Saturn",
+      "owner": "General Motors",
+      "launch_year": 1985,
+      "what": "an American automobile brand",
+      "views": 15456.5,
+      "article": "Saturn Corporation"
+    }
+  ],
+  "sublime": [
+    {
+      "brand": "Sublime",
+      "owner": "Sublime",
+      "launch_year": 1988,
+      "what": "an American rock band",
+      "views": 52455,
+      "article": "Sublime (band)"
+    }
+  ],
+  "sun": [
+    {
+      "brand": "The Sun",
+      "owner": "News UK",
+      "launch_year": 1964,
+      "what": "a British tabloid newspaper",
+      "views": 17295.5,
+      "article": "The Sun (United Kingdom)"
+    }
+  ],
+  "tomcat": [
+    {
+      "brand": "F-14 Tomcat",
+      "owner": "Grumman",
+      "launch_year": 1970,
+      "what": "a carrier-based fighter aircraft",
+      "views": 77324.0,
+      "article": "Grumman F-14 Tomcat"
+    }
+  ],
+  "travis": [
+    {
+      "brand": "Travis",
+      "owner": "Travis",
+      "launch_year": 1990,
+      "what": "a Scottish rock band",
+      "views": 13719.0,
+      "article": "Travis (band)"
+    }
+  ]
+}

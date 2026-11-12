@@ -1,5 +1,5 @@
 """Build site/data.json from data/judged.json and the unified name counts."""
-import collections, csv, json
+import collections, csv, json, os
 OVERRIDES = {'meta': 'contested', 'docker': 'taken', 'twitter': 'taken', 'git': 'contested', 'yahoo': 'contested'}  # owner's call + 2026-11-09 review
 # Field fixes from review (pageviews: median monthly 2024-11..2026-10).
 FIX = {
@@ -52,10 +52,11 @@ def by_data(r):
 # article is about the word itself (its title contains the word), never a synonym concept (ask -> Question).
 FILL = {w: v for w, v in json.load(open('data/raw/orig_fill/views.json')).items()
         if v[1] and any(x in re.findall(r'[a-z]+', v[0].lower()) for x in stems(w))}
+SENSES = json.load(open('data/senses.json')) if os.path.exists('data/senses.json') else {}
 REVIEW = json.load(open('data/review_fixes.json'))  # Sonnet check 2026-11-09, reviewed by Opus
 for k, v in REVIEW['fix'].items(): FIX[k] = {**FIX.get(k, {}), **v}
 NOT_BARE |= set(REVIEW['reject']) | set(REVIEW.get('reject_strict_bare_word', []))  # strict: only products the public calls by the bare word
-import os, statistics
+import statistics
 # Traffic: median monthly views over the last 12 months (2025-11..2026-10), with page moves merged back in.
 VIEWS = json.load(open('data/raw/pageviews_merged.json' if os.path.exists('data/raw/pageviews_merged.json') else 'data/raw/pageviews.json'))
 VIEWS.update(json.load(open('data/raw/extra_views.json')) if os.path.exists('data/raw/extra_views.json') else {})
@@ -100,6 +101,7 @@ for r in rows:
         e['name_series'] = {s: {str(y): c for y, c in sorted(v.items()) if y >= 2000} for s, v in n.items()}
     w = r['word'].lower()
     e['english'] = w not in FOREIGN and (any(x in LOWER for x in stems(w)) or w in ENGLISH or ('name_series' in e and r['kind'] == 'name'))
+    if w in SENSES: e['also'] = SENSES[w]
     e['word'] = w.capitalize() if r['kind'] in ('name', 'place') else w  # headwords lowercase, proper names capitalised (owner, 2026-11-09)
     out.append(e)
 ssa = {}
