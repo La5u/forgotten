@@ -74,7 +74,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -322,10 +322,10 @@
 "brand_views": 32182.5,
 "original_views": 12869.5,
 "brand_share": 0.7143412057178372,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Both the software company and the building material remain familiar.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -402,7 +402,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -476,10 +476,10 @@
 "brand_views": 128137.0,
 "original_views": 2312.5,
 "brand_share": 0.9822728335486146,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Apple's sharing feature is widely used, though humanitarian and military airdrops remain familiar.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -824,7 +824,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -958,10 +958,10 @@
 "brand_views": 226986.0,
 "original_views": 43533.5,
 "brand_share": 0.8390744474982395,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The retailer and the South American river are both widely known.",
+"reason": "",
 "judged": true
 },
 {
@@ -1229,10 +1229,10 @@
 "brand_views": 552.5,
 "original_views": null,
 "brand_share": null,
-"group": "failed",
-"winner": "original",
-"confidence": "medium",
-"reason": "The flashcard program is popular among learners but obscure to the general public.",
+"group": "taken",
+"winner": "brand",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -1289,7 +1289,7 @@
 "group": "contested",
 "winner": "even",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -1347,7 +1347,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -1943,7 +1943,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -2230,10 +2230,10 @@
 "brand_views": 79404.5,
 "original_views": 19964.5,
 "brand_share": 0.7990872404874759,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The film franchise is dominant, while digital avatars are also widely discussed.",
+"reason": "",
 "judged": true
 },
 {
@@ -2249,10 +2249,10 @@
 "brand_views": 30344.5,
 "original_views": 7574.5,
 "brand_share": 0.8002452596323743,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "Marvel's superhero team dominates, though the ordinary plural remains understandable.",
+"reason": "",
 "judged": true
 },
 {
@@ -2310,7 +2310,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -2581,7 +2581,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -2753,7 +2753,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -2925,7 +2925,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -2944,7 +2944,7 @@
 "group": "contested",
 "winner": "even",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -3056,10 +3056,10 @@
 "brand_views": 46546.0,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Microsoft's search engine and the sound word both remain recognizable.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -3212,7 +3212,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -3304,10 +3304,10 @@
 "brand_views": 29269.5,
 "original_views": 4528.0,
 "brand_share": 0.8660255936089948,
-"group": "contested",
-"winner": "original",
-"confidence": "medium",
-"reason": "The video chain remains recognizable, but blockbuster films and other hits are common uses.",
+"group": "taken",
+"winner": "brand",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -3555,7 +3555,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -3594,7 +3594,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -3652,7 +3652,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -4384,7 +4384,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -4422,7 +4422,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -4594,7 +4594,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -4959,7 +4959,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5151,7 +5151,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5171,7 +5171,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5572,7 +5572,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5708,7 +5708,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5746,7 +5746,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -5804,7 +5804,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6018,7 +6018,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6439,7 +6439,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6651,7 +6651,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6671,7 +6671,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6709,7 +6709,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6823,7 +6823,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6842,7 +6842,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -6997,7 +6997,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7058,26 +7058,6 @@
 "judged": true
 },
 {
-"word": "daum",
-"kind": "common",
-"brand": "Daum",
-"owner": "Daum",
-"launch_year": 1997,
-"original_meaning": "Korean: next",
-"group_guess": "taken",
-"source_url": "https://www.koreatimes.co.kr/business/tech-science/20120509/daums-dilemma",
-"brand_article": "Daum (web portal)",
-"original_article": null,
-"brand_views": 1650.5,
-"original_views": null,
-"brand_share": null,
-"group": "taken",
-"winner": "brand",
-"confidence": "medium",
-"reason": "English speakers who recognize Daum are likelier to know the Korean portal than the Korean word.",
-"judged": true
-},
-{
 "word": "dawn",
 "kind": "common",
 "brand": "Dawn",
@@ -7093,7 +7073,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7170,7 +7150,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7377,10 +7357,10 @@
 "brand_views": 173936.0,
 "original_views": 836.5,
 "brand_share": 0.9952137779112846,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The series and its title character are prominent, but Dexter remains a given name.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -7419,7 +7399,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7458,7 +7438,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7534,7 +7514,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -7610,7 +7590,7 @@
 "group": "contested",
 "winner": "even",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -8110,7 +8090,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -8533,7 +8513,7 @@
 "group": "contested",
 "winner": "even",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -8840,7 +8820,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -8879,7 +8859,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -9226,7 +9206,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -9512,7 +9492,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -9531,7 +9511,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -9776,10 +9756,10 @@
 "brand_views": 9182.5,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "medium",
-"reason": "The soda is familiar in English, while the Spanish adjective remains widely used.",
+"reason": "",
 "judged": true
 },
 {
@@ -10164,7 +10144,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -10219,10 +10199,10 @@
 "brand_views": 32324.5,
 "original_views": 11455.0,
 "brand_share": 0.7383478568736509,
-"group": "contested",
+"group": "failed",
 "winner": "original",
 "confidence": "high",
-"reason": "The game franchise is well known, but gears remain a common mechanical term.",
+"reason": "",
 "judged": true
 },
 {
@@ -10375,7 +10355,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -10452,7 +10432,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -10628,7 +10608,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11030,7 +11010,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11049,7 +11029,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11144,7 +11124,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11220,7 +11200,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11277,7 +11257,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11296,7 +11276,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11353,7 +11333,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11853,7 +11833,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -11907,10 +11887,10 @@
 "brand_views": 27165.5,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The restaurant chain is prominent, while hooters remains slang for breasts.",
+"reason": "",
 "judged": true
 },
 {
@@ -12044,7 +12024,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -12083,7 +12063,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -12316,7 +12296,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -12335,7 +12315,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -12890,7 +12870,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -12948,7 +12928,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -13021,10 +13001,10 @@
 "brand_views": 41776.5,
 "original_views": 24686.5,
 "brand_share": 0.6285677745512541,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The vehicle brand is globally prominent, though jeep is also a generic vehicle term.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -13156,10 +13136,10 @@
 "brand_views": 28885.0,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The telecom brand is ubiquitous in India, where the Hindi expression also remains familiar.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -13370,7 +13350,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -13487,7 +13467,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -13659,7 +13639,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -13753,10 +13733,10 @@
 "brand_views": 16495.5,
 "original_views": 606.0,
 "brand_share": 0.9645645118849224,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Nintendo's game franchise is well known, and Kirby remains a real given name.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -13816,26 +13796,6 @@
 "winner": "original",
 "confidence": "high",
 "reason": "The bird, fruit, and New Zealander meanings outweigh the shoe polish brand.",
-"judged": true
-},
-{
-"word": "kizashi",
-"kind": "rare",
-"brand": "Suzuki",
-"owner": "Suzuki Motor Corporation",
-"launch_year": 2009,
-"original_meaning": "Japanese: sign or omen",
-"group_guess": "taken",
-"source_url": "https://www.globalsuzuki.com/globalnews/2009/1021b.html",
-"brand_article": "Suzuki Kizashi",
-"original_article": null,
-"brand_views": 4335.5,
-"original_views": null,
-"brand_share": null,
-"group": "failed",
-"winner": "original",
-"confidence": "medium",
-"reason": "Suzuki's discontinued sedan remained relatively obscure.",
 "judged": true
 },
 {
@@ -13991,7 +13951,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -14007,10 +13967,10 @@
 "brand_views": 29455.5,
 "original_views": 3939.0,
 "brand_share": 0.88204644477384,
-"group": "failed",
-"winner": "original",
+"group": "taken",
+"winner": "brand",
 "confidence": "high",
-"reason": "The software platform is prominent in computing but obscure to the general public.",
+"reason": "",
 "judged": true
 },
 {
@@ -14066,10 +14026,10 @@
 "brand_views": 4903.5,
 "original_views": null,
 "brand_share": null,
-"group": "failed",
-"winner": "original",
-"confidence": "medium",
-"reason": "The whisky is well known among enthusiasts but relatively obscure to the general public.",
+"group": "taken",
+"winner": "brand",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -14204,7 +14164,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -14261,7 +14221,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -14434,7 +14394,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -14492,7 +14452,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -14893,7 +14853,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -15104,7 +15064,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -15411,7 +15371,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -15468,7 +15428,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -15600,10 +15560,10 @@
 "brand_views": 61909.0,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The entertainment company dominates, though the ordinary noun and verb remain common.",
+"reason": "",
 "judged": true
 },
 {
@@ -15929,7 +15889,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -15949,25 +15909,6 @@
 "winner": "original",
 "confidence": "medium",
 "reason": "The film is acclaimed, but the keepsake meaning remains familiar in everyday use.",
-"judged": true
-},
-{
-"word": "Mercari",
-"kind": "rare",
-"brand": "Mercari",
-"owner": "Mercari, Inc.",
-"launch_year": 2013,
-"original_meaning": "Latin for to trade",
-"source_url": "https://en.wikipedia.org/wiki/Mercari",
-"brand_article": "Mercari",
-"original_article": null,
-"brand_views": 5751.5,
-"original_views": null,
-"brand_share": null,
-"group": "contested",
-"winner": "brand",
-"confidence": "medium",
-"reason": "The marketplace is publicly recognizable; the Latin verb is obscure to English speakers.",
 "judged": true
 },
 {
@@ -16083,7 +16024,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -16180,7 +16121,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -16350,10 +16291,10 @@
 "brand_views": 17235.0,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Disney's character is highly recognizable, though Minnie remains a personal name.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -16372,7 +16313,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -17370,10 +17311,10 @@
 "brand_views": 11377.0,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
-"winner": "brand",
+"group": "failed",
+"winner": "original",
 "confidence": "medium",
-"reason": "The car is widely sold, while Niro remains an uncommon given name.",
+"reason": "",
 "judged": true
 },
 {
@@ -17698,10 +17639,10 @@
 "brand_views": 4567.5,
 "original_views": 2366.0,
 "brand_share": 0.6587582029278143,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The cinema chain is familiar in Britain; the ancient building term is specialized.",
+"reason": "",
 "judged": true
 },
 {
@@ -17993,7 +17934,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18069,7 +18010,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18089,7 +18030,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18283,7 +18224,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18512,7 +18453,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18834,10 +18775,10 @@
 "brand_views": 3605.5,
 "original_views": 3690.0,
 "brand_share": 0.49420875882393256,
-"group": "contested",
+"group": "failed",
 "winner": "original",
 "confidence": "high",
-"reason": "The cereal is familiar in America, but small stones are the everyday meaning.",
+"reason": "",
 "judged": true
 },
 {
@@ -18856,7 +18797,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -18954,7 +18895,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19011,7 +18952,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19186,7 +19127,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19282,7 +19223,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19320,7 +19261,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19489,10 +19430,10 @@
 "brand_views": 87357.0,
 "original_views": 6510.0,
 "brand_share": 0.9306465531017291,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The magazine is famous, while playboy remains a familiar description of a pleasure-seeking man.",
+"reason": "",
 "judged": true
 },
 {
@@ -19551,7 +19492,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -19608,7 +19549,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -20006,10 +19947,10 @@
 "brand_views": 40157.0,
 "original_views": 28170.0,
 "brand_share": 0.5877178860479751,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The presentation software dominates globally; the outlet meaning remains common in Australia.",
+"reason": "",
 "judged": true
 },
 {
@@ -20201,7 +20142,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -20296,7 +20237,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -20335,7 +20276,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -20970,7 +20911,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -21158,10 +21099,10 @@
 "brand_views": 9918.5,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The gaming hardware company is established; the occupational noun is rare.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -21411,7 +21352,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -21832,7 +21773,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -21889,7 +21830,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -21988,25 +21929,6 @@
 "judged": true
 },
 {
-"word": "Ryzen",
-"kind": "rare",
-"brand": "Ryzen",
-"owner": "AMD",
-"launch_year": 2017,
-"original_meaning": "An archaic spelling of risen",
-"source_url": "https://en.wikipedia.org/wiki/Ryzen",
-"brand_article": "Ryzen",
-"original_article": null,
-"brand_views": 22926.0,
-"original_views": null,
-"brand_share": null,
-"group": "taken",
-"winner": "brand",
-"confidence": "medium",
-"reason": "AMD's processor brand eclipses the obsolete spelling of risen.",
-"judged": true
-},
-{
 "word": "Sabra",
 "kind": "rare",
 "brand": "Sabra hummus",
@@ -22061,7 +21983,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22159,7 +22081,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22274,7 +22196,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22351,7 +22273,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22446,7 +22368,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22524,7 +22446,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22639,7 +22561,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22658,7 +22580,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22789,10 +22711,10 @@
 "brand_views": 15374.0,
 "original_views": 4281.0,
 "brand_share": 0.7821928262528619,
-"group": "watching",
-"winner": "original",
-"confidence": "high",
-"reason": "The game launched in 2022; the martial arts title remains established.",
+"group": "contested",
+"winner": "even",
+"confidence": "medium",
+"reason": "",
 "judged": true
 },
 {
@@ -22831,7 +22753,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22908,7 +22830,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -22943,10 +22865,10 @@
 "brand_views": 26309.0,
 "original_views": 5981.0,
 "brand_share": 0.8147723753484051,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The game franchise is very prominent, though sims is also used for simulations.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -22965,7 +22887,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23004,7 +22926,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23137,7 +23059,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23175,7 +23097,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23290,7 +23212,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23328,7 +23250,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23481,7 +23403,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23560,7 +23482,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -23674,7 +23596,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -24229,7 +24151,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -24248,7 +24170,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -24305,7 +24227,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -24748,7 +24670,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -24864,7 +24786,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -25133,7 +25055,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -25248,7 +25170,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -25554,10 +25476,10 @@
 "brand_views": 132439.5,
 "original_views": 12458.5,
 "brand_share": 0.9140188270369501,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The car company is prominent, while the scientist and magnetic unit remain established.",
+"reason": "",
 "judged": true
 },
 {
@@ -25691,7 +25613,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -26170,7 +26092,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -26382,7 +26304,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -26478,7 +26400,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -26553,10 +26475,10 @@
 "brand_views": 3859.0,
 "original_views": 15362.5,
 "brand_share": 0.20076476861847412,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "The antacid is widely recognized in America; tums also remains a familiar plural of tum.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -26633,7 +26555,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -26750,25 +26672,6 @@
 "winner": "original",
 "confidence": "medium",
 "reason": "The games are popular, but the adjective remains familiar in everyday expressions.",
-"judged": true
-},
-{
-"word": "Undertale",
-"kind": "rare",
-"brand": "Undertale",
-"owner": "Toby Fox",
-"launch_year": 2015,
-"original_meaning": "An undercount or deficient tally",
-"source_url": "https://en.wikipedia.org/wiki/Undertale",
-"brand_article": "Undertale",
-"original_article": null,
-"brand_views": 52436.0,
-"original_views": null,
-"brand_share": null,
-"group": "taken",
-"winner": "brand",
-"confidence": "high",
-"reason": "The video game dominates; the old tallying sense is obsolete.",
 "judged": true
 },
 {
@@ -27168,10 +27071,10 @@
 "brand_views": 13163.5,
 "original_views": 30.5,
 "brand_share": 0.9976883431862968,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "medium",
-"reason": "The hosting platform is much better known than the small French place.",
+"reason": "",
 "judged": true
 },
 {
@@ -27573,10 +27476,10 @@
 "brand_views": 38851.5,
 "original_views": 1003.0,
 "brand_share": 0.9748334566987417,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
 "confidence": "high",
-"reason": "The media player is widely used, while visible light communication remains a technical term.",
+"reason": "",
 "judged": true
 },
 {
@@ -28444,26 +28347,6 @@
 "judged": true
 },
 {
-"word": "yaz",
-"kind": "common",
-"brand": "Yaz",
-"owner": "Bayer",
-"launch_year": 2006,
-"original_meaning": "Turkish for summer",
-"group_guess": "taken",
-"source_url": "https://www.tdkbelleten.gov.tr/ozet/839/eng",
-"brand_article": "Ethinylestradiol/drospirenone",
-"original_article": "Summer",
-"brand_views": 416.5,
-"original_views": 21387.5,
-"brand_share": 0.019101999633094845,
-"group": "failed",
-"winner": "original",
-"confidence": "medium",
-"reason": "The contraceptive brand is less prominent than the everyday Turkish word for summer.",
-"judged": true
-},
-{
 "word": "yelp",
 "kind": "common",
 "brand": "Yelp",
@@ -28519,7 +28402,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {
@@ -28535,10 +28418,10 @@
 "brand_views": 15797.5,
 "original_views": null,
 "brand_share": null,
-"group": "contested",
+"group": "taken",
 "winner": "brand",
-"confidence": "medium",
-"reason": "Nintendo's character is internationally prominent, while Yoshi remains a Japanese given name.",
+"confidence": "high",
+"reason": "",
 "judged": true
 },
 {
@@ -28712,7 +28595,7 @@
 "group": "failed",
 "winner": "original",
 "confidence": "medium",
-"reason": "Second and third readers agree.",
+"reason": "",
 "judged": true
 },
 {

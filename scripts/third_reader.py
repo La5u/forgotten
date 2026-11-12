@@ -149,7 +149,7 @@ def resolve(entries, gemini, results, articles, judged, protected):
             outcome = 'apply'
             overrides.append({'word': word, 'brand': entry['brand'], 'group': new,
                 'winner': {'taken': 'brand', 'failed': 'original', 'contested': 'even', 'watching': entry.get('winner') or 'original'}[new],
-                'confidence': 'medium', 'reason': 'Second and third readers agree.'})
+                'confidence': 'medium', 'reason': ''})
         else:
             outcome = 'keep'
         groups.append({'word': word, 'brand': entry['brand'], 'brand_views': entry.get('brand_views'),
