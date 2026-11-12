@@ -1,5 +1,17 @@
 {
  "fix": {
+  "cortana": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "jinx": {
+   "group": "contested"
+  },
+  "macintosh": {
+   "original_meaning": "A variant spelling of the McIntosh apple, after which Apple named the computer.",
+   "group": "taken",
+   "winner": "brand"
+  },
   "bud": {
    "brand": "Bud",
    "owner": "Anheuser-Busch",
@@ -413,7 +425,8 @@
    "reason": "Most people now think of Oculus first."
   },
   "bard": {
-   "winner": "original"
+   "winner": "original",
+   "group": "failed"
   },
   "twitter": {
    "winner": "brand"
@@ -572,7 +585,7 @@
    "reason": "Match.com never displaced the original meaning for most people."
   },
   "herschel": {
-   "group": "failed",
+   "group": "contested",
    "winner": "original",
    "reason": "Herschel Supply never displaced the original meaning for most people.",
    "original_meaning": "A surname and given name, as of the astronomer William Herschel."
@@ -931,6 +944,22 @@
   },
   "wednesday": {
    "brand": "Wednesday"
+  },
+  "discord": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "twitch": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "tor": {
+   "group": "taken",
+   "winner": "brand"
+  },
+  "chrome": {
+   "group": "taken",
+   "winner": "brand"
   }
  },
  "reject": [

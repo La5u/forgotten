@@ -14,7 +14,12 @@ FIX = {
 # Not an attempt on the word: the product is not called by the bare word (Alaska Airlines is "Alaska Airlines", not "Alaska").
 NOT_BARE = set('answers navigator core aspire predator circle mantis titanium fly orchid panda julie frankly spruce cash monday oscar lucent alaska american hawaiian united southwest frontier spirit allegiant qatar etihad fiji garuda silver eos peach pegasus breeze zip crew boost calumet ceres gorilla honest hypnos ichiban liberty life mint naked oregon orion persephone president sothys tula venus vision meet fire executive'.split()) | {'photoshop', 'sylvanian'}  # last two: coinages (Sonnet check)
 LAUNCH = {'alexa': 2015}  # Echo reached general US sale on 14 July 2015
-ABANDONED = {'bard', 'cortana', 'stadia', 'hangouts'}
+STATUS = {}  # product status per word: data/raw/status/st*.jsonl ({"word", "status": active|discontinued, "end_year", "note"})
+import glob
+for f in sorted(glob.glob('data/raw/status/st*.jsonl')):
+    for l in open(f):
+        try: d = json.loads(l); STATUS[d['word'].lower()] = d
+        except (ValueError, KeyError, TypeError, AttributeError): pass
 rows = json.load(open('data/judged.json'))
 # English = the word was in English use before the brand: a dictionary word (lowercase entry
 # in /usr/share/dict/words), a given name with births in the US/UK/NSW/Ontario files, or a
@@ -23,12 +28,7 @@ import sys; sys.path.insert(0, 'scripts'); from english import LOWER, stems  # H
 DICT = None
 ENGLISH = set('wednesday atlantic hitman uncharted thunderbird halifax ledger kraken gushers hartford plymouth celsius tesla zen brut pontiac beeper bing detour discord dishonored fisheye galactica houseparty oculus odeon overwatch pythia shazam solvate tatler terraria transformers amazon bandcamp basecamp burlington firefox inbox houseparty meetup mega macintosh oregon patagonia fiji qatar kathmandu tahoe telluride robinhood rockstar starburst photoshop pegasus kafka vivaldi sibelius godot bacchus aztec hypnos eos pythia galactica grok fortnite uber dodgeball digg wizz terraform midjourney chipotle greggs silverado wotsits nerf uno butterfinger tums'.split())
 FOREIGN = set('nokia subaru cortina torino voss carrefour dacia diablo evian glenlivet hulu macallan macan pret prius reebok sephora wawa creta prado akamai altezza doxa gladius zo aya ghibli'.split())  # hand-checked: not English before the brand
-ngrams = json.load(open('data/raw/ngrams.json'))
-def prefreq(r):
-    s = ngrams.get(r['word'].capitalize() if r['kind'] == 'name' else r['word'].lower())
-    y = min(r['launch_year'], 2022) - 1980
-    p = s[max(0, y-5):max(0, y)] if s else None
-    return round(sum(p)/len(p)*1e6, 4) if p else None
+from ngrams import prefreq, cap
 names = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))
 for r in csv.DictReader(open('data/raw/names_unified.csv')):
     names[r['name']][r['source']][int(r['year'])] += int(r['count'])
@@ -81,11 +81,19 @@ for r in rows:
         elif r['group'] == 'data': r['group'] = 'contested'
     if r.get('no_plot'): r['brand_share'] = None  # traffic is shared with a parent article, or the comparison article is a bad match
     if (r.get('brand_views') or 0) + (r.get('original_views') or 0) < 300: continue  # owner, 2026-11-09: too little evidence either way
-    g = 'failed' if r['word'].lower() in ABANDONED else r['group']
-    g = OVERRIDES.get(r['word'].lower(), g)
+    g = OVERRIDES.get(r['word'].lower(), r['group'])
+    r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year'])
     e = {k: r.get(k) for k in ('word', 'kind', 'brand', 'owner', 'launch_year', 'original_meaning', 'winner', 'confidence', 'reason', 'source_url', 'brand_views', 'original_views', 'brand_share', 'no_brand_article', 'cap_pre', 'cap_2022', 'pre_launch_per_million')}
-    e.update(pre_launch_per_million=prefreq(r), group=g, abandoned=r['word'].lower() in ABANDONED)
-    r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year']); e['launch_year'] = r['launch_year']
+    e.update(pre_launch_per_million=prefreq(r), group=g)
+    st = STATUS.get(r['word'].lower(), {})
+    e.update(discontinued=st.get('status') == 'discontinued', end_year=st.get('end_year'))
+    e['abandoned'] = e['discontinued']  # old name, kept for other pages
+    year = min(r['launch_year'], 2022)
+    e['cap_pre'] = cap(r['word'], year-5, year) if r['kind'] != 'name' else None
+    e['cap_2022'] = cap(r['word'], 2020, 2023) if r['kind'] != 'name' else None
+    pre, recent = e['cap_pre'], e['cap_2022']
+    e['brand_share_est'] = round(max(0, min(1, (recent-pre)/(1-pre))), 3) if e['brand_share'] is None and pre is not None and recent is not None and pre < .95 else None
+    e['share_basis'] = 'wikipedia' if e['brand_share'] is not None else 'books' if e['brand_share_est'] is not None else None
     n = names.get(r['word'].capitalize())
     if n and 'us' in n:
         e['us_drop'] = drops(n['us'], r['launch_year'])

@@ -1,15 +1,12 @@
 """Attach the capitalization signal and write Terra review batches for not-yet-reviewed rows. Usage: make_judge_prompts.py PREFIX"""
 import glob, json, re, sys
-rows = json.load(open('data/classified.json')); n = json.load(open('data/raw/ngrams.json'))
-def cap(w, a, b):
-    lo, up = n.get(w.lower()), n.get(w.capitalize())
-    if not lo or not up: return None
-    s = sum(lo[a:b]); t = sum(up[a:b])
-    return round(t/(s+t), 2) if s+t else None
+sys.path.insert(0, 'scripts')
+from ngrams import cap
+rows = json.load(open('data/classified.json'))
 for r in rows:
-    y = min(r['launch_year'], 2022) - 1980
-    r['cap_pre'] = cap(r['word'], max(0, y-5), max(1, y)) if r['kind'] != 'name' else None
-    r['cap_2022'] = cap(r['word'], 40, 43) if r['kind'] != 'name' else None
+    y = min(r['launch_year'], 2022)
+    r['cap_pre'] = cap(r['word'], y-5, y) if r['kind'] != 'name' else None
+    r['cap_2022'] = cap(r['word'], 2020, 2023) if r['kind'] != 'name' else None
 json.dump(rows, open('data/classified.json', 'w'), indent=0)
 done = set()
 for p in glob.glob('data/raw/judge/*.jsonl'):
