@@ -922,6 +922,15 @@
   },
   "oyster": {
    "brand": "Oyster"
+  },
+  "winnie": {
+   "brand": "Winnie-the-Pooh"
+  },
+  "yoshi": {
+   "brand": "Yoshi"
+  },
+  "wednesday": {
+   "brand": "Wednesday"
   }
  },
  "reject": [

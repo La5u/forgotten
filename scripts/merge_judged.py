@@ -4,7 +4,7 @@ rows = {(r['word'].lower(), r['brand'].lower()): r for r in json.load(open('data
 bad = 0
 # Eponyms the judge rejected but whose word has its own everyday meaning that the brand now competes with (2026-11-09).
 import sys; sys.path.insert(0, 'scripts'); from merge_preferences import PREFERRED
-KEEP_EPONYM = {'ford', 'dodge', 'dell', 'miller'}
+KEEP_EPONYM = {'ford', 'dodge', 'dell', 'miller', 'singer', 'dole'}
 for p in sorted(glob.glob('data/raw/judge/*.jsonl')):
     for l in open(p):
         if not l.startswith('{'):
