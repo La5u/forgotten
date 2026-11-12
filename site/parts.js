@@ -19,3 +19,39 @@ export function browser(host,D,{item=card,start='taken',page=60}={}){host.innerH
   set($('#g'),Object.entries(GROUPS).map(([v,o])=>[v,o.label]),()=>g,v=>g=v);set($('#k'),[['','All kinds'],...Object.entries(KINDS)],()=>k,v=>k=v);set($('#l'),[['en','English words'],['all','Every language']],()=>lang,v=>lang=v);
   function r(){const q=$('#q').value.toLowerCase(),l=(lang==='en'?D.entries:D.all).filter(e=>(q||e.group===g)&&(!k||e.kind===k)&&(!q||(e.word+' '+e.brand+' '+(e.owner||'')).toLowerCase().includes(q)));$('#c').textContent=`${l.length} entries. ${q?'':GROUPS[g].note}`;$('#list').innerHTML=l.slice(0,n).map(item).join('');$('#more').style.display=l.length>n?'block':'none'}
   $('#q').oninput=()=>{n=page;r()};$('#more').onclick=()=>{n+=page*2;r()};r()}
+/* Baby-name strip: one small chart per name from names.json (scripts/build_names.py), US share of births, launch marked like the Echo. */
+const NT={company:'Company',character:'Character'},chg=v=>v>=5?`up ${v}%`:v<=-5?`down ${-v}%`:'about level',up1=s=>s[0].toUpperCase()+s.slice(1);
+const pmf=v=>v<1?v.toFixed(2):v<10?v.toFixed(1):Math.round(v).toLocaleString('en-US');
+export function nameCaption(x){const s=x.stats,L=x.launch_year;
+  if(!s)return L-8<1880?`The brand dates from ${L}, too early to compare with the records.`:`Too rare before ${L} to measure: under 20 births a year.`;
+  const a=s.after,e=[1,3].filter(k=>a[k]!=null&&a[k]>=50).sort((p,q)=>a[q]-a[p])[0];let t;
+  if(a[5]!=null)t=(e&&a[5]<a[e]-30?`up ${a[e]}% within ${e===1?'a year':'three years'}, then ${chg(a[5])} at five years`:`${chg(a[5])} five years after launch`)+(a[10]!=null?` and ${chg(a[10])} after ten`:'');
+  else{const k=[3,1].find(k=>a[k]!=null);t=k?`${chg(a[k])} ${k===1?'one year':'three years'} after launch (too recent for more)`:'Launched too recently to measure'}
+  const b=s.before5;return up1(t)+'.'+(b==null?'':b>=15?' It was rising before.':b<=-15?' It was already falling before.':' It was flat before.')}
+export const nameFrom=x=>Math.max(1880,Math.min(1960,x.launch_year-40));
+export function nameStrip(sec,url){let D,f='all',drawn=false;const $=s=>sec.querySelector(s),strip=$('.strip'),to=2025;
+  const pts=(x,k)=>{const r=x.series.us,o={};r[k].forEach((v,i)=>{if(v!=null)o[r.from+i]=v});return o};
+  const card=x=>{const s=x.stats,o=x.owner&&x.owner!==x.brand?esc(x.owner)+', ':'';return `<article class="ncard" data-t="${esc(x.type)}" data-w="${esc(x.word)}"><h3>${esc(x.word)}</h3><p class="nsub">${esc(x.brand)} (${o}${esc(x.launch_year)}) <span class="ntype">${NT[x.type]||'Other'}</span></p><div class="nchart"></div><p class="ncap">${esc(nameCaption(x))}</p></article>`};
+  const alt=x=>{const s=x.stats,p=pts(x,'per_million'),ys=Object.keys(p),pk=ys.reduce((a,y)=>p[y]>p[a]?y:a,ys[0]);
+    return `${x.word}: babies per million births in the United States, ${nameFrom(x)} to ${to}. Highest ${pmf(p[pk])} per million in ${pk}. ${x.brand} launched in ${x.launch_year}.`+(s?` In the three years before, ${pmf(s.baseline)} per million, about ${s.baseline_births} babies a year.`:'')+' '+nameCaption(x)};
+  const draw=()=>{if(!D)return;for(const c of strip.querySelectorAll('.ncard')){if(c.hidden)continue;const x=D.by[c.dataset.w],cnt=pts(x,'count'),
+      svg=lineChart(c.querySelector('.nchart'),{from:nameFrom(x),to,height:190,endLabels:false,tab:false,right:14,mark:{year:x.launch_year,label:`${x.brand}, ${x.launch_year}`},ink:'#16130f',
+        series:[{name:x.word,color:'#c1281e',points:pts(x,'per_million'),fmt:y=>`${pmf(pts(x,'per_million')[y])} per million (${num(cnt[y])} babies)`}]});
+    svg.setAttribute('aria-label',alt(x))}nav()};
+  const nav=()=>{const m=strip.scrollWidth-strip.clientWidth;$('.nprev').disabled=strip.scrollLeft<4;$('.nnext').disabled=strip.scrollLeft>m-4};
+  const filt=()=>{sec.querySelectorAll('.nseg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===f));strip.querySelectorAll('.ncard').forEach(c=>c.hidden=f!=='all'&&c.dataset.t!==f);strip.scrollLeft=0;draw()};
+  const step=d=>{const c=strip.querySelector('.ncard:not([hidden])');strip.scrollBy({left:d*(c?c.offsetWidth+parseFloat(getComputedStyle(strip).columnGap):300),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+  async function go(){D=await(await fetch(url)).json();D.by=Object.fromEntries(D.names.map(x=>[x.word,x]));const L=D.strip.map(w=>D.by[w]).filter(Boolean);
+    const S=D.summary.took_word,A=D.summary.all,c=S.company,h=S.character,p=v=>v==null?'—':pct(v),n=t=>`<small>${t}</small>`;
+    $('.nsum').innerHTML=`<table class="ntab"><caption>Median change in the share of US babies given the name, against the three years before launch. Brands that took the word (Taken or Contested).</caption><tr><th></th><th>5 years before</th><th>5 years after</th><th>10 years after</th><th>Halved by year 5</th></tr>`+
+      [['Company names',c],['Character names',h]].map(([l,v])=>`<tr><th scope="row">${l} ${n(v.after5.n+' names')}</th><td>${p(v.before5.median)}</td><td>${p(v.after5.median)}</td><td>${p(v.after10.median)} ${v.after10.n!==v.after5.n?n(v.after10.n+' names'):''}</td><td>${v.halved5} of ${v.after5.n}</td></tr>`).join('')+'</table>';
+    const d5=c.after5.median-h.after5.median,d10=c.after10.median-h.after10.median,say=(d,w)=>d<=-10?`company names fared worse ${w}`:d>=10?`character names fared worse ${w}`:`there is little difference ${w}`;
+    $('.nread').innerHTML=`<b>What the numbers show.</b> ${up1(say(d5,'after five years'))} (companies ${p(c.after5.median)}, ${c.after5.n} names; characters ${p(h.after5.median)}, ${h.after5.n} names), and ${say(d10,'after ten')} (${p(c.after10.median)} against ${p(h.after10.median)}). `+
+      (d5>-10&&d10>-10?'So the idea that a company taking a name drives parents away, while a character does not, does not hold as a rule here. ':d5<=-10&&d10<=-10?'That leans the way of the idea. ':'The two horizons point different ways. ')+
+      `Alexa and Siri did collapse, but only ${c.halved5} of ${c.after5.n} company names fell by half within five years, against ${h.halved5} of ${h.after5.n} character names. These are small samples with a wide spread. A launch year is not a cause: names were already rising or falling, fashions turn every generation, and a film often lifts a name before it fades (Elsa). Counting failed claims as well, the five-year medians are ${p(A.company.after5.median)} for companies (${A.company.after5.n}) and ${p(A.character.after5.median)} for characters (${A.character.after5.n}).`;
+    sec.querySelectorAll('.nseg button').forEach(b=>{const k=b.dataset.f;b.querySelector('span').textContent=k==='all'?L.length:L.filter(x=>x.type===k).length});
+    strip.innerHTML=L.map(card).join('');$('.nnote').textContent=`${L.length} names: mostly the best-known brands that took a name, among names with enough births to chart. The table counts every name on this site with at least ${D.min_peak} US births in its best year and ${D.min_base} a year before the launch. Each line is babies given the name per million US births, so it is not distorted by the size of each year's cohort; hover for counts. Each chart starts in 1960, or 40 years before the launch if that is earlier. The dashed line marks the launch.`;draw()}
+  sec.querySelector('.nseg').onclick=e=>{const b=e.target.closest('button');if(b){f=b.dataset.f;filt()}};
+  $('.nprev').onclick=()=>step(-1);$('.nnext').onclick=()=>step(1);strip.addEventListener('scroll',nav,{passive:true});
+  let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,150)});
+  const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)&&!drawn){drawn=true;io.disconnect();go()}},{rootMargin:'800px 0px'});io.observe(sec)}

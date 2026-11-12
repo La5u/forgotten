@@ -34,21 +34,23 @@ const NS='http://www.w3.org/2000/svg';
 function el(n,a={},p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.append(e);return e}
 function ticks(max,n=4){const s=Math.pow(10,Math.floor(Math.log10(max/n||1)));const m=[1,2,5,10].find(v=>v*s>=max/n)*s;const r=[];for(let v=0;v<=max+1e-9;v+=m)r.push(v);return r}
 /* series: [{name, color, dash, points:{year:count}, label}] one y axis; a missing year stays a gap, never zero. */
-export function lineChart(host,{series,mark,from,to,ink='#222',grid='#0000001a',height=300,endLabels=true,ring='#fff'}){
-  host.innerHTML='';const W=Math.max(300,host.clientWidth||640),H=height,m={t:24,r:W<480?62:96,b:28,l:46};
+/* tab:false keeps the chart out of the tab order (cards in a strip); right: right margin; s.fmt(y): tooltip value as HTML-safe text. */
+export function lineChart(host,{series,mark,from,to,ink='#222',grid='#0000001a',height=300,endLabels=true,ring='#fff',tab=true,right}){
+  host.innerHTML='';const W=Math.max(host.clientWidth<300?240:300,host.clientWidth||640),H=height,m={t:24,r:right??(W<480?62:96),b:28,l:46};
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':series.map(s=>s.name).join(', ')+' by year'},host);
   const yr=[];for(let y=from;y<=to;y++)yr.push(y);
   const max=Math.max(...series.flatMap(s=>yr.map(y=>s.points[y]||0)),1);
   const X=y=>m.l+(y-from)/(to-from)*(W-m.l-m.r),Y=v=>H-m.b-v/max*(H-m.t-m.b);
   for(const v of ticks(max)){el('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),stroke:grid},svg);const t=el('text',{x:m.l-7,y:Y(v)+4,'text-anchor':'end',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=v.toLocaleString('en-US')}
-  const step=(to-from)>16?5:(W<480?3:2);for(const y of yr)if((y-from)%step===0){const t=el('text',{x:X(y),y:H-8,'text-anchor':'middle',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=y}
-  if(mark){el('line',{x1:X(mark.year),x2:X(mark.year),y1:m.t-6,y2:H-m.b,stroke:ink,'stroke-dasharray':'2 3',opacity:.55},svg);const lft=X(mark.year)>W*.6,t=el('text',{x:X(mark.year)+(lft?-5:5),y:m.t-8,fill:ink,'font-size':11,'text-anchor':lft?'end':'start'},svg);t.textContent=mark.label}
+  let step=(to-from)>16?5:(W<480?3:2);const px=(W-m.l-m.r)/(to-from);if(step*px<40)step=[10,20,25,50,100].find(v=>v*px>=40)||100;  // keep year labels apart on narrow charts
+  for(const y of yr)if((step>=10?y:y-from)%step===0){const t=el('text',{x:X(y),y:H-8,'text-anchor':'middle',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=y}
+  if(mark&&mark.year>=from&&mark.year<=to){el('line',{x1:X(mark.year),x2:X(mark.year),y1:m.t-6,y2:H-m.b,stroke:ink,'stroke-dasharray':'2 3',opacity:.55},svg);const lft=X(mark.year)>W*.6,t=el('text',{x:X(mark.year)+(lft?-5:5),y:m.t-8,fill:ink,'font-size':11,'text-anchor':lft?'end':'start'},svg);t.textContent=mark.label}
   for(const s of series){let d='',on=false;for(const y of yr){const v=s.points[y];if(v==null){on=false;continue}d+=(on?'L':'M')+X(y).toFixed(1)+' '+Y(v).toFixed(1);on=true}
     el('path',{d,fill:'none',stroke:s.color,'stroke-width':2,'stroke-linecap':'round','stroke-linejoin':'round','stroke-dasharray':s.dash||''},svg);
     const ly=[...yr].reverse().find(y=>s.points[y]!=null);if(ly!=null){el('circle',{cx:X(ly),cy:Y(s.points[ly]),r:4,fill:s.color,stroke:ring,'stroke-width':2},svg);if(endLabels){const t=el('text',{x:X(ly)+8,y:Y(s.points[ly])+4,fill:ink,'font-size':12},svg);t.textContent=s.name}}}
-  const cross=el('line',{y1:m.t,y2:H-m.b,stroke:ink,opacity:0},svg),hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent',tabindex:0,'aria-label':'Explore values by year'},svg);
+  const cross=el('line',{y1:m.t,y2:H-m.b,stroke:ink,opacity:0},svg),hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent',...(tab?{tabindex:0,'aria-label':'Explore values by year'}:{})},svg);
   const move=y=>{cross.setAttribute('x1',X(y));cross.setAttribute('x2',X(y));cross.setAttribute('opacity',.35);const r=svg.getBoundingClientRect(),k=r.width/W;
-    showTip(`<b>${y}</b>`+series.map(s=>`<div>${esc(s.name)}: ${s.points[y]==null?'not published':num(s.points[y])}</div>`).join(''),r.left+X(y)*k,r.top+m.t*k+20)};
+    showTip(`<b>${y}</b>`+series.map(s=>`<div>${esc(s.name)}: ${s.points[y]==null?'not published':s.fmt?s.fmt(y):num(s.points[y])}</div>`).join(''),r.left+X(y)*k,r.top+m.t*k+20)};
   let cur=to;const at=e=>{const r=svg.getBoundingClientRect();return Math.max(from,Math.min(to,Math.round(from+((e.clientX-r.left)*W/r.width-m.l)/(W-m.l-m.r)*(to-from))))};
   hit.addEventListener('pointermove',e=>move(cur=at(e)));hit.addEventListener('pointerleave',()=>{hideTip();cross.setAttribute('opacity',0)});
   hit.addEventListener('blur',()=>{hideTip();cross.setAttribute('opacity',0)});hit.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();cur=Math.max(from,Math.min(to,cur+(e.key==='ArrowLeft'?-1:1)));move(cur)}});
