@@ -15,6 +15,7 @@ h1{font-size:clamp(24px,2.4vw,30px);line-height:1;font-weight:400;margin:0;lette
 .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px 0;font:12.5px var(--sans)}.controls input{flex:1 1 220px;padding:9px;border:1px solid var(--k);background:#fff;font:15px var(--serif)}.controls button{font:12.5px var(--sans);border:1px solid var(--k);background:none;padding:7px 10px;cursor:pointer;color:var(--k)}.controls button[aria-pressed=true]{background:var(--k);color:var(--p)}
 :focus-visible{outline:2px solid var(--r);outline-offset:2px}
 #dict{columns:2 400px;column-gap:64px;column-rule:1px solid #11111130;padding-top:16px}
+.e.has-spark{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:14px;align-items:start}.etext{min-width:0}.spark{width:150px;height:44px;text-indent:0;color:var(--k)}.sparkline{display:block}
 .letter{break-after:avoid;font:400 58px/1 var(--serif);margin:12px 0 6px;color:var(--r)}
 .e{break-inside:avoid;margin:0 0 24px;text-indent:-14px;padding-left:14px}.hw{font-weight:700;font-size:23px}.pos{font-style:italic;color:var(--s)}.etym{color:var(--s)}.n{font:700 11px var(--sans)}
 .orig.gone{text-decoration:line-through;text-decoration-color:var(--r);text-decoration-thickness:1.5px;color:var(--s)}.brandsense{color:var(--r)}.small{font-size:15px;color:var(--s);display:block;text-indent:0}.tag{font:700 9.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;padding-left:3px}
@@ -23,7 +24,7 @@ h1{font-size:clamp(24px,2.4vw,30px);line-height:1;font-weight:400;margin:0;lette
 table{border-collapse:collapse;font:12.5px var(--sans);width:100%}td,th{padding:3px 6px;border-bottom:1px solid #11111126;text-align:right}th:first-child,td:first-child{text-align:left}details{margin-top:8px;font:12.5px var(--sans)}summary{cursor:pointer}
 .tip{position:fixed;display:none;z-index:9;background:var(--k);color:#fff;font:12px/1.4 var(--sans);padding:7px 9px;pointer-events:none;max-width:260px}
 #more{display:block;margin:22px auto;padding:9px 16px;border:0;background:var(--k);color:var(--p);font:12.5px var(--sans);cursor:pointer}
-@media(max-width:760px){.page{padding:0 38px 60px 14px}:root{--gl:14px;--gr:38px}.title{grid-template-columns:auto 1fr;gap:4px 14px}.tot{grid-column:1/-1;text-align:left}#tot,.sib::before{display:none}.def{font-size:14px;text-align:right}.ipa{display:none}.fig{padding:56px 0}.full{min-height:auto}.key{grid-template-columns:1fr 1fr}.thumb a{width:22px;font-size:10px;line-height:16px}.strip{gap:14px}.seg button{padding:7px 12px}}
+@media(max-width:760px){.e.has-spark{grid-template-columns:minmax(0,1fr);gap:5px}.page{padding:0 38px 60px 14px}:root{--gl:14px;--gr:38px}.title{grid-template-columns:auto 1fr;gap:4px 14px}.tot{grid-column:1/-1;text-align:left}#tot,.sib::before{display:none}.def{font-size:14px;text-align:right}.ipa{display:none}.fig{padding:56px 0}.full{min-height:auto}.key{grid-template-columns:1fr 1fr}.thumb a{width:22px;font-size:10px;line-height:16px}.strip{gap:14px}.seg button{padding:7px 12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.thumb{transition:none}}
 </style></head><body><header class="title"><div><h1 style="display:inline">for·got·ten</h1><p class="ipa">/fərˈɡɒtn̩/ <i>adj.</i></p></div><div class="def">No longer remembered.</div><div class="tot"><span id="tot"></span><a class="sib" href="generic.html">Brands that became words →</a></div></header>
 <div class="page">
@@ -35,12 +36,14 @@ table{border-collapse:collapse;font:12.5px var(--sans);width:100%}td,th{padding:
 <div class="strip" tabindex="0" role="region" aria-label="Baby-name charts, scroll sideways"><p class="note">Loading name charts…</p></div><p class="small nnote"></p></section>
 <section class="cats" id="cats"><h2>Four outcomes</h2><p class="cap">Click a row to show only those words in the chart above and dictionary below.</p><table id="cattab"></table></section>
 <div class="controls" id="c"></div>
+<p class="note">Book histories: ink = lowercase, group colour = Capitalized (one series: ink); tick = launch. Books end in 2022, so recent brands show little after launch.</p>
 <main id="dict"></main><button id="more">Continue</button>
 <section class="meth"><h2>Guide to the dictionary</h2><div id="m"></div></section>
 </div><nav class="thumb" id="thumb" aria-label="Jump to letter"></nav>
 <script type="module">
-import {load,GROUPS,KINDS,esc,num,pct,lineChart,stealsChart,legend,METHODS,MARK,isName} from './shared.js';import {alexaBirths,ECHO,nameStrip} from './parts.js';
+import {load,GROUPS,KINDS,esc,num,pct,lineChart,stealsChart,legend,METHODS,MARK,isName} from './shared.js';import {alexaBirths,ECHO,nameStrip} from './parts.js';import {dictionarySparks} from './sparks.js';
 const D=await load(),E=D.entries,$=s=>document.querySelector(s),k='#16130f',red='#c1281e',gr='#b98700';
+const sparks=dictionarySparks(new URL('sparks.json',import.meta.url));
 let g='',ki='',lang='en',type='',n=220;
 const filtered=()=>{const q=$('#q')?.value.toLowerCase()||'';return (lang==='en'?E:D.all).filter(e=>(!ki||e.kind===ki)&&(!type||(type==='names')===isName(e))&&(!q||(e.word+' '+e.brand+' '+(e.owner||'')+(Array.isArray(e.also)?' '+e.also.map(a=>a.brand).join(' '):'')).toLowerCase().includes(q)))};
 const ex=g=>filtered().filter(e=>e.group===g).sort((a,b)=>(b.brand_views+b.original_views)-(a.brand_views+a.original_views)).slice(0,5).map(e=>esc(e.word)).join(', ');
@@ -57,15 +60,15 @@ const draw=()=>{lineChart($('#f1'),{from:1970,to:2025,height:Math.min(420,innerW
 nameStrip($('#names'),new URL('names.json',import.meta.url));
 $('#l1').innerHTML='<p class="small">Girls named Alexa per year, United States plus England and Wales (included from 1996, when their records start).</p>';
 
-$('#m').innerHTML=METHODS;
+$('#m').innerHTML=METHODS+'<p>Dictionary histories show Google Books uses per million words, 1900–2022, averaged over three-year bins; both casings share a scale from zero.</p>';
 const c=$('#c');c.innerHTML='<input type="search" id="q" placeholder="Look up a word or company" aria-label="Search"><span id="kb"></span><span id="lb"></span><span id="wb" role="group" aria-label="Words or names"></span>';
 const set=(h,o,cur,fn)=>{h.innerHTML=o.map(([v,t])=>`<button data-v="${v}" aria-pressed="${cur===v}">${t}</button> `).join('');h.onclick=e=>{const b=e.target.closest('button');if(b){fn(b.dataset.v);bar();n=220;render()}}};
 const bar=()=>{cats();set($('#kb'),[['','Any kind'],...Object.entries(KINDS)],ki,v=>ki=v);set($('#lb'),[['en','English words'],['all','Every language']],lang,v=>lang=v);set($('#wb'),[['','All'],['words','Words only'],['names','Names only']],type,v=>type=v)};bar();
 const entry=e=>{const pos=e.kind==='name'?'n. (given name)':'n.',u=e.group==='taken',b=`<span class="brandsense">${esc(e.brand)}${e.owner&&e.owner!==e.brand?' ('+esc(e.owner)+')':''}, since ${e.launch_year}.</span>`;
 let s;if(u)s=`<span class="n">1</span> ${b} <span class="n">2</span> <span class="orig gone">${esc(e.original_meaning)}</span>`;else if(e.group==='contested'){const o=`<span>${esc(e.original_meaning)}</span>`;s=e.winner==='brand'?`<span class="n">1</span> ${b} <span class="n">2</span> ${o}`:`<span class="n">1</span> ${o} <span class="n">2</span> ${b}`}else s=`<span class="n">1</span> ${esc(e.original_meaning)} <span class="small">Also ${esc(e.brand)}, ${e.launch_year}.</span>`;
 if(Array.isArray(e.also))e.also.forEach((a,i)=>{const details=[a.owner,a.launch_year].filter(x=>x!=null&&x!=='').map(esc).join(', ');s+=` ${u||e.group==='contested'?`<span class="n">${i+3}</span> `:''}<span class="small">Also ${esc(a.brand)}, ${esc(a.what)}${details?' ('+details+')':''}.</span>`});
-return `<div class="e" id="w-${esc(e.word.toLowerCase())}"><span class="hw">${esc(e.word)}</span> <span class="pos">${pos}</span> ${s}<span class="tag" style="color:${({contested:'#8a6500',failed:'#0e8a5f'})[e.group]||GROUPS[e.group].color}">${GROUPS[e.group].label}</span>${e.discontinued?`<span class="tag" style="color:var(--s)">Discontinued${e.end_year?' '+e.end_year:''}</span>`:''}</div>`};
-function render(){const r=filtered().filter(e=>!g||e.group===g);$('#tot').textContent=`${r.length} ${lang==='en'?'English ':''}entries`;cats();scat();let last='',h='';r.slice(0,n).forEach(e=>{const l=e.word[0].toUpperCase();if(l!==last){h+=`<div class="letter" id="L-${l}">${l}</div>`;last=l}h+=entry(e)});$('#dict').innerHTML=h||'<p>No entry.</p>';$('#more').style.display=r.length>n?'block':'none';$('#thumb').innerHTML=[...new Set(r.map(e=>e.word[0].toUpperCase()))].map(l=>`<a href="#L-${l}">${l}</a>`).join('');thumb();}
+return `<div class="e" id="w-${esc(e.word.toLowerCase())}"><div class="etext"><span class="hw">${esc(e.word)}</span> <span class="pos">${pos}</span> ${s}<span class="tag" style="color:${({contested:'#8a6500',failed:'#0e8a5f'})[e.group]||GROUPS[e.group].color}">${GROUPS[e.group].label}</span>${e.discontinued?`<span class="tag" style="color:var(--s)">Discontinued${e.end_year?' '+e.end_year:''}</span>`:''}</div></div>`};
+function render(){const r=filtered().filter(e=>!g||e.group===g);$('#tot').textContent=`${r.length} ${lang==='en'?'English ':''}entries`;cats();scat();let last='',h='';r.slice(0,n).forEach(e=>{const l=e.word[0].toUpperCase();if(l!==last){h+=`<div class="letter" id="L-${l}">${l}</div>`;last=l}h+=entry(e)});$('#dict').innerHTML=h||'<p>No entry.</p>';sparks($('#dict').querySelectorAll('.e'),r.slice(0,n));$('#more').style.display=r.length>n?'block':'none';$('#thumb').innerHTML=[...new Set(r.map(e=>e.word[0].toUpperCase()))].map(l=>`<a href="#L-${l}">${l}</a>`).join('');thumb();}
 $('#cattab').onclick=ev=>{const r=ev.target.closest('tr');if(!r)return;g=g===r.dataset.v?'':r.dataset.v;if(SC.some(x=>x[0]===g))sg=g;bar();n=220;render();$('#c').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
 const thumb=()=>$('#thumb').classList.toggle('on',$('#dict').getBoundingClientRect().top<innerHeight&&!!$('#dict .letter'));
 addEventListener('scroll',thumb,{passive:true});addEventListener('resize',thumb);
