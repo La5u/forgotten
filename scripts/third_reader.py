@@ -1,6 +1,7 @@
 """Independently resolve Gemini disagreements and article proposals with DeepSeek."""
 import csv
 import json
+import os
 import runpy
 import sys
 import time
@@ -15,6 +16,17 @@ VERIFY = Path('data/raw/verify')
 RESULTS = VERIFY / 'deepseek.jsonl'
 GROUPS = {'taken', 'contested', 'failed', 'watching', 'reject'}
 GEMINI = runpy.run_path('scripts/verify_gemini.py')
+
+
+def record_usage(payload, model):
+    # Add this call to the owner's usage tally (same as ~/.local/bin/mistral); never break a run.
+    try:
+        sys.path.append(os.path.expanduser('~/.config/waybar/ai-usage'))
+        import tally
+        u = payload.get('usage') or {}
+        tally.record('mistral', model, u.get('prompt_tokens'), u.get('completion_tokens'))
+    except Exception as exc:
+        print(f'usage not recorded ({exc})', file=sys.stderr)
 
 
 def key(word, task):
@@ -84,7 +96,9 @@ def verify(items, task, token):
             if response.status_code == 429 or 500 <= response.status_code < 600:
                 raise requests.ConnectionError(f'HTTP {response.status_code}')
             response.raise_for_status()
-            return parse_response(response.json(), items, task)
+            payload = response.json()
+            record_usage(payload, body['model'])
+            return parse_response(payload, items, task)
         except (requests.Timeout, requests.ConnectionError) as exc:
             if attempt == 7:
                 raise RuntimeError(f'after 8 attempts: {exc}') from exc
@@ -208,7 +222,7 @@ def main():
         token = Path('~/.config/mistral.key').expanduser().read_text(encoding='utf-8').strip()
         if not token:
             raise ValueError('empty Mistral API key')
-        with RESULTS.open('a', encoding='utf-8') as f, ThreadPoolExecutor(max_workers=3) as pool:
+        with RESULTS.open('a', encoding='utf-8') as f, ThreadPoolExecutor(max_workers=12) as pool:
             futures = {pool.submit(verify, batch, task, token): (task, batch) for task, batch in batches}
             for future in as_completed(futures):
                 task, batch = futures[future]
