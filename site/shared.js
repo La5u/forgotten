@@ -3,6 +3,7 @@ export const GROUPS = {taken:{label:'Taken',color:'#d0342c',note:'The brand come
   contested:{label:'Contested',color:'#b98700',note:'Both meanings are in daily use.'},
   failed:{label:'Failed',color:'#0e8a5f',note:'A company claimed the word and never owned it.'},
   watching:{label:'Watching',color:'#7a5ae0',note:'Too little data to call yet.'}};
+export const isName=e=>/^\p{Lu}/u.test(e.word);
 export const KINDS = {name:'Names',common:'Common words',rare:'Rare words'};
 export async function load(){const d=await(await fetch(new URL('data.json', import.meta.url))).json();
   d.entries.sort((a,b)=>a.word.localeCompare(b.word));d.by=Object.fromEntries(d.entries.map(e=>[e.word.toLowerCase(),e]));
@@ -69,7 +70,7 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   for(const e of pts){const g=el('g',{tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
     const cx=PX(e),cy=PY(e),col=(palette&&palette[e.group])||shade(e);
     el('circle',{cx,cy,r:12,fill:'transparent'},g);
-    el('path',{d:mark(e.discontinued?'x':e.brand_share==null?'sq':'dot',cx,cy,r),...markStyle(e.discontinued?'x':'',col,ring)},g);
+    el('path',{d:mark(isName(e)?'diamond':'dot',cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
     const on=ev=>{const r=ev.target.getBoundingClientRect?ev.target.getBoundingClientRect():{left:0,top:0};showTip(tipHTML(e),r.left,r.top)};
     g.addEventListener('pointerenter',on);g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
     if(onPick){g.addEventListener('click',()=>onPick(e));g.addEventListener('keydown',ev=>{if(ev.key==='Enter')onPick(e)})}}
@@ -86,17 +87,17 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   if(corners)for(const[x,y,a,t]of[[W-m.r-6,34,'end','Common word, now the brand\'s'],[m.l+8,34,'start','Rare word, now the brand\'s'],[W-m.r-6,H-m.b-10,'end','Common word, still its own']]){const c=el('text',{x,y,'text-anchor':a,fill:ink,'font-size':13,opacity:.6,'pointer-events':'none'},svg);c.textContent=t}
   const yt=el('text',{x:m.l,y:11,fill:ink,'font-size':12},svg);yt.textContent='↑ Brand share of attention today';
   const off=entries.filter(e=>e.group!=='watching'&&!pts.includes(e));
-  return {plotted:pts.length,dots:pts.filter(e=>!e.discontinued&&e.brand_share!=null).length,squares:pts.filter(e=>!e.discontinued&&e.brand_share==null).length,
-    crosses:pts.filter(e=>e.discontinued).length,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
-/* Scatter markers: dot = Wikipedia share, square = books estimate, × = discontinued product. Same size and weight for all. */
-function mark(k,x,y,r){if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=k==='sq'?r*.89:r*.95;
-  return k==='sq'?`M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`:`M${x-d} ${y-d}L${x+d} ${y+d}M${x+d} ${y-d}L${x-d} ${y+d}`}
-const markStyle=(k,col,ring)=>k==='x'?{fill:'none',stroke:col,'stroke-width':2,'stroke-linecap':'round'}:{fill:col,stroke:ring,'stroke-width':.8};
-export const MARK=(k,col)=>`<svg width="12" height="12" viewBox="-6 -6 12 12" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k,0,0,3.6)}" ${Object.entries(markStyle(k==='x'?'x':'',col,'#fff')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
+  return {plotted:pts.length,words:pts.filter(e=>!isName(e)).length,names:pts.filter(isName).length,
+    books:pts.filter(e=>e.brand_share==null).length,discontinued:pts.filter(e=>e.discontinued).length,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
+/* Equal-area markers: circle = word, diamond = capitalised name/place; dashed = books, white = discontinued. */
+function mark(k,x,y,r){if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
+  return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
+const markStyle=(gone,col,books)=>({fill:gone?'#fff':col,stroke:col,'stroke-width':1,'stroke-linejoin':'round',...(books?{'stroke-dasharray':'2 2',...(gone?{}:{'fill-opacity':.6})}:{})});
+export const MARK=(k,col)=>`<svg width="12" height="12" viewBox="-6 -6 12 12" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'?'diamond':'dot',0,0,3.6)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
 export function legend(items){return '<div class="legend">'+items.map(([c,t,d])=>`<span><i style="background:${c}${d?';background-image:repeating-linear-gradient(90deg,transparent 0 3px,#fff 3px 5px)':''}"></i>${esc(t)}</span>`).join('')+'</div>'}
 export const METHODS=`<p>Births come from the US Social Security Administration, the ONS (England and Wales), New South Wales and Ontario. Names under a publishing threshold are absent from those files, so a missing value means unknown or very small, never zero.</p>
 <p>Attention is median monthly English Wikipedia views over the last 12 months, with page moves merged, for the brand's page and the original meaning's page. People look up companies more than fruit, so this over-counts brands. It is one signal, along with capitalization in Google Books through 2022.</p>
-<p>On the chart, dots are measured from Wikipedia traffic. Squares are used when the original meaning has no Wikipedia article: they are estimated from how much more often the word is capitalised in books than before the launch, and books lag behind speech, so recent brands are understated. An × marks a discontinued product, which can still own the word.</p>
+<p>On the chart, circles are lowercase words and diamonds are capitalised names or places. Solid outlines show Wikipedia traffic. Dashed outlines show estimates when the original meaning has no Wikipedia article: they are estimated from how much more often the word is capitalised in books than before the launch, and books lag behind speech, so recent brands are understated. A hollow white marker marks a discontinued product, which can still own the word.</p>
 <p>A word counts if it now also names a product, service, company or franchise, and the general public uses the bare word for it. Company-owned characters count. Bands and people do not, which is an editorial choice. Words where both sides together get under 300 views a month are left out as too thin to judge.</p>
 <p>The groups are editorial judgments informed by that data, not outputs of a formula. A fall in a name after a launch does not prove the launch caused it, which is why similar names sit beside it where they exist.</p>
 <p>A trademark covers specific goods and services. It does not own a word. Registration details per entry are being added.</p>`;
