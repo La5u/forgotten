@@ -1,6 +1,6 @@
 """Build site/data.json from data/judged.json and the unified name counts."""
 import collections, csv, json, os
-OVERRIDES = {'meta': 'contested', 'docker': 'taken', 'twitter': 'taken', 'git': 'contested', 'yahoo': 'contested'}  # owner's call + 2026-11-09 review
+OVERRIDES = {'meta': 'contested', 'docker': 'taken', 'twitter': 'taken', 'git': 'contested', 'yahoo': 'taken'}  # owner's call + 2026-11-09 review
 # Field fixes from review (pageviews: median monthly 2024-11..2026-10).
 FIX = {
     'rockstar': dict(brand='Rockstar Games', owner='Take-Two Interactive', launch_year=1998, brand_views=97501.5, original_views=608.0,
@@ -52,6 +52,7 @@ def by_data(r):
 # article is about the word itself (its title contains the word), never a synonym concept (ask -> Question).
 FILL = {w: v for w, v in json.load(open('data/raw/orig_fill/views.json')).items()
         if v[1] and any(x in re.findall(r'[a-z]+', v[0].lower()) for x in stems(w))}
+REGIONS = json.load(open('data/regions.json')) if os.path.exists('data/regions.json') else {}
 SENSES = json.load(open('data/senses.json')) if os.path.exists('data/senses.json') else {}
 REVIEW = json.load(open('data/review_fixes.json'))  # Sonnet check 2026-11-09, reviewed by Opus
 for k, v in REVIEW['fix'].items(): FIX[k] = {**FIX.get(k, {}), **v}
@@ -88,12 +89,14 @@ for r in rows:
     r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year'])
     e = {k: r.get(k) for k in ('word', 'kind', 'brand', 'owner', 'launch_year', 'original_meaning', 'winner', 'confidence', 'reason', 'source_url', 'brand_views', 'original_views', 'brand_share', 'no_brand_article', 'cap_pre', 'cap_2022', 'pre_launch_per_million')}
     e.update(pre_launch_per_million=prefreq(r), group=g)
+    region = REGIONS.get(r['word'].lower(), {})
+    e['region'] = region.get('region')
     st = SWAPS.get(r['word'].lower(), {}).get('status', STATUS.get(r['word'].lower(), {}))
     e.update(discontinued=st.get('status') == 'discontinued', end_year=st.get('end_year'))
     e['abandoned'] = e['discontinued']  # old name, kept for other pages
     year = min(r['launch_year'], 2022)
-    e['cap_pre'] = cap(r['word'], year-5, year) if r['kind'] != 'name' else None
-    e['cap_2022'] = cap(r['word'], 2020, 2023) if r['kind'] != 'name' else None
+    e['cap_pre'] = cap(r['word'], year-5, year) if r['kind'] not in ('name', 'place') else None
+    e['cap_2022'] = cap(r['word'], 2020, 2023) if r['kind'] not in ('name', 'place') else None
     pre, recent = e['cap_pre'], e['cap_2022']
     e['brand_share_est'] = round(max(0, min(1, (recent-pre)/(1-pre))), 3) if e['brand_share'] is None and pre is not None and recent is not None and pre < .95 else None
     e['share_basis'] = 'wikipedia' if e['brand_share'] is not None else 'books' if e['brand_share_est'] is not None else None
@@ -102,9 +105,10 @@ for r in rows:
         e['us_drop'] = drops(n['us'], r['launch_year'])
         e['name_series'] = {s: {str(y): c for y, c in sorted(v.items()) if y >= 2000} for s, v in n.items()}
     w = r['word'].lower()
-    e['english'] = w not in FOREIGN and (any(x in LOWER for x in stems(w)) or w in ENGLISH or ('name_series' in e and r['kind'] == 'name'))
+    e['english'] = w not in FOREIGN and (any(x in LOWER for x in stems(w)) or w in ENGLISH or ('name_series' in e and r['kind'] in ('name', 'place')))
     if w in SENSES: e['also'] = SENSES[w]
-    e['word'] = w.capitalize() if r['kind'] in ('name', 'place') else w  # headwords lowercase, proper names capitalised (owner, 2026-11-09)
+    if region.get('place') is True: e['kind'] = 'place'
+    e['word'] = w.capitalize() if e['kind'] in ('name', 'place') else w  # headwords lowercase, proper names capitalised (owner, 2026-11-09)
     out.append(e)
 ssa = {}
 for y in range(1970, 2026):

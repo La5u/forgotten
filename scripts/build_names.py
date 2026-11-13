@@ -66,7 +66,7 @@ def table(rows):
         t[ty]['halved5'], t[ty]['up50_5'] = sum(v <= -50 for v in a5), sum(v >= 50 for v in a5)
         t[ty]['before5'] = {'median': med([s['before5'] for s in r if s['before5'] is not None and s['after'][5] is not None]), 'n': sum(s['before5'] is not None and s['after'][5] is not None for s in r)}
     return t
-summary = {'all': table(out), 'took_word': table([x for x in out if x['group'] in ('taken', 'contested')]), 'names_only': table([x for x in out if x['kind'] == 'name'])}
+summary = {'all': table(out), 'took_word': table([x for x in out if x['group'] in ('taken', 'contested')]), 'names_only': table([x for x in out if x['kind'] in ('name', 'place')])}
 # Cards on the page: names the brief singled out, then the most-viewed measurable brands that took the word, up to 14 per type,
 # skipping names that never reached 300 US births a year (too noisy). Alexa has its own chart.
 LEAD = 'Siri Dora Garfield Elsa Barbie Mario Tesla Mercedes'.split()
