@@ -3,7 +3,12 @@ import glob, json, collections, re
 rows = {(r['word'].lower(), r['brand'].lower()): r for r in json.load(open('data/classified.json'))}
 bad = 0
 # Eponyms the judge rejected but whose word has its own everyday meaning that the brand now competes with (2026-11-09).
-import sys; sys.path.insert(0, 'scripts'); from merge_preferences import PREFERRED
+import sys; sys.path.insert(0, 'scripts'); from merge_preferences import PREFERRED, SWAPS
+for w, s in SWAPS.items():
+    r = {**rows[w, s['previous_brand'].lower()], **s['row']}
+    b, o = r['brand_views'], r.get('original_views')
+    r['brand_share'] = b/(b+o) if b is not None and o else None
+    rows[w, r['brand'].lower()] = r
 KEEP_EPONYM = {'ford', 'dodge', 'dell', 'miller', 'singer', 'dole'}
 for p in sorted(glob.glob('data/raw/judge/*.jsonl')):
     for l in open(p):

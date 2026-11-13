@@ -64,7 +64,9 @@ LAST12 = [f'{y}{m:02d}' for y in (2025, 2026) for m in range(1, 13) if '202511' 
 def med12(t):
     v = VIEWS.get(t)
     return statistics.median(v.get(k, 0) for k in LAST12) if v else None
-from merge_preferences import PREFERRED
+from merge_preferences import PREFERRED, SWAPS
+for w in SWAPS:  # Judge files own the swapped brands' verdicts.
+    FIX[w] = {k: v for k, v in FIX.get(w, {}).items() if k not in ('group', 'winner', 'confidence', 'reason')}
 for r in rows:
     if r['word'].lower() in NOT_BARE and r['brand'].lower() != PREFERRED.get(r['word'].lower(), '').lower(): continue
     r.update(FIX.get(r['word'].lower(), {}))
@@ -86,7 +88,7 @@ for r in rows:
     r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year'])
     e = {k: r.get(k) for k in ('word', 'kind', 'brand', 'owner', 'launch_year', 'original_meaning', 'winner', 'confidence', 'reason', 'source_url', 'brand_views', 'original_views', 'brand_share', 'no_brand_article', 'cap_pre', 'cap_2022', 'pre_launch_per_million')}
     e.update(pre_launch_per_million=prefreq(r), group=g)
-    st = STATUS.get(r['word'].lower(), {})
+    st = SWAPS.get(r['word'].lower(), {}).get('status', STATUS.get(r['word'].lower(), {}))
     e.update(discontinued=st.get('status') == 'discontinued', end_year=st.get('end_year'))
     e['abandoned'] = e['discontinued']  # old name, kept for other pages
     year = min(r['launch_year'], 2022)

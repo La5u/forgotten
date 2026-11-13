@@ -2,21 +2,21 @@
   "ada": [
     {
       "brand": "Ada",
-      "owner": "Jean Ichbiah and the U.S. Department of Defense",
-      "launch_year": 1980,
-      "what": "a programming language",
-      "views": 14161,
-      "article": "Ada (programming language)"
+      "owner": "Ada",
+      "launch_year": 2016,
+      "what": "an artificial intelligence customer service platform",
+      "views": 934.0,
+      "article": "Ada Health"
     }
   ],
   "arrow": [
     {
-      "brand": "Arrow",
-      "owner": "Warner Bros. Television",
-      "launch_year": 2012,
-      "what": "a superhero television series",
-      "views": 42795.0,
-      "article": "Arrow (TV series)"
+      "brand": "Apache Arrow",
+      "owner": "Apache Software Foundation",
+      "launch_year": 2016,
+      "what": "a columnar data software framework",
+      "views": 1277.5,
+      "article": "Apache Arrow"
     }
   ],
   "boost": [
@@ -31,12 +31,12 @@
   ],
   "copilot": [
     {
-      "brand": "Microsoft Copilot",
+      "brand": "GitHub Copilot",
       "owner": "Microsoft",
-      "launch_year": 2023,
-      "what": "an artificial intelligence assistant",
-      "views": 53275,
-      "article": "Microsoft Copilot"
+      "launch_year": 2021,
+      "what": "an artificial intelligence coding assistant",
+      "views": 11046.0,
+      "article": "GitHub Copilot"
     }
   ],
   "flash": [
@@ -51,12 +51,12 @@
   ],
   "genesis": [
     {
-      "brand": "Genesis",
-      "owner": "Genesis",
-      "launch_year": 1967,
-      "what": "an English rock band",
-      "views": 101590,
-      "article": "Genesis (band)"
+      "brand": "Sega Genesis",
+      "owner": "Sega",
+      "launch_year": 1989,
+      "what": "a video game console",
+      "views": 39005.5,
+      "article": "Sega Genesis"
     },
     {
       "brand": "Genesis",
@@ -69,12 +69,12 @@
   ],
   "lex": [
     {
-      "brand": "Lex Luthor",
-      "owner": "DC Comics",
-      "launch_year": 1940,
-      "what": "a comic-book supervillain",
-      "views": 27166.0,
-      "article": "Lex Luthor"
+      "brand": "Lex",
+      "owner": "Amazon",
+      "launch_year": 2016,
+      "what": "a conversational artificial intelligence service",
+      "views": 186.0,
+      "article": "Amazon Lex"
     }
   ],
   "mint": [
@@ -89,12 +89,12 @@
   ],
   "nova": [
     {
-      "brand": "Nova",
-      "owner": "GBH",
-      "launch_year": 1974,
-      "what": "a science documentary television series",
-      "views": 4218.5,
-      "article": "Nova (American TV program)"
+      "brand": "Amazon Nova",
+      "owner": "Amazon",
+      "launch_year": 2024,
+      "what": "a family of artificial intelligence models",
+      "views": 3098.5,
+      "article": "Amazon Nova"
     }
   ],
   "pilot": [
@@ -119,12 +119,12 @@
   ],
   "prodigy": [
     {
-      "brand": "The Prodigy",
-      "owner": "The Prodigy",
-      "launch_year": 1990,
-      "what": "an English electronic music group",
-      "views": 92278.0,
-      "article": "The Prodigy"
+      "brand": "Prodigy",
+      "owner": "IBM and Sears",
+      "launch_year": 1988,
+      "what": "an online service",
+      "views": 4175.0,
+      "article": "Prodigy (online service)"
     }
   ],
   "saturn": [
@@ -139,12 +139,12 @@
   ],
   "sublime": [
     {
-      "brand": "Sublime",
-      "owner": "Sublime",
-      "launch_year": 1988,
-      "what": "an American rock band",
-      "views": 52455,
-      "article": "Sublime (band)"
+      "brand": "Sublime Text",
+      "owner": "Sublime HQ",
+      "launch_year": 2008,
+      "what": "a text editor",
+      "views": 4781.5,
+      "article": "Sublime Text"
     }
   ],
   "sun": [
@@ -159,22 +159,22 @@
   ],
   "tomcat": [
     {
-      "brand": "F-14 Tomcat",
-      "owner": "Grumman",
-      "launch_year": 1970,
-      "what": "a carrier-based fighter aircraft",
-      "views": 77324.0,
-      "article": "Grumman F-14 Tomcat"
+      "brand": "Apache Tomcat",
+      "owner": "Apache Software Foundation",
+      "launch_year": 1999,
+      "what": "a Java web application server",
+      "views": 4488.0,
+      "article": "Apache Tomcat"
     }
   ],
   "travis": [
     {
-      "brand": "Travis",
-      "owner": "Travis",
-      "launch_year": 1990,
-      "what": "a Scottish rock band",
-      "views": 13719.0,
-      "article": "Travis (band)"
+      "brand": "Travis CI",
+      "owner": "Idera, Inc.",
+      "launch_year": 2011,
+      "what": "a continuous integration service",
+      "views": 474.5,
+      "article": "Travis CI"
     }
   ]
 }

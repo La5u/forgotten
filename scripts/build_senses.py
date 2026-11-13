@@ -5,6 +5,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
 sys.path.insert(0, 'scripts'); from wiki_mappings import mappings
+from merge_preferences import SWAPS
 P = 'data/raw/senses'
 UA = 'forgotten-research/0.1 (https://github.com/la5u/forgotten)'
 def read(p, default=None):
@@ -77,6 +78,8 @@ def build():
         if t in seen.setdefault(w, set()): continue
         seen[w].add(t)
         out.setdefault(w, []).append(dict(brand=r.get('brand'), owner=r.get('owner'), launch_year=r.get('launch_year'), what=r.get('what'), views=v, article=t))
+    for w, s in SWAPS.items():  # Keep the former published brands even below the traffic cutoff.
+        if w in entries: out[w] = s['senses']
     out = {w: sorted(rows, key=lambda r: r['views'], reverse=True)[:2] for w, rows in sorted(out.items())}
     json.dump(out, open('data/senses.json', 'w'), indent=2, ensure_ascii=False)
     with open(P + '/need_views.txt', 'w') as f:

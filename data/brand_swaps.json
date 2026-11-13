@@ -1,0 +1,270 @@
+{
+  "prodigy": {
+    "previous_brand": "Prodigy",
+    "row": {
+      "brand": "The Prodigy",
+      "owner": "The Prodigy",
+      "launch_year": 1990,
+      "kind": "common",
+      "brand_article": "The Prodigy",
+      "brand_views": 92278.0,
+      "source_url": "https://en.wikipedia.org/wiki/The_Prodigy"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Prodigy",
+        "owner": "IBM and Sears",
+        "launch_year": 1988,
+        "what": "an online service",
+        "views": 4175.0,
+        "article": "Prodigy (online service)"
+      }
+    ]
+  },
+  "genesis": {
+    "previous_brand": "Sega Genesis",
+    "row": {
+      "brand": "Genesis",
+      "owner": "Genesis",
+      "launch_year": 1967,
+      "kind": "common",
+      "brand_article": "Genesis (band)",
+      "brand_views": 101590,
+      "source_url": "https://en.wikipedia.org/wiki/Genesis_(band)"
+    },
+    "status": {
+      "status": "discontinued",
+      "end_year": 2022
+    },
+    "senses": [
+      {
+        "brand": "Sega Genesis",
+        "owner": "Sega",
+        "launch_year": 1989,
+        "what": "a video game console",
+        "views": 39005.5,
+        "article": "Sega Genesis"
+      },
+      {
+        "brand": "Genesis",
+        "owner": "Hyundai Motor Company",
+        "launch_year": 2015,
+        "what": "a luxury car brand",
+        "views": 29005.5,
+        "article": "Genesis Motor"
+      }
+    ]
+  },
+  "tomcat": {
+    "previous_brand": "Apache Tomcat",
+    "row": {
+      "brand": "F-14 Tomcat",
+      "owner": "Grumman",
+      "launch_year": 1970,
+      "kind": "common",
+      "brand_article": "Grumman F-14 Tomcat",
+      "brand_views": 77324.0,
+      "source_url": "https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Apache Tomcat",
+        "owner": "Apache Software Foundation",
+        "launch_year": 1999,
+        "what": "a Java web application server",
+        "views": 4488.0,
+        "article": "Apache Tomcat"
+      }
+    ]
+  },
+  "sublime": {
+    "previous_brand": "Sublime Text",
+    "row": {
+      "brand": "Sublime",
+      "owner": "Sublime",
+      "launch_year": 1988,
+      "kind": "common",
+      "brand_article": "Sublime (band)",
+      "brand_views": 52455,
+      "source_url": "https://en.wikipedia.org/wiki/Sublime_(band)"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Sublime Text",
+        "owner": "Sublime HQ",
+        "launch_year": 2008,
+        "what": "a text editor",
+        "views": 4781.5,
+        "article": "Sublime Text"
+      }
+    ]
+  },
+  "copilot": {
+    "previous_brand": "GitHub Copilot",
+    "row": {
+      "brand": "Microsoft Copilot",
+      "owner": "Microsoft",
+      "launch_year": 2023,
+      "kind": "common",
+      "brand_article": "Microsoft Copilot",
+      "brand_views": 53275,
+      "source_url": "https://en.wikipedia.org/wiki/Microsoft_Copilot"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "GitHub Copilot",
+        "owner": "Microsoft",
+        "launch_year": 2021,
+        "what": "an artificial intelligence coding assistant",
+        "views": 11046.0,
+        "article": "GitHub Copilot"
+      }
+    ]
+  },
+  "arrow": {
+    "previous_brand": "Apache Arrow",
+    "row": {
+      "brand": "Arrow",
+      "owner": "Warner Bros. Television",
+      "launch_year": 2012,
+      "kind": "common",
+      "brand_article": "Arrow (TV series)",
+      "brand_views": 42795.0,
+      "source_url": "https://en.wikipedia.org/wiki/Arrow_(TV_series)"
+    },
+    "status": {
+      "status": "discontinued",
+      "end_year": 2020
+    },
+    "senses": [
+      {
+        "brand": "Apache Arrow",
+        "owner": "Apache Software Foundation",
+        "launch_year": 2016,
+        "what": "a columnar data software framework",
+        "views": 1277.5,
+        "article": "Apache Arrow"
+      }
+    ]
+  },
+  "lex": {
+    "previous_brand": "Lex",
+    "row": {
+      "brand": "Lex Luthor",
+      "owner": "DC Comics",
+      "launch_year": 1940,
+      "kind": "name",
+      "brand_article": "Lex Luthor",
+      "brand_views": 27166.0,
+      "source_url": "https://en.wikipedia.org/wiki/Lex_Luthor"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Lex",
+        "owner": "Amazon",
+        "launch_year": 2016,
+        "what": "a conversational artificial intelligence service",
+        "views": 186.0,
+        "article": "Amazon Lex"
+      }
+    ]
+  },
+  "ada": {
+    "previous_brand": "Ada",
+    "row": {
+      "brand": "Ada",
+      "owner": "Jean Ichbiah and the U.S. Department of Defense",
+      "launch_year": 1980,
+      "kind": "name",
+      "brand_article": "Ada (programming language)",
+      "brand_views": 14161,
+      "source_url": "https://en.wikipedia.org/wiki/Ada_(programming_language)"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Ada",
+        "owner": "Ada",
+        "launch_year": 2016,
+        "what": "an artificial intelligence customer service platform",
+        "views": 934.0,
+        "article": "Ada Health"
+      }
+    ]
+  },
+  "travis": {
+    "previous_brand": "Travis CI",
+    "row": {
+      "brand": "Travis",
+      "owner": "Travis",
+      "launch_year": 1990,
+      "kind": "name",
+      "brand_article": "Travis (band)",
+      "brand_views": 13719.0,
+      "source_url": "https://en.wikipedia.org/wiki/Travis_(band)"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Travis CI",
+        "owner": "Idera, Inc.",
+        "launch_year": 2011,
+        "what": "a continuous integration service",
+        "views": 474.5,
+        "article": "Travis CI"
+      }
+    ]
+  },
+  "nova": {
+    "previous_brand": "Amazon Nova",
+    "row": {
+      "brand": "Nova",
+      "owner": "GBH",
+      "launch_year": 1974,
+      "kind": "common",
+      "brand_article": "Nova (American TV program)",
+      "brand_views": 4218.5,
+      "source_url": "https://en.wikipedia.org/wiki/Nova_(American_TV_program)"
+    },
+    "status": {
+      "status": "active",
+      "end_year": null
+    },
+    "senses": [
+      {
+        "brand": "Amazon Nova",
+        "owner": "Amazon",
+        "launch_year": 2024,
+        "what": "a family of artificial intelligence models",
+        "views": 3098.5,
+        "article": "Amazon Nova"
+      }
+    ]
+  }
+}

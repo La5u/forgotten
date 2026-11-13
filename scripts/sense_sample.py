@@ -80,8 +80,8 @@ Original everyday meaning: {orig}
 
 For each numbered sentence, label the use of "{word}" as:
 - "brand": refers to {brand} (this brand, product, company or character), including when written with a fuller name or as part of it.
-- "original": the original meaning listed above, including its ordinary figurative or extended uses. A clearly different established sense of the word (one not covered by the listed meaning) is not "original": label it "other" with a note naming that sense.
-- "other": anything else (a different brand or company, a person, place, title, team, a different sense, etc.) or unclear. For "other" add a 2-4 word note of what it is.
+- "original": the original meaning listed above OR any other ordinary dictionary sense of the word as a common noun, verb or adjective, including figurative or extended uses. For example, camera "zoom in" is "original" for zoom, and "online avatar" is "original" for avatar.
+- "other": only proper names that are not {brand} (another brand or company, a person, place, title or team), website boilerplate, or genuinely unclear uses, subject to the personal-name rule below. For "other" add a 2-4 word note of what it is, except use the exact note "boilerplate" for website boilerplate.
 If the original meaning is itself a personal name (a given name or surname), then any real or fictional person called that name who is not {brand} counts as "original"; apply this consistently.
 If the word only appears inside website boilerplate (navigation, menus, share buttons, follow-us or social links), label it "other" with note "boilerplate".
 If the word appears more than once, label the dominant use. Judge each sentence on its own.
