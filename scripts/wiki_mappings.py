@@ -7,5 +7,8 @@ def mappings():
             if l.startswith('{'):
                 r = json.loads(l)
                 k = (r['word'].lower(), re.sub(r' \(\d{4}\)$', '', r['brand']).lower())
-                out[k] = {**out.get(k, {}), **{f: v for f, v in r.items() if v not in ('', None)}}  # an empty re-map never erases an older article
+                merged = out.setdefault(k, {})
+                for f, v in r.items():
+                    if f in ('brand_article', 'original_article') and v == '-': merged.pop(f, None)
+                    elif v not in ('', None): merged[f] = v  # empty re-maps keep older values
     return out

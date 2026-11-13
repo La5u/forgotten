@@ -118,10 +118,10 @@ def main():
         if r.get('discontinued') != s.get('discontinued') or r.get('end_year') != s.get('end_year'):
             statuses.append((s['word'], s.get('discontinued'), s.get('end_year'), r.get('discontinued'), r.get('end_year')))
         brand_key = re.sub(r' \(\d{4}\)$', '', j['brand']).lower()
-        m = maps.get((k, brand_key), {})
+        m = maps.get((k, brand_key), j)
         for side in ('brand', 'original'):
             field = side + '_article'
-            current = title(m.get(field) or j.get(field))
+            current = title(m.get(field))
             suggested = title(r.get(field + '_better'))
             if suggested and key(suggested) != key(current): candidates.append((j, side, current, suggested))
     checks = load(CHECK); check_titles((x[3] for x in candidates), checks)

@@ -1,4370 +1,4526 @@
 {
-  "aardvark": {
-    "region": null,
-    "place": null
-  },
-  "access": {
-    "region": null,
-    "place": null
-  },
-  "accord": {
-    "region": null,
-    "place": null
-  },
-  "ace": {
-    "region": "US",
-    "place": null
-  },
-  "acer": {
-    "region": null,
-    "place": null
-  },
-  "acorns": {
-    "region": "US",
-    "place": null
-  },
-  "acrobat": {
-    "region": null,
-    "place": null
-  },
-  "ada": {
-    "region": null,
-    "place": false
-  },
-  "adaptation": {
-    "region": null,
-    "place": null
-  },
-  "admiral": {
-    "region": "UK",
-    "place": null
-  },
-  "adobe": {
-    "region": null,
-    "place": null
-  },
-  "aerie": {
-    "region": null,
-    "place": null
-  },
-  "aero": {
-    "region": null,
-    "place": null
-  },
-  "affinity": {
-    "region": null,
-    "place": null
-  },
-  "affirm": {
-    "region": null,
-    "place": null
-  },
-  "aim": {
-    "region": null,
-    "place": null
-  },
-  "airdrop": {
-    "region": null,
-    "place": null
-  },
-  "airflow": {
-    "region": null,
-    "place": null
-  },
-  "airheads": {
-    "region": "US",
-    "place": null
-  },
-  "airwaves": {
-    "region": "UK",
-    "place": null
-  },
-  "ajax": {
-    "region": null,
-    "place": false
-  },
-  "akira": {
-    "region": null,
-    "place": false
-  },
-  "alan": {
-    "region": null,
-    "place": false
-  },
-  "aldo": {
-    "region": null,
-    "place": false
-  },
-  "alexa": {
-    "region": null,
-    "place": false
-  },
-  "alexia": {
-    "region": null,
-    "place": false
-  },
-  "alice": {
-    "region": null,
-    "place": false
-  },
-  "alien": {
-    "region": null,
-    "place": null
-  },
-  "allegra": {
-    "region": null,
-    "place": false
-  },
-  "allure": {
-    "region": "US",
-    "place": null
-  },
-  "ally": {
-    "region": "US",
-    "place": null
-  },
-  "alphabet": {
-    "region": null,
-    "place": null
-  },
-  "amazon": {
-    "region": null,
-    "place": true
-  },
-  "ambrosia": {
-    "region": "UK",
-    "place": null
-  },
-  "amelia": {
-    "region": null,
-    "place": false
-  },
-  "amen": {
-    "region": null,
-    "place": null
-  },
-  "america": {
-    "region": null,
-    "place": true
-  },
-  "amy": {
-    "region": null,
-    "place": false
-  },
-  "anastasia": {
-    "region": null,
-    "place": false
-  },
-  "anchor": {
-    "region": null,
-    "place": null
-  },
-  "android": {
-    "region": null,
-    "place": null
-  },
-  "angular": {
-    "region": null,
-    "place": null
-  },
-  "annabelle": {
-    "region": null,
-    "place": false
-  },
-  "annie": {
-    "region": null,
-    "place": false
-  },
-  "ant": {
-    "region": null,
-    "place": null
-  },
-  "anthem": {
-    "region": "US",
-    "place": null
-  },
-  "anthrax": {
-    "region": null,
-    "place": null
-  },
-  "anthropic": {
-    "region": null,
-    "place": null
-  },
-  "apex": {
-    "region": null,
-    "place": null
-  },
-  "apollo": {
-    "region": null,
-    "place": null
-  },
-  "apple": {
-    "region": null,
-    "place": null
-  },
-  "aquarius": {
-    "region": null,
-    "place": null
-  },
-  "arc": {
-    "region": null,
-    "place": null
-  },
-  "archer": {
-    "region": null,
-    "place": null
-  },
-  "aria": {
-    "region": null,
-    "place": null
-  },
-  "ariel": {
-    "region": null,
-    "place": false
-  },
-  "ark": {
-    "region": null,
-    "place": null
-  },
-  "arlo": {
-    "region": null,
-    "place": false
-  },
-  "arm": {
-    "region": null,
-    "place": null
-  },
-  "arrow": {
-    "region": null,
-    "place": null
-  },
-  "arrowhead": {
-    "region": "US",
-    "place": null
-  },
-  "artemis": {
-    "region": null,
-    "place": false
-  },
-  "arthur": {
-    "region": null,
-    "place": false
-  },
-  "asana": {
-    "region": null,
-    "place": null
-  },
-  "asia": {
-    "region": null,
-    "place": true
-  },
-  "ask": {
-    "region": null,
-    "place": null
-  },
-  "asphalt": {
-    "region": null,
-    "place": null
-  },
-  "asteroids": {
-    "region": null,
-    "place": null
-  },
-  "astrid": {
-    "region": null,
-    "place": false
-  },
-  "atlantic": {
-    "region": null,
-    "place": null
-  },
-  "atom": {
-    "region": null,
-    "place": null
-  },
-  "audacity": {
-    "region": null,
-    "place": null
-  },
-  "audible": {
-    "region": null,
-    "place": null
-  },
-  "august": {
-    "region": null,
-    "place": null
-  },
-  "aurora": {
-    "region": null,
-    "place": false
-  },
-  "avast": {
-    "region": null,
-    "place": null
-  },
-  "avatar": {
-    "region": null,
-    "place": null
-  },
-  "avengers": {
-    "region": null,
-    "place": null
-  },
-  "avocado": {
-    "region": null,
-    "place": null
-  },
-  "avon": {
-    "region": null,
-    "place": true
-  },
-  "axe": {
-    "region": null,
-    "place": null
-  },
-  "aztec": {
-    "region": "UK",
-    "place": null
-  },
-  "azure": {
-    "region": null,
-    "place": null
-  },
-  "babe": {
-    "region": null,
-    "place": null
-  },
-  "bambi": {
-    "region": null,
-    "place": false
-  },
-  "bamboo": {
-    "region": null,
-    "place": null
-  },
-  "bane": {
-    "region": null,
-    "place": null
-  },
-  "bang": {
-    "region": null,
-    "place": null
-  },
-  "barbie": {
-    "region": null,
-    "place": false
-  },
-  "bard": {
-    "region": null,
-    "place": null
-  },
-  "barney": {
-    "region": null,
-    "place": false
-  },
-  "basecamp": {
-    "region": null,
-    "place": null
-  },
-  "batiste": {
-    "region": null,
-    "place": null
-  },
-  "batman": {
-    "region": null,
-    "place": null
-  },
-  "battlefield": {
-    "region": null,
-    "place": null
-  },
-  "battleship": {
-    "region": null,
-    "place": null
-  },
-  "bazooka": {
-    "region": null,
-    "place": null
-  },
-  "bear": {
-    "region": null,
-    "place": null
-  },
-  "beats": {
-    "region": null,
-    "place": null
-  },
-  "bee": {
-    "region": null,
-    "place": null
-  },
-  "beefeater": {
-    "region": null,
-    "place": null
-  },
-  "beeper": {
-    "region": null,
-    "place": null
-  },
-  "beetle": {
-    "region": null,
-    "place": null
-  },
-  "bejeweled": {
-    "region": null,
-    "place": null
-  },
-  "benefit": {
-    "region": null,
-    "place": null
-  },
-  "berserk": {
-    "region": null,
-    "place": null
-  },
-  "big": {
-    "region": null,
-    "place": null
-  },
-  "billabong": {
-    "region": null,
-    "place": null
-  },
-  "billboard": {
-    "region": null,
-    "place": null
-  },
-  "bimbo": {
-    "region": null,
-    "place": null
-  },
-  "bing": {
-    "region": null,
-    "place": null
-  },
-  "bird": {
-    "region": null,
-    "place": null
-  },
-  "bixby": {
-    "region": null,
-    "place": false
-  },
-  "blackberry": {
-    "region": null,
-    "place": null
-  },
-  "blade": {
-    "region": null,
-    "place": null
-  },
-  "bleach": {
-    "region": null,
-    "place": null
-  },
-  "blender": {
-    "region": null,
-    "place": null
-  },
-  "blink": {
-    "region": null,
-    "place": null
-  },
-  "bliss": {
-    "region": null,
-    "place": null
-  },
-  "blizzard": {
-    "region": null,
-    "place": null
-  },
-  "blob": {
-    "region": null,
-    "place": null
-  },
-  "block": {
-    "region": null,
-    "place": null
-  },
-  "blockbuster": {
-    "region": null,
-    "place": null
-  },
-  "bloom": {
-    "region": null,
-    "place": null
-  },
-  "bluey": {
-    "region": null,
-    "place": null
-  },
-  "bobcat": {
-    "region": null,
-    "place": null
-  },
-  "boggle": {
-    "region": null,
-    "place": null
-  },
-  "bold": {
-    "region": null,
-    "place": null
-  },
-  "bolt": {
-    "region": null,
-    "place": null
-  },
-  "bonanza": {
-    "region": null,
-    "place": null
-  },
-  "bonsai": {
-    "region": null,
-    "place": null
-  },
-  "boost": {
-    "region": "UK",
-    "place": null
-  },
-  "boots": {
-    "region": "UK",
-    "place": null
-  },
-  "borderlands": {
-    "region": null,
-    "place": null
-  },
-  "borders": {
-    "region": null,
-    "place": null
-  },
-  "boss": {
-    "region": null,
-    "place": null
-  },
-  "boston": {
-    "region": null,
-    "place": true
-  },
-  "bounty": {
-    "region": null,
-    "place": null
-  },
-  "bowser": {
-    "region": null,
-    "place": null
-  },
-  "box": {
-    "region": null,
-    "place": null
-  },
-  "brackets": {
-    "region": null,
-    "place": null
-  },
-  "braid": {
-    "region": null,
-    "place": null
-  },
-  "brave": {
-    "region": null,
-    "place": null
-  },
-  "bravo": {
-    "region": "US",
-    "place": null
-  },
-  "breakout": {
-    "region": null,
-    "place": null
-  },
-  "brigade": {
-    "region": null,
-    "place": null
-  },
-  "brilliant": {
-    "region": null,
-    "place": null
-  },
-  "brisk": {
-    "region": null,
-    "place": null
-  },
-  "bronco": {
-    "region": null,
-    "place": null
-  },
-  "brother": {
-    "region": null,
-    "place": null
-  },
-  "brut": {
-    "region": null,
-    "place": null
-  },
-  "bud": {
-    "region": null,
-    "place": null
-  },
-  "buffy": {
-    "region": null,
-    "place": false
-  },
-  "bugles": {
-    "region": "US",
-    "place": null
-  },
-  "bully": {
-    "region": null,
-    "place": null
-  },
-  "bumble": {
-    "region": null,
-    "place": null
-  },
-  "bump": {
-    "region": null,
-    "place": null
-  },
-  "burbs": {
-    "region": null,
-    "place": null
-  },
-  "burnout": {
-    "region": null,
-    "place": null
-  },
-  "burrow": {
-    "region": null,
-    "place": null
-  },
-  "butterfinger": {
-    "region": "US",
-    "place": null
-  },
-  "buzz": {
-    "region": null,
-    "place": null
-  },
-  "cable": {
-    "region": null,
-    "place": null
-  },
-  "cadence": {
-    "region": null,
-    "place": null
-  },
-  "cadillac": {
-    "region": null,
-    "place": true
-  },
-  "caffeine": {
-    "region": null,
-    "place": null
-  },
-  "calibre": {
-    "region": null,
-    "place": null
-  },
-  "calm": {
-    "region": null,
-    "place": null
-  },
-  "camel": {
-    "region": null,
-    "place": null
-  },
-  "canon": {
-    "region": null,
-    "place": null
-  },
-  "canvas": {
-    "region": null,
-    "place": null
-  },
-  "carbon": {
-    "region": null,
-    "place": null
-  },
-  "caress": {
-    "region": null,
-    "place": null
-  },
-  "carnage": {
-    "region": null,
-    "place": null
-  },
-  "carnation": {
-    "region": null,
-    "place": null
-  },
-  "carnival": {
-    "region": null,
-    "place": null
-  },
-  "carrie": {
-    "region": null,
-    "place": false
-  },
-  "carrier": {
-    "region": null,
-    "place": null
-  },
-  "cascade": {
-    "region": null,
-    "place": null
-  },
-  "casino": {
-    "region": null,
-    "place": null
-  },
-  "casper": {
-    "region": null,
-    "place": false
-  },
-  "cassandra": {
-    "region": null,
-    "place": false
-  },
-  "catchphrase": {
-    "region": null,
-    "place": null
-  },
-  "caterpillar": {
-    "region": null,
-    "place": null
-  },
-  "cathy": {
-    "region": null,
-    "place": false
-  },
-  "celebrations": {
-    "region": null,
-    "place": null
-  },
-  "celeste": {
-    "region": null,
-    "place": false
-  },
-  "celia": {
-    "region": null,
-    "place": false
-  },
-  "celine": {
-    "region": null,
-    "place": false
-  },
-  "cell": {
-    "region": null,
-    "place": null
-  },
-  "celsius": {
-    "region": null,
-    "place": false
-  },
-  "centipede": {
-    "region": null,
-    "place": null
-  },
-  "chai": {
-    "region": null,
-    "place": null
-  },
-  "champion": {
-    "region": null,
-    "place": null
-  },
-  "character": {
-    "region": null,
-    "place": null
-  },
-  "charger": {
-    "region": null,
-    "place": null
-  },
-  "chartreuse": {
-    "region": null,
-    "place": true
-  },
-  "chase": {
-    "region": null,
-    "place": null
-  },
-  "checkers": {
-    "region": "US",
-    "place": null
-  },
-  "cheer": {
-    "region": null,
-    "place": null
-  },
-  "cheerios": {
-    "region": null,
-    "place": null
-  },
-  "cheers": {
-    "region": null,
-    "place": null
-  },
-  "chef": {
-    "region": null,
-    "place": null
-  },
-  "cherry": {
-    "region": null,
-    "place": null
-  },
-  "chesterfield": {
-    "region": null,
-    "place": true
-  },
-  "chevron": {
-    "region": null,
-    "place": null
-  },
-  "chewy": {
-    "region": "US",
-    "place": null
-  },
-  "chime": {
-    "region": null,
-    "place": null
-  },
-  "chipotle": {
-    "region": null,
-    "place": null
-  },
-  "christine": {
-    "region": null,
-    "place": false
-  },
-  "chrome": {
-    "region": null,
-    "place": null
-  },
-  "chromium": {
-    "region": null,
-    "place": null
-  },
-  "chucky": {
-    "region": null,
-    "place": false
-  },
-  "citizen": {
-    "region": null,
-    "place": null
-  },
-  "civic": {
-    "region": null,
-    "place": null
-  },
-  "civilization": {
-    "region": null,
-    "place": null
-  },
-  "claude": {
-    "region": null,
-    "place": false
-  },
-  "clear": {
-    "region": null,
-    "place": null
-  },
-  "cleo": {
-    "region": null,
-    "place": false
-  },
-  "clio": {
-    "region": null,
-    "place": false
-  },
-  "clover": {
-    "region": null,
-    "place": null
-  },
-  "clubhouse": {
-    "region": null,
-    "place": null
-  },
-  "clue": {
-    "region": null,
-    "place": null
-  },
-  "clueless": {
-    "region": null,
-    "place": null
-  },
-  "coach": {
-    "region": null,
-    "place": null
-  },
-  "coast": {
-    "region": null,
-    "place": null
-  },
-  "cocoon": {
-    "region": null,
-    "place": null
-  },
-  "coda": {
-    "region": null,
-    "place": null
-  },
-  "codex": {
-    "region": null,
-    "place": null
-  },
-  "cohere": {
-    "region": null,
-    "place": null
-  },
-  "cohost": {
-    "region": null,
-    "place": null
-  },
-  "coke": {
-    "region": null,
-    "place": null
-  },
-  "columbia": {
-    "region": null,
-    "place": true
-  },
-  "comet": {
-    "region": null,
-    "place": null
-  },
-  "comfort": {
-    "region": null,
-    "place": null
-  },
-  "commodore": {
-    "region": null,
-    "place": null
-  },
-  "community": {
-    "region": null,
-    "place": null
-  },
-  "confluence": {
-    "region": null,
-    "place": null
-  },
-  "consul": {
-    "region": null,
-    "place": null
-  },
-  "contra": {
-    "region": null,
-    "place": null
-  },
-  "control": {
-    "region": null,
-    "place": null
-  },
-  "converse": {
-    "region": null,
-    "place": null
-  },
-  "copilot": {
-    "region": null,
-    "place": null
-  },
-  "cora": {
-    "region": null,
-    "place": false
-  },
-  "coraline": {
-    "region": null,
-    "place": false
-  },
-  "corduroy": {
-    "region": null,
-    "place": null
-  },
-  "corgi": {
-    "region": null,
-    "place": null
-  },
-  "corolla": {
-    "region": null,
-    "place": null
-  },
-  "corona": {
-    "region": null,
-    "place": null
-  },
-  "corsair": {
-    "region": null,
-    "place": null
-  },
-  "cortana": {
-    "region": null,
-    "place": null
-  },
-  "corvette": {
-    "region": null,
-    "place": null
-  },
-  "cosmopolitan": {
-    "region": null,
-    "place": null
-  },
-  "cosmos": {
-    "region": null,
-    "place": null
-  },
-  "countdown": {
-    "region": "UK",
-    "place": null
-  },
-  "creed": {
-    "region": null,
-    "place": null
-  },
-  "crest": {
-    "region": null,
-    "place": null
-  },
-  "cricket": {
-    "region": "US",
-    "place": null
-  },
-  "crocs": {
-    "region": null,
-    "place": null
-  },
-  "crucible": {
-    "region": null,
-    "place": null
-  },
-  "cruise": {
-    "region": null,
-    "place": null
-  },
-  "crunch": {
-    "region": null,
-    "place": null
-  },
-  "crush": {
-    "region": null,
-    "place": null
-  },
-  "cruze": {
-    "region": null,
-    "place": false
-  },
-  "cursor": {
-    "region": null,
-    "place": null
-  },
-  "curve": {
-    "region": null,
-    "place": null
-  },
-  "cyborg": {
-    "region": null,
-    "place": null
-  },
-  "cyclops": {
-    "region": null,
-    "place": null
-  },
-  "daisy": {
-    "region": null,
-    "place": null
-  },
-  "dallas": {
-    "region": null,
-    "place": true
-  },
-  "dash": {
-    "region": null,
-    "place": null
-  },
-  "data": {
-    "region": null,
-    "place": null
-  },
-  "dawn": {
-    "region": null,
-    "place": null
-  },
-  "debonair": {
-    "region": null,
-    "place": null
-  },
-  "decathlon": {
-    "region": null,
-    "place": null
-  },
-  "degree": {
-    "region": null,
-    "place": null
-  },
-  "delicious": {
-    "region": null,
-    "place": null
-  },
-  "deliverance": {
-    "region": null,
-    "place": null
-  },
-  "dell": {
-    "region": null,
-    "place": null
-  },
-  "delta": {
-    "region": null,
-    "place": null
-  },
-  "deluge": {
-    "region": null,
-    "place": null
-  },
-  "desperado": {
-    "region": null,
-    "place": null
-  },
-  "destiny": {
-    "region": null,
-    "place": null
-  },
-  "detour": {
-    "region": null,
-    "place": null
-  },
-  "devin": {
-    "region": null,
-    "place": false
-  },
-  "dexter": {
-    "region": null,
-    "place": false
-  },
-  "dial": {
-    "region": null,
-    "place": null
-  },
-  "dialect": {
-    "region": null,
-    "place": null
-  },
-  "diesel": {
-    "region": null,
-    "place": null
-  },
-  "diplomacy": {
-    "region": null,
-    "place": null
-  },
-  "discord": {
-    "region": null,
-    "place": null
-  },
-  "discover": {
-    "region": "US",
-    "place": null
-  },
-  "discovery": {
-    "region": null,
-    "place": null
-  },
-  "dish": {
-    "region": "US",
-    "place": null
-  },
-  "dishonored": {
-    "region": null,
-    "place": null
-  },
-  "django": {
-    "region": null,
-    "place": false
-  },
-  "docker": {
-    "region": null,
-    "place": null
-  },
-  "dodge": {
-    "region": null,
-    "place": null
-  },
-  "dodgeball": {
-    "region": null,
-    "place": null
-  },
-  "dogma": {
-    "region": null,
-    "place": null
-  },
-  "dole": {
-    "region": null,
-    "place": null
-  },
-  "dolly": {
-    "region": null,
-    "place": null
-  },
-  "dominion": {
-    "region": null,
-    "place": null
-  },
-  "donkey": {
-    "region": null,
-    "place": null
-  },
-  "doom": {
-    "region": null,
-    "place": null
-  },
-  "dora": {
-    "region": null,
-    "place": false
-  },
-  "dory": {
-    "region": null,
-    "place": null
-  },
-  "dove": {
-    "region": null,
-    "place": null
-  },
-  "downy": {
-    "region": "US",
-    "place": null
-  },
-  "dream": {
-    "region": null,
-    "place": null
-  },
-  "drive": {
-    "region": null,
-    "place": null
-  },
-  "drone": {
-    "region": null,
-    "place": null
-  },
-  "drumstick": {
-    "region": null,
-    "place": null
-  },
-  "duel": {
-    "region": null,
-    "place": null
-  },
-  "dune": {
-    "region": null,
-    "place": null
-  },
-  "eagle": {
-    "region": null,
-    "place": null
-  },
-  "earthbound": {
-    "region": null,
-    "place": null
-  },
-  "ebony": {
-    "region": "US",
-    "place": null
-  },
-  "echo": {
-    "region": null,
-    "place": null
-  },
-  "eclipse": {
-    "region": null,
-    "place": null
-  },
-  "economist": {
-    "region": null,
-    "place": null
-  },
-  "eden": {
-    "region": null,
-    "place": true
-  },
-  "edge": {
-    "region": null,
-    "place": null
-  },
-  "elastic": {
-    "region": null,
-    "place": null
-  },
-  "elephant": {
-    "region": "UK",
-    "place": null
-  },
-  "elixir": {
-    "region": null,
-    "place": null
-  },
-  "eliza": {
-    "region": null,
-    "place": false
-  },
-  "ella": {
-    "region": null,
-    "place": false
-  },
-  "elmo": {
-    "region": null,
-    "place": false
-  },
-  "elsa": {
-    "region": null,
-    "place": false
-  },
-  "emirates": {
-    "region": null,
-    "place": null
-  },
-  "emmy": {
-    "region": null,
-    "place": false
-  },
-  "energizer": {
-    "region": null,
-    "place": null
-  },
-  "ensure": {
-    "region": null,
-    "place": null
-  },
-  "entourage": {
-    "region": null,
-    "place": null
-  },
-  "epic": {
-    "region": null,
-    "place": null
-  },
-  "era": {
-    "region": "US",
-    "place": null
-  },
-  "esmeralda": {
-    "region": null,
-    "place": false
-  },
-  "esquire": {
-    "region": null,
-    "place": null
-  },
-  "essence": {
-    "region": "US",
-    "place": null
-  },
-  "essie": {
-    "region": null,
-    "place": false
-  },
-  "evanescence": {
-    "region": null,
-    "place": null
-  },
-  "everest": {
-    "region": null,
-    "place": true
-  },
-  "excel": {
-    "region": null,
-    "place": null
-  },
-  "excite": {
-    "region": null,
-    "place": null
-  },
-  "explorer": {
-    "region": null,
-    "place": null
-  },
-  "express": {
-    "region": "US",
-    "place": null
-  },
-  "extra": {
-    "region": null,
-    "place": null
-  },
-  "fable": {
-    "region": null,
-    "place": null
-  },
-  "fairy": {
-    "region": "UK",
-    "place": null
-  },
-  "faith": {
-    "region": null,
-    "place": null
-  },
-  "falcon": {
-    "region": null,
-    "place": null
-  },
-  "fallout": {
-    "region": null,
-    "place": null
-  },
-  "fandom": {
-    "region": null,
-    "place": null
-  },
-  "fantasia": {
-    "region": null,
-    "place": null
-  },
-  "fast": {
-    "region": null,
-    "place": null
-  },
-  "fasten": {
-    "region": null,
-    "place": null
-  },
-  "fastly": {
-    "region": null,
-    "place": null
-  },
-  "felix": {
-    "region": null,
-    "place": false
-  },
-  "fender": {
-    "region": null,
-    "place": null
-  },
-  "fez": {
-    "region": null,
-    "place": null
-  },
-  "fiat": {
-    "region": null,
-    "place": null
-  },
-  "fidelity": {
-    "region": null,
-    "place": null
-  },
-  "figment": {
-    "region": null,
-    "place": null
-  },
-  "finale": {
-    "region": null,
-    "place": null
-  },
-  "finish": {
-    "region": null,
-    "place": null
-  },
-  "finn": {
-    "region": null,
-    "place": false
-  },
-  "fireball": {
-    "region": null,
-    "place": null
-  },
-  "firefox": {
-    "region": null,
-    "place": null
-  },
-  "fisheye": {
-    "region": null,
-    "place": null
-  },
-  "flake": {
-    "region": null,
-    "place": null
-  },
-  "flash": {
-    "region": null,
-    "place": null
-  },
-  "flask": {
-    "region": null,
-    "place": null
-  },
-  "fleabag": {
-    "region": null,
-    "place": null
-  },
-  "flock": {
-    "region": null,
-    "place": null
-  },
-  "flutter": {
-    "region": null,
-    "place": null
-  },
-  "flux": {
-    "region": null,
-    "place": null
-  },
-  "ford": {
-    "region": null,
-    "place": null
-  },
-  "foreigner": {
-    "region": null,
-    "place": null
-  },
-  "fortnite": {
-    "region": null,
-    "place": null
-  },
-  "fortune": {
-    "region": null,
-    "place": null
-  },
-  "fossil": {
-    "region": null,
-    "place": null
-  },
-  "fox": {
-    "region": null,
-    "place": null
-  },
-  "friend": {
-    "region": null,
-    "place": null
-  },
-  "friends": {
-    "region": null,
-    "place": null
-  },
-  "frosty": {
-    "region": null,
-    "place": null
-  },
-  "frozen": {
-    "region": null,
-    "place": null
-  },
-  "fuse": {
-    "region": null,
-    "place": null
-  },
-  "gain": {
-    "region": null,
-    "place": null
-  },
-  "galactica": {
-    "region": null,
-    "place": null
-  },
-  "galaxy": {
-    "region": null,
-    "place": null
-  },
-  "gambit": {
-    "region": null,
-    "place": null
-  },
-  "gamma": {
-    "region": null,
-    "place": null
-  },
-  "gap": {
-    "region": null,
-    "place": null
-  },
-  "garfield": {
-    "region": null,
-    "place": false
-  },
-  "garnet": {
-    "region": null,
-    "place": null
-  },
-  "gateway": {
-    "region": null,
-    "place": null
-  },
-  "gatsby": {
-    "region": "Japan",
-    "place": false
-  },
-  "gauntlet": {
-    "region": null,
-    "place": null
-  },
-  "gears": {
-    "region": null,
-    "place": null
-  },
-  "gemini": {
-    "region": null,
-    "place": null
-  },
-  "gemma": {
-    "region": null,
-    "place": false
-  },
-  "genesis": {
-    "region": null,
-    "place": null
-  },
-  "genie": {
-    "region": null,
-    "place": null
-  },
-  "ghost": {
-    "region": null,
-    "place": null
-  },
-  "giant": {
-    "region": "US",
-    "place": null
-  },
-  "gimp": {
-    "region": null,
-    "place": null
-  },
-  "git": {
-    "region": null,
-    "place": null
-  },
-  "glad": {
-    "region": null,
-    "place": null
-  },
-  "glade": {
-    "region": null,
-    "place": null
-  },
-  "glamour": {
-    "region": null,
-    "place": null
-  },
-  "glass": {
-    "region": null,
-    "place": null
-  },
-  "glee": {
-    "region": null,
-    "place": null
-  },
-  "go": {
-    "region": null,
-    "place": null
-  },
-  "godiva": {
-    "region": null,
-    "place": false
-  },
-  "godot": {
-    "region": null,
-    "place": null
-  },
-  "goldfish": {
-    "region": null,
-    "place": null
-  },
-  "golf": {
-    "region": null,
-    "place": null
-  },
-  "goofy": {
-    "region": null,
-    "place": null
-  },
-  "goop": {
-    "region": null,
-    "place": null
-  },
-  "gopher": {
-    "region": null,
-    "place": null
-  },
-  "grab": {
-    "region": "Singapore",
-    "place": null
-  },
-  "granite": {
-    "region": null,
-    "place": null
-  },
-  "granola": {
-    "region": null,
-    "place": null
-  },
-  "graphite": {
-    "region": null,
-    "place": null
-  },
-  "gravity": {
-    "region": null,
-    "place": null
-  },
-  "grease": {
-    "region": null,
-    "place": null
-  },
-  "grok": {
-    "region": null,
-    "place": null
-  },
-  "grover": {
-    "region": null,
-    "place": false
-  },
-  "guardian": {
-    "region": null,
-    "place": null
-  },
-  "guess": {
-    "region": null,
-    "place": null
-  },
-  "gulf": {
-    "region": null,
-    "place": null
-  },
-  "gumtree": {
-    "region": "Australia",
-    "place": null
-  },
-  "gushers": {
-    "region": "US",
-    "place": null
-  },
-  "gusto": {
-    "region": "US",
-    "place": null
-  },
-  "habitat": {
-    "region": "UK",
-    "place": null
-  },
-  "hades": {
-    "region": null,
-    "place": false
-  },
-  "haiku": {
-    "region": null,
-    "place": null
-  },
-  "hairspray": {
-    "region": null,
-    "place": null
-  },
-  "halifax": {
-    "region": "UK",
-    "place": true
-  },
-  "halls": {
-    "region": null,
-    "place": null
-  },
-  "halo": {
-    "region": null,
-    "place": null
-  },
-  "handbrake": {
-    "region": null,
-    "place": null
-  },
-  "hangouts": {
-    "region": null,
-    "place": null
-  },
-  "harlequin": {
-    "region": null,
-    "place": null
-  },
-  "hartford": {
-    "region": "US",
-    "place": true
-  },
-  "harvey": {
-    "region": null,
-    "place": false
-  },
-  "headspace": {
-    "region": null,
-    "place": null
-  },
-  "heart": {
-    "region": null,
-    "place": null
-  },
-  "hearthstone": {
-    "region": null,
-    "place": null
-  },
-  "heat": {
-    "region": null,
-    "place": null
-  },
-  "hello": {
-    "region": null,
-    "place": null
-  },
-  "hermes": {
-    "region": null,
-    "place": false
-  },
-  "hero": {
-    "region": "India",
-    "place": null
-  },
-  "herschel": {
-    "region": null,
-    "place": false
-  },
-  "hertz": {
-    "region": null,
-    "place": null
-  },
-  "hey": {
-    "region": null,
-    "place": null
-  },
-  "hinge": {
-    "region": null,
-    "place": null
-  },
-  "history": {
-    "region": null,
-    "place": null
-  },
-  "hitman": {
-    "region": null,
-    "place": null
-  },
-  "hive": {
-    "region": null,
-    "place": null
-  },
-  "hobnobs": {
-    "region": "UK",
-    "place": null
-  },
-  "holden": {
-    "region": "Australia",
-    "place": false
-  },
-  "hole": {
-    "region": null,
-    "place": null
-  },
-  "hollister": {
-    "region": null,
-    "place": true
-  },
-  "homeland": {
-    "region": null,
-    "place": null
-  },
-  "honey": {
-    "region": null,
-    "place": null
-  },
-  "honor": {
-    "region": null,
-    "place": null
-  },
-  "hoopla": {
-    "region": null,
-    "place": null
-  },
-  "hooters": {
-    "region": null,
-    "place": null
-  },
-  "hopper": {
-    "region": null,
-    "place": null
-  },
-  "horizon": {
-    "region": "US",
-    "place": null
-  },
-  "hostel": {
-    "region": null,
-    "place": null
-  },
-  "hostess": {
-    "region": "US",
-    "place": null
-  },
-  "hound": {
-    "region": null,
-    "place": null
-  },
-  "house": {
-    "region": null,
-    "place": null
-  },
-  "houseparty": {
-    "region": null,
-    "place": null
-  },
-  "hue": {
-    "region": null,
-    "place": null
-  },
-  "hulk": {
-    "region": null,
-    "place": null
-  },
-  "humane": {
-    "region": null,
-    "place": null
-  },
-  "hummer": {
-    "region": null,
-    "place": null
-  },
-  "hunter": {
-    "region": null,
-    "place": null
-  },
-  "hush": {
-    "region": "UK",
-    "place": null
-  },
-  "husky": {
-    "region": "US",
-    "place": null
-  },
-  "hustler": {
-    "region": null,
-    "place": null
-  },
-  "ibis": {
-    "region": null,
-    "place": null
-  },
-  "iceland": {
-    "region": "UK",
-    "place": true
-  },
-  "iceman": {
-    "region": null,
-    "place": null
-  },
-  "ideogram": {
-    "region": null,
-    "place": null
-  },
-  "illustrator": {
-    "region": null,
-    "place": null
-  },
-  "impala": {
-    "region": "US",
-    "place": null
-  },
-  "imperial": {
-    "region": "US",
-    "place": null
-  },
-  "inbox": {
-    "region": null,
-    "place": null
-  },
-  "inception": {
-    "region": null,
-    "place": null
-  },
-  "incubus": {
-    "region": null,
-    "place": null
-  },
-  "indeed": {
-    "region": null,
-    "place": null
-  },
-  "independent": {
-    "region": null,
-    "place": null
-  },
-  "indigo": {
-    "region": null,
-    "place": null
-  },
-  "infamous": {
-    "region": null,
-    "place": null
-  },
-  "inflection": {
-    "region": null,
-    "place": null
-  },
-  "innocent": {
-    "region": "UK",
-    "place": null
-  },
-  "inside": {
-    "region": null,
-    "place": null
-  },
-  "insomnia": {
-    "region": null,
-    "place": null
-  },
-  "intel": {
-    "region": null,
-    "place": null
-  },
-  "intercept": {
-    "region": "US",
-    "place": null
-  },
-  "intercom": {
-    "region": null,
-    "place": null
-  },
-  "intercontinental": {
-    "region": null,
-    "place": null
-  },
-  "interstellar": {
-    "region": null,
-    "place": null
-  },
-  "interview": {
-    "region": "US",
-    "place": null
-  },
-  "intuit": {
-    "region": null,
-    "place": null
-  },
-  "ivory": {
-    "region": "US",
-    "place": null
-  },
-  "jackass": {
-    "region": null,
-    "place": null
-  },
-  "jaguar": {
-    "region": null,
-    "place": null
-  },
-  "jared": {
-    "region": "US",
-    "place": false
-  },
-  "jasper": {
-    "region": null,
-    "place": false
-  },
-  "java": {
-    "region": null,
-    "place": true
-  },
-  "jaws": {
-    "region": null,
-    "place": null
-  },
-  "jeep": {
-    "region": null,
-    "place": null
-  },
-  "jelly": {
-    "region": null,
-    "place": null
-  },
-  "jeopardy": {
-    "region": null,
-    "place": null
-  },
-  "jiffy": {
-    "region": "US",
-    "place": null
-  },
-  "jinx": {
-    "region": null,
-    "place": null
-  },
-  "jockey": {
-    "region": null,
-    "place": null
-  },
-  "joker": {
-    "region": null,
-    "place": null
-  },
-  "jordan": {
-    "region": null,
-    "place": false
-  },
-  "journey": {
-    "region": null,
-    "place": null
-  },
-  "joy": {
-    "region": "US",
-    "place": null
-  },
-  "juggernaut": {
-    "region": null,
-    "place": null
-  },
-  "julia": {
-    "region": null,
-    "place": false
-  },
-  "jura": {
-    "region": null,
-    "place": true
-  },
-  "justice": {
-    "region": "US",
-    "place": null
-  },
-  "kafka": {
-    "region": null,
-    "place": false
-  },
-  "kappa": {
-    "region": null,
-    "place": null
-  },
-  "kathmandu": {
-    "region": "New Zealand",
-    "place": true
-  },
-  "kayak": {
-    "region": null,
-    "place": null
-  },
-  "ken": {
-    "region": null,
-    "place": false
-  },
-  "kent": {
-    "region": null,
-    "place": true
-  },
-  "kenzo": {
-    "region": null,
-    "place": false
-  },
-  "kermit": {
-    "region": null,
-    "place": false
-  },
-  "kettle": {
-    "region": null,
-    "place": null
-  },
-  "keystone": {
-    "region": "US",
-    "place": null
-  },
-  "kick": {
-    "region": null,
-    "place": null
-  },
-  "kind": {
-    "region": null,
-    "place": null
-  },
-  "kindle": {
-    "region": null,
-    "place": null
-  },
-  "kingfisher": {
-    "region": null,
-    "place": null
-  },
-  "kingpin": {
-    "region": null,
-    "place": null
-  },
-  "kirby": {
-    "region": null,
-    "place": false
-  },
-  "kiwi": {
-    "region": null,
-    "place": null
-  },
-  "kodi": {
-    "region": null,
-    "place": false
-  },
-  "kraken": {
-    "region": null,
-    "place": null
-  },
-  "labyrinth": {
-    "region": null,
-    "place": null
-  },
-  "lancet": {
-    "region": null,
-    "place": null
-  },
-  "lava": {
-    "region": null,
-    "place": null
-  },
-  "ledger": {
-    "region": null,
-    "place": null
-  },
-  "leia": {
-    "region": null,
-    "place": false
-  },
-  "lemmings": {
-    "region": null,
-    "place": null
-  },
-  "lemonade": {
-    "region": null,
-    "place": null
-  },
-  "lever": {
-    "region": null,
-    "place": null
-  },
-  "lex": {
-    "region": null,
-    "place": false
-  },
-  "libby": {
-    "region": null,
-    "place": false
-  },
-  "life": {
-    "region": null,
-    "place": null
-  },
-  "lifebuoy": {
-    "region": null,
-    "place": null
-  },
-  "lifetime": {
-    "region": null,
-    "place": null
-  },
-  "lilt": {
-    "region": "UK",
-    "place": null
-  },
-  "limbo": {
-    "region": null,
-    "place": null
-  },
-  "lime": {
-    "region": null,
-    "place": null
-  },
-  "lincoln": {
-    "region": null,
-    "place": false
-  },
-  "line": {
-    "region": "Japan",
-    "place": null
-  },
-  "link": {
-    "region": null,
-    "place": null
-  },
-  "lion": {
-    "region": null,
-    "place": null
-  },
-  "lionel": {
-    "region": null,
-    "place": false
-  },
-  "lisa": {
-    "region": null,
-    "place": false
-  },
-  "lizard": {
-    "region": null,
-    "place": null
-  },
-  "llama": {
-    "region": null,
-    "place": null
-  },
-  "logic": {
-    "region": null,
-    "place": null
-  },
-  "look": {
-    "region": "US",
-    "place": null
-  },
-  "loom": {
-    "region": null,
-    "place": null
-  },
-  "lost": {
-    "region": null,
-    "place": null
-  },
-  "lotto": {
-    "region": null,
-    "place": null
-  },
-  "lotus": {
-    "region": null,
-    "place": null
-  },
-  "lovable": {
-    "region": null,
-    "place": null
-  },
-  "lucid": {
-    "region": null,
-    "place": null
-  },
-  "lumen": {
-    "region": null,
-    "place": null
-  },
-  "luna": {
-    "region": null,
-    "place": false
-  },
-  "lurch": {
-    "region": null,
-    "place": null
-  },
-  "lush": {
-    "region": null,
-    "place": null
-  },
-  "luther": {
-    "region": null,
-    "place": false
-  },
-  "lux": {
-    "region": null,
-    "place": null
-  },
-  "lynx": {
-    "region": null,
-    "place": null
-  },
-  "lyra": {
-    "region": null,
-    "place": null
-  },
-  "mac": {
-    "region": null,
-    "place": null
-  },
-  "mace": {
-    "region": null,
-    "place": null
-  },
-  "macintosh": {
-    "region": null,
-    "place": null
-  },
-  "mad": {
-    "region": null,
-    "place": null
-  },
-  "madness": {
-    "region": null,
-    "place": null
-  },
-  "maestro": {
-    "region": null,
-    "place": null
-  },
-  "magic": {
-    "region": null,
-    "place": null
-  },
-  "magneto": {
-    "region": null,
-    "place": null
-  },
-  "magnum": {
-    "region": null,
-    "place": null
-  },
-  "malibu": {
-    "region": null,
-    "place": true
-  },
-  "mango": {
-    "region": null,
-    "place": null
-  },
-  "marabou": {
-    "region": null,
-    "place": null
-  },
-  "marathon": {
-    "region": null,
-    "place": null
-  },
-  "marcie": {
-    "region": null,
-    "place": false
-  },
-  "mario": {
-    "region": null,
-    "place": false
-  },
-  "mars": {
-    "region": null,
-    "place": false
-  },
-  "marvel": {
-    "region": null,
-    "place": null
-  },
-  "mastermind": {
-    "region": null,
-    "place": null
-  },
-  "mastodon": {
-    "region": null,
-    "place": null
-  },
-  "match": {
-    "region": null,
-    "place": null
-  },
-  "matchbox": {
-    "region": null,
-    "place": null
-  },
-  "matilda": {
-    "region": null,
-    "place": false
-  },
-  "maven": {
-    "region": null,
-    "place": null
-  },
-  "maxim": {
-    "region": null,
-    "place": null
-  },
-  "maya": {
-    "region": null,
-    "place": false
-  },
-  "medium": {
-    "region": null,
-    "place": null
-  },
-  "meerkat": {
-    "region": null,
-    "place": null
-  },
-  "meetup": {
-    "region": null,
-    "place": null
-  },
-  "mega": {
-    "region": null,
-    "place": null
-  },
-  "memento": {
-    "region": null,
-    "place": null
-  },
-  "mercedes": {
-    "region": null,
-    "place": false
-  },
-  "mercurial": {
-    "region": null,
-    "place": null
-  },
-  "mercury": {
-    "region": null,
-    "place": false
-  },
-  "messenger": {
-    "region": null,
-    "place": null
-  },
-  "meta": {
-    "region": null,
-    "place": null
-  },
-  "method": {
-    "region": null,
-    "place": null
-  },
-  "metropolis": {
-    "region": null,
-    "place": null
-  },
-  "mickey": {
-    "region": null,
-    "place": false
-  },
-  "micron": {
-    "region": null,
-    "place": null
-  },
-  "midas": {
-    "region": null,
-    "place": false
-  },
-  "miller": {
-    "region": null,
-    "place": null
-  },
-  "milo": {
-    "region": null,
-    "place": false
-  },
-  "minesweeper": {
-    "region": null,
-    "place": null
-  },
-  "mini": {
-    "region": null,
-    "place": null
-  },
-  "minions": {
-    "region": null,
-    "place": null
-  },
-  "minnie": {
-    "region": null,
-    "place": false
-  },
-  "minstrels": {
-    "region": "UK",
-    "place": null
-  },
-  "mint": {
-    "region": null,
-    "place": null
-  },
-  "mirage": {
-    "region": null,
-    "place": null
-  },
-  "mirror": {
-    "region": "UK",
-    "place": null
-  },
-  "misery": {
-    "region": null,
-    "place": null
-  },
-  "mistral": {
-    "region": null,
-    "place": null
-  },
-  "monk": {
-    "region": null,
-    "place": null
-  },
-  "monopoly": {
-    "region": null,
-    "place": null
-  },
-  "monsoon": {
-    "region": "UK",
-    "place": null
-  },
-  "monster": {
-    "region": null,
-    "place": null
-  },
-  "moon": {
-    "region": null,
-    "place": null
-  },
-  "moonlight": {
-    "region": null,
-    "place": null
-  },
-  "moonstruck": {
-    "region": null,
-    "place": null
-  },
-  "mosaic": {
-    "region": null,
-    "place": null
-  },
-  "mounds": {
-    "region": "US",
-    "place": null
-  },
-  "moves": {
-    "region": null,
-    "place": null
-  },
-  "mulberry": {
-    "region": null,
-    "place": null
-  },
-  "muse": {
-    "region": null,
-    "place": null
-  },
-  "mustang": {
-    "region": null,
-    "place": null
-  },
-  "mystique": {
-    "region": null,
-    "place": null
-  },
-  "myth": {
-    "region": null,
-    "place": null
-  },
-  "nala": {
-    "region": null,
-    "place": false
-  },
-  "nancy": {
-    "region": null,
-    "place": false
-  },
-  "nation": {
-    "region": null,
-    "place": null
-  },
-  "nationwide": {
-    "region": "UK",
-    "place": null
-  },
-  "natter": {
-    "region": null,
-    "place": null
-  },
-  "nature": {
-    "region": null,
-    "place": null
-  },
-  "nectar": {
-    "region": "UK",
-    "place": null
-  },
-  "nerds": {
-    "region": null,
-    "place": null
-  },
-  "nerf": {
-    "region": null,
-    "place": null
-  },
-  "nest": {
-    "region": null,
-    "place": null
-  },
-  "network": {
-    "region": null,
-    "place": null
-  },
-  "newton": {
-    "region": null,
-    "place": null
-  },
-  "next": {
-    "region": "UK",
-    "place": null
-  },
-  "nickelodeon": {
-    "region": null,
-    "place": null
-  },
-  "nike": {
-    "region": null,
-    "place": false
-  },
-  "ninja": {
-    "region": null,
-    "place": null
-  },
-  "noddy": {
-    "region": "UK",
-    "place": null
-  },
-  "nook": {
-    "region": "US",
-    "place": null
-  },
-  "nothing": {
-    "region": null,
-    "place": null
-  },
-  "notion": {
-    "region": null,
-    "place": null
-  },
-  "nova": {
-    "region": "US",
-    "place": null
-  },
-  "nyx": {
-    "region": null,
-    "place": false
-  },
-  "oakley": {
-    "region": null,
-    "place": false
-  },
-  "oasis": {
-    "region": "UK",
-    "place": null
-  },
-  "oblivion": {
-    "region": null,
-    "place": null
-  },
-  "observer": {
-    "region": "UK",
-    "place": null
-  },
-  "obsidian": {
-    "region": null,
-    "place": null
-  },
-  "oculus": {
-    "region": null,
-    "place": null
-  },
-  "odeon": {
-    "region": "UK",
-    "place": null
-  },
-  "ola": {
-    "region": "India",
-    "place": false
-  },
-  "olaf": {
-    "region": null,
-    "place": false
-  },
-  "olympus": {
-    "region": null,
-    "place": true
-  },
-  "omega": {
-    "region": null,
-    "place": null
-  },
-  "onion": {
-    "region": null,
-    "place": null
-  },
-  "opera": {
-    "region": null,
-    "place": null
-  },
-  "operation": {
-    "region": null,
-    "place": null
-  },
-  "opus": {
-    "region": null,
-    "place": null
-  },
-  "oracle": {
-    "region": null,
-    "place": null
-  },
-  "orange": {
-    "region": "France/Europe",
-    "place": null
-  },
-  "orbit": {
-    "region": null,
-    "place": null
-  },
-  "orca": {
-    "region": null,
-    "place": null
-  },
-  "origin": {
-    "region": null,
-    "place": null
-  },
-  "origins": {
-    "region": null,
-    "place": null
-  },
-  "othello": {
-    "region": null,
-    "place": false
-  },
-  "otter": {
-    "region": null,
-    "place": null
-  },
-  "outlook": {
-    "region": null,
-    "place": null
-  },
-  "overwatch": {
-    "region": null,
-    "place": null
-  },
-  "oxygen": {
-    "region": "US",
-    "place": null
-  },
-  "oyster": {
-    "region": "UK",
-    "place": null
-  },
-  "paint": {
-    "region": null,
-    "place": null
-  },
-  "palisade": {
-    "region": null,
-    "place": null
-  },
-  "palm": {
-    "region": null,
-    "place": null
-  },
-  "pampers": {
-    "region": null,
-    "place": null
-  },
-  "pandemic": {
-    "region": null,
-    "place": null
-  },
-  "pandora": {
-    "region": null,
-    "place": false
-  },
-  "paper": {
-    "region": null,
-    "place": null
-  },
-  "paperboy": {
-    "region": null,
-    "place": null
-  },
-  "paramount": {
-    "region": null,
-    "place": null
-  },
-  "parasite": {
-    "region": null,
-    "place": null
-  },
-  "patagonia": {
-    "region": null,
-    "place": true
-  },
-  "path": {
-    "region": null,
-    "place": null
-  },
-  "patron": {
-    "region": null,
-    "place": null
-  },
-  "payday": {
-    "region": "US",
-    "place": null
-  },
-  "peacock": {
-    "region": "US",
-    "place": null
-  },
-  "pears": {
-    "region": null,
-    "place": null
-  },
-  "pebble": {
-    "region": null,
-    "place": null
-  },
-  "pebbles": {
-    "region": "US",
-    "place": null
-  },
-  "pedigree": {
-    "region": null,
-    "place": null
-  },
-  "peeps": {
-    "region": "US",
-    "place": null
-  },
-  "peloton": {
-    "region": null,
-    "place": null
-  },
-  "penguin": {
-    "region": null,
-    "place": null
-  },
-  "penthouse": {
-    "region": null,
-    "place": null
-  },
-  "people": {
-    "region": null,
-    "place": null
-  },
-  "perfection": {
-    "region": null,
-    "place": null
-  },
-  "periscope": {
-    "region": null,
-    "place": null
-  },
-  "perplexity": {
-    "region": null,
-    "place": null
-  },
-  "persona": {
-    "region": null,
-    "place": null
-  },
-  "pete": {
-    "region": null,
-    "place": false
-  },
-  "phi": {
-    "region": null,
-    "place": null
-  },
-  "philadelphia": {
-    "region": null,
-    "place": true
-  },
-  "pi": {
-    "region": null,
-    "place": null
-  },
-  "piccolo": {
-    "region": null,
-    "place": null
-  },
-  "picnic": {
-    "region": null,
-    "place": null
-  },
-  "piglet": {
-    "region": null,
-    "place": null
-  },
-  "pilot": {
-    "region": null,
-    "place": null
-  },
-  "pioneer": {
-    "region": null,
-    "place": null
-  },
-  "pitchfork": {
-    "region": null,
-    "place": null
-  },
-  "pixel": {
-    "region": null,
-    "place": null
-  },
-  "planters": {
-    "region": "US",
-    "place": null
-  },
-  "platoon": {
-    "region": null,
-    "place": null
-  },
-  "playboy": {
-    "region": null,
-    "place": null
-  },
-  "playgirl": {
-    "region": null,
-    "place": null
-  },
-  "pledge": {
-    "region": null,
-    "place": null
-  },
-  "pluto": {
-    "region": null,
-    "place": null
-  },
-  "plymouth": {
-    "region": "US",
-    "place": true
-  },
-  "pocket": {
-    "region": null,
-    "place": null
-  },
-  "pocketbook": {
-    "region": null,
-    "place": null
-  },
-  "poetry": {
-    "region": "US",
-    "place": null
-  },
-  "pogo": {
-    "region": null,
-    "place": null
-  },
-  "polar": {
-    "region": "US",
-    "place": null
-  },
-  "polestar": {
-    "region": null,
-    "place": null
-  },
-  "politico": {
-    "region": null,
-    "place": null
-  },
-  "polly": {
-    "region": null,
-    "place": false
-  },
-  "polo": {
-    "region": null,
-    "place": null
-  },
-  "poltergeist": {
-    "region": null,
-    "place": null
-  },
-  "pong": {
-    "region": null,
-    "place": null
-  },
-  "pontiac": {
-    "region": "US",
-    "place": false
-  },
-  "poppets": {
-    "region": "UK",
-    "place": null
-  },
-  "portal": {
-    "region": null,
-    "place": null
-  },
-  "postal": {
-    "region": null,
-    "place": null
-  },
-  "postman": {
-    "region": null,
-    "place": null
-  },
-  "premiere": {
-    "region": null,
-    "place": null
-  },
-  "preview": {
-    "region": null,
-    "place": null
-  },
-  "prey": {
-    "region": null,
-    "place": null
-  },
-  "prime": {
-    "region": null,
-    "place": null
-  },
-  "processing": {
-    "region": null,
-    "place": null
-  },
-  "procreate": {
-    "region": null,
-    "place": null
-  },
-  "prodigy": {
-    "region": null,
-    "place": null
-  },
-  "progressive": {
-    "region": "US",
-    "place": null
-  },
-  "prometheus": {
-    "region": null,
-    "place": null
-  },
-  "promise": {
-    "region": "India",
-    "place": null
-  },
-  "propel": {
-    "region": "US",
-    "place": null
-  },
-  "prototype": {
-    "region": null,
-    "place": null
-  },
-  "prudential": {
-    "region": null,
-    "place": null
-  },
-  "psych": {
-    "region": null,
-    "place": null
-  },
-  "publisher": {
-    "region": null,
-    "place": null
-  },
-  "pulsar": {
-    "region": null,
-    "place": null
-  },
-  "puma": {
-    "region": null,
-    "place": null
-  },
-  "punch": {
-    "region": "UK",
-    "place": null
-  },
-  "puppet": {
-    "region": null,
-    "place": null
-  },
-  "putty": {
-    "region": null,
-    "place": null
-  },
-  "pyramid": {
-    "region": null,
-    "place": null
-  },
-  "pythia": {
-    "region": null,
-    "place": null
-  },
-  "python": {
-    "region": null,
-    "place": null
-  },
-  "quake": {
-    "region": null,
-    "place": null
-  },
-  "quantum": {
-    "region": null,
-    "place": null
-  },
-  "quavers": {
-    "region": "UK",
-    "place": null
-  },
-  "quest": {
-    "region": null,
-    "place": null
-  },
-  "quicken": {
-    "region": null,
-    "place": null
-  },
-  "quill": {
-    "region": null,
-    "place": null
-  },
-  "rage": {
-    "region": null,
-    "place": null
-  },
-  "raid": {
-    "region": null,
-    "place": null
-  },
-  "railway": {
-    "region": null,
-    "place": null
-  },
-  "rainbow": {
-    "region": null,
-    "place": null
-  },
-  "ram": {
-    "region": null,
-    "place": null
-  },
-  "ramp": {
-    "region": "US",
-    "place": null
-  },
-  "ratatouille": {
-    "region": null,
-    "place": null
-  },
-  "raven": {
-    "region": null,
-    "place": null
-  },
-  "reaper": {
-    "region": null,
-    "place": null
-  },
-  "reason": {
-    "region": null,
-    "place": null
-  },
-  "redshift": {
-    "region": null,
-    "place": null
-  },
-  "regal": {
-    "region": "UK",
-    "place": null
-  },
-  "regions": {
-    "region": "US",
-    "place": null
-  },
-  "reign": {
-    "region": null,
-    "place": null
-  },
-  "relay": {
-    "region": null,
-    "place": null
-  },
-  "rely": {
-    "region": "US",
-    "place": null
-  },
-  "revels": {
-    "region": "UK",
-    "place": null
-  },
-  "rey": {
-    "region": null,
-    "place": false
-  },
-  "riff": {
-    "region": null,
-    "place": null
-  },
-  "ring": {
-    "region": null,
-    "place": null
-  },
-  "riot": {
-    "region": null,
-    "place": null
-  },
-  "ripple": {
-    "region": null,
-    "place": null
-  },
-  "rippling": {
-    "region": null,
-    "place": null
-  },
-  "risen": {
-    "region": null,
-    "place": null
-  },
-  "risk": {
-    "region": null,
-    "place": null
-  },
-  "robin": {
-    "region": null,
-    "place": false
-  },
-  "robinhood": {
-    "region": null,
-    "place": false
-  },
-  "rockstar": {
-    "region": null,
-    "place": null
-  },
-  "roland": {
-    "region": null,
-    "place": false
-  },
-  "rooms": {
-    "region": null,
-    "place": null
-  },
-  "root": {
-    "region": "US",
-    "place": null
-  },
-  "rosalina": {
-    "region": null,
-    "place": false
-  },
-  "roses": {
-    "region": null,
-    "place": null
-  },
-  "roundup": {
-    "region": null,
-    "place": null
-  },
-  "rover": {
-    "region": null,
-    "place": null
-  },
-  "ruby": {
-    "region": null,
-    "place": null
-  },
-  "rudy": {
-    "region": null,
-    "place": false
-  },
-  "ruffles": {
-    "region": null,
-    "place": null
-  },
-  "rumble": {
-    "region": null,
-    "place": null
-  },
-  "runway": {
-    "region": null,
-    "place": null
-  },
-  "rust": {
-    "region": null,
-    "place": null
-  },
-  "safari": {
-    "region": null,
-    "place": null
-  },
-  "sage": {
-    "region": null,
-    "place": null
-  },
-  "salon": {
-    "region": "US",
-    "place": null
-  },
-  "samba": {
-    "region": null,
-    "place": null
-  },
-  "saturn": {
-    "region": null,
-    "place": null
-  },
-  "saw": {
-    "region": null,
-    "place": null
-  },
-  "scale": {
-    "region": null,
-    "place": null
-  },
-  "scar": {
-    "region": null,
-    "place": null
-  },
-  "scarecrow": {
-    "region": null,
-    "place": null
-  },
-  "scholastic": {
-    "region": null,
-    "place": null
-  },
-  "science": {
-    "region": null,
-    "place": null
-  },
-  "scion": {
-    "region": "US",
-    "place": null
-  },
-  "scoot": {
-    "region": null,
-    "place": null
-  },
-  "scrabble": {
-    "region": null,
-    "place": null
-  },
-  "scratch": {
-    "region": null,
-    "place": null
-  },
-  "scream": {
-    "region": null,
-    "place": null
-  },
-  "seat": {
-    "region": "Europe",
-    "place": null
-  },
-  "secret": {
-    "region": null,
-    "place": null
-  },
-  "sentry": {
-    "region": null,
-    "place": null
-  },
-  "sequence": {
-    "region": null,
-    "place": null
-  },
-  "sesame": {
-    "region": null,
-    "place": null
-  },
-  "set": {
-    "region": null,
-    "place": null
-  },
-  "seven": {
-    "region": null,
-    "place": null
-  },
-  "shark": {
-    "region": null,
-    "place": null
-  },
-  "sharp": {
-    "region": null,
-    "place": null
-  },
-  "shazam": {
-    "region": null,
-    "place": null
-  },
-  "shell": {
-    "region": null,
-    "place": null
-  },
-  "showtime": {
-    "region": null,
-    "place": null
-  },
-  "sienna": {
-    "region": null,
-    "place": null
-  },
-  "signal": {
-    "region": null,
-    "place": null
-  },
-  "silk": {
-    "region": "US",
-    "place": null
-  },
-  "silverado": {
-    "region": null,
-    "place": true
-  },
-  "simon": {
-    "region": null,
-    "place": false
-  },
-  "simple": {
-    "region": null,
-    "place": null
-  },
-  "sims": {
-    "region": null,
-    "place": null
-  },
-  "singer": {
-    "region": null,
-    "place": null
-  },
-  "siri": {
-    "region": null,
-    "place": false
-  },
-  "sirius": {
-    "region": "US",
-    "place": null
-  },
-  "sizzler": {
-    "region": null,
-    "place": null
-  },
-  "skate": {
-    "region": null,
-    "place": null
-  },
-  "sketch": {
-    "region": null,
-    "place": null
-  },
-  "skip": {
-    "region": "Europe",
-    "place": null
-  },
-  "skittles": {
-    "region": null,
-    "place": null
-  },
-  "sky": {
-    "region": "UK",
-    "place": null
-  },
-  "slack": {
-    "region": null,
-    "place": null
-  },
-  "slate": {
-    "region": "US",
-    "place": null
-  },
-  "slayer": {
-    "region": null,
-    "place": null
-  },
-  "slice": {
-    "region": "US",
-    "place": null
-  },
-  "slingshot": {
-    "region": null,
-    "place": null
-  },
-  "slinky": {
-    "region": null,
-    "place": null
-  },
-  "slipknot": {
-    "region": null,
-    "place": null
-  },
-  "smart": {
-    "region": null,
-    "place": null
-  },
-  "smarties": {
-    "region": null,
-    "place": null
-  },
-  "snake": {
-    "region": null,
-    "place": null
-  },
-  "snap": {
-    "region": null,
-    "place": null
-  },
-  "snapdragon": {
-    "region": null,
-    "place": null
-  },
-  "snickers": {
-    "region": null,
-    "place": null
-  },
-  "snowball": {
-    "region": null,
-    "place": null
-  },
-  "snowflake": {
-    "region": null,
-    "place": null
-  },
-  "snowy": {
-    "region": null,
-    "place": null
-  },
-  "solitaire": {
-    "region": null,
-    "place": null
-  },
-  "solo": {
-    "region": "US",
-    "place": null
-  },
-  "solvate": {
-    "region": null,
-    "place": null
-  },
-  "soma": {
-    "region": null,
-    "place": null
-  },
-  "sonic": {
-    "region": null,
-    "place": null
-  },
-  "sonnet": {
-    "region": null,
-    "place": null
-  },
-  "sorry": {
-    "region": null,
-    "place": null
-  },
-  "source": {
-    "region": null,
-    "place": null
-  },
-  "spanner": {
-    "region": null,
-    "place": null
-  },
-  "spar": {
-    "region": null,
-    "place": null
-  },
-  "spark": {
-    "region": null,
-    "place": null
-  },
-  "spawn": {
-    "region": null,
-    "place": null
-  },
-  "spectator": {
-    "region": null,
-    "place": null
-  },
-  "spectrum": {
-    "region": "US",
-    "place": null
-  },
-  "speed": {
-    "region": null,
-    "place": null
-  },
-  "speedway": {
-    "region": "US",
-    "place": null
-  },
-  "spin": {
-    "region": null,
-    "place": null
-  },
-  "spitfire": {
-    "region": null,
-    "place": null
-  },
-  "spore": {
-    "region": null,
-    "place": null
-  },
-  "spot": {
-    "region": null,
-    "place": null
-  },
-  "sprig": {
-    "region": "US",
-    "place": null
-  },
-  "spring": {
-    "region": null,
-    "place": null
-  },
-  "sprint": {
-    "region": "US",
-    "place": null
-  },
-  "sprite": {
-    "region": null,
-    "place": null
-  },
-  "square": {
-    "region": null,
-    "place": null
-  },
-  "squealer": {
-    "region": null,
-    "place": null
-  },
-  "squeeze": {
-    "region": null,
-    "place": null
-  },
-  "squirt": {
-    "region": "US",
-    "place": null
-  },
-  "stadia": {
-    "region": null,
-    "place": null
-  },
-  "staples": {
-    "region": null,
-    "place": null
-  },
-  "starburst": {
-    "region": null,
-    "place": null
-  },
-  "starling": {
-    "region": "UK",
-    "place": null
-  },
-  "starship": {
-    "region": null,
-    "place": null
-  },
-  "steam": {
-    "region": null,
-    "place": null
-  },
-  "stella": {
-    "region": null,
-    "place": false
-  },
-  "sting": {
-    "region": null,
-    "place": null
-  },
-  "storm": {
-    "region": null,
-    "place": null
-  },
-  "stray": {
-    "region": null,
-    "place": null
-  },
-  "stride": {
-    "region": null,
-    "place": null
-  },
-  "stripe": {
-    "region": null,
-    "place": null
-  },
-  "suave": {
-    "region": "US",
-    "place": null
-  },
-  "sublime": {
-    "region": null,
-    "place": null
-  },
-  "subversion": {
-    "region": null,
-    "place": null
-  },
-  "subway": {
-    "region": null,
-    "place": null
-  },
-  "succession": {
-    "region": null,
-    "place": null
-  },
-  "sun": {
-    "region": null,
-    "place": null
-  },
-  "sunbeam": {
-    "region": null,
-    "place": null
-  },
-  "sunlight": {
-    "region": null,
-    "place": null
-  },
-  "superhuman": {
-    "region": null,
-    "place": null
-  },
-  "superman": {
-    "region": null,
-    "place": null
-  },
-  "supernatural": {
-    "region": null,
-    "place": null
-  },
-  "supreme": {
-    "region": null,
-    "place": null
-  },
-  "surf": {
-    "region": null,
-    "place": null
-  },
-  "surface": {
-    "region": null,
-    "place": null
-  },
-  "surge": {
-    "region": "US",
-    "place": null
-  },
-  "survivor": {
-    "region": null,
-    "place": null
-  },
-  "swagger": {
-    "region": null,
-    "place": null
-  },
-  "swatch": {
-    "region": null,
-    "place": null
-  },
-  "sweethearts": {
-    "region": "US",
-    "place": null
-  },
-  "swift": {
-    "region": null,
-    "place": null
-  },
-  "switch": {
-    "region": null,
-    "place": null
-  },
-  "symphony": {
-    "region": "US",
-    "place": null
-  },
-  "tab": {
-    "region": null,
-    "place": null
-  },
-  "taboo": {
-    "region": null,
-    "place": null
-  },
-  "taken": {
-    "region": null,
-    "place": null
-  },
-  "tang": {
-    "region": null,
-    "place": null
-  },
-  "tango": {
-    "region": "UK",
-    "place": null
-  },
-  "target": {
-    "region": "US",
-    "place": null
-  },
-  "tatler": {
-    "region": null,
-    "place": null
-  },
-  "taxi": {
-    "region": null,
-    "place": null
-  },
-  "tay": {
-    "region": null,
-    "place": false
-  },
-  "teams": {
-    "region": null,
-    "place": null
-  },
-  "telegram": {
-    "region": null,
-    "place": null
-  },
-  "tempo": {
-    "region": null,
-    "place": null
-  },
-  "terraform": {
-    "region": null,
-    "place": null
-  },
-  "terraria": {
-    "region": null,
-    "place": null
-  },
-  "tesla": {
-    "region": null,
-    "place": null
-  },
-  "thief": {
-    "region": null,
-    "place": null
-  },
-  "thing": {
-    "region": null,
-    "place": null
-  },
-  "things": {
-    "region": null,
-    "place": null
-  },
-  "thrasher": {
-    "region": null,
-    "place": null
-  },
-  "threads": {
-    "region": null,
-    "place": null
-  },
-  "three": {
-    "region": "UK",
-    "place": null
-  },
-  "thumper": {
-    "region": null,
-    "place": null
-  },
-  "thunderbird": {
-    "region": null,
-    "place": null
-  },
-  "tick": {
-    "region": null,
-    "place": null
-  },
-  "tidal": {
-    "region": null,
-    "place": null
-  },
-  "tide": {
-    "region": null,
-    "place": null
-  },
-  "tiffany": {
-    "region": null,
-    "place": false
-  },
-  "tiger": {
-    "region": null,
-    "place": null
-  },
-  "tile": {
-    "region": null,
-    "place": null
-  },
-  "timberland": {
-    "region": null,
-    "place": null
-  },
-  "time": {
-    "region": null,
-    "place": null
-  },
-  "tinder": {
-    "region": null,
-    "place": null
-  },
-  "toast": {
-    "region": null,
-    "place": null
-  },
-  "tombstone": {
-    "region": null,
-    "place": null
-  },
-  "tomcat": {
-    "region": null,
-    "place": null
-  },
-  "tony": {
-    "region": null,
-    "place": false
-  },
-  "tool": {
-    "region": null,
-    "place": null
-  },
-  "topic": {
-    "region": null,
-    "place": null
-  },
-  "tor": {
-    "region": null,
-    "place": null
-  },
-  "total": {
-    "region": null,
-    "place": null
-  },
-  "tracer": {
-    "region": null,
-    "place": null
-  },
-  "trainspotting": {
-    "region": null,
-    "place": null
-  },
-  "transformers": {
-    "region": null,
-    "place": null
-  },
-  "transmission": {
-    "region": null,
-    "place": null
-  },
-  "travelers": {
-    "region": "US",
-    "place": null
-  },
-  "travis": {
-    "region": null,
-    "place": false
-  },
-  "trident": {
-    "region": null,
-    "place": null
-  },
-  "trinity": {
-    "region": null,
-    "place": null
-  },
-  "triumph": {
-    "region": null,
-    "place": null
-  },
-  "trojan": {
-    "region": null,
-    "place": null
-  },
-  "trolls": {
-    "region": null,
-    "place": null
-  },
-  "trouble": {
-    "region": null,
-    "place": null
-  },
-  "tums": {
-    "region": null,
-    "place": null
-  },
-  "turtles": {
-    "region": null,
-    "place": null
-  },
-  "twilight": {
-    "region": null,
-    "place": null
-  },
-  "twirl": {
-    "region": null,
-    "place": null
-  },
-  "twister": {
-    "region": null,
-    "place": null
-  },
-  "twitch": {
-    "region": null,
-    "place": null
-  },
-  "twitter": {
-    "region": null,
-    "place": null
-  },
-  "uber": {
-    "region": null,
-    "place": null
-  },
-  "uncharted": {
-    "region": null,
-    "place": null
-  },
-  "unity": {
-    "region": null,
-    "place": null
-  },
-  "universal": {
-    "region": null,
-    "place": null
-  },
-  "unreal": {
-    "region": null,
-    "place": null
-  },
-  "ursula": {
-    "region": null,
-    "place": false
-  },
-  "vagrant": {
-    "region": null,
-    "place": null
-  },
-  "valentina": {
-    "region": null,
-    "place": false
-  },
-  "valve": {
-    "region": null,
-    "place": null
-  },
-  "vanguard": {
-    "region": null,
-    "place": null
-  },
-  "vanish": {
-    "region": null,
-    "place": null
-  },
-  "vans": {
-    "region": null,
-    "place": null
-  },
-  "variety": {
-    "region": null,
-    "place": null
-  },
-  "vault": {
-    "region": null,
-    "place": null
-  },
-  "vector": {
-    "region": null,
-    "place": null
-  },
-  "veep": {
-    "region": null,
-    "place": null
-  },
-  "venom": {
-    "region": null,
-    "place": null
-  },
-  "venture": {
-    "region": "US",
-    "place": null
-  },
-  "verge": {
-    "region": null,
-    "place": null
-  },
-  "vertigo": {
-    "region": null,
-    "place": null
-  },
-  "vice": {
-    "region": null,
-    "place": null
-  },
-  "vicuna": {
-    "region": null,
-    "place": null
-  },
-  "vim": {
-    "region": null,
-    "place": null
-  },
-  "vine": {
-    "region": null,
-    "place": null
-  },
-  "virgin": {
-    "region": null,
-    "place": null
-  },
-  "visa": {
-    "region": null,
-    "place": null
-  },
-  "vogue": {
-    "region": null,
-    "place": null
-  },
-  "walkers": {
-    "region": "UK",
-    "place": null
-  },
-  "wallpaper": {
-    "region": null,
-    "place": null
-  },
-  "warehouse": {
-    "region": "UK",
-    "place": null
-  },
-  "warp": {
-    "region": null,
-    "place": null
-  },
-  "wasp": {
-    "region": null,
-    "place": null
-  },
-  "watson": {
-    "region": null,
-    "place": false
-  },
-  "wave": {
-    "region": null,
-    "place": null
-  },
-  "wednesday": {
-    "region": null,
-    "place": null
-  },
-  "whirlpool": {
-    "region": null,
-    "place": null
-  },
-  "whisper": {
-    "region": null,
-    "place": null
-  },
-  "whistles": {
-    "region": "UK",
-    "place": null
-  },
-  "whopper": {
-    "region": null,
-    "place": null
-  },
-  "wildcat": {
-    "region": null,
-    "place": null
-  },
-  "willow": {
-    "region": null,
-    "place": null
-  },
-  "wimpy": {
-    "region": null,
-    "place": null
-  },
-  "windows": {
-    "region": null,
-    "place": null
-  },
-  "windsurf": {
-    "region": null,
-    "place": null
-  },
-  "winnie": {
-    "region": null,
-    "place": false
-  },
-  "winston": {
-    "region": null,
-    "place": null
-  },
-  "wired": {
-    "region": null,
-    "place": null
-  },
-  "wise": {
-    "region": null,
-    "place": null
-  },
-  "wish": {
-    "region": null,
-    "place": null
-  },
-  "witness": {
-    "region": null,
-    "place": null
-  },
-  "wolverine": {
-    "region": null,
-    "place": null
-  },
-  "woody": {
-    "region": null,
-    "place": false
-  },
-  "word": {
-    "region": null,
-    "place": null
-  },
-  "workday": {
-    "region": null,
-    "place": null
-  },
-  "worms": {
-    "region": null,
-    "place": null
-  },
-  "wotsits": {
-    "region": "UK",
-    "place": null
-  },
-  "wrangler": {
-    "region": null,
-    "place": null
-  },
-  "yahoo": {
-    "region": null,
-    "place": null
-  },
-  "yammer": {
-    "region": null,
-    "place": null
-  },
-  "yelp": {
-    "region": null,
-    "place": null
-  },
-  "yes": {
-    "region": null,
-    "place": null
-  },
-  "yeti": {
-    "region": null,
-    "place": null
-  },
-  "yoshi": {
-    "region": null,
-    "place": false
-  },
-  "zara": {
-    "region": null,
-    "place": false
-  },
-  "zebra": {
-    "region": null,
-    "place": null
-  },
-  "zed": {
-    "region": null,
-    "place": null
-  },
-  "zelda": {
-    "region": null,
-    "place": false
-  },
-  "zen": {
-    "region": null,
-    "place": null
-  },
-  "zenith": {
-    "region": null,
-    "place": null
-  },
-  "zephyr": {
-    "region": null,
-    "place": null
-  },
-  "zest": {
-    "region": null,
-    "place": null
-  },
-  "zodiac": {
-    "region": null,
-    "place": null
-  },
-  "zoom": {
-    "region": null,
-    "place": null
-  }
+ "aardvark": {
+  "region": null,
+  "place": null
+ },
+ "access": {
+  "region": null,
+  "place": null
+ },
+ "accord": {
+  "region": null,
+  "place": null
+ },
+ "ace": {
+  "region": "US",
+  "place": null
+ },
+ "acer": {
+  "region": null,
+  "place": null
+ },
+ "acorns": {
+  "region": "US",
+  "place": null
+ },
+ "acrobat": {
+  "region": null,
+  "place": null
+ },
+ "ada": {
+  "region": null,
+  "place": false
+ },
+ "adaptation": {
+  "region": null,
+  "place": null
+ },
+ "admiral": {
+  "region": "UK",
+  "place": null
+ },
+ "adobe": {
+  "region": null,
+  "place": null
+ },
+ "aerie": {
+  "region": null,
+  "place": null
+ },
+ "aero": {
+  "region": null,
+  "place": null
+ },
+ "affinity": {
+  "region": null,
+  "place": null
+ },
+ "affirm": {
+  "region": null,
+  "place": null
+ },
+ "aim": {
+  "region": null,
+  "place": null
+ },
+ "airdrop": {
+  "region": null,
+  "place": null
+ },
+ "airflow": {
+  "region": null,
+  "place": null
+ },
+ "airheads": {
+  "region": "US",
+  "place": null
+ },
+ "airwaves": {
+  "region": "UK",
+  "place": null
+ },
+ "ajax": {
+  "region": null,
+  "place": false
+ },
+ "akira": {
+  "region": null,
+  "place": false
+ },
+ "aladdin": {
+  "region": null,
+  "place": false
+ },
+ "alan": {
+  "region": null,
+  "place": false
+ },
+ "aldo": {
+  "region": null,
+  "place": false
+ },
+ "alexa": {
+  "region": null,
+  "place": false
+ },
+ "alexia": {
+  "region": null,
+  "place": false
+ },
+ "alice": {
+  "region": null,
+  "place": false
+ },
+ "alien": {
+  "region": null,
+  "place": null
+ },
+ "allegra": {
+  "region": null,
+  "place": false
+ },
+ "allure": {
+  "region": "US",
+  "place": null
+ },
+ "ally": {
+  "region": "US",
+  "place": null
+ },
+ "alpaca": {
+  "region": null,
+  "place": null
+ },
+ "alphabet": {
+  "region": null,
+  "place": null
+ },
+ "always": {
+  "region": null,
+  "place": null
+ },
+ "amazon": {
+  "region": null,
+  "place": true
+ },
+ "ambrosia": {
+  "region": "UK",
+  "place": null
+ },
+ "amelia": {
+  "region": null,
+  "place": false
+ },
+ "amen": {
+  "region": null,
+  "place": null
+ },
+ "america": {
+  "region": null,
+  "place": true
+ },
+ "amy": {
+  "region": null,
+  "place": false
+ },
+ "anastasia": {
+  "region": null,
+  "place": false
+ },
+ "anchor": {
+  "region": null,
+  "place": null
+ },
+ "android": {
+  "region": null,
+  "place": null
+ },
+ "angular": {
+  "region": null,
+  "place": null
+ },
+ "annabelle": {
+  "region": null,
+  "place": false
+ },
+ "annie": {
+  "region": null,
+  "place": false
+ },
+ "ant": {
+  "region": null,
+  "place": null
+ },
+ "anthem": {
+  "region": "US",
+  "place": null
+ },
+ "anthrax": {
+  "region": null,
+  "place": null
+ },
+ "anthropic": {
+  "region": null,
+  "place": null
+ },
+ "apex": {
+  "region": null,
+  "place": null
+ },
+ "apollo": {
+  "region": null,
+  "place": null
+ },
+ "apple": {
+  "region": null,
+  "place": null
+ },
+ "aquarius": {
+  "region": null,
+  "place": null
+ },
+ "arc": {
+  "region": null,
+  "place": null
+ },
+ "archer": {
+  "region": null,
+  "place": null
+ },
+ "aria": {
+  "region": null,
+  "place": null
+ },
+ "ariel": {
+  "region": null,
+  "place": false
+ },
+ "ark": {
+  "region": null,
+  "place": null
+ },
+ "arlo": {
+  "region": null,
+  "place": false
+ },
+ "arm": {
+  "region": null,
+  "place": null
+ },
+ "arrow": {
+  "region": null,
+  "place": null
+ },
+ "arrowhead": {
+  "region": "US",
+  "place": null
+ },
+ "artemis": {
+  "region": null,
+  "place": false
+ },
+ "arthur": {
+  "region": null,
+  "place": false
+ },
+ "asana": {
+  "region": null,
+  "place": null
+ },
+ "asia": {
+  "region": null,
+  "place": true
+ },
+ "ask": {
+  "region": null,
+  "place": null
+ },
+ "asphalt": {
+  "region": null,
+  "place": null
+ },
+ "asteroids": {
+  "region": null,
+  "place": null
+ },
+ "astrid": {
+  "region": null,
+  "place": false
+ },
+ "atlantic": {
+  "region": null,
+  "place": null
+ },
+ "atom": {
+  "region": null,
+  "place": null
+ },
+ "audacity": {
+  "region": null,
+  "place": null
+ },
+ "audible": {
+  "region": null,
+  "place": null
+ },
+ "august": {
+  "region": null,
+  "place": null
+ },
+ "aurora": {
+  "region": null,
+  "place": false
+ },
+ "avast": {
+  "region": null,
+  "place": null
+ },
+ "avatar": {
+  "region": null,
+  "place": null
+ },
+ "avengers": {
+  "region": null,
+  "place": null
+ },
+ "avocado": {
+  "region": null,
+  "place": null
+ },
+ "avon": {
+  "region": null,
+  "place": true
+ },
+ "axe": {
+  "region": null,
+  "place": null
+ },
+ "aztec": {
+  "region": "UK",
+  "place": null
+ },
+ "azure": {
+  "region": null,
+  "place": null
+ },
+ "babe": {
+  "region": null,
+  "place": null
+ },
+ "bambi": {
+  "region": null,
+  "place": false
+ },
+ "bamboo": {
+  "region": null,
+  "place": null
+ },
+ "bane": {
+  "region": null,
+  "place": null
+ },
+ "bang": {
+  "region": null,
+  "place": null
+ },
+ "barbie": {
+  "region": null,
+  "place": false
+ },
+ "bard": {
+  "region": null,
+  "place": null
+ },
+ "barney": {
+  "region": null,
+  "place": false
+ },
+ "basecamp": {
+  "region": null,
+  "place": null
+ },
+ "batiste": {
+  "region": null,
+  "place": null
+ },
+ "batman": {
+  "region": null,
+  "place": null
+ },
+ "battlefield": {
+  "region": null,
+  "place": null
+ },
+ "battleship": {
+  "region": null,
+  "place": null
+ },
+ "bazooka": {
+  "region": null,
+  "place": null
+ },
+ "bear": {
+  "region": null,
+  "place": null
+ },
+ "beats": {
+  "region": null,
+  "place": null
+ },
+ "bee": {
+  "region": null,
+  "place": null
+ },
+ "beefeater": {
+  "region": null,
+  "place": null
+ },
+ "beeper": {
+  "region": null,
+  "place": null
+ },
+ "beetle": {
+  "region": null,
+  "place": null
+ },
+ "bejeweled": {
+  "region": null,
+  "place": null
+ },
+ "benefit": {
+  "region": null,
+  "place": null
+ },
+ "berserk": {
+  "region": null,
+  "place": null
+ },
+ "big": {
+  "region": null,
+  "place": null
+ },
+ "billabong": {
+  "region": null,
+  "place": null
+ },
+ "billboard": {
+  "region": null,
+  "place": null
+ },
+ "bimbo": {
+  "region": null,
+  "place": null
+ },
+ "bing": {
+  "region": null,
+  "place": null
+ },
+ "bird": {
+  "region": null,
+  "place": null
+ },
+ "bixby": {
+  "region": null,
+  "place": false
+ },
+ "blackberry": {
+  "region": null,
+  "place": null
+ },
+ "blade": {
+  "region": null,
+  "place": null
+ },
+ "bleach": {
+  "region": null,
+  "place": null
+ },
+ "blender": {
+  "region": null,
+  "place": null
+ },
+ "blink": {
+  "region": null,
+  "place": null
+ },
+ "bliss": {
+  "region": null,
+  "place": null
+ },
+ "blizzard": {
+  "region": null,
+  "place": null
+ },
+ "blob": {
+  "region": null,
+  "place": null
+ },
+ "block": {
+  "region": null,
+  "place": null
+ },
+ "blockbuster": {
+  "region": null,
+  "place": null
+ },
+ "bloom": {
+  "region": null,
+  "place": null
+ },
+ "bluey": {
+  "region": null,
+  "place": null
+ },
+ "blur": {
+  "region": null,
+  "place": null
+ },
+ "bobcat": {
+  "region": null,
+  "place": null
+ },
+ "boggle": {
+  "region": null,
+  "place": null
+ },
+ "bold": {
+  "region": null,
+  "place": null
+ },
+ "bolt": {
+  "region": null,
+  "place": null
+ },
+ "bonanza": {
+  "region": null,
+  "place": null
+ },
+ "bonsai": {
+  "region": null,
+  "place": null
+ },
+ "boost": {
+  "region": "UK",
+  "place": null
+ },
+ "boots": {
+  "region": "UK",
+  "place": null
+ },
+ "borderlands": {
+  "region": null,
+  "place": null
+ },
+ "borders": {
+  "region": null,
+  "place": null
+ },
+ "boss": {
+  "region": null,
+  "place": null
+ },
+ "boston": {
+  "region": null,
+  "place": true
+ },
+ "bounty": {
+  "region": null,
+  "place": null
+ },
+ "bowser": {
+  "region": null,
+  "place": null
+ },
+ "box": {
+  "region": null,
+  "place": null
+ },
+ "brackets": {
+  "region": null,
+  "place": null
+ },
+ "braid": {
+  "region": null,
+  "place": null
+ },
+ "brave": {
+  "region": null,
+  "place": null
+ },
+ "bravo": {
+  "region": "US",
+  "place": null
+ },
+ "breakout": {
+  "region": null,
+  "place": null
+ },
+ "brigade": {
+  "region": null,
+  "place": null
+ },
+ "brilliant": {
+  "region": null,
+  "place": null
+ },
+ "brisk": {
+  "region": null,
+  "place": null
+ },
+ "bronco": {
+  "region": null,
+  "place": null
+ },
+ "brother": {
+  "region": null,
+  "place": null
+ },
+ "brut": {
+  "region": null,
+  "place": null
+ },
+ "bud": {
+  "region": null,
+  "place": null
+ },
+ "buffy": {
+  "region": null,
+  "place": false
+ },
+ "bugles": {
+  "region": "US",
+  "place": null
+ },
+ "bully": {
+  "region": null,
+  "place": null
+ },
+ "bumble": {
+  "region": null,
+  "place": null
+ },
+ "bump": {
+  "region": null,
+  "place": null
+ },
+ "burbs": {
+  "region": null,
+  "place": null
+ },
+ "burlington": {
+  "region": "US",
+  "place": true
+ },
+ "burnout": {
+  "region": null,
+  "place": null
+ },
+ "burrow": {
+  "region": null,
+  "place": null
+ },
+ "butterfinger": {
+  "region": "US",
+  "place": null
+ },
+ "butterfly": {
+  "region": null,
+  "place": null
+ },
+ "buzz": {
+  "region": null,
+  "place": null
+ },
+ "cable": {
+  "region": null,
+  "place": null
+ },
+ "cadence": {
+  "region": null,
+  "place": null
+ },
+ "cadillac": {
+  "region": null,
+  "place": true
+ },
+ "caffeine": {
+  "region": null,
+  "place": null
+ },
+ "calibre": {
+  "region": null,
+  "place": null
+ },
+ "calm": {
+  "region": null,
+  "place": null
+ },
+ "camel": {
+  "region": null,
+  "place": null
+ },
+ "canon": {
+  "region": null,
+  "place": null
+ },
+ "canvas": {
+  "region": null,
+  "place": null
+ },
+ "carbon": {
+  "region": null,
+  "place": null
+ },
+ "caress": {
+  "region": null,
+  "place": null
+ },
+ "carnage": {
+  "region": null,
+  "place": null
+ },
+ "carnation": {
+  "region": null,
+  "place": null
+ },
+ "carnival": {
+  "region": null,
+  "place": null
+ },
+ "carrie": {
+  "region": null,
+  "place": false
+ },
+ "carrier": {
+  "region": null,
+  "place": null
+ },
+ "cascade": {
+  "region": null,
+  "place": null
+ },
+ "casino": {
+  "region": null,
+  "place": null
+ },
+ "casper": {
+  "region": null,
+  "place": false
+ },
+ "cassandra": {
+  "region": null,
+  "place": false
+ },
+ "catchphrase": {
+  "region": null,
+  "place": null
+ },
+ "caterpillar": {
+  "region": null,
+  "place": null
+ },
+ "cathy": {
+  "region": null,
+  "place": false
+ },
+ "celebrations": {
+  "region": null,
+  "place": null
+ },
+ "celeste": {
+  "region": null,
+  "place": false
+ },
+ "celia": {
+  "region": null,
+  "place": false
+ },
+ "celine": {
+  "region": null,
+  "place": false
+ },
+ "cell": {
+  "region": null,
+  "place": null
+ },
+ "celsius": {
+  "region": null,
+  "place": false
+ },
+ "centipede": {
+  "region": null,
+  "place": null
+ },
+ "chai": {
+  "region": null,
+  "place": null
+ },
+ "champion": {
+  "region": null,
+  "place": null
+ },
+ "character": {
+  "region": null,
+  "place": null
+ },
+ "charger": {
+  "region": null,
+  "place": null
+ },
+ "chartreuse": {
+  "region": null,
+  "place": true
+ },
+ "chase": {
+  "region": null,
+  "place": null
+ },
+ "checkers": {
+  "region": "US",
+  "place": null
+ },
+ "cheer": {
+  "region": null,
+  "place": null
+ },
+ "cheerios": {
+  "region": null,
+  "place": null
+ },
+ "cheers": {
+  "region": null,
+  "place": null
+ },
+ "chef": {
+  "region": null,
+  "place": null
+ },
+ "cherry": {
+  "region": null,
+  "place": null
+ },
+ "chesterfield": {
+  "region": null,
+  "place": true
+ },
+ "chevron": {
+  "region": null,
+  "place": null
+ },
+ "chewy": {
+  "region": "US",
+  "place": null
+ },
+ "chime": {
+  "region": null,
+  "place": null
+ },
+ "chipotle": {
+  "region": null,
+  "place": null
+ },
+ "christine": {
+  "region": null,
+  "place": false
+ },
+ "chrome": {
+  "region": null,
+  "place": null
+ },
+ "chromium": {
+  "region": null,
+  "place": null
+ },
+ "chucky": {
+  "region": null,
+  "place": false
+ },
+ "citizen": {
+  "region": null,
+  "place": null
+ },
+ "civic": {
+  "region": null,
+  "place": null
+ },
+ "civilization": {
+  "region": null,
+  "place": null
+ },
+ "clash": {
+  "region": null,
+  "place": null
+ },
+ "claude": {
+  "region": null,
+  "place": false
+ },
+ "clear": {
+  "region": null,
+  "place": null
+ },
+ "cleo": {
+  "region": null,
+  "place": false
+ },
+ "clio": {
+  "region": null,
+  "place": false
+ },
+ "clover": {
+  "region": null,
+  "place": null
+ },
+ "clubhouse": {
+  "region": null,
+  "place": null
+ },
+ "clue": {
+  "region": null,
+  "place": null
+ },
+ "clueless": {
+  "region": null,
+  "place": null
+ },
+ "coach": {
+  "region": null,
+  "place": null
+ },
+ "coast": {
+  "region": null,
+  "place": null
+ },
+ "cocoon": {
+  "region": null,
+  "place": null
+ },
+ "coda": {
+  "region": null,
+  "place": null
+ },
+ "codex": {
+  "region": null,
+  "place": null
+ },
+ "cohere": {
+  "region": null,
+  "place": null
+ },
+ "cohost": {
+  "region": null,
+  "place": null
+ },
+ "coke": {
+  "region": null,
+  "place": null
+ },
+ "columbia": {
+  "region": null,
+  "place": true
+ },
+ "comet": {
+  "region": null,
+  "place": null
+ },
+ "comfort": {
+  "region": null,
+  "place": null
+ },
+ "commodore": {
+  "region": null,
+  "place": null
+ },
+ "community": {
+  "region": null,
+  "place": null
+ },
+ "confluence": {
+  "region": null,
+  "place": null
+ },
+ "consul": {
+  "region": null,
+  "place": null
+ },
+ "contra": {
+  "region": null,
+  "place": null
+ },
+ "control": {
+  "region": null,
+  "place": null
+ },
+ "converse": {
+  "region": null,
+  "place": null
+ },
+ "copilot": {
+  "region": null,
+  "place": null
+ },
+ "cora": {
+  "region": null,
+  "place": false
+ },
+ "coraline": {
+  "region": null,
+  "place": false
+ },
+ "corduroy": {
+  "region": null,
+  "place": null
+ },
+ "corgi": {
+  "region": null,
+  "place": null
+ },
+ "corolla": {
+  "region": null,
+  "place": null
+ },
+ "corona": {
+  "region": null,
+  "place": null
+ },
+ "corsair": {
+  "region": null,
+  "place": null
+ },
+ "cortana": {
+  "region": null,
+  "place": null
+ },
+ "corvette": {
+  "region": null,
+  "place": null
+ },
+ "cosmopolitan": {
+  "region": null,
+  "place": null
+ },
+ "cosmos": {
+  "region": null,
+  "place": null
+ },
+ "countdown": {
+  "region": "UK",
+  "place": null
+ },
+ "cream": {
+  "region": null,
+  "place": null
+ },
+ "creed": {
+  "region": null,
+  "place": null
+ },
+ "crest": {
+  "region": null,
+  "place": null
+ },
+ "cricket": {
+  "region": "US",
+  "place": null
+ },
+ "crocs": {
+  "region": null,
+  "place": null
+ },
+ "crucible": {
+  "region": null,
+  "place": null
+ },
+ "cruise": {
+  "region": null,
+  "place": null
+ },
+ "crunch": {
+  "region": null,
+  "place": null
+ },
+ "crush": {
+  "region": null,
+  "place": null
+ },
+ "cruze": {
+  "region": null,
+  "place": false
+ },
+ "cure": {
+  "region": null,
+  "place": null
+ },
+ "cursor": {
+  "region": null,
+  "place": null
+ },
+ "curve": {
+  "region": null,
+  "place": null
+ },
+ "cyborg": {
+  "region": null,
+  "place": null
+ },
+ "cyclops": {
+  "region": null,
+  "place": null
+ },
+ "daisy": {
+  "region": null,
+  "place": null
+ },
+ "dallas": {
+  "region": null,
+  "place": true
+ },
+ "dash": {
+  "region": null,
+  "place": null
+ },
+ "data": {
+  "region": null,
+  "place": null
+ },
+ "dawn": {
+  "region": null,
+  "place": null
+ },
+ "debonair": {
+  "region": null,
+  "place": null
+ },
+ "decathlon": {
+  "region": null,
+  "place": null
+ },
+ "degree": {
+  "region": null,
+  "place": null
+ },
+ "delicious": {
+  "region": null,
+  "place": null
+ },
+ "deliverance": {
+  "region": null,
+  "place": null
+ },
+ "dell": {
+  "region": null,
+  "place": null
+ },
+ "delta": {
+  "region": null,
+  "place": null
+ },
+ "deluge": {
+  "region": null,
+  "place": null
+ },
+ "desperado": {
+  "region": null,
+  "place": null
+ },
+ "destiny": {
+  "region": null,
+  "place": null
+ },
+ "detour": {
+  "region": null,
+  "place": null
+ },
+ "devin": {
+  "region": null,
+  "place": false
+ },
+ "dexter": {
+  "region": null,
+  "place": false
+ },
+ "dial": {
+  "region": null,
+  "place": null
+ },
+ "dialect": {
+  "region": null,
+  "place": null
+ },
+ "diesel": {
+  "region": null,
+  "place": null
+ },
+ "diplomacy": {
+  "region": null,
+  "place": null
+ },
+ "discord": {
+  "region": null,
+  "place": null
+ },
+ "discover": {
+  "region": "US",
+  "place": null
+ },
+ "discovery": {
+  "region": null,
+  "place": null
+ },
+ "dish": {
+  "region": "US",
+  "place": null
+ },
+ "dishonored": {
+  "region": null,
+  "place": null
+ },
+ "django": {
+  "region": null,
+  "place": false
+ },
+ "docker": {
+  "region": null,
+  "place": null
+ },
+ "dodge": {
+  "region": null,
+  "place": null
+ },
+ "dodgeball": {
+  "region": null,
+  "place": null
+ },
+ "dogma": {
+  "region": null,
+  "place": null
+ },
+ "dole": {
+  "region": null,
+  "place": null
+ },
+ "dolly": {
+  "region": null,
+  "place": null
+ },
+ "dominion": {
+  "region": null,
+  "place": null
+ },
+ "donkey": {
+  "region": null,
+  "place": null
+ },
+ "doom": {
+  "region": null,
+  "place": null
+ },
+ "doors": {
+  "region": null,
+  "place": null
+ },
+ "dora": {
+  "region": null,
+  "place": false
+ },
+ "dory": {
+  "region": null,
+  "place": null
+ },
+ "dove": {
+  "region": null,
+  "place": null
+ },
+ "downy": {
+  "region": "US",
+  "place": null
+ },
+ "dream": {
+  "region": null,
+  "place": null
+ },
+ "drive": {
+  "region": null,
+  "place": null
+ },
+ "drone": {
+  "region": null,
+  "place": null
+ },
+ "drumstick": {
+  "region": null,
+  "place": null
+ },
+ "duel": {
+  "region": null,
+  "place": null
+ },
+ "dune": {
+  "region": null,
+  "place": null
+ },
+ "eagle": {
+  "region": null,
+  "place": null
+ },
+ "eagles": {
+  "region": null,
+  "place": null
+ },
+ "earthbound": {
+  "region": null,
+  "place": null
+ },
+ "ebony": {
+  "region": "US",
+  "place": null
+ },
+ "echo": {
+  "region": null,
+  "place": null
+ },
+ "eclipse": {
+  "region": null,
+  "place": null
+ },
+ "economist": {
+  "region": null,
+  "place": null
+ },
+ "eden": {
+  "region": null,
+  "place": true
+ },
+ "edge": {
+  "region": null,
+  "place": null
+ },
+ "elastic": {
+  "region": null,
+  "place": null
+ },
+ "elephant": {
+  "region": "UK",
+  "place": null
+ },
+ "elixir": {
+  "region": null,
+  "place": null
+ },
+ "eliza": {
+  "region": null,
+  "place": false
+ },
+ "ella": {
+  "region": null,
+  "place": false
+ },
+ "elmo": {
+  "region": null,
+  "place": false
+ },
+ "elsa": {
+  "region": null,
+  "place": false
+ },
+ "emirates": {
+  "region": null,
+  "place": null
+ },
+ "emmy": {
+  "region": null,
+  "place": false
+ },
+ "energizer": {
+  "region": null,
+  "place": null
+ },
+ "ensure": {
+  "region": null,
+  "place": null
+ },
+ "entourage": {
+  "region": null,
+  "place": null
+ },
+ "epic": {
+  "region": null,
+  "place": null
+ },
+ "era": {
+  "region": "US",
+  "place": null
+ },
+ "esmeralda": {
+  "region": null,
+  "place": false
+ },
+ "esquire": {
+  "region": null,
+  "place": null
+ },
+ "essence": {
+  "region": "US",
+  "place": null
+ },
+ "essie": {
+  "region": null,
+  "place": false
+ },
+ "evanescence": {
+  "region": null,
+  "place": null
+ },
+ "everest": {
+  "region": null,
+  "place": true
+ },
+ "excel": {
+  "region": null,
+  "place": null
+ },
+ "excite": {
+  "region": null,
+  "place": null
+ },
+ "explorer": {
+  "region": null,
+  "place": null
+ },
+ "express": {
+  "region": "US",
+  "place": null
+ },
+ "extra": {
+  "region": null,
+  "place": null
+ },
+ "fable": {
+  "region": null,
+  "place": null
+ },
+ "fairy": {
+  "region": "UK",
+  "place": null
+ },
+ "faith": {
+  "region": null,
+  "place": null
+ },
+ "falcon": {
+  "region": null,
+  "place": null
+ },
+ "fallout": {
+  "region": null,
+  "place": null
+ },
+ "fandom": {
+  "region": null,
+  "place": null
+ },
+ "fantasia": {
+  "region": null,
+  "place": null
+ },
+ "fast": {
+  "region": null,
+  "place": null
+ },
+ "fasten": {
+  "region": null,
+  "place": null
+ },
+ "fastly": {
+  "region": null,
+  "place": null
+ },
+ "felix": {
+  "region": null,
+  "place": false
+ },
+ "fender": {
+  "region": null,
+  "place": null
+ },
+ "fez": {
+  "region": null,
+  "place": null
+ },
+ "fiat": {
+  "region": null,
+  "place": null
+ },
+ "fidelity": {
+  "region": null,
+  "place": null
+ },
+ "figment": {
+  "region": null,
+  "place": null
+ },
+ "finale": {
+  "region": null,
+  "place": null
+ },
+ "finish": {
+  "region": null,
+  "place": null
+ },
+ "finn": {
+  "region": null,
+  "place": false
+ },
+ "fireball": {
+  "region": null,
+  "place": null
+ },
+ "firefox": {
+  "region": null,
+  "place": null
+ },
+ "fisheye": {
+  "region": null,
+  "place": null
+ },
+ "flake": {
+  "region": null,
+  "place": null
+ },
+ "flash": {
+  "region": null,
+  "place": null
+ },
+ "flask": {
+  "region": null,
+  "place": null
+ },
+ "fleabag": {
+  "region": null,
+  "place": null
+ },
+ "flock": {
+  "region": null,
+  "place": null
+ },
+ "flutter": {
+  "region": null,
+  "place": null
+ },
+ "flux": {
+  "region": null,
+  "place": null
+ },
+ "ford": {
+  "region": null,
+  "place": null
+ },
+ "foreigner": {
+  "region": null,
+  "place": null
+ },
+ "fortnite": {
+  "region": null,
+  "place": null
+ },
+ "fortune": {
+  "region": null,
+  "place": null
+ },
+ "fossil": {
+  "region": null,
+  "place": null
+ },
+ "fox": {
+  "region": null,
+  "place": null
+ },
+ "free": {
+  "region": "France/Europe",
+  "place": null
+ },
+ "friend": {
+  "region": null,
+  "place": null
+ },
+ "friends": {
+  "region": null,
+  "place": null
+ },
+ "frosty": {
+  "region": null,
+  "place": null
+ },
+ "frozen": {
+  "region": null,
+  "place": null
+ },
+ "fuse": {
+  "region": null,
+  "place": null
+ },
+ "gain": {
+  "region": null,
+  "place": null
+ },
+ "galactica": {
+  "region": null,
+  "place": null
+ },
+ "galaxy": {
+  "region": null,
+  "place": null
+ },
+ "gambit": {
+  "region": null,
+  "place": null
+ },
+ "gamma": {
+  "region": null,
+  "place": null
+ },
+ "gap": {
+  "region": null,
+  "place": null
+ },
+ "garbage": {
+  "region": null,
+  "place": null
+ },
+ "garfield": {
+  "region": null,
+  "place": false
+ },
+ "garnet": {
+  "region": null,
+  "place": null
+ },
+ "gateway": {
+  "region": null,
+  "place": null
+ },
+ "gatsby": {
+  "region": "Japan",
+  "place": false
+ },
+ "gauntlet": {
+  "region": null,
+  "place": null
+ },
+ "gears": {
+  "region": null,
+  "place": null
+ },
+ "gemini": {
+  "region": null,
+  "place": null
+ },
+ "gemma": {
+  "region": null,
+  "place": false
+ },
+ "genesis": {
+  "region": null,
+  "place": null
+ },
+ "genie": {
+  "region": null,
+  "place": null
+ },
+ "ghost": {
+  "region": null,
+  "place": null
+ },
+ "giant": {
+  "region": "US",
+  "place": null
+ },
+ "gimp": {
+  "region": null,
+  "place": null
+ },
+ "git": {
+  "region": null,
+  "place": null
+ },
+ "glad": {
+  "region": null,
+  "place": null
+ },
+ "glade": {
+  "region": null,
+  "place": null
+ },
+ "glamour": {
+  "region": null,
+  "place": null
+ },
+ "glass": {
+  "region": null,
+  "place": null
+ },
+ "glee": {
+  "region": null,
+  "place": null
+ },
+ "go": {
+  "region": null,
+  "place": null
+ },
+ "godiva": {
+  "region": null,
+  "place": false
+ },
+ "godot": {
+  "region": null,
+  "place": null
+ },
+ "goldfish": {
+  "region": null,
+  "place": null
+ },
+ "golf": {
+  "region": null,
+  "place": null
+ },
+ "goofy": {
+  "region": null,
+  "place": null
+ },
+ "goop": {
+  "region": null,
+  "place": null
+ },
+ "gopher": {
+  "region": null,
+  "place": null
+ },
+ "grab": {
+  "region": "Singapore",
+  "place": null
+ },
+ "granite": {
+  "region": null,
+  "place": null
+ },
+ "granola": {
+  "region": null,
+  "place": null
+ },
+ "graphite": {
+  "region": null,
+  "place": null
+ },
+ "gravity": {
+  "region": null,
+  "place": null
+ },
+ "grease": {
+  "region": null,
+  "place": null
+ },
+ "grok": {
+  "region": null,
+  "place": null
+ },
+ "grover": {
+  "region": null,
+  "place": false
+ },
+ "guardian": {
+  "region": null,
+  "place": null
+ },
+ "guess": {
+  "region": null,
+  "place": null
+ },
+ "gulf": {
+  "region": null,
+  "place": null
+ },
+ "gumtree": {
+  "region": "Australia",
+  "place": null
+ },
+ "gushers": {
+  "region": "US",
+  "place": null
+ },
+ "gusto": {
+  "region": "US",
+  "place": null
+ },
+ "habitat": {
+  "region": "UK",
+  "place": null
+ },
+ "hades": {
+  "region": null,
+  "place": false
+ },
+ "haiku": {
+  "region": null,
+  "place": null
+ },
+ "hairspray": {
+  "region": null,
+  "place": null
+ },
+ "halifax": {
+  "region": "UK",
+  "place": true
+ },
+ "halls": {
+  "region": null,
+  "place": null
+ },
+ "halo": {
+  "region": null,
+  "place": null
+ },
+ "handbrake": {
+  "region": null,
+  "place": null
+ },
+ "hangouts": {
+  "region": null,
+  "place": null
+ },
+ "harlequin": {
+  "region": null,
+  "place": null
+ },
+ "hartford": {
+  "region": "US",
+  "place": true
+ },
+ "harvey": {
+  "region": null,
+  "place": false
+ },
+ "headspace": {
+  "region": null,
+  "place": null
+ },
+ "heart": {
+  "region": null,
+  "place": null
+ },
+ "hearthstone": {
+  "region": null,
+  "place": null
+ },
+ "heat": {
+  "region": null,
+  "place": null
+ },
+ "hello": {
+  "region": null,
+  "place": null
+ },
+ "hercules": {
+  "region": null,
+  "place": null
+ },
+ "hermes": {
+  "region": null,
+  "place": false
+ },
+ "hero": {
+  "region": "India",
+  "place": null
+ },
+ "herschel": {
+  "region": null,
+  "place": false
+ },
+ "hertz": {
+  "region": null,
+  "place": null
+ },
+ "hey": {
+  "region": null,
+  "place": null
+ },
+ "hinge": {
+  "region": null,
+  "place": null
+ },
+ "history": {
+  "region": null,
+  "place": null
+ },
+ "hitman": {
+  "region": null,
+  "place": null
+ },
+ "hive": {
+  "region": null,
+  "place": null
+ },
+ "hobnobs": {
+  "region": "UK",
+  "place": null
+ },
+ "holden": {
+  "region": "Australia",
+  "place": false
+ },
+ "hole": {
+  "region": null,
+  "place": null
+ },
+ "hollister": {
+  "region": null,
+  "place": true
+ },
+ "homeland": {
+  "region": null,
+  "place": null
+ },
+ "honey": {
+  "region": null,
+  "place": null
+ },
+ "honor": {
+  "region": null,
+  "place": null
+ },
+ "hoopla": {
+  "region": null,
+  "place": null
+ },
+ "hooters": {
+  "region": null,
+  "place": null
+ },
+ "hopper": {
+  "region": null,
+  "place": null
+ },
+ "horizon": {
+  "region": "US",
+  "place": null
+ },
+ "hostel": {
+  "region": null,
+  "place": null
+ },
+ "hostess": {
+  "region": "US",
+  "place": null
+ },
+ "hound": {
+  "region": null,
+  "place": null
+ },
+ "house": {
+  "region": null,
+  "place": null
+ },
+ "houseparty": {
+  "region": null,
+  "place": null
+ },
+ "hue": {
+  "region": null,
+  "place": null
+ },
+ "hugo": {
+  "region": null,
+  "place": false
+ },
+ "hulk": {
+  "region": null,
+  "place": null
+ },
+ "humane": {
+  "region": null,
+  "place": null
+ },
+ "hummer": {
+  "region": null,
+  "place": null
+ },
+ "hunter": {
+  "region": null,
+  "place": null
+ },
+ "hush": {
+  "region": "UK",
+  "place": null
+ },
+ "husky": {
+  "region": "US",
+  "place": null
+ },
+ "hustler": {
+  "region": null,
+  "place": null
+ },
+ "ibis": {
+  "region": null,
+  "place": null
+ },
+ "iceland": {
+  "region": "UK",
+  "place": true
+ },
+ "iceman": {
+  "region": null,
+  "place": null
+ },
+ "ideogram": {
+  "region": null,
+  "place": null
+ },
+ "illustrator": {
+  "region": null,
+  "place": null
+ },
+ "impala": {
+  "region": "US",
+  "place": null
+ },
+ "imperial": {
+  "region": "US",
+  "place": null
+ },
+ "inbox": {
+  "region": null,
+  "place": null
+ },
+ "inception": {
+  "region": null,
+  "place": null
+ },
+ "incubus": {
+  "region": null,
+  "place": null
+ },
+ "indeed": {
+  "region": null,
+  "place": null
+ },
+ "independent": {
+  "region": null,
+  "place": null
+ },
+ "indigo": {
+  "region": null,
+  "place": null
+ },
+ "infamous": {
+  "region": null,
+  "place": null
+ },
+ "inflection": {
+  "region": null,
+  "place": null
+ },
+ "innocent": {
+  "region": "UK",
+  "place": null
+ },
+ "inside": {
+  "region": null,
+  "place": null
+ },
+ "insomnia": {
+  "region": null,
+  "place": null
+ },
+ "intel": {
+  "region": null,
+  "place": null
+ },
+ "intercept": {
+  "region": "US",
+  "place": null
+ },
+ "intercom": {
+  "region": null,
+  "place": null
+ },
+ "intercontinental": {
+  "region": null,
+  "place": null
+ },
+ "interstellar": {
+  "region": null,
+  "place": null
+ },
+ "interview": {
+  "region": "US",
+  "place": null
+ },
+ "intuit": {
+  "region": null,
+  "place": null
+ },
+ "ivory": {
+  "region": "US",
+  "place": null
+ },
+ "jackass": {
+  "region": null,
+  "place": null
+ },
+ "jaguar": {
+  "region": null,
+  "place": null
+ },
+ "jared": {
+  "region": "US",
+  "place": false
+ },
+ "jasper": {
+  "region": null,
+  "place": false
+ },
+ "java": {
+  "region": null,
+  "place": true
+ },
+ "jaws": {
+  "region": null,
+  "place": null
+ },
+ "jeep": {
+  "region": null,
+  "place": null
+ },
+ "jelly": {
+  "region": null,
+  "place": null
+ },
+ "jeopardy": {
+  "region": null,
+  "place": null
+ },
+ "jiffy": {
+  "region": "US",
+  "place": null
+ },
+ "jinx": {
+  "region": null,
+  "place": null
+ },
+ "jockey": {
+  "region": null,
+  "place": null
+ },
+ "joker": {
+  "region": null,
+  "place": null
+ },
+ "jordan": {
+  "region": null,
+  "place": false
+ },
+ "journey": {
+  "region": null,
+  "place": null
+ },
+ "joy": {
+  "region": "US",
+  "place": null
+ },
+ "juggernaut": {
+  "region": null,
+  "place": null
+ },
+ "julia": {
+  "region": null,
+  "place": false
+ },
+ "jura": {
+  "region": null,
+  "place": true
+ },
+ "justice": {
+  "region": "US",
+  "place": null
+ },
+ "kafka": {
+  "region": null,
+  "place": false
+ },
+ "kappa": {
+  "region": null,
+  "place": null
+ },
+ "kathmandu": {
+  "region": "New Zealand",
+  "place": true
+ },
+ "kayak": {
+  "region": null,
+  "place": null
+ },
+ "ken": {
+  "region": null,
+  "place": false
+ },
+ "kent": {
+  "region": null,
+  "place": true
+ },
+ "kenzo": {
+  "region": null,
+  "place": false
+ },
+ "kermit": {
+  "region": null,
+  "place": false
+ },
+ "kettle": {
+  "region": null,
+  "place": null
+ },
+ "keystone": {
+  "region": "US",
+  "place": null
+ },
+ "kick": {
+  "region": null,
+  "place": null
+ },
+ "killers": {
+  "region": null,
+  "place": null
+ },
+ "kimi": {
+  "region": null,
+  "place": false
+ },
+ "kind": {
+  "region": null,
+  "place": null
+ },
+ "kindle": {
+  "region": null,
+  "place": null
+ },
+ "kingfisher": {
+  "region": null,
+  "place": null
+ },
+ "kingpin": {
+  "region": null,
+  "place": null
+ },
+ "kirby": {
+  "region": null,
+  "place": false
+ },
+ "kiss": {
+  "region": null,
+  "place": null
+ },
+ "kiwi": {
+  "region": null,
+  "place": null
+ },
+ "kodi": {
+  "region": null,
+  "place": false
+ },
+ "kraken": {
+  "region": null,
+  "place": null
+ },
+ "labyrinth": {
+  "region": null,
+  "place": null
+ },
+ "lancet": {
+  "region": null,
+  "place": null
+ },
+ "lava": {
+  "region": null,
+  "place": null
+ },
+ "ledger": {
+  "region": null,
+  "place": null
+ },
+ "leia": {
+  "region": null,
+  "place": false
+ },
+ "lemmings": {
+  "region": null,
+  "place": null
+ },
+ "lemonade": {
+  "region": null,
+  "place": null
+ },
+ "lever": {
+  "region": null,
+  "place": null
+ },
+ "lex": {
+  "region": null,
+  "place": false
+ },
+ "libby": {
+  "region": null,
+  "place": false
+ },
+ "life": {
+  "region": null,
+  "place": null
+ },
+ "lifebuoy": {
+  "region": null,
+  "place": null
+ },
+ "lifetime": {
+  "region": null,
+  "place": null
+ },
+ "lilt": {
+  "region": "UK",
+  "place": null
+ },
+ "limbo": {
+  "region": null,
+  "place": null
+ },
+ "lime": {
+  "region": null,
+  "place": null
+ },
+ "lincoln": {
+  "region": null,
+  "place": false
+ },
+ "line": {
+  "region": "Japan",
+  "place": null
+ },
+ "link": {
+  "region": null,
+  "place": null
+ },
+ "lion": {
+  "region": null,
+  "place": null
+ },
+ "lionel": {
+  "region": null,
+  "place": false
+ },
+ "lisa": {
+  "region": null,
+  "place": false
+ },
+ "lizard": {
+  "region": null,
+  "place": null
+ },
+ "llama": {
+  "region": null,
+  "place": null
+ },
+ "logic": {
+  "region": null,
+  "place": null
+ },
+ "look": {
+  "region": "US",
+  "place": null
+ },
+ "loom": {
+  "region": null,
+  "place": null
+ },
+ "lost": {
+  "region": null,
+  "place": null
+ },
+ "lotto": {
+  "region": null,
+  "place": null
+ },
+ "lotus": {
+  "region": null,
+  "place": null
+ },
+ "lovable": {
+  "region": null,
+  "place": null
+ },
+ "lucid": {
+  "region": null,
+  "place": null
+ },
+ "lucifer": {
+  "region": null,
+  "place": false
+ },
+ "lumen": {
+  "region": null,
+  "place": null
+ },
+ "luna": {
+  "region": null,
+  "place": false
+ },
+ "lurch": {
+  "region": null,
+  "place": null
+ },
+ "lush": {
+  "region": null,
+  "place": null
+ },
+ "luther": {
+  "region": null,
+  "place": false
+ },
+ "lux": {
+  "region": null,
+  "place": null
+ },
+ "lynx": {
+  "region": null,
+  "place": null
+ },
+ "lyra": {
+  "region": null,
+  "place": null
+ },
+ "mac": {
+  "region": null,
+  "place": null
+ },
+ "mace": {
+  "region": null,
+  "place": null
+ },
+ "macintosh": {
+  "region": null,
+  "place": null
+ },
+ "mad": {
+  "region": null,
+  "place": null
+ },
+ "madness": {
+  "region": null,
+  "place": null
+ },
+ "maestro": {
+  "region": null,
+  "place": null
+ },
+ "magic": {
+  "region": null,
+  "place": null
+ },
+ "magneto": {
+  "region": null,
+  "place": null
+ },
+ "magnum": {
+  "region": null,
+  "place": null
+ },
+ "malibu": {
+  "region": null,
+  "place": true
+ },
+ "mango": {
+  "region": null,
+  "place": null
+ },
+ "marabou": {
+  "region": null,
+  "place": null
+ },
+ "marathon": {
+  "region": null,
+  "place": null
+ },
+ "marcie": {
+  "region": null,
+  "place": false
+ },
+ "mario": {
+  "region": null,
+  "place": false
+ },
+ "mars": {
+  "region": null,
+  "place": false
+ },
+ "marvel": {
+  "region": null,
+  "place": null
+ },
+ "mastermind": {
+  "region": null,
+  "place": null
+ },
+ "mastodon": {
+  "region": null,
+  "place": null
+ },
+ "match": {
+  "region": null,
+  "place": null
+ },
+ "matchbox": {
+  "region": null,
+  "place": null
+ },
+ "matilda": {
+  "region": null,
+  "place": false
+ },
+ "matrix": {
+  "region": null,
+  "place": null
+ },
+ "maven": {
+  "region": null,
+  "place": null
+ },
+ "maxim": {
+  "region": null,
+  "place": null
+ },
+ "maya": {
+  "region": null,
+  "place": false
+ },
+ "medium": {
+  "region": null,
+  "place": null
+ },
+ "meerkat": {
+  "region": null,
+  "place": null
+ },
+ "meetup": {
+  "region": null,
+  "place": null
+ },
+ "mega": {
+  "region": null,
+  "place": null
+ },
+ "memento": {
+  "region": null,
+  "place": null
+ },
+ "mercedes": {
+  "region": null,
+  "place": false
+ },
+ "mercurial": {
+  "region": null,
+  "place": null
+ },
+ "mercury": {
+  "region": null,
+  "place": false
+ },
+ "messenger": {
+  "region": null,
+  "place": null
+ },
+ "meta": {
+  "region": null,
+  "place": null
+ },
+ "method": {
+  "region": null,
+  "place": null
+ },
+ "metropolis": {
+  "region": null,
+  "place": null
+ },
+ "mickey": {
+  "region": null,
+  "place": false
+ },
+ "micron": {
+  "region": null,
+  "place": null
+ },
+ "midas": {
+  "region": null,
+  "place": false
+ },
+ "migration": {
+  "region": null,
+  "place": null
+ },
+ "miller": {
+  "region": null,
+  "place": null
+ },
+ "milo": {
+  "region": null,
+  "place": false
+ },
+ "minesweeper": {
+  "region": null,
+  "place": null
+ },
+ "mini": {
+  "region": null,
+  "place": null
+ },
+ "minions": {
+  "region": null,
+  "place": null
+ },
+ "minnie": {
+  "region": null,
+  "place": false
+ },
+ "minstrels": {
+  "region": "UK",
+  "place": null
+ },
+ "mint": {
+  "region": null,
+  "place": null
+ },
+ "mirage": {
+  "region": null,
+  "place": null
+ },
+ "mirror": {
+  "region": "UK",
+  "place": null
+ },
+ "misery": {
+  "region": null,
+  "place": null
+ },
+ "mistral": {
+  "region": null,
+  "place": null
+ },
+ "monk": {
+  "region": null,
+  "place": null
+ },
+ "monopoly": {
+  "region": null,
+  "place": null
+ },
+ "monsoon": {
+  "region": "UK",
+  "place": null
+ },
+ "monster": {
+  "region": null,
+  "place": null
+ },
+ "moon": {
+  "region": null,
+  "place": null
+ },
+ "moonlight": {
+  "region": null,
+  "place": null
+ },
+ "moonstruck": {
+  "region": null,
+  "place": null
+ },
+ "mosaic": {
+  "region": null,
+  "place": null
+ },
+ "mounds": {
+  "region": "US",
+  "place": null
+ },
+ "moves": {
+  "region": null,
+  "place": null
+ },
+ "mulan": {
+  "region": null,
+  "place": false
+ },
+ "mulberry": {
+  "region": null,
+  "place": null
+ },
+ "muse": {
+  "region": null,
+  "place": null
+ },
+ "mustang": {
+  "region": null,
+  "place": null
+ },
+ "mystique": {
+  "region": null,
+  "place": null
+ },
+ "myth": {
+  "region": null,
+  "place": null
+ },
+ "nala": {
+  "region": null,
+  "place": false
+ },
+ "nancy": {
+  "region": null,
+  "place": false
+ },
+ "nation": {
+  "region": null,
+  "place": null
+ },
+ "nationwide": {
+  "region": "UK",
+  "place": null
+ },
+ "natter": {
+  "region": null,
+  "place": null
+ },
+ "nature": {
+  "region": null,
+  "place": null
+ },
+ "nectar": {
+  "region": "UK",
+  "place": null
+ },
+ "nerds": {
+  "region": null,
+  "place": null
+ },
+ "nerf": {
+  "region": null,
+  "place": null
+ },
+ "nest": {
+  "region": null,
+  "place": null
+ },
+ "network": {
+  "region": null,
+  "place": null
+ },
+ "newton": {
+  "region": null,
+  "place": null
+ },
+ "next": {
+  "region": "UK",
+  "place": null
+ },
+ "nickelodeon": {
+  "region": null,
+  "place": null
+ },
+ "nike": {
+  "region": null,
+  "place": false
+ },
+ "ninja": {
+  "region": null,
+  "place": null
+ },
+ "nirvana": {
+  "region": null,
+  "place": null
+ },
+ "noddy": {
+  "region": "UK",
+  "place": null
+ },
+ "nook": {
+  "region": "US",
+  "place": null
+ },
+ "nothing": {
+  "region": null,
+  "place": null
+ },
+ "notion": {
+  "region": null,
+  "place": null
+ },
+ "nova": {
+  "region": "US",
+  "place": null
+ },
+ "nyx": {
+  "region": null,
+  "place": false
+ },
+ "oakley": {
+  "region": null,
+  "place": false
+ },
+ "oasis": {
+  "region": "UK",
+  "place": null
+ },
+ "oblivion": {
+  "region": null,
+  "place": null
+ },
+ "observer": {
+  "region": "UK",
+  "place": null
+ },
+ "obsidian": {
+  "region": null,
+  "place": null
+ },
+ "oculus": {
+  "region": null,
+  "place": null
+ },
+ "odeon": {
+  "region": "UK",
+  "place": null
+ },
+ "office": {
+  "region": null,
+  "place": null
+ },
+ "ola": {
+  "region": "India",
+  "place": false
+ },
+ "olaf": {
+  "region": null,
+  "place": false
+ },
+ "olympus": {
+  "region": null,
+  "place": true
+ },
+ "omega": {
+  "region": null,
+  "place": null
+ },
+ "onion": {
+  "region": null,
+  "place": null
+ },
+ "opera": {
+  "region": null,
+  "place": null
+ },
+ "operation": {
+  "region": null,
+  "place": null
+ },
+ "opus": {
+  "region": null,
+  "place": null
+ },
+ "oracle": {
+  "region": null,
+  "place": null
+ },
+ "orange": {
+  "region": "France/Europe",
+  "place": null
+ },
+ "orbit": {
+  "region": null,
+  "place": null
+ },
+ "orca": {
+  "region": null,
+  "place": null
+ },
+ "origin": {
+  "region": null,
+  "place": null
+ },
+ "origins": {
+  "region": null,
+  "place": null
+ },
+ "othello": {
+  "region": null,
+  "place": false
+ },
+ "otter": {
+  "region": null,
+  "place": null
+ },
+ "outlook": {
+  "region": null,
+  "place": null
+ },
+ "overwatch": {
+  "region": null,
+  "place": null
+ },
+ "oxygen": {
+  "region": "US",
+  "place": null
+ },
+ "oyster": {
+  "region": "UK",
+  "place": null
+ },
+ "paint": {
+  "region": null,
+  "place": null
+ },
+ "palisade": {
+  "region": null,
+  "place": null
+ },
+ "palm": {
+  "region": null,
+  "place": null
+ },
+ "pampers": {
+  "region": null,
+  "place": null
+ },
+ "pandemic": {
+  "region": null,
+  "place": null
+ },
+ "pandora": {
+  "region": null,
+  "place": false
+ },
+ "paper": {
+  "region": null,
+  "place": null
+ },
+ "paperboy": {
+  "region": null,
+  "place": null
+ },
+ "paramount": {
+  "region": null,
+  "place": null
+ },
+ "parasite": {
+  "region": null,
+  "place": null
+ },
+ "patagonia": {
+  "region": null,
+  "place": true
+ },
+ "path": {
+  "region": null,
+  "place": null
+ },
+ "patron": {
+  "region": null,
+  "place": null
+ },
+ "payday": {
+  "region": "US",
+  "place": null
+ },
+ "peacock": {
+  "region": "US",
+  "place": null
+ },
+ "pears": {
+  "region": null,
+  "place": null
+ },
+ "pebble": {
+  "region": null,
+  "place": null
+ },
+ "pebbles": {
+  "region": "US",
+  "place": null
+ },
+ "pedigree": {
+  "region": null,
+  "place": null
+ },
+ "peeps": {
+  "region": "US",
+  "place": null
+ },
+ "peloton": {
+  "region": null,
+  "place": null
+ },
+ "penguin": {
+  "region": null,
+  "place": null
+ },
+ "penthouse": {
+  "region": null,
+  "place": null
+ },
+ "people": {
+  "region": null,
+  "place": null
+ },
+ "perfection": {
+  "region": null,
+  "place": null
+ },
+ "periscope": {
+  "region": null,
+  "place": null
+ },
+ "perplexity": {
+  "region": null,
+  "place": null
+ },
+ "persona": {
+  "region": null,
+  "place": null
+ },
+ "pete": {
+  "region": null,
+  "place": false
+ },
+ "phi": {
+  "region": null,
+  "place": null
+ },
+ "philadelphia": {
+  "region": null,
+  "place": true
+ },
+ "pi": {
+  "region": null,
+  "place": null
+ },
+ "piccolo": {
+  "region": null,
+  "place": null
+ },
+ "picnic": {
+  "region": null,
+  "place": null
+ },
+ "piglet": {
+  "region": null,
+  "place": null
+ },
+ "pilot": {
+  "region": null,
+  "place": null
+ },
+ "pioneer": {
+  "region": null,
+  "place": null
+ },
+ "pitchfork": {
+  "region": null,
+  "place": null
+ },
+ "pixel": {
+  "region": null,
+  "place": null
+ },
+ "pixies": {
+  "region": null,
+  "place": null
+ },
+ "planters": {
+  "region": "US",
+  "place": null
+ },
+ "platoon": {
+  "region": null,
+  "place": null
+ },
+ "playboy": {
+  "region": null,
+  "place": null
+ },
+ "playgirl": {
+  "region": null,
+  "place": null
+ },
+ "pledge": {
+  "region": null,
+  "place": null
+ },
+ "pluto": {
+  "region": null,
+  "place": null
+ },
+ "plymouth": {
+  "region": "US",
+  "place": true
+ },
+ "pocahontas": {
+  "region": null,
+  "place": false
+ },
+ "pocket": {
+  "region": null,
+  "place": null
+ },
+ "pocketbook": {
+  "region": null,
+  "place": null
+ },
+ "poetry": {
+  "region": "US",
+  "place": null
+ },
+ "pogo": {
+  "region": null,
+  "place": null
+ },
+ "polar": {
+  "region": "US",
+  "place": null
+ },
+ "polestar": {
+  "region": null,
+  "place": null
+ },
+ "police": {
+  "region": null,
+  "place": null
+ },
+ "politico": {
+  "region": null,
+  "place": null
+ },
+ "polly": {
+  "region": null,
+  "place": false
+ },
+ "polo": {
+  "region": null,
+  "place": null
+ },
+ "poltergeist": {
+  "region": null,
+  "place": null
+ },
+ "pong": {
+  "region": null,
+  "place": null
+ },
+ "pontiac": {
+  "region": "US",
+  "place": false
+ },
+ "poppets": {
+  "region": "UK",
+  "place": null
+ },
+ "portal": {
+  "region": null,
+  "place": null
+ },
+ "postal": {
+  "region": null,
+  "place": null
+ },
+ "postman": {
+  "region": null,
+  "place": null
+ },
+ "premiere": {
+  "region": null,
+  "place": null
+ },
+ "preview": {
+  "region": null,
+  "place": null
+ },
+ "prey": {
+  "region": null,
+  "place": null
+ },
+ "prime": {
+  "region": null,
+  "place": null
+ },
+ "prince": {
+  "region": null,
+  "place": null
+ },
+ "processing": {
+  "region": null,
+  "place": null
+ },
+ "procreate": {
+  "region": null,
+  "place": null
+ },
+ "prodigy": {
+  "region": null,
+  "place": null
+ },
+ "progressive": {
+  "region": "US",
+  "place": null
+ },
+ "prometheus": {
+  "region": null,
+  "place": null
+ },
+ "promise": {
+  "region": "India",
+  "place": null
+ },
+ "propel": {
+  "region": "US",
+  "place": null
+ },
+ "prototype": {
+  "region": null,
+  "place": null
+ },
+ "prudential": {
+  "region": null,
+  "place": null
+ },
+ "psych": {
+  "region": null,
+  "place": null
+ },
+ "publisher": {
+  "region": null,
+  "place": null
+ },
+ "pulp": {
+  "region": null,
+  "place": null
+ },
+ "pulsar": {
+  "region": null,
+  "place": null
+ },
+ "puma": {
+  "region": null,
+  "place": null
+ },
+ "punch": {
+  "region": "UK",
+  "place": null
+ },
+ "puppet": {
+  "region": null,
+  "place": null
+ },
+ "putty": {
+  "region": null,
+  "place": null
+ },
+ "pyramid": {
+  "region": null,
+  "place": null
+ },
+ "pythia": {
+  "region": null,
+  "place": null
+ },
+ "python": {
+  "region": null,
+  "place": null
+ },
+ "quake": {
+  "region": null,
+  "place": null
+ },
+ "quantum": {
+  "region": null,
+  "place": null
+ },
+ "quavers": {
+  "region": "UK",
+  "place": null
+ },
+ "queen": {
+  "region": null,
+  "place": null
+ },
+ "quest": {
+  "region": null,
+  "place": null
+ },
+ "quicken": {
+  "region": null,
+  "place": null
+ },
+ "quill": {
+  "region": null,
+  "place": null
+ },
+ "rage": {
+  "region": null,
+  "place": null
+ },
+ "raid": {
+  "region": null,
+  "place": null
+ },
+ "railway": {
+  "region": null,
+  "place": null
+ },
+ "rainbow": {
+  "region": null,
+  "place": null
+ },
+ "ram": {
+  "region": null,
+  "place": null
+ },
+ "ramp": {
+  "region": "US",
+  "place": null
+ },
+ "ratatouille": {
+  "region": null,
+  "place": null
+ },
+ "raven": {
+  "region": null,
+  "place": null
+ },
+ "reaper": {
+  "region": null,
+  "place": null
+ },
+ "reason": {
+  "region": null,
+  "place": null
+ },
+ "redshift": {
+  "region": null,
+  "place": null
+ },
+ "regal": {
+  "region": "UK",
+  "place": null
+ },
+ "regions": {
+  "region": "US",
+  "place": null
+ },
+ "reign": {
+  "region": null,
+  "place": null
+ },
+ "relay": {
+  "region": null,
+  "place": null
+ },
+ "rely": {
+  "region": "US",
+  "place": null
+ },
+ "revels": {
+  "region": "UK",
+  "place": null
+ },
+ "rey": {
+  "region": null,
+  "place": false
+ },
+ "riff": {
+  "region": null,
+  "place": null
+ },
+ "ring": {
+  "region": null,
+  "place": null
+ },
+ "riot": {
+  "region": null,
+  "place": null
+ },
+ "ripple": {
+  "region": null,
+  "place": null
+ },
+ "rippling": {
+  "region": null,
+  "place": null
+ },
+ "risen": {
+  "region": null,
+  "place": null
+ },
+ "risk": {
+  "region": null,
+  "place": null
+ },
+ "robin": {
+  "region": null,
+  "place": false
+ },
+ "robinhood": {
+  "region": null,
+  "place": false
+ },
+ "rockstar": {
+  "region": null,
+  "place": null
+ },
+ "rocky": {
+  "region": null,
+  "place": null
+ },
+ "roland": {
+  "region": null,
+  "place": false
+ },
+ "rooms": {
+  "region": null,
+  "place": null
+ },
+ "root": {
+  "region": "US",
+  "place": null
+ },
+ "rosalina": {
+  "region": null,
+  "place": false
+ },
+ "roses": {
+  "region": null,
+  "place": null
+ },
+ "roundup": {
+  "region": null,
+  "place": null
+ },
+ "rover": {
+  "region": null,
+  "place": null
+ },
+ "ruby": {
+  "region": null,
+  "place": null
+ },
+ "rudy": {
+  "region": null,
+  "place": false
+ },
+ "ruffles": {
+  "region": null,
+  "place": null
+ },
+ "rumble": {
+  "region": null,
+  "place": null
+ },
+ "runway": {
+  "region": null,
+  "place": null
+ },
+ "rush": {
+  "region": null,
+  "place": null
+ },
+ "rust": {
+  "region": null,
+  "place": null
+ },
+ "safari": {
+  "region": null,
+  "place": null
+ },
+ "sage": {
+  "region": null,
+  "place": null
+ },
+ "salon": {
+  "region": "US",
+  "place": null
+ },
+ "samba": {
+  "region": null,
+  "place": null
+ },
+ "saturn": {
+  "region": null,
+  "place": null
+ },
+ "saw": {
+  "region": null,
+  "place": null
+ },
+ "scale": {
+  "region": null,
+  "place": null
+ },
+ "scar": {
+  "region": null,
+  "place": null
+ },
+ "scarecrow": {
+  "region": null,
+  "place": null
+ },
+ "scholastic": {
+  "region": null,
+  "place": null
+ },
+ "science": {
+  "region": null,
+  "place": null
+ },
+ "scion": {
+  "region": "US",
+  "place": null
+ },
+ "scoot": {
+  "region": null,
+  "place": null
+ },
+ "scrabble": {
+  "region": null,
+  "place": null
+ },
+ "scratch": {
+  "region": null,
+  "place": null
+ },
+ "scream": {
+  "region": null,
+  "place": null
+ },
+ "seat": {
+  "region": "Europe",
+  "place": null
+ },
+ "secret": {
+  "region": null,
+  "place": null
+ },
+ "sentry": {
+  "region": null,
+  "place": null
+ },
+ "sequence": {
+  "region": null,
+  "place": null
+ },
+ "sesame": {
+  "region": null,
+  "place": null
+ },
+ "set": {
+  "region": null,
+  "place": null
+ },
+ "seven": {
+  "region": null,
+  "place": null
+ },
+ "shark": {
+  "region": null,
+  "place": null
+ },
+ "sharp": {
+  "region": null,
+  "place": null
+ },
+ "shazam": {
+  "region": null,
+  "place": null
+ },
+ "shell": {
+  "region": null,
+  "place": null
+ },
+ "showtime": {
+  "region": null,
+  "place": null
+ },
+ "sienna": {
+  "region": null,
+  "place": null
+ },
+ "signal": {
+  "region": null,
+  "place": null
+ },
+ "silk": {
+  "region": "US",
+  "place": null
+ },
+ "silverado": {
+  "region": null,
+  "place": true
+ },
+ "simon": {
+  "region": null,
+  "place": false
+ },
+ "simple": {
+  "region": null,
+  "place": null
+ },
+ "sims": {
+  "region": null,
+  "place": null
+ },
+ "singer": {
+  "region": null,
+  "place": null
+ },
+ "siri": {
+  "region": null,
+  "place": false
+ },
+ "sirius": {
+  "region": "US",
+  "place": null
+ },
+ "sizzler": {
+  "region": null,
+  "place": null
+ },
+ "skate": {
+  "region": null,
+  "place": null
+ },
+ "sketch": {
+  "region": null,
+  "place": null
+ },
+ "skip": {
+  "region": "Europe",
+  "place": null
+ },
+ "skittles": {
+  "region": null,
+  "place": null
+ },
+ "sky": {
+  "region": "UK",
+  "place": null
+ },
+ "slack": {
+  "region": null,
+  "place": null
+ },
+ "slate": {
+  "region": "US",
+  "place": null
+ },
+ "slayer": {
+  "region": null,
+  "place": null
+ },
+ "slice": {
+  "region": "US",
+  "place": null
+ },
+ "slingshot": {
+  "region": null,
+  "place": null
+ },
+ "slinky": {
+  "region": null,
+  "place": null
+ },
+ "slipknot": {
+  "region": null,
+  "place": null
+ },
+ "smart": {
+  "region": null,
+  "place": null
+ },
+ "smarties": {
+  "region": null,
+  "place": null
+ },
+ "smiths": {
+  "region": null,
+  "place": null
+ },
+ "snake": {
+  "region": null,
+  "place": null
+ },
+ "snap": {
+  "region": null,
+  "place": null
+ },
+ "snapdragon": {
+  "region": null,
+  "place": null
+ },
+ "snickers": {
+  "region": null,
+  "place": null
+ },
+ "snowball": {
+  "region": null,
+  "place": null
+ },
+ "snowflake": {
+  "region": null,
+  "place": null
+ },
+ "snowy": {
+  "region": null,
+  "place": null
+ },
+ "solitaire": {
+  "region": null,
+  "place": null
+ },
+ "solo": {
+  "region": "US",
+  "place": null
+ },
+ "solvate": {
+  "region": null,
+  "place": null
+ },
+ "soma": {
+  "region": null,
+  "place": null
+ },
+ "sonic": {
+  "region": null,
+  "place": null
+ },
+ "sonnet": {
+  "region": null,
+  "place": null
+ },
+ "sorry": {
+  "region": null,
+  "place": null
+ },
+ "source": {
+  "region": null,
+  "place": null
+ },
+ "spanner": {
+  "region": null,
+  "place": null
+ },
+ "spar": {
+  "region": null,
+  "place": null
+ },
+ "spark": {
+  "region": null,
+  "place": null
+ },
+ "spawn": {
+  "region": null,
+  "place": null
+ },
+ "spectator": {
+  "region": null,
+  "place": null
+ },
+ "spectrum": {
+  "region": "US",
+  "place": null
+ },
+ "speed": {
+  "region": null,
+  "place": null
+ },
+ "speedway": {
+  "region": "US",
+  "place": null
+ },
+ "spin": {
+  "region": null,
+  "place": null
+ },
+ "spitfire": {
+  "region": null,
+  "place": null
+ },
+ "spore": {
+  "region": null,
+  "place": null
+ },
+ "spot": {
+  "region": null,
+  "place": null
+ },
+ "sprig": {
+  "region": "US",
+  "place": null
+ },
+ "spring": {
+  "region": null,
+  "place": null
+ },
+ "sprint": {
+  "region": "US",
+  "place": null
+ },
+ "sprite": {
+  "region": null,
+  "place": null
+ },
+ "square": {
+  "region": null,
+  "place": null
+ },
+ "squealer": {
+  "region": null,
+  "place": null
+ },
+ "squeeze": {
+  "region": null,
+  "place": null
+ },
+ "squirt": {
+  "region": "US",
+  "place": null
+ },
+ "stadia": {
+  "region": null,
+  "place": null
+ },
+ "staples": {
+  "region": null,
+  "place": null
+ },
+ "starburst": {
+  "region": null,
+  "place": null
+ },
+ "starling": {
+  "region": "UK",
+  "place": null
+ },
+ "starship": {
+  "region": null,
+  "place": null
+ },
+ "steam": {
+  "region": null,
+  "place": null
+ },
+ "stella": {
+  "region": null,
+  "place": false
+ },
+ "sting": {
+  "region": null,
+  "place": null
+ },
+ "storm": {
+  "region": null,
+  "place": null
+ },
+ "stray": {
+  "region": null,
+  "place": null
+ },
+ "stride": {
+  "region": null,
+  "place": null
+ },
+ "stripe": {
+  "region": null,
+  "place": null
+ },
+ "strokes": {
+  "region": null,
+  "place": null
+ },
+ "suave": {
+  "region": "US",
+  "place": null
+ },
+ "sublime": {
+  "region": null,
+  "place": null
+ },
+ "subversion": {
+  "region": null,
+  "place": null
+ },
+ "subway": {
+  "region": null,
+  "place": null
+ },
+ "succession": {
+  "region": null,
+  "place": null
+ },
+ "suede": {
+  "region": null,
+  "place": null
+ },
+ "sun": {
+  "region": null,
+  "place": null
+ },
+ "sunbeam": {
+  "region": null,
+  "place": null
+ },
+ "sunlight": {
+  "region": null,
+  "place": null
+ },
+ "superhuman": {
+  "region": null,
+  "place": null
+ },
+ "superman": {
+  "region": null,
+  "place": null
+ },
+ "supernatural": {
+  "region": null,
+  "place": null
+ },
+ "supreme": {
+  "region": null,
+  "place": null
+ },
+ "surf": {
+  "region": null,
+  "place": null
+ },
+ "surface": {
+  "region": null,
+  "place": null
+ },
+ "surge": {
+  "region": "US",
+  "place": null
+ },
+ "survivor": {
+  "region": null,
+  "place": null
+ },
+ "swagger": {
+  "region": null,
+  "place": null
+ },
+ "swatch": {
+  "region": null,
+  "place": null
+ },
+ "sweethearts": {
+  "region": "US",
+  "place": null
+ },
+ "swift": {
+  "region": null,
+  "place": null
+ },
+ "switch": {
+  "region": null,
+  "place": null
+ },
+ "symphony": {
+  "region": "US",
+  "place": null
+ },
+ "tab": {
+  "region": null,
+  "place": null
+ },
+ "taboo": {
+  "region": null,
+  "place": null
+ },
+ "taken": {
+  "region": null,
+  "place": null
+ },
+ "tang": {
+  "region": null,
+  "place": null
+ },
+ "tango": {
+  "region": "UK",
+  "place": null
+ },
+ "target": {
+  "region": "US",
+  "place": null
+ },
+ "tatler": {
+  "region": null,
+  "place": null
+ },
+ "taxi": {
+  "region": null,
+  "place": null
+ },
+ "tay": {
+  "region": null,
+  "place": false
+ },
+ "teams": {
+  "region": null,
+  "place": null
+ },
+ "telegram": {
+  "region": null,
+  "place": null
+ },
+ "tempo": {
+  "region": null,
+  "place": null
+ },
+ "terminator": {
+  "region": null,
+  "place": null
+ },
+ "terraform": {
+  "region": null,
+  "place": null
+ },
+ "terraria": {
+  "region": null,
+  "place": null
+ },
+ "tesla": {
+  "region": null,
+  "place": null
+ },
+ "thief": {
+  "region": null,
+  "place": null
+ },
+ "thing": {
+  "region": null,
+  "place": null
+ },
+ "things": {
+  "region": null,
+  "place": null
+ },
+ "thrasher": {
+  "region": null,
+  "place": null
+ },
+ "threads": {
+  "region": null,
+  "place": null
+ },
+ "three": {
+  "region": "UK",
+  "place": null
+ },
+ "thumper": {
+  "region": null,
+  "place": null
+ },
+ "thunderbird": {
+  "region": null,
+  "place": null
+ },
+ "tick": {
+  "region": null,
+  "place": null
+ },
+ "tidal": {
+  "region": null,
+  "place": null
+ },
+ "tide": {
+  "region": null,
+  "place": null
+ },
+ "tiffany": {
+  "region": null,
+  "place": false
+ },
+ "tiger": {
+  "region": null,
+  "place": null
+ },
+ "tile": {
+  "region": null,
+  "place": null
+ },
+ "timberland": {
+  "region": null,
+  "place": null
+ },
+ "time": {
+  "region": null,
+  "place": null
+ },
+ "tinder": {
+  "region": null,
+  "place": null
+ },
+ "titanic": {
+  "region": null,
+  "place": null
+ },
+ "toast": {
+  "region": null,
+  "place": null
+ },
+ "tombstone": {
+  "region": null,
+  "place": null
+ },
+ "tomcat": {
+  "region": null,
+  "place": null
+ },
+ "tony": {
+  "region": null,
+  "place": false
+ },
+ "tool": {
+  "region": null,
+  "place": null
+ },
+ "topic": {
+  "region": null,
+  "place": null
+ },
+ "tor": {
+  "region": null,
+  "place": null
+ },
+ "torrent": {
+  "region": null,
+  "place": null
+ },
+ "total": {
+  "region": null,
+  "place": null
+ },
+ "tracer": {
+  "region": null,
+  "place": null
+ },
+ "trainspotting": {
+  "region": null,
+  "place": null
+ },
+ "transformers": {
+  "region": null,
+  "place": null
+ },
+ "transmission": {
+  "region": null,
+  "place": null
+ },
+ "travelers": {
+  "region": "US",
+  "place": null
+ },
+ "travis": {
+  "region": null,
+  "place": false
+ },
+ "trident": {
+  "region": null,
+  "place": null
+ },
+ "trinity": {
+  "region": null,
+  "place": null
+ },
+ "triumph": {
+  "region": null,
+  "place": null
+ },
+ "trojan": {
+  "region": null,
+  "place": null
+ },
+ "trolls": {
+  "region": null,
+  "place": null
+ },
+ "trouble": {
+  "region": null,
+  "place": null
+ },
+ "tums": {
+  "region": null,
+  "place": null
+ },
+ "turtles": {
+  "region": null,
+  "place": null
+ },
+ "twilight": {
+  "region": null,
+  "place": null
+ },
+ "twirl": {
+  "region": null,
+  "place": null
+ },
+ "twister": {
+  "region": null,
+  "place": null
+ },
+ "twitch": {
+  "region": null,
+  "place": null
+ },
+ "twitter": {
+  "region": null,
+  "place": null
+ },
+ "uber": {
+  "region": null,
+  "place": null
+ },
+ "uncharted": {
+  "region": null,
+  "place": null
+ },
+ "unity": {
+  "region": null,
+  "place": null
+ },
+ "universal": {
+  "region": null,
+  "place": null
+ },
+ "unreal": {
+  "region": null,
+  "place": null
+ },
+ "up": {
+  "region": null,
+  "place": null
+ },
+ "ursula": {
+  "region": null,
+  "place": false
+ },
+ "vagrant": {
+  "region": null,
+  "place": null
+ },
+ "valentina": {
+  "region": null,
+  "place": false
+ },
+ "valve": {
+  "region": null,
+  "place": null
+ },
+ "vanguard": {
+  "region": null,
+  "place": null
+ },
+ "vanish": {
+  "region": null,
+  "place": null
+ },
+ "vans": {
+  "region": null,
+  "place": null
+ },
+ "variety": {
+  "region": null,
+  "place": null
+ },
+ "vault": {
+  "region": null,
+  "place": null
+ },
+ "vector": {
+  "region": null,
+  "place": null
+ },
+ "veep": {
+  "region": null,
+  "place": null
+ },
+ "venom": {
+  "region": null,
+  "place": null
+ },
+ "venture": {
+  "region": "US",
+  "place": null
+ },
+ "verge": {
+  "region": null,
+  "place": null
+ },
+ "vertigo": {
+  "region": null,
+  "place": null
+ },
+ "vice": {
+  "region": null,
+  "place": null
+ },
+ "vicuna": {
+  "region": null,
+  "place": null
+ },
+ "vim": {
+  "region": null,
+  "place": null
+ },
+ "vine": {
+  "region": null,
+  "place": null
+ },
+ "virgin": {
+  "region": null,
+  "place": null
+ },
+ "visa": {
+  "region": null,
+  "place": null
+ },
+ "vogue": {
+  "region": null,
+  "place": null
+ },
+ "walkers": {
+  "region": "UK",
+  "place": null
+ },
+ "wallpaper": {
+  "region": null,
+  "place": null
+ },
+ "warehouse": {
+  "region": "UK",
+  "place": null
+ },
+ "warp": {
+  "region": null,
+  "place": null
+ },
+ "wasp": {
+  "region": null,
+  "place": null
+ },
+ "watson": {
+  "region": null,
+  "place": false
+ },
+ "wave": {
+  "region": null,
+  "place": null
+ },
+ "wednesday": {
+  "region": null,
+  "place": null
+ },
+ "whirlpool": {
+  "region": null,
+  "place": null
+ },
+ "whisper": {
+  "region": null,
+  "place": null
+ },
+ "whistles": {
+  "region": "UK",
+  "place": null
+ },
+ "whopper": {
+  "region": null,
+  "place": null
+ },
+ "wildcat": {
+  "region": null,
+  "place": null
+ },
+ "willow": {
+  "region": null,
+  "place": null
+ },
+ "wimpy": {
+  "region": null,
+  "place": null
+ },
+ "windows": {
+  "region": null,
+  "place": null
+ },
+ "windsurf": {
+  "region": null,
+  "place": null
+ },
+ "winnie": {
+  "region": null,
+  "place": false
+ },
+ "winston": {
+  "region": null,
+  "place": null
+ },
+ "wired": {
+  "region": null,
+  "place": null
+ },
+ "wise": {
+  "region": null,
+  "place": null
+ },
+ "wish": {
+  "region": null,
+  "place": null
+ },
+ "witness": {
+  "region": null,
+  "place": null
+ },
+ "wolverine": {
+  "region": null,
+  "place": null
+ },
+ "woody": {
+  "region": null,
+  "place": false
+ },
+ "word": {
+  "region": null,
+  "place": null
+ },
+ "workday": {
+  "region": null,
+  "place": null
+ },
+ "worms": {
+  "region": null,
+  "place": null
+ },
+ "wotsits": {
+  "region": "UK",
+  "place": null
+ },
+ "wrangler": {
+  "region": null,
+  "place": null
+ },
+ "yahoo": {
+  "region": null,
+  "place": null
+ },
+ "yammer": {
+  "region": null,
+  "place": null
+ },
+ "yelp": {
+  "region": null,
+  "place": null
+ },
+ "yes": {
+  "region": null,
+  "place": null
+ },
+ "yeti": {
+  "region": null,
+  "place": null
+ },
+ "yoshi": {
+  "region": null,
+  "place": false
+ },
+ "zara": {
+  "region": null,
+  "place": false
+ },
+ "zebra": {
+  "region": null,
+  "place": null
+ },
+ "zed": {
+  "region": null,
+  "place": null
+ },
+ "zelda": {
+  "region": null,
+  "place": false
+ },
+ "zen": {
+  "region": null,
+  "place": null
+ },
+ "zenith": {
+  "region": null,
+  "place": null
+ },
+ "zephyr": {
+  "region": null,
+  "place": null
+ },
+ "zest": {
+  "region": null,
+  "place": null
+ },
+ "zodiac": {
+  "region": null,
+  "place": null
+ },
+ "zoom": {
+  "region": null,
+  "place": null
+ }
 }

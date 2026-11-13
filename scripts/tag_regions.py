@@ -47,7 +47,7 @@ def validate(answer, batch):
         if place is not None and type(place) is not bool:
             raise ValueError(f'{w}: invalid place')
         if not w[0].isupper() and place is not None:
-            raise ValueError(f'{w}: lowercase place must be null')
+            place = None
         out[w] = {'region': region, 'place': place}
     if out.keys() != expected.keys():
         raise ValueError('missing words')
