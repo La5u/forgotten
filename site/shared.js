@@ -9,10 +9,10 @@ export const KINDS = {name:'Names',common:'Common words',rare:'Rare words'};
 export async function load(){const d=await(await fetch(new URL('data.json', import.meta.url))).json();
   d.entries.sort((a,b)=>a.word.localeCompare(b.word));d.by=Object.fromEntries(d.entries.map(e=>[e.word.toLowerCase(),e]));
   d.all=d.entries;d.entries=d.all.filter(e=>e.english);return d}  // English-only by default; the browser can switch to d.all
-/* Contested dots shade by who is ahead: green (original word ahead) -> amber (even) -> red (brand ahead). */
+/* Contested dots shade by who is ahead: green (original word ahead) -> yellow-amber (brand ahead). */
 const mix=(a,b,t)=>'#'+[0,2,4].map(i=>Math.round(parseInt(a.substr(i+1,2),16)*(1-t)+parseInt(b.substr(i+1,2),16)*t).toString(16).padStart(2,'0')).join('');
 export const shade=e=>{if(e.group!=='contested')return GROUPS[e.group].color;const t=e.brand_share??e.brand_share_est??({brand:.8,original:.2,even:.5})[e.winner]??.5;
-  return t<.5?mix(GROUPS.failed.color,GROUPS.contested.color,t*2):mix(GROUPS.contested.color,GROUPS.taken.color,(t-.5)*2)};
+  return mix(GROUPS.failed.color,GROUPS.contested.color,t)};
 export const brandLine=e=>`${esc(e.brand)}${e.owner&&e.owner!==e.brand?' ('+esc(e.owner)+')':''}, ${e.launch_year}`;
 /* Hover text: taken -> the lost original meaning; failed -> the company that tried; contested -> whichever side is losing. */
 /* Chart y: measured Wikipedia share, else the books estimate; null = not plotted. */
@@ -63,53 +63,56 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   const W=Math.max(300,host.clientWidth||700),H=height,m={t:44,r:18,b:44,l:48};
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Word frequency before launch against brand share of attention today'},host);
   const lmin=-3,lmax=3,X=v=>m.l+(Math.max(lmin,Math.min(lmax,Math.log10(v)))-lmin)/(lmax-lmin)*(W-m.l-m.r),Y=s=>H-m.b-6-s*(H-m.t-m.b-12);
-  const PX=e=>X(e.pre_launch_per_million),PY=e=>Y(shareY(e));
+  const PX=e=>X(e.pre_launch_per_million),PY=e=>Y(shareY(e)),size=v=>{const lo=W<560?2:2.5,hi=W<560?7:9,t=(Math.log10(Math.max(1000,Math.min(500000,v||0)))-3)/Math.log10(500);return Math.sqrt(lo*lo+t*(hi*hi-lo*lo))},radius=e=>size(e.brand_views);
+  const extent=e=>radius(e)*(fiction(e)?Math.sqrt(Math.PI)/2:e.region?Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5))):isName(e)?Math.sqrt(Math.PI/2):1);
   for(const s of[0,.25,.5,.75,1]){el('line',{x1:m.l,x2:W-m.r,y1:Y(s),y2:Y(s),stroke:grid},svg);const t=el('text',{x:m.l-7,y:Y(s)+4,'text-anchor':'end',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=s*100+'%'}
   for(let l=lmin;l<=lmax;l++){const t=el('text',{x:X(10**l),y:H-m.b+16,'text-anchor':'middle',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=l===lmin?'≤'+10**l:10**l>=1?(10**l).toLocaleString('en-US'):String(10**l)}
   const ax=el('text',{x:(W+m.l-m.r)/2,y:H-6,'text-anchor':'middle',fill:ink,'font-size':12},svg);ax.textContent=W<560?'Book frequency before launch →':'Uses per million words in books before launch (log scale) →';
   const words=pts.filter(e=>!isName(e)).length,names=pts.filter(isName).length,books=pts.filter(e=>e.brand_share==null).length,discontinued=pts.filter(e=>e.discontinued).length;
   const legendItems=[words&&['dot','word'],names&&['diamond','Names and places'],['star','regional brand'],['square','fiction: character, film, show or game'],pts.length>books&&['dot','solid: Wikipedia attention'],books&&['books','dashed: estimated from books'],discontinued&&['hollow','white: discontinued']].filter(Boolean);
+  const sizeItems=[5000,50000,500000].map((v,i)=>[size(v),num(v)+(i===2?' views a month':'')]);
   let legendBox=null;
   if(plotLegend&&W>=560){
-    const x=m.l+8,h=legendItems.length*18+12,y=H-m.b-h-8,w=274,col=(palette&&palette[group])||GROUPS[group]?.color||ink;
-    legendBox={x,y,w,h};
+    const x=m.l+8,h=(legendItems.length+sizeItems.length)*20+12,y=H-m.b-h-8,col=(palette&&palette[group])||GROUPS[group]?.color||ink;
+    legendBox={x,y,w:0,h};
     const g=el('g',{'font-size':11,'font-family':'var(--sans, sans-serif)','pointer-events':'none'},svg);
-    el('rect',{x,y,width:w,height:h,fill:'var(--p, #fff)','fill-opacity':.9,stroke:ink,'stroke-width':1},g);
-    legendItems.forEach(([k,label],i)=>{const cy=y+15+i*18;
+    const bg=el('rect',{x,y,width:0,height:h,fill:'var(--p, #fff)','fill-opacity':.9,stroke:ink,'stroke-width':1},g);
+    legendItems.forEach(([k,label],i)=>{const cy=y+16+i*20;
       el('path',{d:mark(k==='diamond'||k==='star'||k==='square'?k:'dot',x+13,cy-3,3.6),...markStyle(k==='hollow',col,k==='books')},g);
       const t=el('text',{x:x+25,y:cy,fill:ink},g);t.textContent=label});
+    sizeItems.forEach(([r,label],i)=>{const cy=y+16+(legendItems.length+i)*20;el('circle',{cx:x+13,cy:cy-3,r,...markStyle(false,col,false)},g);const t=el('text',{x:x+27,y:cy,fill:ink},g);t.textContent=label});
+    legendBox.w=Math.ceil(Math.max(...[...g.querySelectorAll('text')].map(t=>+t.getAttribute('x')-x+t.getComputedTextLength()))+10);bg.setAttribute('width',legendBox.w);
   }
-  const r=W>1000?3.6:3.2;
-  for(const e of pts){const g=el('g',{tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
-    const cx=PX(e),cy=PY(e),col=(palette&&palette[e.group])||shade(e);
-    el('circle',{cx,cy,r:12,fill:'transparent'},g);
+  for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
+    const cx=PX(e),cy=PY(e),r=radius(e),col=(palette&&palette[e.group])||shade(e);
+    el('circle',{cx,cy,r:Math.max(12,extent(e)),fill:'transparent'},g);
     el('path',{d:mark(fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
     const on=ev=>{const r=ev.target.getBoundingClientRect?ev.target.getBoundingClientRect():{left:0,top:0};showTip(tipHTML(e),r.left,r.top)};
     g.addEventListener('pointerenter',on);g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
     if(onPick){g.addEventListener('click',()=>onPick(e));g.addEventListener('keydown',ev=>{if(ev.key==='Enter')onPick(e)})}}
   if(labels==='all'){ // greedy placement: taken first, then most-viewed; skip a label only if it would collide
     const fs=W>1000?11:10,box=legendBox?[legendBox]:[],hit=(a)=>a.x<m.l||a.x+a.w>W-m.r||a.y<15||a.y+a.h>H-m.b||box.some(b=>a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h);
-    const few=pts.length<90,far=few?90:26;if(few)for(const e of pts){const cx=PX(e),cy=PY(e);box.push({x:cx-3,y:cy-3,w:6,h:6})}
+    const few=pts.length<90,far=few?90:26;for(const e of pts){const cx=PX(e),cy=PY(e),r=extent(e)+1;box.push({x:cx-r,y:cy-r,w:2*r,h:2*r})}
     const rank=e=>(e.group==='taken'?1e12:0)+(e.brand_views||0)+(e.original_views||0);
     box.push({x:m.l,y:0,w:250,h:16});if(corners)box.push({x:W-m.r-230,y:20,w:230,h:20},{x:m.l,y:20,w:210,h:20},{x:W-m.r-220,y:H-m.b-26,w:220,h:22});
-    for(const e of [...pts].sort((a,b)=>rank(b)-rank(a))){const cx=PX(e),cy=PY(e),w=e.word.length*fs*.56+2,h=fs+1;
-      const near=[[cx+6,cy-h/2],[cx-6-w,cy-h/2],[cx-w/2,cy-6-h],[cx-w/2,cy+6],[cx+5,cy-h-3],[cx+5,cy+3],[cx-5-w,cy-h-3],[cx-5-w,cy+3]];for(let R=14;R<=far;R+=6)for(let i=0;i<16;i++){const t=i/16*2*Math.PI;near.push([cx+R*Math.cos(t)-(Math.cos(t)<0?w:0),cy+R*Math.sin(t)-h/2])}
+    for(const e of [...pts].sort((a,b)=>rank(b)-rank(a))){const cx=PX(e),cy=PY(e),r=extent(e),d=r+3,w=e.word.length*fs*.56+2,h=fs+1;
+      const near=[[cx+d,cy-h/2],[cx-d-w,cy-h/2],[cx-w/2,cy-d-h],[cx-w/2,cy+d],[cx+d,cy-h-d],[cx+d,cy+d],[cx-d-w,cy-h-d],[cx-d-w,cy+d]];for(let R=r+11;R<=far;R+=6)for(let i=0;i<16;i++){const t=i/16*2*Math.PI;near.push([cx+R*Math.cos(t)-(Math.cos(t)<0?w:0),cy+R*Math.sin(t)-h/2])}
       let at=near.map(([x,y])=>({x,y,w,h})).find(a=>!hit(a));if(!at)continue;box.push(at);{const lx=at.x>cx?at.x:at.x+w>cx?cx:at.x+w,ly=at.y+h/2;if(Math.hypot(lx-cx,ly-cy)>13)el('line',{x1:cx,y1:cy,x2:lx,y2:ly,stroke:ink,'stroke-width':.5,opacity:.35,'pointer-events':'none'},svg)}
       const t=el('text',{x:at.x,y:at.y+h-2,fill:ink,'font-size':fs,opacity:.8,'pointer-events':'none'},svg);t.textContent=e.word}
-  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e)continue;const t=el('text',{x:PX(e)+7,y:PY(e)-6,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
+  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e)continue;const t=el('text',{x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
   if(corners)for(const[x,y,a,t]of[[W-m.r-6,34,'end','Common word, now the brand\'s'],[m.l+8,34,'start','Rare word, now the brand\'s'],[W-m.r-6,H-m.b-10,'end','Common word, still its own']]){const c=el('text',{x,y,'text-anchor':a,fill:ink,'font-size':13,opacity:.6,'pointer-events':'none'},svg);c.textContent=t}
   const yt=el('text',{x:m.l,y:11,fill:ink,'font-size':12},svg);yt.textContent=W<560?'↑ Brand share':'↑ Brand share of attention today';
   const off=entries.filter(e=>(!group||e.group===group)&&e.group!=='watching'&&!eligible.includes(e));
-  return {plotted:pts.length,total:eligible.length,words,names,books,discontinued,legendItems,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
+  return {plotted:pts.length,total:eligible.length,words,names,books,discontinued,legendItems,sizeItems,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
 /* Equal-area markers: circle = word, diamond = capitalised name/place, star = regional brand, square = fiction (takes precedence); dashed = books, white = discontinued. */
 function mark(k,x,y,r){if(k==='square'){const d=r*Math.sqrt(Math.PI)/2;return `M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`}if(k==='star'){const R=r*Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5)));return Array.from({length:10},(_,i)=>{const a=i*Math.PI/5-Math.PI/2,d=i%2?R/2:R;return (i?'L':'M')+(x+d*Math.cos(a))+' '+(y+d*Math.sin(a))}).join('')+'Z'}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
   return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
-const markStyle=(gone,col,books)=>({fill:gone?'#fff':col,stroke:col,'stroke-width':1,'stroke-linejoin':'round',...(books?{'stroke-dasharray':'2 2',...(gone?{}:{'fill-opacity':.6})}:{})});
-export const MARK=(k,col)=>`<svg width="12" height="12" viewBox="-6 -6 12 12" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'||k==='star'||k==='square'?k:'dot',0,0,3.6)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
+const markStyle=(gone,col,books)=>({fill:gone?'#fff':col,'fill-opacity':gone?1:.8,stroke:col,'stroke-width':1,'stroke-linejoin':'round',...(books?{'stroke-dasharray':'2 2'}:{})});
+export const MARK=(k,col,r=3.6)=>`<svg width="${Math.max(12,2*r+2)}" height="${Math.max(12,2*r+2)}" viewBox="${-Math.max(6,r+1)} ${-Math.max(6,r+1)} ${Math.max(12,2*r+2)} ${Math.max(12,2*r+2)}" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'||k==='star'||k==='square'?k:'dot',0,0,r)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
 export function legend(items){return '<div class="legend">'+items.map(([c,t,d])=>`<span><i style="background:${c}${d?';background-image:repeating-linear-gradient(90deg,transparent 0 3px,#fff 3px 5px)':''}"></i>${esc(t)}</span>`).join('')+'</div>'}
 export const METHODS=`<p>Births come from the US Social Security Administration, the ONS (England and Wales), New South Wales and Ontario. Names under a publishing threshold are absent from those files, so a missing value means unknown or very small, never zero.</p>
 <p>Attention is median monthly English Wikipedia views over the last 12 months, with page moves merged, for the brand's page and the original meaning's page. People look up companies more than fruit, so this over-counts brands. It is one signal, along with capitalization in Google Books through 2022. The small graphs beside dictionary entries show uses in Google Books.</p>
-<p>On the chart, circles are lowercase words and diamonds are capitalised names or places. Stars mark brands known only in one region. Squares mark fictional characters, films, shows or games, taking precedence over other shapes. Solid outlines show Wikipedia traffic. Dashed outlines show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow white marker marks a discontinued product, which can still own the word.</p>
+<p>Marker size shows monthly brand Wikipedia views on a log scale. On the chart, circles are lowercase words and diamonds are capitalised names or places. Stars mark brands known only in one region. Squares mark fictional characters, films, shows or games, taking precedence over other shapes. Solid outlines show Wikipedia traffic. Dashed outlines show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow white marker marks a discontinued product, which can still own the word.</p>
 <p>A word counts if it now also names a product, service, company or franchise, and the general public uses the bare word for it. Company-owned characters count. Bands and people do not, which is an editorial choice. Words where both sides together get under 300 views a month are left out as too thin to judge.</p>
 <p>The groups are editorial judgments informed by that data, not outputs of a formula. A fall in a name after a launch does not prove the launch caused it, which is why similar names sit beside it where they exist.</p>
 <p>A trademark covers specific goods and services. It does not own a word. Registration details per entry are being added.</p>`;
