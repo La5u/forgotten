@@ -70,7 +70,7 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   for(const e of pts){const g=el('g',{tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
     const cx=PX(e),cy=PY(e),col=(palette&&palette[e.group])||shade(e);
     el('circle',{cx,cy,r:12,fill:'transparent'},g);
-    el('path',{d:mark(isName(e)?'diamond':'dot',cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
+    el('path',{d:mark(e.region?'star':isName(e)?'diamond':'dot',cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
     const on=ev=>{const r=ev.target.getBoundingClientRect?ev.target.getBoundingClientRect():{left:0,top:0};showTip(tipHTML(e),r.left,r.top)};
     g.addEventListener('pointerenter',on);g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
     if(onPick){g.addEventListener('click',()=>onPick(e));g.addEventListener('keydown',ev=>{if(ev.key==='Enter')onPick(e)})}}
@@ -89,15 +89,15 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   const off=entries.filter(e=>(!group||e.group===group)&&e.group!=='watching'&&!eligible.includes(e));
   return {plotted:pts.length,total:eligible.length,words:pts.filter(e=>!isName(e)).length,names:pts.filter(isName).length,
     books:pts.filter(e=>e.brand_share==null).length,discontinued:pts.filter(e=>e.discontinued).length,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
-/* Equal-area markers: circle = word, diamond = capitalised name/place; dashed = books, white = discontinued. */
-function mark(k,x,y,r){if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
+/* Equal-area markers: circle = word, diamond = capitalised name/place, star = regional brand; dashed = books, white = discontinued. */
+function mark(k,x,y,r){if(k==='star'){const R=r*Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5)));return Array.from({length:10},(_,i)=>{const a=i*Math.PI/5-Math.PI/2,d=i%2?R/2:R;return (i?'L':'M')+(x+d*Math.cos(a))+' '+(y+d*Math.sin(a))}).join('')+'Z'}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
   return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
 const markStyle=(gone,col,books)=>({fill:gone?'#fff':col,stroke:col,'stroke-width':1,'stroke-linejoin':'round',...(books?{'stroke-dasharray':'2 2',...(gone?{}:{'fill-opacity':.6})}:{})});
-export const MARK=(k,col)=>`<svg width="12" height="12" viewBox="-6 -6 12 12" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'?'diamond':'dot',0,0,3.6)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
+export const MARK=(k,col)=>`<svg width="12" height="12" viewBox="-6 -6 12 12" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'||k==='star'?k:'dot',0,0,3.6)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
 export function legend(items){return '<div class="legend">'+items.map(([c,t,d])=>`<span><i style="background:${c}${d?';background-image:repeating-linear-gradient(90deg,transparent 0 3px,#fff 3px 5px)':''}"></i>${esc(t)}</span>`).join('')+'</div>'}
 export const METHODS=`<p>Births come from the US Social Security Administration, the ONS (England and Wales), New South Wales and Ontario. Names under a publishing threshold are absent from those files, so a missing value means unknown or very small, never zero.</p>
 <p>Attention is median monthly English Wikipedia views over the last 12 months, with page moves merged, for the brand's page and the original meaning's page. People look up companies more than fruit, so this over-counts brands. It is one signal, along with capitalization in Google Books through 2022.</p>
-<p>On the chart, circles are lowercase words and diamonds are capitalised names or places. Solid outlines show Wikipedia traffic. Dashed outlines show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow white marker marks a discontinued product, which can still own the word.</p>
+<p>On the chart, circles are lowercase words and diamonds are capitalised names or places. Stars mark brands known only in one region. Solid outlines show Wikipedia traffic. Dashed outlines show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow white marker marks a discontinued product, which can still own the word.</p>
 <p>A word counts if it now also names a product, service, company or franchise, and the general public uses the bare word for it. Company-owned characters count. Bands and people do not, which is an editorial choice. Words where both sides together get under 300 views a month are left out as too thin to judge.</p>
 <p>The groups are editorial judgments informed by that data, not outputs of a formula. A fall in a name after a launch does not prove the launch caused it, which is why similar names sit beside it where they exist.</p>
 <p>A trademark covers specific goods and services. It does not own a word. Registration details per entry are being added.</p>`;
