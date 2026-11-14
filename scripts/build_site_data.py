@@ -53,6 +53,7 @@ def by_data(r):
 FILL = {w: v for w, v in json.load(open('data/raw/orig_fill/views.json')).items()
         if v[1] and any(x in re.findall(r'[a-z]+', v[0].lower()) for x in stems(w))}
 REGIONS = json.load(open('data/regions.json')) if os.path.exists('data/regions.json') else {}
+FICTION = json.load(open('data/fiction.json')) if os.path.exists('data/fiction.json') else {}
 SENSES = json.load(open('data/senses.json')) if os.path.exists('data/senses.json') else {}
 REVIEW = json.load(open('data/review_fixes.json'))  # Sonnet check 2026-11-09, reviewed by Opus
 for k, v in REVIEW['fix'].items(): FIX[k] = {**FIX.get(k, {}), **v}
@@ -91,6 +92,7 @@ for r in rows:
     e.update(pre_launch_per_million=prefreq(r), group=g)
     region = REGIONS.get(r['word'].lower(), {})
     e['region'] = region.get('region')
+    e['brand_type'] = FICTION.get(r['word'].lower())
     st = SWAPS.get(r['word'].lower(), {}).get('status', STATUS.get(r['word'].lower(), {}))
     e.update(discontinued=st.get('status') == 'discontinued', end_year=st.get('end_year'))
     e['abandoned'] = e['discontinued']  # old name, kept for other pages
