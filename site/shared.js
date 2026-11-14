@@ -1,7 +1,7 @@
 // Shared data helpers and hand-written SVG charts for every design.
 export const GROUPS = {taken:{label:'Taken',color:'#d0342c',note:'The brand comes to mind first. The old meaning is rare.'},
   contested:{label:'Contested',color:'#b98700',note:'Both meanings are in daily use.'},
-  failed:{label:'Failed',color:'#0e8a5f',note:'A company claimed the word and never owned it.'},
+  failed:{label:'Kept',color:'#0e8a5f',note:'The word still means what it meant.'},
   watching:{label:'Watching',color:'#7a5ae0',note:'Too little data to call yet.'}};
 const fiction=e=>e.brand_type==='character'||e.brand_type==='work';
 export const isName=e=>/^\p{Lu}/u.test(e.word);
@@ -20,7 +20,7 @@ export const shareY=e=>e.brand_share??e.brand_share_est??null;
 export function tipHTML(e){const w=`<b>${esc(e.word)}</b>`,o=`<div>${esc(e.original_meaning)}</div>`,b=`<div>${brandLine(e)}${e.reason?'. '+esc(e.reason):''}</div>`,
     f=(fiction(e)?`<div style="opacity:.7">${e.brand_type==='character'?'Fictional character':'Film, show or game'}</div>`:''),sh=f+(e.brand_share!=null?`<div style="opacity:.7">Brand share ${Math.round(e.brand_share*100)}% (Wikipedia)</div>`:e.brand_share_est!=null?`<div style="opacity:.7">Brand share about ${Math.round(e.brand_share_est*100)}% (books)</div>`:'')+(e.discontinued?`<div style="opacity:.7">Discontinued${e.end_year?' in '+e.end_year:''}</div>`:'')+(e.region?`<div style="opacity:.7">${GROUPS[e.group].label} <span style="color:#aaa;font-size:10px">${esc(e.region)}</span></div>`:'');
   if(e.group==='taken')return `${w} <span style="opacity:.7">once meant</span>${o}<div style="opacity:.7">Now ${brandLine(e)}</div>${sh}`;
-  if(e.group==='failed')return `${w} <span style="opacity:.7">failed claim</span>${b}${sh}`;
+  if(e.group==='failed')return `${w} <span style="opacity:.7">Kept</span>${b}${sh}`;
   if(e.group==='contested'){const brandLosing=e.winner==='original'||(e.winner!=='brand'&&(e.brand_share??.5)<.5);
     return brandLosing?`${w} <span style="opacity:.7">the brand is behind</span>${b}${sh}`:`${w} <span style="opacity:.7">the original is behind</span>${o}<div style="opacity:.7">Brand: ${brandLine(e)}</div>${sh}`}
   return `${w}${o}${b}${f}`}
