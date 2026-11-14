@@ -602,11 +602,11 @@
 "original_meaning": "Foreign or originating elsewhere",
 "source_url": "https://en.wikipedia.org/wiki/Alien_(film)",
 "brand_article": "Alien (film)",
-"original_article": null,
+"original_article": "Alien (law)",
 "brand_views": 120263.5,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 5860.5,
+"brand_share": 0.9535338238558878,
+"group": "taken"
 },
 {
 "word": "Allegiant",
@@ -691,12 +691,12 @@
 "owner": "Alpaca Markets",
 "launch_year": 2015,
 "original_meaning": "A South American domesticated mammal related to the llama",
-"brand_article": null,
+"brand_article": "AlpacaDB",
 "original_article": "Alpaca",
-"brand_views": null,
+"brand_views": 0.0,
 "original_views": 38760.0,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.0,
+"group": "failed"
 },
 {
 "word": "alphabet",
@@ -847,12 +847,12 @@
 "original_meaning": "An expression of agreement, especially after a prayer.",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Amen_%28website%29",
-"brand_article": null,
+"brand_article": "Amen (website)",
 "original_article": "Amen",
-"brand_views": null,
+"brand_views": 63.0,
 "original_views": 11019.0,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.00568489442338928,
+"group": "failed"
 },
 {
 "word": "america",
@@ -953,12 +953,12 @@
 "launch_year": 1886,
 "original_meaning": "A device that holds a vessel in place.",
 "source_url": "https://en.wikipedia.org/wiki/Anchor_(brand)",
-"brand_article": null,
+"brand_article": "Anchor (brand)",
 "original_article": "Anchor",
-"brand_views": null,
+"brand_views": 1772.0,
 "original_views": 8444.5,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.17344491753535946,
+"group": "failed"
 },
 {
 "word": "Android",
@@ -2894,10 +2894,10 @@
 "original_meaning": "Confident and willing to take risks",
 "source_url": "https://www.allbookstores.com/Rising-Tide-Lessons-165-Years/9781591391470",
 "brand_article": "Bold (detergent)",
-"original_article": null,
+"original_article": "Boldness",
 "brand_views": 410.0,
-"original_views": null,
-"brand_share": null,
+"original_views": 1730.5,
+"brand_share": 0.19154403176827844,
 "group": "failed"
 },
 {
@@ -3092,11 +3092,11 @@
 "original_meaning": "A generous supply or reward.",
 "source_url": "https://en.wikipedia.org/wiki/Bounty_(chocolate_bar)",
 "brand_article": "Bounty (chocolate bar)",
-"original_article": null,
+"original_article": "Bounty (reward)",
 "brand_views": 7960.0,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 3183.0,
+"brand_share": 0.7143498160279996,
+"group": "taken"
 },
 {
 "word": "Bournville",
@@ -3256,12 +3256,12 @@
 "original_meaning": "A military unit or organized group.",
 "group_guess": "failed",
 "source_url": "https://en.wikipedia.org/wiki/Brigade_Media",
-"brand_article": null,
+"brand_article": "Brigade Media",
 "original_article": "Brigade",
-"brand_views": null,
+"brand_views": 831.0,
 "original_views": 17477.5,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.04538875385749788,
+"group": "failed"
 },
 {
 "word": "Brilliant",
@@ -3559,12 +3559,12 @@
 "owner": "Tamasu",
 "launch_year": 1950,
 "original_meaning": "An insect with broad, often colourful wings",
-"brand_article": null,
+"brand_article": "Butterfly (brand)",
 "original_article": "Butterfly",
-"brand_views": null,
+"brand_views": 887.5,
 "original_views": 42597.5,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.02040933655283431,
+"group": "failed"
 },
 {
 "word": "Buzz",
@@ -3910,12 +3910,12 @@
 "launch_year": 1955,
 "original_meaning": "A small waterfall or series of waterfalls",
 "source_url": "https://www.allbookstores.com/Rising-Tide-Lessons-165-Years/9781591391470",
-"brand_article": null,
+"brand_article": "Cascade (brand)",
 "original_article": "Waterfall",
-"brand_views": null,
+"brand_views": 478.0,
 "original_views": 11757.5,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.03906665032078787,
+"group": "failed"
 },
 {
 "word": "Cash",
@@ -9140,12 +9140,12 @@
 "original_meaning": "Valley of Rothes in Scotland",
 "group_guess": "taken",
 "source_url": "https://www.theglenrothes.com/faqs",
-"brand_article": null,
+"brand_article": "The Glenrothes distillery",
 "original_article": "Glenrothes",
-"brand_views": null,
+"brand_views": 563.0,
 "original_views": 2954.5,
-"brand_share": null,
-"group": "unknown"
+"brand_share": 0.16005685856432125,
+"group": "failed"
 },
 {
 "word": "glimpse",
@@ -10123,11 +10123,11 @@
 "original_meaning": "An opening through or into something",
 "source_url": "https://en.wikipedia.org/wiki/Hole_(band)",
 "brand_article": "Hole (band)",
-"original_article": null,
+"original_article": "Hole",
 "brand_views": 27913.5,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 2578.0,
+"brand_share": 0.915451847236115,
+"group": "taken"
 },
 {
 "word": "Hollister",
@@ -13637,11 +13637,11 @@
 "launch_year": 1999,
 "original_meaning": "An environment or structure in which something develops",
 "brand_article": "The Matrix",
-"original_article": null,
+"original_article": "Matrix (mathematics)",
 "brand_views": 150653.5,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 30936.0,
+"brand_share": 0.8296377268509468,
+"group": "taken"
 },
 {
 "word": "Maven",
@@ -17960,11 +17960,11 @@
 "launch_year": 1978,
 "original_meaning": "A soft, wet, shapeless mass of material",
 "brand_article": "Pulp (band)",
-"original_article": null,
+"original_article": "Pulp (paper)",
 "brand_views": 28129.5,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 5295.5,
+"brand_share": 0.8415706806282722,
+"group": "taken"
 },
 {
 "word": "Pulsar",
@@ -20078,11 +20078,11 @@
 "original_meaning": "Having an edge or point that cuts easily.",
 "source_url": "https://en.wikipedia.org/wiki/Sharp_Corporation",
 "brand_article": "Sharp Corporation",
-"original_article": null,
+"original_article": "Sharpness (cutting)",
 "brand_views": 14662.0,
-"original_views": null,
-"brand_share": null,
-"group": "unknown"
+"original_views": 406.5,
+"brand_share": 0.9730231940803663,
+"group": "taken"
 },
 {
 "word": "Shazam",
@@ -20349,10 +20349,10 @@
 "original_meaning": "Easy to understand or uncomplicated.",
 "source_url": "https://en.wikipedia.org/wiki/Simple_(skincare)",
 "brand_article": "Simple Skincare",
-"original_article": null,
+"original_article": "Simplicity",
 "brand_views": 931.0,
-"original_views": null,
-"brand_share": null,
+"original_views": 1293.5,
+"brand_share": 0.4185210159586424,
 "group": "failed"
 },
 {

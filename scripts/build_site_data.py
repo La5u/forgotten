@@ -78,7 +78,7 @@ for r in rows:
     if 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('original_views') and r['word'].lower() in FILL: r['original_views'] = FILL[r['word'].lower()][1]; r['original_article'] = FILL[r['word'].lower()][0]
     if not r.get('brand_views') and r.get('original_views'): r['brand_views'] = 0; r['no_brand_article'] = True  # brand never got a Wikipedia article
     if 'original_views' in FIX.get(r['word'].lower(), {}) and FIX[r['word'].lower()]['original_views'] is None: r['brand_share'] = None
-    if r.get('brand_views') is not None and r.get('original_views'): r['brand_share'] = r['brand_views']/(r['brand_views']+r['original_views'])
+    if r.get('brand_views') is not None and r.get('original_views'): r['brand_share'] = r['brand_views']/(r['brand_views']+r['original_views']) if not r.get('no_brand_article') else None
     if r['group'] in ('watching', 'data'):  # Watching only when traffic is missing on one side; recency alone is not doubt
         g2, w2 = by_data(r)
         if g2: r['group'], r['winner'] = g2, w2
@@ -98,7 +98,7 @@ for r in rows:
     e['cap_pre'] = cap(r['word'], year-5, year) if r['kind'] not in ('name', 'place') else None
     e['cap_2022'] = cap(r['word'], 2020, 2023) if r['kind'] not in ('name', 'place') else None
     pre, recent = e['cap_pre'], e['cap_2022']
-    e['brand_share_est'] = round(max(0, min(1, (recent-pre)/(1-pre))), 3) if e['brand_share'] is None and pre is not None and recent is not None and pre < .95 else None
+    e['brand_share_est'] = round(min(1, (recent-pre)/(1-pre)), 3) if e['brand_share'] is None and pre is not None and recent is not None and pre < .95 and recent > pre else None
     e['share_basis'] = 'wikipedia' if e['brand_share'] is not None else 'books' if e['brand_share_est'] is not None else None
     n = names.get(r['word'].capitalize())
     if n and 'us' in n:
