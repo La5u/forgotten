@@ -61,7 +61,7 @@ export function lineChart(host,{series,mark,from,to,ink='#222',grid='#0000001a',
 export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460,labels=[],colors=true,onPick,corners=false,palette=null,ring='#fff',minViews=0,group='',plotLegend=false}={}){
   hideTip();host.innerHTML='';const eligible=entries.filter(e=>(!group||e.group===group)&&e.pre_launch_per_million!=null&&e.group!=='watching'&&shareY(e)!=null),pts=eligible.filter(e=>!minViews||(e.brand_views||0)>=minViews);
   const W=Math.max(300,host.clientWidth||700),H=height,m={t:44,r:18,b:44,l:48};
-  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Word frequency before launch against brand share of attention today'},host);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'group','aria-label':'Word frequency before launch against brand share of attention today'},host);
   const lmin=-3,lmax=3,X=v=>m.l+(Math.max(lmin,Math.min(lmax,Math.log10(v)))-lmin)/(lmax-lmin)*(W-m.l-m.r),Y=s=>H-m.b-6-s*(H-m.t-m.b-12);
   const views=pts.map(e=>Math.max(0,e.brand_views||0)),vmin=views.length?Math.min(...views):0,vmax=views.length?Math.max(...views):0,p=.35;
   const PX=e=>X(e.pre_launch_per_million),PY=e=>Y(shareY(e)),size=v=>{const lo=W<560?2:2.5,hi=W<560?7:9,t=vmin===vmax?1:(Math.max(0,v||0)**p-vmin**p)/(vmax**p-vmin**p);return lo+t*(hi-lo)},radius=e=>size(e.brand_views);
@@ -72,25 +72,35 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   const words=pts.filter(e=>!isName(e)).length,names=pts.filter(isName).length,books=pts.filter(e=>e.brand_share==null).length,discontinued=pts.filter(e=>e.discontinued).length;
   const legendRows=[['Shape',[['dot','word'],['diamond','name or place'],['star','regional'],['square','fiction']]],['Fill',[['dot','Wikipedia'],['books','book estimate'],['hollow','discontinued']]]];
   const sizeItems=pts.length?[vmin,((vmin**p+vmax**p)/2)**(1/p),vmax].map((v,i)=>[size(v),i===0&&v<100?'under 100':Number(v.toPrecision(2)).toLocaleString('en-US')]):[];
+  const shape=e=>fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',tags=e=>({'data-shape':shape(e),'data-fill':e.discontinued?'hollow':e.brand_share==null?'books':'dot'});
+  let pinned=null,hover=null,focus=null;
+  const filter=()=>{const f=hover||focus||pinned;hideTip();svg.querySelectorAll('[data-shape]').forEach(e=>{const hide=f&&e.getAttribute('data-'+f[0])!==f[1];e.style.opacity=hide?0:'';e.style.pointerEvents=hide?'none':''})};
+  const bindLegend=(e,row,k,label)=>{const f=[row.toLowerCase(),k];e.setAttribute('data-legend',k);e.setAttribute('tabindex',0);e.setAttribute('role','button');e.setAttribute('aria-label',`${row}: ${label}`);e.style.cursor='pointer';
+    e.addEventListener('pointerenter',ev=>{if(ev.pointerType!=='touch'){hover=f;filter()}});e.addEventListener('pointerleave',()=>{hover=null;filter()});
+    e.addEventListener('focus',()=>{focus=f;filter()});e.addEventListener('blur',()=>{focus=null;filter()});
+    const toggle=()=>{pinned=pinned&&pinned[0]===f[0]&&pinned[1]===k?null:f;hover=focus=null;filter()};
+    e.addEventListener('click',ev=>{ev.stopPropagation();toggle()});e.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();toggle()}})};
+  svg.addEventListener('click',ev=>{if(!ev.target.closest('[data-shape],[data-legend]')){pinned=hover=focus=null;filter()}});
   let legendBox=null;
   if(plotLegend&&W>=560){
-    const x=m.l+8,h=76,y=H-m.b-h-8,col=(palette&&palette[group])||GROUPS[group]?.color||ink;
+    const x=m.l+8,h=76,y=H-m.b-h-8;
     legendBox={x,y,w:0,h};
-    const g=el('g',{'font-size':11,'font-family':'var(--sans, sans-serif)','pointer-events':'none'},svg);
+    const g=el('g',{'font-size':11,'font-family':'var(--sans, sans-serif)'},svg);
     const bg=el('rect',{x,y,width:0,height:h,fill:'var(--p, #fff)','fill-opacity':.9,stroke:ink,'stroke-width':1},g);
     [...legendRows,['Size',sizeItems]].forEach(([label,items],i)=>{const cy=y+18+i*22;let dx=x+46;
       const t=el('text',{x:x+8,y:cy,fill:ink,opacity:.6},g);t.textContent=label;
-      items.forEach(([k,label])=>{const r=i===2?k:3.6;
-        el('path',{d:mark(i===2?'dot':k==='diamond'||k==='star'||k==='square'?k:'dot',dx+r,cy-4,r),...markStyle(k==='hollow',col,k==='books')},g);
-        const t=el('text',{x:dx+2*r+5,y:cy,fill:ink},g);t.textContent=label;dx+=2*r+5+t.getComputedTextLength()+12});
+      items.forEach(([k,text])=>{const r=i===2?k:3.6,item=el('g',{},g),start=dx;
+        const hit=el('rect',{x:dx-4,y:cy-Math.max(14,r+5),width:0,height:Math.max(22,2*r+4),fill:'transparent'},item);
+        el('path',{d:mark(i===2?'dot':k==='diamond'||k==='star'||k==='square'?k:'dot',dx+r,cy-4,r),...markStyle(k==='hollow',ink,k==='books')},item);
+        const t=el('text',{x:dx+2*r+5,y:cy,fill:ink},item);t.textContent=text;dx+=2*r+5+t.getComputedTextLength()+12;hit.setAttribute('width',dx-start-4);if(i<2)bindLegend(item,label,k,text)});
       if(i===2){const t=el('text',{x:dx,y:cy,fill:ink},g);t.textContent='views a month';dx+=t.getComputedTextLength()}
       legendBox.w=Math.max(legendBox.w,Math.ceil(dx-x+8));
     });bg.setAttribute('width',legendBox.w);
   }
-  for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
+  for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{...tags(e),tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
     const cx=PX(e),cy=PY(e),r=radius(e),col=(palette&&palette[e.group])||shade(e);
     el('circle',{cx,cy,r:Math.max(12,extent(e)),fill:'transparent'},g);
-    el('path',{d:mark(fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
+    el('path',{d:mark(shape(e),cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
     const on=ev=>{const r=ev.target.getBoundingClientRect?ev.target.getBoundingClientRect():{left:0,top:0};showTip(tipHTML(e),r.left,r.top)};
     g.addEventListener('pointerenter',on);g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
     if(onPick){g.addEventListener('click',()=>onPick(e));g.addEventListener('keydown',ev=>{if(ev.key==='Enter')onPick(e)})}}
@@ -101,13 +111,13 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
     box.push({x:m.l,y:0,w:250,h:16});if(corners)box.push({x:W-m.r-230,y:20,w:230,h:20},{x:m.l,y:20,w:210,h:20},{x:W-m.r-220,y:H-m.b-26,w:220,h:22});
     for(const e of [...pts].sort((a,b)=>rank(b)-rank(a))){const cx=PX(e),cy=PY(e),r=extent(e),d=r+3,w=e.word.length*fs*.56+2,h=fs+1;
       const near=[[cx+d,cy-h/2],[cx-d-w,cy-h/2],[cx-w/2,cy-d-h],[cx-w/2,cy+d],[cx+d,cy-h-d],[cx+d,cy+d],[cx-d-w,cy-h-d],[cx-d-w,cy+d]];for(let R=r+11;R<=far;R+=6)for(let i=0;i<16;i++){const t=i/16*2*Math.PI;near.push([cx+R*Math.cos(t)-(Math.cos(t)<0?w:0),cy+R*Math.sin(t)-h/2])}
-      let at=near.map(([x,y])=>({x,y,w,h})).find(a=>!hit(a));if(!at)continue;box.push(at);{const lx=at.x>cx?at.x:at.x+w>cx?cx:at.x+w,ly=at.y+h/2;if(Math.hypot(lx-cx,ly-cy)>13)el('line',{x1:cx,y1:cy,x2:lx,y2:ly,stroke:ink,'stroke-width':.5,opacity:.35,'pointer-events':'none'},svg)}
-      const t=el('text',{x:at.x,y:at.y+h-2,fill:ink,'font-size':fs,opacity:.8,'pointer-events':'none'},svg);t.textContent=e.word}
-  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e)continue;const t=el('text',{x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
+      let at=near.map(([x,y])=>({x,y,w,h})).find(a=>!hit(a));if(!at)continue;box.push(at);{const lx=at.x>cx?at.x:at.x+w>cx?cx:at.x+w,ly=at.y+h/2;if(Math.hypot(lx-cx,ly-cy)>13)el('line',{...tags(e),x1:cx,y1:cy,x2:lx,y2:ly,stroke:ink,'stroke-width':.5,opacity:.35,'pointer-events':'none'},svg)}
+      const t=el('text',{...tags(e),x:at.x,y:at.y+h-2,fill:ink,'font-size':fs,opacity:.8,'pointer-events':'none'},svg);t.textContent=e.word}
+  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e)continue;const t=el('text',{...tags(e),x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
   if(corners)for(const[x,y,a,t]of[[W-m.r-6,34,'end','Common word, now the brand\'s'],[m.l+8,34,'start','Rare word, now the brand\'s'],[W-m.r-6,H-m.b-10,'end','Common word, still its own']]){const c=el('text',{x,y,'text-anchor':a,fill:ink,'font-size':13,opacity:.6,'pointer-events':'none'},svg);c.textContent=t}
   const yt=el('text',{x:m.l,y:11,fill:ink,'font-size':12},svg);yt.textContent=W<560?'↑ Brand share':'↑ Brand share of attention today';
   const off=entries.filter(e=>(!group||e.group===group)&&e.group!=='watching'&&!eligible.includes(e));
-  return {plotted:pts.length,total:eligible.length,words,names,books,discontinued,legendRows,sizeItems,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
+  return {plotted:pts.length,total:eligible.length,words,names,books,discontinued,legendRows,sizeItems,bindLegend,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
 /* Equal-area markers: circle = word, diamond = capitalised name/place, star = regional brand, square = fiction (takes precedence); pale = books, hollow = discontinued. */
 function mark(k,x,y,r){if(k==='square'){const d=r*Math.sqrt(Math.PI)/2;return `M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`}if(k==='star'){const R=r*Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5)));return Array.from({length:10},(_,i)=>{const a=i*Math.PI/5-Math.PI/2,d=i%2?R/2:R;return (i?'L':'M')+(x+d*Math.cos(a))+' '+(y+d*Math.sin(a))}).join('')+'Z'}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
   return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
