@@ -31,7 +31,7 @@ export function capitalisationDumbbells(section,entries){const data=dumbbellData
     data.forEach((e,i)=>{const y=t+(i+.5)*row,c=GROUPS[e.group].color;el('text',{x:l-9,y:y+4,'text-anchor':'end',fill:'#111'},s,e.word);el('line',{x1:X(e.cap_pre),x2:X(e.cap_2022),y1:y,y2:y,stroke:c,'stroke-width':2},s);for(const [v,open] of[[e.cap_pre,true],[e.cap_2022,false]])el('circle',{cx:X(v),cy:y,r:4,fill:open?'#fff':c,stroke:c,'stroke-width':1.5},s);el('text',{x:W-2,y:y+4,'text-anchor':'end'},s,pp(e.cap_2022-e.cap_pre));const n=el('rect',{x:0,y:y-row/2,width:W,height:row,fill:'transparent'},s);bind(n,`<b>${esc(e.word)}</b> · ${GROUPS[e.group].label}<div>${pc(e.cap_pre)} before launch → ${pc(e.cap_2022)} in 2022</div><div>Rise: ${pp(e.cap_2022-e.cap_pre)} points</div><div>Before launch: ${e.pre_launch_per_million} uses per million</div><div>${num(e.brand_views)} monthly brand views</div>`)});el('text',{x:l,y:H-5},s,'Capitalised share →');
   };section.querySelector('.note').textContent='Words need at least 0.01 uses per million before launch; numbers on the right show the rise in percentage points. Capitals can refer to other names too; hover or tap a row for details.';draw();addEventListener('resize',draw)}
 
-const types=['company','character'],labels={company:'Companies',character:'Characters'},colors={company:GROUPS.taken.color,character:GROUPS.failed.color};
+const types=['company','character'],labels={company:'Products',character:'Fictional characters'},colors={company:GROUPS.taken.color,character:GROUPS.failed.color};
 const round=v=>Math.round(v*10)/10;
 const pm=(x,y)=>{const r=x.series.us,i=y-r.from;return y<1880||y>2025?null:(r.per_million[i]??0)},base=x=>[-3,-2,-1].reduce((s,k)=>s+pm(x,x.launch_year+k),0)/3;
 // Match build_names.py: use stored changes where available and round median changes with ties to even.
@@ -57,15 +57,31 @@ function aggregate(host,groups){host.innerHTML='';const W=Math.max(280,host.clie
   const hide=()=>{tip.style.display='none';cross.setAttribute('opacity',0)},at=e=>{const r=svg.getBoundingClientRect();show(Math.max(-10,Math.min(15,Math.round(((e.clientX-r.left)*W/r.width-m.l)/pw*25-10))))};
   hit.addEventListener('pointermove',at);hit.addEventListener('pointerdown',at);hit.addEventListener('pointerleave',hide);hit.addEventListener('blur',hide);hit.addEventListener('focus',()=>show(cur));hit.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();show(Math.max(-10,Math.min(15,cur+(e.key==='ArrowLeft'?-1:1))))}})
 }
+export function nameCarousel(section,C,key){const $=s=>section.querySelector(s),rows=C[key].map(name=>C.names.find(n=>n.name===name));let index=0;
+  const change=(a,b)=>{const v=100*(b/a-1);return `${v<0?'fell':'rose'} ${Math.abs(v).toFixed(1)}%`},points=(a,from)=>Object.fromEntries(a.map((v,i)=>[from+i,v]));
+  const draw=()=>{const n=rows[index],A=points(n.name_index,n.from),P=points(n.comparison_index,n.from),comparison=`Other ${n.sex==='F'?"girls'":n.sex==='M'?"boys'":''} names popular at the same time (median of ${n.peers.length})`;
+    $('.carousel-chart rect[fill="transparent"]')?.dispatchEvent(new Event('pointerleave'));
+    $('.carousel-title').textContent=`${n.name}, after ${n.brand}`;$('.carousel-type').textContent=n.type==='company'?'Product':n.type==='character'?'Fictional character':'Name';
+    $('.carousel-position').textContent=`${index+1} of ${rows.length}`;
+    $('.carousel-finding').textContent=`From ${n.launch} to ${n.end}, ${n.name} ${change(A[n.launch],A[n.end])} while the comparison names ${change(P[n.launch],P[n.end])}.`;
+    $('.carousel-five').textContent=`Five years after launch: ${A[n.launch+5].toFixed(1)} for ${n.name}, ${P[n.launch+5].toFixed(1)} for the comparison names (before launch = 100).`;
+    $('.carousel-flags').textContent=n.flags.join(' ');$('.comparison-names').textContent=n.peers.join(', ')+'.';
+    $('.carousel-legend').innerHTML=[[GROUPS.taken.color,n.name,2.6],['#888',comparison,1.4]].map(([c,label,w])=>`<span><svg width="20" height="12" aria-hidden="true"><path d="M0 6H20" stroke="${c}" stroke-width="${w}"/></svg> ${esc(label)}</span>`).join('');
+    const series=[{name:comparison,color:'#888',points:P},{name:n.name,color:GROUPS.taken.color,points:A}],s=lineChart($('.carousel-chart'),{from:n.from,to:C.to,height:340,endLabels:false,right:14,tab:false,mark:{year:n.launch,label:`Launch, ${n.launch}`},ink:'#16130f',series:series.map(s=>({...s,fmt:y=>s.points[y].toFixed(1)+' (before launch = 100)'}))});
+    s.querySelectorAll('path').forEach((p,i)=>p.setAttribute('stroke-width',i?2.6:1.4));s.querySelectorAll('circle').forEach((p,i)=>p.setAttribute('r',i?3.5:2.5));
+    s.setAttribute('aria-label',`${n.name} and comparison names, ${n.from} to ${C.to}. Average of ${n.launch-3} to ${n.launch-1} = 100. ${$('.carousel-five').textContent}`);
+  };
+  const step=d=>{index=(index+d+rows.length)%rows.length;draw()};$('.carousel-prev').onclick=()=>step(-1);$('.carousel-next').onclick=()=>step(1);
+  section.addEventListener('keydown',e=>{if(!e.altKey&&!e.ctrlKey&&!e.metaKey&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowLeft'?-1:1)}});
+  let start;const host=$('.carousel-chart');host.style.touchAction='pan-y';host.addEventListener('pointerdown',e=>{if(e.pointerType==='touch')start={x:e.clientX,y:e.clientY}});host.addEventListener('pointercancel',()=>start=null);host.addEventListener('pointerup',e=>{if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;start=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.5)step(dx<0?1:-1)});
+  host.addEventListener('pointerdown',e=>{if(e.target.matches('svg rect'))e.target.dispatchEvent(new PointerEvent('pointermove',{clientX:e.clientX,clientY:e.clientY,bubbles:true}))});
+  draw();let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(draw,120)})
+}
 export async function pageCharts(entries){const [S,N,C]=await Promise.all(['sparks.json','names.json','name_controls.json'].map(async f=>{const r=await fetch(new URL(f,import.meta.url));if(!r.ok)throw Error(f+': '+r.status);return r.json()})), $=s=>document.querySelector(s),groups=aligned(N.names),row=t=>groups.find(g=>g.type===t).rows[15];
   takeoverCurve($('#takeover'),entries,S);capitalisationDumbbells($('#dumbbells'),entries);
   $('#aggregate-legend').innerHTML=legend(types.map(t=>[colors[t],labels[t]]));
-  $('#aggregate-finding').textContent='No general penalty: the middle name barely moves after a launch, for companies and characters alike. Alexa and Siri are exceptions.';
-  $('#aggregate-note').textContent=`US births per million, with each name set to 100 at its average in the three years before launch; lines show medians rounded to whole points and bands the middle half. All outcomes among site names count, with at least 20 births a year before launch: ${row('company').n} company names and ${row('character').n} character names at year five. Counts vary by year; points with fewer than 10 names are left out. Hover, tap or use arrow keys for values.`;
-  const points=a=>Object.fromEntries(a.map((v,i)=>[C.from+i,v])),a=C.series.Alexa,A=points(a.map(v=>v==null?null:100*v/a[C.base_year-C.from])),P=points(C.peers_index),comparison=`Other girls' names popular in the 2000s (median of ${C.peers.length})`,series=[{name:'Alexa',color:colors.company,points:A},{name:comparison,color:colors.character,points:P}],fall=p=>(100*(1-p[2025]/p[2015])).toFixed(1);
-  $('#alexa-finding').textContent=`From 2015 to 2025, Alexa fell ${fall(A)}% in US births per million, while the comparison names fell ${fall(P)}%.`;
-  $('#l1').innerHTML=legend(series.map(s=>[s.color,s.name]));$('#comparison-names').textContent=C.peers.join(', ')+'.';
-  const draw=()=>{aggregate($('#aggregate'),groups);lineChart($('#f1'),{from:C.from,to:C.to,height:340,endLabels:false,right:14,mark:{year:2014.9,label:'Echo, late 2014'},ink:'#16130f',series:series.map(s=>({...s,fmt:y=>`${round(s.points[y])} (2014 = 100)`}))})};
-  $('#f1').addEventListener('pointerdown',e=>{if(e.target.matches('svg rect'))e.target.dispatchEvent(new PointerEvent('pointermove',{clientX:e.clientX,clientY:e.clientY,bubbles:true}))});
-  draw();let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(draw,120)})
+  $('#aggregate-finding').textContent='No general penalty: the middle name barely moves after a launch, for products and fictional characters alike. Alexa and Siri are exceptions.';
+  $('#aggregate-note').textContent=`US births per million, with each name set to 100 at its average in the three years before launch; lines show medians rounded to whole points and bands the middle half. All outcomes among site names count, with at least 20 births a year before launch: ${row('company').n} product names and ${row('character').n} fictional character names at year five. Counts vary by year; points with fewer than 10 names are left out. Hover, tap or use arrow keys for values.`;
+  nameCarousel($('#alexa'),C,'worst');nameCarousel($('#name-lift'),C,'lift');
+  const draw=()=>aggregate($('#aggregate'),groups);draw();let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(draw,120)})
 }

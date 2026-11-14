@@ -59,43 +59,41 @@ export function lineChart(host,{series,mark,from,to,ink='#222',grid='#0000001a',
   return svg}
 /* x: how common the word was before launch (log scale), y: brand share (Wikipedia, else estimated from books). */
 export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460,labels=[],colors=true,onPick,corners=false,palette=null,ring='#fff',minViews=0,group='',plotLegend=false,search='',onJump}={}){
-  hideTip();host.innerHTML='';const eligible=entries.filter(e=>(!group||e.group===group)&&e.pre_launch_per_million!=null&&e.group!=='watching'&&shareY(e)!=null),pts=eligible.filter(e=>!minViews||(e.brand_views||0)>=minViews);
+  hideTip();host.innerHTML='';const eligible=entries.filter(e=>(!group||e.group===group)&&e.pre_launch_per_million!=null&&shareY(e)!=null),pts=eligible.filter(e=>!minViews||(e.brand_views||0)>=minViews);
   const W=Math.max(300,host.clientWidth||700),H=height,m={t:44,r:18,b:44,l:48};
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'group','aria-label':'Word frequency before launch against brand share of attention today'},host);
   const lmin=-3,lmax=3,X=v=>m.l+(Math.max(lmin,Math.min(lmax,Math.log10(v)))-lmin)/(lmax-lmin)*(W-m.l-m.r),Y=s=>H-m.b-6-s*(H-m.t-m.b-12);
   const views=pts.map(e=>Math.max(0,e.brand_views||0)),vmin=views.length?Math.min(...views):0,vmax=views.length?Math.max(...views):0,p=.35;
   const PX=e=>X(e.pre_launch_per_million),PY=e=>Y(shareY(e)),size=v=>{const lo=W<560?2:2.5,hi=W<560?7:9,t=vmin===vmax?1:(Math.max(0,v||0)**p-vmin**p)/(vmax**p-vmin**p);return lo+t*(hi-lo)},radius=e=>size(e.brand_views);
-  const extent=e=>radius(e)*(fiction(e)?Math.sqrt(Math.PI)/2:e.region?Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5))):isName(e)?Math.sqrt(Math.PI/2):1);
+  const extent=e=>radius(e)*(fiction(e)?Math.sqrt(Math.PI)/2:isName(e)?Math.sqrt(Math.PI/2):1)+(e.region?.6:0);
   for(const s of[0,.25,.5,.75,1]){el('line',{x1:m.l,x2:W-m.r,y1:Y(s),y2:Y(s),stroke:grid},svg);const t=el('text',{x:m.l-7,y:Y(s)+4,'text-anchor':'end',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=s*100+'%'}
   for(let l=lmin;l<=lmax;l++){const t=el('text',{x:X(10**l),y:H-m.b+16,'text-anchor':'middle',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=l===lmin?'≤'+10**l:10**l>=1?(10**l).toLocaleString('en-US'):String(10**l)}
   const ax=el('text',{x:(W+m.l-m.r)/2,y:H-6,'text-anchor':'middle',fill:ink,'font-size':12},svg);ax.textContent=W<560?'Book frequency before launch →':'Uses per million words in books before launch (log scale) →';
   const words=pts.filter(e=>!isName(e)).length,names=pts.filter(isName).length,books=pts.filter(e=>e.brand_share==null).length,discontinued=pts.filter(e=>e.discontinued).length;
-  const legendRows=[['Shape',[['dot','word'],['diamond','name or place'],['star','regional'],['square','fiction']]],['Fill',[['dot','Wikipedia'],['books','book estimate'],['hollow','discontinued']]]];
+  const legendRows=[['Shape',[['dot','word'],['diamond','name or place'],['square','fiction']]],['Mark',[['dot','Wikipedia'],['books','book estimate'],['hollow','discontinued'],['regional','regional']]]];
   const sizeItems=pts.length?[vmin,((vmin**p+vmax**p)/2)**(1/p),vmax].map((v,i)=>[size(v),i===0&&v<100?'under 100':Number(v.toPrecision(2)).toLocaleString('en-US')]):[];
-  const query=search.trim().toLowerCase(),shape=e=>fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',tags=e=>({'data-word':e.word.toLowerCase(),'data-shape':shape(e),'data-fill':e.discontinued?'hollow':e.brand_share==null?'books':'dot'});
+  const query=search.trim().toLowerCase(),shape=e=>fiction(e)?'square':isName(e)?'diamond':'dot',tags=e=>({'data-word':e.word.toLowerCase(),'data-shape':shape(e),'data-mark':(e.brand_share==null?'books':'dot')+(e.discontinued?' hollow':'')+(e.region?' regional':'')});
   let pinned=null,hover=null,focus=null;
-  const filter=()=>{const f=hover||focus||pinned;hideTip();svg.querySelectorAll('[data-shape]').forEach(e=>{const hide=f&&e.getAttribute('data-'+f[0])!==f[1];e.style.opacity=hide?0:query&&e.dataset.word!==query? .12:'';e.style.pointerEvents=hide?'none':''})};
+  const filter=()=>{const f=hover||focus||pinned;hideTip();svg.querySelectorAll('[data-shape]').forEach(e=>{const hide=f&&!(e.getAttribute('data-'+f[0])||'').split(' ').includes(f[1]);e.style.opacity=hide?0:query&&e.dataset.word!==query? .12:'';e.style.pointerEvents=hide?'none':''})};
   const bindLegend=(e,row,k,label)=>{const f=[row.toLowerCase(),k];e.setAttribute('data-legend',k);e.setAttribute('tabindex',0);e.setAttribute('role','button');e.setAttribute('aria-label',`${row}: ${label}`);e.style.cursor='pointer';
     e.addEventListener('pointerenter',ev=>{if(ev.pointerType!=='touch'){hover=f;filter()}});e.addEventListener('pointerleave',()=>{hover=null;filter()});
     e.addEventListener('focus',()=>{focus=f;filter()});e.addEventListener('blur',()=>{focus=null;filter()});
     const toggle=()=>{pinned=pinned&&pinned[0]===f[0]&&pinned[1]===k?null:f;hover=focus=null;filter()};
     e.addEventListener('click',ev=>{ev.stopPropagation();toggle()});e.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();toggle()}})};
   svg.addEventListener('click',ev=>{if(!ev.target.closest('[data-shape],[data-legend]')){pinned=hover=focus=null;filter()}});
-  let legendBox=null;
+  let legendBox=null,legendLayer;
   if(plotLegend&&W>=560){
-    const x=m.l+8,h=76,y=H-m.b-h-8;
-    legendBox={x,y,w:0,h};
-    const g=el('g',{'font-size':11,'font-family':'var(--sans, sans-serif)'},svg);
-    const bg=el('rect',{x,y,width:0,height:h,fill:'var(--p, #fff)','fill-opacity':.9,stroke:ink,'stroke-width':1},g);
-    [...legendRows,['Size',sizeItems]].forEach(([label,items],i)=>{const cy=y+18+i*22;let dx=x+46;
-      const t=el('text',{x:x+8,y:cy,fill:ink,opacity:.6},g);t.textContent=label;
-      items.forEach(([k,text])=>{const r=i===2?k:3.6,item=el('g',{},g),start=dx;
-        const hit=el('rect',{x:dx-4,y:cy-Math.max(14,r+5),width:0,height:Math.max(22,2*r+4),fill:'transparent'},item);
-        el('path',{d:mark(i===2?'dot':k==='diamond'||k==='star'||k==='square'?k:'dot',dx+r,cy-4,r),...markStyle(k==='hollow',ink,k==='books')},item);
-        const t=el('text',{x:dx+2*r+5,y:cy,fill:ink},item);t.textContent=text;dx+=2*r+5+t.getComputedTextLength()+12;hit.setAttribute('width',dx-start-4);if(i<2)bindLegend(item,label,k,text)});
-      if(i===2){const t=el('text',{x:dx,y:cy,fill:ink},g);t.textContent='views a month';dx+=t.getComputedTextLength()}
-      legendBox.w=Math.max(legendBox.w,Math.ceil(dx-x+8));
-    });bg.setAttribute('width',legendBox.w);
+    const h=116,g=legendLayer=el('g',{'font-size':11,'font-family':'var(--sans, sans-serif)'},svg),bg=el('rect',{width:0,height:h,fill:'var(--p, #fff)','fill-opacity':.95,stroke:ink,'stroke-width':1},g);let dx=10;
+    [...legendRows,['Size',sizeItems]].forEach(([label,items],i)=>{let w=0;
+      const t=el('text',{x:dx,y:18,fill:ink,opacity:.6},g);t.textContent=label;w=t.getComputedTextLength();
+      items.forEach(([k,text],j)=>{const r=i===2?k:3.6,cy=39+j*21,item=el('g',{},g),hit=el('rect',{x:dx-3,y:cy-15,width:0,height:21,fill:'transparent'},item);
+        el('path',{d:mark(i===2?'dot':k==='diamond'||k==='square'?k:'dot',dx+9,cy-4,r),...markStyle(k==='hollow',k==='regional'?'#aaa':ink,k==='books',k==='regional',ink)},item);
+        const t=el('text',{x:dx+23,y:cy,fill:ink},item);t.textContent=text;w=Math.max(w,23+t.getComputedTextLength());hit.setAttribute('width',23+t.getComputedTextLength()+3);if(i<2)bindLegend(item,label,k,text)});
+      if(i===2){const t=el('text',{x:dx,y:102,fill:ink},g);t.textContent='views a month';w=Math.max(w,t.getComputedTextLength())}dx+=Math.ceil(w)+14;
+    });const w=dx-4,candidates=[{x:m.l+8,y:H-m.b-h-(corners?30:8)},{x:W-m.r-w-8,y:H-m.b-h-(corners?30:8)},{x:m.l+8,y:m.t+8},{x:W-m.r-w-8,y:m.t+8}].map(b=>({...b,w,h}));
+    if(w<=W-m.l-m.r-16&&h<=H-m.t-m.b-46){const count=b=>pts.filter(e=>PX(e)+extent(e)>=b.x&&PX(e)-extent(e)<=b.x+w&&PY(e)+extent(e)>=b.y&&PY(e)-extent(e)<=b.y+h).length;
+      legendBox=candidates.reduce((a,b)=>count(b)<count(a)?b:a);g.setAttribute('transform',`translate(${legendBox.x} ${legendBox.y})`);bg.setAttribute('width',w);
+    }else{g.remove();legendLayer=null}
   }
   const positions=new Map(),bind=(g,e,cx,cy,r)=>{positions.set(e,{cx,cy,r});let tapped=0;
     const on=()=>{const b=svg.getBoundingClientRect(),k=b.width/W;showTip(tipHTML(e)+(onJump?'<div style="opacity:.7">Activate twice to read the dictionary entry.</div>':''),b.left+cx*k,b.top+cy*k)};
@@ -105,7 +103,7 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{...tags(e),tabindex:0,role:'button',style:'cursor:pointer;touch-action:manipulation','aria-label':`${e.word}: ${GROUPS[e.group].label}${onJump?'. Press Enter for dictionary entry':''}`},svg);
     const cx=PX(e),cy=PY(e),r=radius(e),col=(palette&&palette[e.group])||shade(e);
     el('circle',{cx,cy,r:Math.max(12,extent(e)),fill:'transparent'},g);
-    el('path',{d:mark(shape(e),cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);bind(g,e,cx,cy,extent(e))}
+    el('path',{d:mark(shape(e),cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null,!!e.region,ink)},g);bind(g,e,cx,cy,extent(e))}
   if(labels==='all'){ // greedy placement: taken first, then most-viewed; skip a label only if it would collide
     const fs=W>1000?11:10,box=legendBox?[legendBox]:[],hit=(a)=>a.x<m.l||a.x+a.w>W-m.r||a.y<15||a.y+a.h>H-m.b||box.some(b=>a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h);
     const few=pts.length<90,far=few?90:26;for(const e of pts){const cx=PX(e),cy=PY(e),r=extent(e)+1;box.push({x:cx-r,y:cy-r,w:2*r,h:2*r})}
@@ -118,21 +116,22 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e||e.word.toLowerCase()===query)continue;const t=el('text',{...tags(e),x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
   if(corners)for(const[x,y,a,t]of[[W-m.r-6,34,'end','Common word, now the brand\'s'],[m.l+8,34,'start','Rare word, now the brand\'s'],[W-m.r-6,H-m.b-10,'end','Common word, still its own']]){const c=el('text',{x,y,'text-anchor':a,fill:ink,'font-size':13,opacity:.6,'pointer-events':'none'},svg);c.textContent=t}
   const yt=el('text',{x:m.l,y:11,fill:ink,'font-size':12},svg);yt.textContent=W<560?'↑ Brand share':'↑ Brand share of attention today';
+  if(legendLayer)svg.append(legendLayer);
   let found=false;const match=pts.find(e=>e.word.toLowerCase()===query);
   if(query){svg.querySelectorAll('[data-word]').forEach(e=>{if(e.dataset.word!==query)e.style.opacity=.12});if(match){found=true;svg.append([...svg.querySelectorAll('g[tabindex][data-word]')].find(g=>g.dataset.word===query));const {cx,cy,r}=positions.get(match),g=el('g',{...tags(match),'pointer-events':'none'},svg);
     el('circle',{cx,cy,r:r+5,fill:'none',stroke:ink,'stroke-width':1.5},g);const w=match.word.length*7+8,x=Math.max(m.l,Math.min(W-m.r-w,cx-w/2)),y=Math.max(25,cy-r-11);
     el('rect',{x,y:y-12,width:w,height:16,fill:'var(--p, #fff)'},g);const t=el('text',{x:x+4,y,fill:ink,'font-size':12,'font-weight':600},g);t.textContent=match.word}}
-  const off=entries.filter(e=>(!group||e.group===group)&&e.group!=='watching'&&!eligible.includes(e));
+  const off=entries.filter(e=>(!group||e.group===group)&&!eligible.includes(e));
   return {plotted:pts.length,total:eligible.length,found,words,names,books,discontinued,legendRows,sizeItems,bindLegend,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
-/* Equal-area markers: circle = word, diamond = capitalised name/place, star = regional brand, square = fiction (takes precedence); pale = books, hollow = discontinued. */
-function mark(k,x,y,r){if(k==='square'){const d=r*Math.sqrt(Math.PI)/2;return `M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`}if(k==='star'){const R=r*Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5)));return Array.from({length:10},(_,i)=>{const a=i*Math.PI/5-Math.PI/2,d=i%2?R/2:R;return (i?'L':'M')+(x+d*Math.cos(a))+' '+(y+d*Math.sin(a))}).join('')+'Z'}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
+/* Equal-area markers: circle = word, diamond = capitalised name/place, square = fiction; pale = books, hollow = discontinued, dark outline = regional. */
+function mark(k,x,y,r){if(k==='square'){const d=r*Math.sqrt(Math.PI)/2;return `M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
   return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
-const markStyle=(gone,col,books)=>({fill:gone?'var(--p, #fff)':col,'fill-opacity':gone?1:books?.35:.85,...(gone?{stroke:col,'stroke-width':1,'stroke-opacity':books?.45:1,'stroke-linejoin':'round'}:{})});
-export const MARK=(k,col,r=3.6)=>`<svg width="${Math.max(12,2*r+2)}" height="${Math.max(12,2*r+2)}" viewBox="${-Math.max(6,r+1)} ${-Math.max(6,r+1)} ${Math.max(12,2*r+2)} ${Math.max(12,2*r+2)}" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'||k==='star'||k==='square'?k:'dot',0,0,r)}" ${Object.entries(markStyle(k==='hollow',col,k==='books')).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
+const markStyle=(gone,col,books,regional=false,ink=col)=>({fill:gone?'var(--p, #fff)':col,'fill-opacity':gone?1:books?.35:.85,...(gone||regional?{stroke:regional?ink:col,'stroke-width':regional?1.2:1,'stroke-opacity':regional?1:books?.45:1,'stroke-linejoin':'round'}:{})});
+export const MARK=(k,col,r=3.6)=>`<svg width="${Math.max(12,2*r+2)}" height="${Math.max(12,2*r+2)}" viewBox="${-Math.max(6,r+1)} ${-Math.max(6,r+1)} ${Math.max(12,2*r+2)} ${Math.max(12,2*r+2)}" style="margin-right:5px;vertical-align:-1px"><path d="${mark(k==='diamond'||k==='square'?k:'dot',0,0,r)}" ${Object.entries(markStyle(k==='hollow',k==='regional'?'#aaa':col,k==='books',k==='regional',col)).map(([a,v])=>`${a}="${v}"`).join(' ')}/></svg>`;
 export function legend(items){return '<div class="legend">'+items.map(([c,t,d])=>`<span><i style="background:${c}${d?';background-image:repeating-linear-gradient(90deg,transparent 0 3px,#fff 3px 5px)':''}"></i>${esc(t)}</span>`).join('')+'</div>'}
 export const METHODS=`<p>Births come from the US Social Security Administration, the ONS (England and Wales), New South Wales and Ontario. Names under a publishing threshold are absent from those files, so a missing value means unknown or very small, never zero.</p>
 <p>Attention is median monthly English Wikipedia views over the last 12 months, with page moves merged, for the brand's page and the original meaning's page. People look up companies more than fruit, so this over-counts brands. It is one signal, along with capitalization in Google Books through 2022. The small graphs beside dictionary entries show uses in Google Books.</p>
-<p>Marker sizes show monthly brand Wikipedia views on a log scale, relative to the brands shown. On the chart, circles are lowercase words and diamonds are capitalised names or places. Stars mark brands known only in one region. Squares mark fictional characters, films, shows or games, taking precedence over other shapes. Solid fills show Wikipedia traffic. Paler, more transparent fills show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow marker marks a discontinued product, which can still own the word.</p>
+<p>Marker sizes show monthly brand Wikipedia views on a log scale, relative to the brands shown. On the chart, circles are lowercase words and diamonds are capitalised names or places. A thin dark outline marks brands known only in one region. Squares mark fictional characters, films, shows or games, taking precedence over other shapes. Solid fills show Wikipedia traffic. Paler, more transparent fills show estimates when there is no usable Wikipedia comparison: only a positive rise in capitalization in books since before the launch yields an estimate, and books lag behind speech, so recent brands are understated. A hollow marker marks a discontinued product, which can still own the word. Regional products keep their dark outline when hollow.</p>
 <p>A word counts if it now also names a product, service, company or franchise, and the general public uses the bare word for it. Company-owned characters count. Bands and people do not, which is an editorial choice. Words where both sides together get under 300 views a month are left out as too thin to judge.</p>
 <p>The groups are editorial judgments informed by that data, not outputs of a formula. A fall in a name after a launch does not prove the launch caused it, which is why similar names sit beside it where they exist.</p>
 <p>A trademark covers specific goods and services. It does not own a word. Registration details per entry are being added.</p>`;
