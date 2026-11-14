@@ -58,7 +58,7 @@ export function lineChart(host,{series,mark,from,to,ink='#222',grid='#0000001a',
   hit.addEventListener('blur',()=>{hideTip();cross.setAttribute('opacity',0)});hit.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();cur=Math.max(from,Math.min(to,cur+(e.key==='ArrowLeft'?-1:1)));move(cur)}});
   return svg}
 /* x: how common the word was before launch (log scale), y: brand share (Wikipedia, else estimated from books). */
-export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460,labels=[],colors=true,onPick,corners=false,palette=null,ring='#fff',minViews=0,group='',plotLegend=false}={}){
+export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460,labels=[],colors=true,onPick,corners=false,palette=null,ring='#fff',minViews=0,group='',plotLegend=false,search='',onJump}={}){
   hideTip();host.innerHTML='';const eligible=entries.filter(e=>(!group||e.group===group)&&e.pre_launch_per_million!=null&&e.group!=='watching'&&shareY(e)!=null),pts=eligible.filter(e=>!minViews||(e.brand_views||0)>=minViews);
   const W=Math.max(300,host.clientWidth||700),H=height,m={t:44,r:18,b:44,l:48};
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'group','aria-label':'Word frequency before launch against brand share of attention today'},host);
@@ -72,9 +72,9 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
   const words=pts.filter(e=>!isName(e)).length,names=pts.filter(isName).length,books=pts.filter(e=>e.brand_share==null).length,discontinued=pts.filter(e=>e.discontinued).length;
   const legendRows=[['Shape',[['dot','word'],['diamond','name or place'],['star','regional'],['square','fiction']]],['Fill',[['dot','Wikipedia'],['books','book estimate'],['hollow','discontinued']]]];
   const sizeItems=pts.length?[vmin,((vmin**p+vmax**p)/2)**(1/p),vmax].map((v,i)=>[size(v),i===0&&v<100?'under 100':Number(v.toPrecision(2)).toLocaleString('en-US')]):[];
-  const shape=e=>fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',tags=e=>({'data-shape':shape(e),'data-fill':e.discontinued?'hollow':e.brand_share==null?'books':'dot'});
+  const query=search.trim().toLowerCase(),shape=e=>fiction(e)?'square':e.region?'star':isName(e)?'diamond':'dot',tags=e=>({'data-word':e.word.toLowerCase(),'data-shape':shape(e),'data-fill':e.discontinued?'hollow':e.brand_share==null?'books':'dot'});
   let pinned=null,hover=null,focus=null;
-  const filter=()=>{const f=hover||focus||pinned;hideTip();svg.querySelectorAll('[data-shape]').forEach(e=>{const hide=f&&e.getAttribute('data-'+f[0])!==f[1];e.style.opacity=hide?0:'';e.style.pointerEvents=hide?'none':''})};
+  const filter=()=>{const f=hover||focus||pinned;hideTip();svg.querySelectorAll('[data-shape]').forEach(e=>{const hide=f&&e.getAttribute('data-'+f[0])!==f[1];e.style.opacity=hide?0:query&&e.dataset.word!==query? .12:'';e.style.pointerEvents=hide?'none':''})};
   const bindLegend=(e,row,k,label)=>{const f=[row.toLowerCase(),k];e.setAttribute('data-legend',k);e.setAttribute('tabindex',0);e.setAttribute('role','button');e.setAttribute('aria-label',`${row}: ${label}`);e.style.cursor='pointer';
     e.addEventListener('pointerenter',ev=>{if(ev.pointerType!=='touch'){hover=f;filter()}});e.addEventListener('pointerleave',()=>{hover=null;filter()});
     e.addEventListener('focus',()=>{focus=f;filter()});e.addEventListener('blur',()=>{focus=null;filter()});
@@ -97,27 +97,33 @@ export function stealsChart(host,entries,{ink='#222',grid='#0000001a',height=460
       legendBox.w=Math.max(legendBox.w,Math.ceil(dx-x+8));
     });bg.setAttribute('width',legendBox.w);
   }
-  for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{...tags(e),tabindex:0,style:'cursor:pointer','aria-label':`${e.word}: ${GROUPS[e.group].label}`},svg);
+  const positions=new Map(),bind=(g,e,cx,cy,r)=>{positions.set(e,{cx,cy,r});let tapped=0;
+    const on=()=>{const b=svg.getBoundingClientRect(),k=b.width/W;showTip(tipHTML(e)+(onJump?'<div style="opacity:.7">Activate twice to read the dictionary entry.</div>':''),b.left+cx*k,b.top+cy*k)};
+    g.addEventListener('pointerenter',ev=>{if(ev.pointerType!=='touch')on()});g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
+    g.addEventListener('click',()=>{if(onJump){const now=Date.now();if(now-tapped<1800){hideTip();onJump(e);tapped=0;return}tapped=now;on()}else if(onPick)onPick(e);else on()});
+    g.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();if(onJump){hideTip();onJump(e)}else if(onPick)onPick(e);else on()}if(ev.key==='Escape')hideTip()})};
+  for(const e of [...pts].sort((a,b)=>radius(b)-radius(a))){const g=el('g',{...tags(e),tabindex:0,role:'button',style:'cursor:pointer;touch-action:manipulation','aria-label':`${e.word}: ${GROUPS[e.group].label}${onJump?'. Press Enter for dictionary entry':''}`},svg);
     const cx=PX(e),cy=PY(e),r=radius(e),col=(palette&&palette[e.group])||shade(e);
     el('circle',{cx,cy,r:Math.max(12,extent(e)),fill:'transparent'},g);
-    el('path',{d:mark(shape(e),cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);
-    const on=ev=>{const r=ev.target.getBoundingClientRect?ev.target.getBoundingClientRect():{left:0,top:0};showTip(tipHTML(e),r.left,r.top)};
-    g.addEventListener('pointerenter',on);g.addEventListener('focus',on);g.addEventListener('pointerleave',hideTip);g.addEventListener('blur',hideTip);
-    if(onPick){g.addEventListener('click',()=>onPick(e));g.addEventListener('keydown',ev=>{if(ev.key==='Enter')onPick(e)})}}
+    el('path',{d:mark(shape(e),cx,cy,r),...markStyle(e.discontinued,col,e.brand_share==null)},g);bind(g,e,cx,cy,extent(e))}
   if(labels==='all'){ // greedy placement: taken first, then most-viewed; skip a label only if it would collide
     const fs=W>1000?11:10,box=legendBox?[legendBox]:[],hit=(a)=>a.x<m.l||a.x+a.w>W-m.r||a.y<15||a.y+a.h>H-m.b||box.some(b=>a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h);
     const few=pts.length<90,far=few?90:26;for(const e of pts){const cx=PX(e),cy=PY(e),r=extent(e)+1;box.push({x:cx-r,y:cy-r,w:2*r,h:2*r})}
     const rank=e=>(e.group==='taken'?1e12:0)+(e.brand_views||0)+(e.original_views||0);
     box.push({x:m.l,y:0,w:250,h:16});if(corners)box.push({x:W-m.r-230,y:20,w:230,h:20},{x:m.l,y:20,w:210,h:20},{x:W-m.r-220,y:H-m.b-26,w:220,h:22});
-    for(const e of [...pts].sort((a,b)=>rank(b)-rank(a))){const cx=PX(e),cy=PY(e),r=extent(e),d=r+3,w=e.word.length*fs*.56+2,h=fs+1;
+    for(const e of [...pts].sort((a,b)=>rank(b)-rank(a))){if(e.word.toLowerCase()===query)continue;const cx=PX(e),cy=PY(e),r=extent(e),d=r+3,w=e.word.length*fs*.56+2,h=fs+1;
       const near=[[cx+d,cy-h/2],[cx-d-w,cy-h/2],[cx-w/2,cy-d-h],[cx-w/2,cy+d],[cx+d,cy-h-d],[cx+d,cy+d],[cx-d-w,cy-h-d],[cx-d-w,cy+d]];for(let R=r+11;R<=far;R+=6)for(let i=0;i<16;i++){const t=i/16*2*Math.PI;near.push([cx+R*Math.cos(t)-(Math.cos(t)<0?w:0),cy+R*Math.sin(t)-h/2])}
       let at=near.map(([x,y])=>({x,y,w,h})).find(a=>!hit(a));if(!at)continue;box.push(at);{const lx=at.x>cx?at.x:at.x+w>cx?cx:at.x+w,ly=at.y+h/2;if(Math.hypot(lx-cx,ly-cy)>13)el('line',{...tags(e),x1:cx,y1:cy,x2:lx,y2:ly,stroke:ink,'stroke-width':.5,opacity:.35,'pointer-events':'none'},svg)}
       const t=el('text',{...tags(e),x:at.x,y:at.y+h-2,fill:ink,'font-size':fs,opacity:.8,'pointer-events':'none'},svg);t.textContent=e.word}
-  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e)continue;const t=el('text',{...tags(e),x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
+  }else for(const w of labels){const e=pts.find(p=>p.word.toLowerCase()===w);if(!e||e.word.toLowerCase()===query)continue;const t=el('text',{...tags(e),x:PX(e)+extent(e)+4,y:PY(e)-extent(e)-3,fill:ink,'font-size':12,'font-weight':600,'pointer-events':'none'},svg);t.textContent=e.word}
   if(corners)for(const[x,y,a,t]of[[W-m.r-6,34,'end','Common word, now the brand\'s'],[m.l+8,34,'start','Rare word, now the brand\'s'],[W-m.r-6,H-m.b-10,'end','Common word, still its own']]){const c=el('text',{x,y,'text-anchor':a,fill:ink,'font-size':13,opacity:.6,'pointer-events':'none'},svg);c.textContent=t}
   const yt=el('text',{x:m.l,y:11,fill:ink,'font-size':12},svg);yt.textContent=W<560?'↑ Brand share':'↑ Brand share of attention today';
+  let found=false;const match=pts.find(e=>e.word.toLowerCase()===query);
+  if(query){svg.querySelectorAll('[data-word]').forEach(e=>{if(e.dataset.word!==query)e.style.opacity=.12});if(match){found=true;svg.append([...svg.querySelectorAll('g[tabindex][data-word]')].find(g=>g.dataset.word===query));const {cx,cy,r}=positions.get(match),g=el('g',{...tags(match),'pointer-events':'none'},svg);
+    el('circle',{cx,cy,r:r+5,fill:'none',stroke:ink,'stroke-width':1.5},g);const w=match.word.length*7+8,x=Math.max(m.l,Math.min(W-m.r-w,cx-w/2)),y=Math.max(25,cy-r-11);
+    el('rect',{x,y:y-12,width:w,height:16,fill:'var(--p, #fff)'},g);const t=el('text',{x:x+4,y,fill:ink,'font-size':12,'font-weight':600},g);t.textContent=match.word}}
   const off=entries.filter(e=>(!group||e.group===group)&&e.group!=='watching'&&!eligible.includes(e));
-  return {plotted:pts.length,total:eligible.length,words,names,books,discontinued,legendRows,sizeItems,bindLegend,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
+  return {plotted:pts.length,total:eligible.length,found,words,names,books,discontinued,legendRows,sizeItems,bindLegend,legendInPlot:!!legendBox,off,noBooks:off.filter(e=>e.pre_launch_per_million==null).length}}
 /* Equal-area markers: circle = word, diamond = capitalised name/place, star = regional brand, square = fiction (takes precedence); pale = books, hollow = discontinued. */
 function mark(k,x,y,r){if(k==='square'){const d=r*Math.sqrt(Math.PI)/2;return `M${x-d} ${y-d}h${2*d}v${2*d}h${-2*d}Z`}if(k==='star'){const R=r*Math.sqrt(Math.PI/(2.5*Math.sin(Math.PI/5)));return Array.from({length:10},(_,i)=>{const a=i*Math.PI/5-Math.PI/2,d=i%2?R/2:R;return (i?'L':'M')+(x+d*Math.cos(a))+' '+(y+d*Math.sin(a))}).join('')+'Z'}if(k==='dot')return`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;const d=r*Math.sqrt(Math.PI/2);
   return `M${x} ${y-d}L${x+d} ${y}L${x} ${y+d}L${x-d} ${y}Z`}
