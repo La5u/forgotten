@@ -57,31 +57,55 @@ function aggregate(host,groups){host.innerHTML='';const W=Math.max(280,host.clie
   const hide=()=>{tip.style.display='none';cross.setAttribute('opacity',0)},at=e=>{const r=svg.getBoundingClientRect();show(Math.max(-10,Math.min(15,Math.round(((e.clientX-r.left)*W/r.width-m.l)/pw*25-10))))};
   hit.addEventListener('pointermove',at);hit.addEventListener('pointerdown',at);hit.addEventListener('pointerleave',hide);hit.addEventListener('blur',hide);hit.addEventListener('focus',()=>show(cur));hit.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();show(Math.max(-10,Math.min(15,cur+(e.key==='ArrowLeft'?-1:1))))}})
 }
-export function nameCarousel(section,C,key){const $=s=>section.querySelector(s),rows=C[key].map(name=>C.names.find(n=>n.name===name));let index=0;
-  const change=(a,b)=>{const v=100*(b/a-1);return `${v<0?'fell':'rose'} ${Math.abs(v).toFixed(1)}%`},points=(a,from)=>Object.fromEntries(a.map((v,i)=>[from+i,v]));
+export function nameCarousel(section,C,key){const $=s=>section.querySelector(s),rows=(C[key]||[]).map(name=>C.names.find(n=>n.name===name)).filter(Boolean);let index=0;
+  section.hidden=!rows.length;if(!rows.length)return;
+  for(const selector of ['.carousel-prev','.carousel-next'])$(selector).hidden=rows.length<2;
+  section.querySelector(':scope > p:last-child').hidden=rows.length<2;
+  const points=(a,from)=>Object.fromEntries(a.map((v,i)=>[from+i,v])),jumpHost=$('.carousel-names');
+  jumpHost.innerHTML=rows.map((n,i)=>`<button type="button" data-index="${i}" aria-pressed="${i===0}">${esc(n.name)}</button>`).join('');
+  jumpHost.hidden=rows.length<2;
   const draw=()=>{const n=rows[index],A=points(n.name_index,n.from),P=points(n.comparison_index,n.from),comparison=`Other ${n.sex==='F'?"girls'":n.sex==='M'?"boys'":''} names popular at the same time (median of ${n.peers.length})`;
     $('.carousel-chart rect[fill="transparent"]')?.dispatchEvent(new Event('pointerleave'));
     $('.carousel-title').textContent=`${n.name}, after ${n.brand}`;$('.carousel-type').textContent=n.type==='company'?'Product':n.type==='character'?'Fictional character':'Name';
     $('.carousel-position').textContent=`${index+1} of ${rows.length}`;
-    $('.carousel-finding').textContent=`From ${n.launch} to ${n.end}, ${n.name} ${change(A[n.launch],A[n.end])} while the comparison names ${change(P[n.launch],P[n.end])}.`;
-    $('.carousel-five').textContent=`Five years after launch: ${A[n.launch+5].toFixed(1)} for ${n.name}, ${P[n.launch+5].toFixed(1)} for the comparison names (before launch = 100).`;
-    $('.carousel-flags').textContent=n.flags.join(' ');$('.comparison-names').textContent=n.peers.join(', ')+'.';
+    jumpHost.querySelectorAll('button').forEach((button,i)=>button.setAttribute('aria-pressed',i===index));
+    const after=n.after_years===6?'six years':`${n.after_years} available years`,long=n.test==='long',change=100*(long?n.end_ratio/n.before-1:n.change);
+    $('.carousel-finding').textContent=n.test==='spike'?`In ${n.launch} to ${n.launch+2}, ${n.name} peaked ${Math.round(100*(n.early_peak/n.before-1))}% above its earlier level and averaged ${Math.round(Math.abs(100*n.change))}% ${n.change<0?'below':'above'} that level in the ${after} after launch, measured against names popular at the same time.`:long?`By ${n.end_to}, ${n.name} stood ${Math.round(Math.abs(change))}% ${change<0?'below':'above'} its level in the six years before launch, measured against names popular at the same time.`:`In the ${after} after launch, ${n.name} averaged ${Math.round(Math.abs(change))}% ${change<0?'below':'above'} its level in the six years before, measured against names popular at the same time.`;
+    $('.carousel-five').textContent=`Six years before against ${after} after; a bigger change than ${Math.round(n.placebo_percentile)}% of names popular at the same time.`;
+    $('.comparison-names').textContent=n.peers.join(', ')+'.';
     $('.carousel-legend').innerHTML=[[GROUPS.taken.color,n.name,2.6],['#888',comparison,1.4]].map(([c,label,w])=>`<span><svg width="20" height="12" aria-hidden="true"><path d="M0 6H20" stroke="${c}" stroke-width="${w}"/></svg> ${esc(label)}</span>`).join('');
-    const series=[{name:comparison,color:'#888',points:P},{name:n.name,color:GROUPS.taken.color,points:A}],s=lineChart($('.carousel-chart'),{from:n.from,to:C.to,height:340,endLabels:false,right:14,tab:false,mark:{year:n.launch,label:`Launch, ${n.launch}`},ink:'#16130f',series:series.map(s=>({...s,fmt:y=>s.points[y].toFixed(1)+' (before launch = 100)'}))});
+    const series=[{name:comparison,color:'#888',points:P},{name:n.name,color:GROUPS.taken.color,points:A}],s=lineChart($('.carousel-chart'),{from:n.from,to:n.end,height:340,endLabels:false,right:14,tab:rows.length<2,mark:{year:n.launch,label:`Launch, ${n.launch}`},ink:'#16130f',series:series.map(s=>({...s,fmt:y=>Math.round(s.points[y])+' (100 is the average before launch)'}))});
     s.querySelectorAll('path').forEach((p,i)=>p.setAttribute('stroke-width',i?2.6:1.4));s.querySelectorAll('circle').forEach((p,i)=>p.setAttribute('r',i?3.5:2.5));
-    s.setAttribute('aria-label',`${n.name} and comparison names, ${n.from} to ${C.to}. Average of ${n.launch-3} to ${n.launch-1} = 100. ${$('.carousel-five').textContent}`);
+    s.setAttribute('aria-label',`${n.name} and comparison names, ${n.from} to ${n.end}. Set to 100 at the average in the three years before launch. ${$('.carousel-finding').textContent} ${$('.carousel-five').textContent}`);
   };
+  jumpHost.onclick=e=>{const button=e.target.closest('button[data-index]');if(button){index=Number(button.dataset.index);draw()}};
   const step=d=>{index=(index+d+rows.length)%rows.length;draw()};$('.carousel-prev').onclick=()=>step(-1);$('.carousel-next').onclick=()=>step(1);
-  section.addEventListener('keydown',e=>{if(!e.altKey&&!e.ctrlKey&&!e.metaKey&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowLeft'?-1:1)}});
-  let start;const host=$('.carousel-chart');host.style.touchAction='pan-y';host.addEventListener('pointerdown',e=>{if(e.pointerType==='touch')start={x:e.clientX,y:e.clientY}});host.addEventListener('pointercancel',()=>start=null);host.addEventListener('pointerup',e=>{if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;start=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.5)step(dx<0?1:-1)});
+  section.addEventListener('keydown',e=>{if(rows.length>1&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowLeft'?-1:1)}});
+  let start;const host=$('.carousel-chart');host.style.touchAction='pan-y';host.addEventListener('pointerdown',e=>{if(rows.length>1&&e.pointerType==='touch')start={x:e.clientX,y:e.clientY}});host.addEventListener('pointercancel',()=>start=null);host.addEventListener('pointerup',e=>{if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;start=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.5)step(dx<0?1:-1)});
   host.addEventListener('pointerdown',e=>{if(e.target.matches('svg rect'))e.target.dispatchEvent(new PointerEvent('pointermove',{clientX:e.clientX,clientY:e.clientY,bubbles:true}))});
   draw();let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(draw,120)})
+}
+
+// Keep the raw-birth cards' captions explicit about their separate baseline.
+function rawNameNotes(section){
+  const strip=section.querySelector('.strip'),suffix=' Changes are against the average of the three years before launch, without comparison-name controls.';
+  const clarify=text=>{const label=text.replaceAll('five years after launch','at year five').replaceAll('after ten','at year ten');return label.endsWith(suffix)?label:label+suffix};
+  const update=()=>{const finding=section.querySelector('.nread'),sentence=" Better-known brands and characters do no differently, with a rank correlation of 0.06 across 60 names, using today's Wikipedia views.";
+    if(finding.textContent&&!finding.textContent.endsWith(sentence))finding.append(sentence);
+    for(const card of strip.querySelectorAll('.ncard')){
+    const caption=card.querySelector('.ncap'),chart=card.querySelector('svg');
+    if(caption&&!caption.textContent.includes('Too rare')&&!caption.textContent.includes('too early')&&!caption.textContent.includes('too recently')){const text=clarify(caption.textContent);if(text!==caption.textContent)caption.textContent=text;
+      if(chart)chart.setAttribute('aria-label',clarify(chart.getAttribute('aria-label')||''))}
+  }};
+  new MutationObserver(records=>{if(records.some(r=>[...r.addedNodes].some(n=>n.nodeType===1&&n.matches('.ncard,svg'))))update()}).observe(strip,{childList:true,subtree:true});
+  update();
 }
 export async function pageCharts(entries){const [S,N,C]=await Promise.all(['sparks.json','names.json','name_controls.json'].map(async f=>{const r=await fetch(new URL(f,import.meta.url));if(!r.ok)throw Error(f+': '+r.status);return r.json()})), $=s=>document.querySelector(s),groups=aligned(N.names),row=t=>groups.find(g=>g.type===t).rows[15];
   takeoverCurve($('#takeover'),entries,S);capitalisationDumbbells($('#dumbbells'),entries);
   $('#aggregate-legend').innerHTML=legend(types.map(t=>[colors[t],labels[t]]));
   $('#aggregate-finding').textContent='No general penalty: the middle name barely moves after a launch, for products and fictional characters alike. Alexa and Siri are exceptions.';
   $('#aggregate-note').textContent=`US births per million, with each name set to 100 at its average in the three years before launch; lines show medians rounded to whole points and bands the middle half. All outcomes among site names count, with at least 20 births a year before launch: ${row('company').n} product names and ${row('character').n} fictional character names at year five. Counts vary by year; points with fewer than 10 names are left out. Hover, tap or use arrow keys for values.`;
-  nameCarousel($('#alexa'),C,'worst');nameCarousel($('#name-lift'),C,'lift');
+  nameCarousel($('#alexa'),C,'worst');nameCarousel($('#name-lift'),C,'lift');nameCarousel($('#name-spike'),C,'spike');
+  rawNameNotes($('#names'));
   const draw=()=>aggregate($('#aggregate'),groups);draw();let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(draw,120)})
 }
