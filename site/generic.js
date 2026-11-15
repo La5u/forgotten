@@ -2,10 +2,11 @@
 import {esc,legend} from './shared.js';
 export {esc,legend};
 
-/* Both colours pass 4.5:1 as text on white (#c1281e 5.9:1, #8a6500 5.3:1). */
+/* Mirror Taken, Contested and Kept on index.html. */
 export const GEN_GROUPS = {
-  lost:{label:'Lost',color:'#c1281e',note:'The trademark is legally generic, or has lapsed, in at least one major country.'},
-  slipping:{label:'Slipping',color:'#8a6500',note:'Still a protected trademark, but widely used as an everyday word.'}};
+  lost:{label:'Lost',color:'#d0342c',note:'The trademark is legally generic, or has lapsed, in at least one major country.'},
+  slipping:{label:'Slipping',color:'#b98700',note:'Still a trademark, but used as an everyday word and losing its capitals in print (or lacking casing data).'},
+  held:{label:'Held',color:'#0e8a5f',note:'Still a trademark and capitalised at least nine times in ten in print, despite everyday generic use.'}};
 
 /* Region filter: derived from the free-text region string. An entry can match several (e.g. "US, UK"). */
 export const REGIONS = {global:'Worldwide',na:'US & Canada',uk:'UK & Ireland',anz:'Australia & NZ'};
@@ -32,49 +33,56 @@ function showTip(html,x,y){if(!tip){tip=document.createElement('div');tip.classN
   tip.innerHTML=html;tip.style.display='block';const w=tip.offsetWidth,h=tip.offsetHeight;
   tip.style.left=Math.max(6,Math.min(innerWidth-w-6,x+14))+'px';tip.style.top=(y-h-12<6?y+16:y-h-12)+'px'}
 export function hideTip(){if(tip)tip.style.display='none'}
-export function tipHTML(e){const g=GEN_GROUPS[e.status];
+export function tipHTML(e){const g=GEN_GROUPS[e.group];
   return `<b>${esc(e.brand)}</b> <span style="opacity:.7">${esc(e.owner)}, ${esc(e.launch_year)}</span>`+
     `<div>${esc(e.word)}: ${esc(e.meaning)}</div><div style="opacity:.8">${esc(e.note)}</div>`+
     `<div style="opacity:.7">${g?esc(g.label):''} · ${e.lower_share_recent==null?'no 2010s data':pct(e.lower_share_recent)+' lowercase in the 2010s'}</div>`}
 
 /* Scatter: x = launch year, y = lowercase share in the 2010s. Dots are not tab stops; the list below carries the same data. */
 export function scatter(host,entries,{height=520,ink='#16130f',grid='#0000001a'}={}){
-  host.innerHTML='';const pts=entries.filter(e=>e.lower_share_recent!=null&&e.launch_year!=null);
+  hideTip();host.innerHTML='';const pts=entries.filter(e=>Number.isFinite(e.lower_share_recent)&&e.lower_share_recent>=0&&e.lower_share_recent<=1&&Number.isFinite(e.launch_year));
   const W=Math.max(300,host.clientWidth||700),H=height,m={t:30,r:16,b:46,l:42};
-  const lo=Math.floor(Math.min(1900,...pts.map(e=>e.launch_year))/10)*10,hi=2010;
+  const lo=Math.floor(Math.min(1900,...pts.map(e=>e.launch_year))/10)*10,hi=Math.max(2010,Math.ceil(Math.max(0,...pts.map(e=>e.launch_year))/10)*10);
   const X=y=>m.l+(y-lo)/(hi-lo)*(W-m.l-m.r),Y=s=>H-m.b-s*(H-m.t-m.b);
   const nL=pts.filter(e=>e.status==='lost').length,nM=pts.filter(e=>e.lower_share_recent>=.5).length;
-  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':`Scatter of ${pts.length} brand names: launch year against the share of printed uses written in lowercase in the 2010s. ${nM} are lowercase more often than not; ${nL} are lost trademarks. Every entry is listed in the dictionary below.`},host);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',style:'display:block;font-family:var(--sans, sans-serif)',role:'img','aria-label':`Scatter of ${pts.length} brand names: launch year against the share of printed uses written in lowercase in the 2010s. ${nM} are lowercase more often than not; ${nL} are lost trademarks. Every entry is listed in the dictionary below.`},host);
   for(const s of[0,.25,.5,.75,1]){el('line',{x1:m.l,x2:W-m.r,y1:Y(s),y2:Y(s),stroke:s===.5?ink:grid,'stroke-dasharray':s===.5?'3 4':'',opacity:s===.5?.45:1},svg);
     const t=el('text',{x:m.l-7,y:Y(s)+4,'text-anchor':'end',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=s*100+'%'}
   const half=el('text',{x:W-m.r-4,y:Y(.5)-6,'text-anchor':'end',fill:ink,'font-size':11,'font-style':'italic',opacity:.7},svg);half.textContent='half lowercase';
   const step=W<560?50:25;for(let y=Math.ceil(lo/step)*step;y<=hi;y+=step){el('line',{x1:X(y),x2:X(y),y1:H-m.b,y2:H-m.b+4,stroke:ink,opacity:.4},svg);const t=el('text',{x:X(y),y:H-m.b+17,'text-anchor':'middle',fill:ink,'font-size':11,opacity:.65},svg);t.textContent=y}
   const ax=el('text',{x:(W+m.l-m.r)/2,y:H-6,'text-anchor':'middle',fill:ink,'font-size':12},svg);ax.textContent='Year the brand launched →';
   const yt=el('text',{x:m.l,y:12,fill:ink,'font-size':12},svg);yt.textContent=W<560?'↑ Lowercase share, 2010s':'↑ Share of printed uses written in lowercase, 2010s';
-  const r=W>1000?4.2:3.6,big=W>1000;
+  const r=W>1000?4.2:3.6,big=W>1000,radius=e=>e.group==='lost'?r:r*.85;
   const dots=el('g',{},svg);
-  pts.forEach((e,i)=>{const c=GEN_GROUPS[e.status]?.color||ink,cx=X(e.launch_year),cy=Y(e.lower_share_recent);
-    el('circle',{cx,cy,r:e.status==='lost'?r:r*.85,fill:c,opacity:e.status==='lost'?.95:.75,stroke:'#fff','stroke-width':1,'pointer-events':'none'},dots);
-    el('circle',{cx,cy,r:11,fill:'transparent','data-i':i,style:'cursor:pointer'},dots)});
-  const on=ev=>{const i=ev.target.dataset?.i;if(i==null)return;const b=ev.target.getBoundingClientRect();showTip(tipHTML(pts[i]),b.left+b.width/2,b.top+b.height/2)};
-  dots.addEventListener('pointerover',on);dots.addEventListener('pointerout',hideTip);
-  dots.addEventListener('pointerdown',ev=>{if(ev.pointerType!=='mouse')on(ev)});
-  // Greedy labels: lost first, then the most-printed; skip a label only if every nearby slot collides.
-  const fs=big?11:10,box=[],hit=a=>a.x<m.l||a.x+a.w>W-m.r||a.y<16||a.y+a.h>H-m.b||box.some(b=>a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h);
-  for(const e of pts){box.push({x:X(e.launch_year)-3,y:Y(e.lower_share_recent)-3,w:6,h:6})}
-  box.push({x:m.l,y:0,w:330,h:18},{x:W-m.r-110,y:Y(.5)-18,w:110,h:14});
-  const rank=e=>(e.status==='lost'?1e9:0)+(e.total_recent_per_million||0);
-  for(const e of[...pts].sort((a,b)=>rank(b)-rank(a))){const cx=X(e.launch_year),cy=Y(e.lower_share_recent),w=e.word.length*fs*.56+2,h=fs+1;
-    const near=[[cx+6,cy-h/2],[cx-6-w,cy-h/2],[cx-w/2,cy-6-h],[cx-w/2,cy+6],[cx+5,cy-h-3],[cx+5,cy+3],[cx-5-w,cy-h-3],[cx-5-w,cy+3]];
-    for(let R=14;R<=50;R+=6)for(let k=0;k<16;k++){const t=k/16*2*Math.PI;near.push([cx+R*Math.cos(t)-(Math.cos(t)<0?w:0),cy+R*Math.sin(t)-h/2])}
-    const at=near.map(([x,y])=>({x,y,w,h})).find(a=>!hit(a));if(!at)continue;box.push(at);
-    const lx=at.x>cx?at.x:at.x+w>cx?cx:at.x+w,ly=at.y+h/2;if(Math.hypot(lx-cx,ly-cy)>13)el('line',{x1:cx,y1:cy,x2:lx,y2:ly,stroke:ink,'stroke-width':.5,opacity:.35,'pointer-events':'none'},svg);
-    const t=el('text',{x:at.x,y:at.y+h-2,fill:ink,'font-size':fs,'font-weight':e.status==='lost'?700:400,opacity:e.status==='lost'?1:.75,'pointer-events':'none'},svg);t.textContent=e.word}
+  pts.forEach(e=>{const c=GEN_GROUPS[e.group]?.color||ink,cx=X(e.launch_year),cy=Y(e.lower_share_recent);
+    el('circle',{cx,cy,r:radius(e),fill:c,opacity:e.group==='lost'?.95:.75,stroke:'#fff','stroke-width':1,'pointer-events':'none'},dots)});
+  // Pick the nearest dot, so overlapping touch targets do not hide their neighbours.
+  const hit=el('rect',{x:m.l-12,y:m.t-12,width:W-m.l-m.r+24,height:H-m.t-m.b+24,fill:'transparent',style:'cursor:crosshair'},svg);
+  const on=ev=>{const b=svg.getBoundingClientRect(),k=b.width/W,x=(ev.clientX-b.left)/k,y=(ev.clientY-b.top)/k;
+    let best=null,dist=18;for(const e of pts){const d=Math.hypot(X(e.launch_year)-x,Y(e.lower_share_recent)-y);if(d<dist){best=e;dist=d}}
+    if(best)showTip(tipHTML(best),b.left+X(best.launch_year)*k,b.top+Y(best.lower_share_recent)*k);else hideTip()};
+  hit.addEventListener('pointermove',ev=>{if(ev.pointerType==='mouse')on(ev)});hit.addEventListener('pointerleave',ev=>{if(ev.pointerType==='mouse')hideTip()});
+  hit.addEventListener('pointerdown',on);
+  svg.addEventListener('click',ev=>{if(ev.target!==hit)hideTip()});
+  // Greedy labels: lost first, then the most-printed. Measure actual glyph bounds;
+  // keep every label clear of all dots and labels, using only adjacent slots (no leaders).
+  const fs=big?11:10,box=[...svg.querySelectorAll('text')].map(t=>{const b=t.getBBox();return {x:b.x-2,y:b.y-2,w:b.width+4,h:b.height+4}});
+  const dotBox=pts.map(e=>{const d=radius(e)+2;return {x:X(e.launch_year)-d,y:Y(e.lower_share_recent)-d,w:d*2,h:d*2}});
+  const overlaps=(a,b)=>a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h;
+  const blocked=a=>a.x<m.l||a.x+a.w>W-m.r||a.y<m.t-8||a.y+a.h>H-m.b||box.some(b=>overlaps(a,b))||dotBox.some(b=>overlaps(a,b));
+  const limit=matchMedia('(max-width:600px)').matches?10:Infinity;let labels=0;
+  const ordered=[...pts].sort((a,b)=>Number(b.group==='lost')-Number(a.group==='lost')||(b.total_recent_per_million||0)-(a.total_recent_per_million||0));
+  for(const e of ordered){if(labels>=limit)break;const cx=X(e.launch_year),cy=Y(e.lower_share_recent),gap=radius(e)+5;
+    const t=el('text',{x:0,y:0,fill:ink,'font-size':fs,'font-weight':e.group==='lost'?700:400,opacity:e.group==='lost'?1:.75,'pointer-events':'none','data-label':e.word},svg);t.textContent=e.word;
+    const b=t.getBBox(),w=b.width,h=b.height;
+    const near=[[cx+gap,cy-h/2],[cx-gap-w,cy-h/2],[cx-w/2,cy-gap-h],[cx-w/2,cy+gap],[cx+gap,cy-gap-h],[cx+gap,cy+gap],[cx-gap-w,cy-gap-h],[cx-gap-w,cy+gap]];
+    const at=near.map(([x,y])=>({x:x-2,y:y-2,w:w+4,h:h+4})).find(a=>!blocked(a));
+    if(!at){t.remove();continue}box.push(at);labels++;t.setAttribute('x',at.x+2-b.x);t.setAttribute('y',at.y+2-b.y)}
   return entries.filter(e=>!pts.includes(e))}
 
 /* Inline sparkline of lowercase share by decade, 1900s-2010s on a shared axis, with the 50% line marked. */
 const DEC=[];for(let d=1900;d<=2010;d+=10)DEC.push(d);
-export function spark(e){const col=GEN_GROUPS[e.status]?.color||'#111',w=84,h=20,p=2.5,X=i=>p+i*(w-2*p)/(DEC.length-1),Y=s=>h-p-s*(h-2*p);
+export function spark(e){const col=GEN_GROUPS[e.group]?.color||'#111',w=84,h=20,p=2.5,X=i=>p+i*(w-2*p)/(DEC.length-1),Y=s=>h-p-s*(h-2*p);
   let d='',on=false,last=null;DEC.forEach((y,i)=>{const v=e.decades?.[y]?.lower_share;if(v==null){on=false;return}d+=(on?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1);on=true;last=[X(i),Y(v)]});
   const ks=Object.keys(e.decades||{}).filter(k=>e.decades[k].lower_share!=null).sort();
   const r=e.lower_share_recent,since=e.first_decade_majority_lower;
@@ -85,7 +93,7 @@ export function spark(e){const col=GEN_GROUPS[e.status]?.color||'#111',w=84,h=20
     (last?`<circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="2.2" fill="${col}"/>`:'')+
     `</svg><span aria-hidden="true">${r==null?'no data':pct(r)+' lowercase'}</span></span>`}
 
-export function entryHTML(e){const g=GEN_GROUPS[e.status]||{label:e.status,color:'#666'};
+export function entryHTML(e){const g=GEN_GROUPS[e.group]||{label:e.group,color:'#666'};
   const by=`${esc(e.brand)}${e.owner&&e.owner!==e.brand?' ('+esc(e.owner)+', '+esc(e.launch_year)+')':' ('+esc(e.launch_year)+')'}`;
   const lost=e.status==='lost'&&e.lost_year?` Trademark lost ${esc(e.lost_year)}.`:'';
   const reg=e.region&&e.region!=='global'?`<span class="reg">${esc(e.region)}</span>`:'';
@@ -98,4 +106,5 @@ export function entryHTML(e){const g=GEN_GROUPS[e.status]||{label:e.status,color
 export const GEN_METHODS=`<p><b>Lowercase share</b> is the share of a word's printed uses in Google Books (English, 1900 to 2019) written entirely in lowercase: <i>zipper</i> rather than <i>Zipper</i> or <i>ZIPPER</i>. Writers lowercase a word when they treat it as the ordinary name of a thing rather than as a brand, so a rising share is a sign the name is turning generic. The dashed line marks half.</p>
 <p>The share is a lower bound. Every sentence that starts with the word is capitalised, so even a fully generic word never reaches 100%. Names that are also surnames or places, such as Hoover, are pulled down further by every Mr Hoover. Edited books follow style guides that keep trademark capitals, and printed text lags speech by years, so a word can be everyday talk long before books show it.</p>
 <p>Decades before a brand launched are left out. Counts for rare words are small and noisy; a sparkline that sits at zero can mean the word is simply rare in print.</p>
-<p><b>Lost</b> means a court, registry or lapse made the trademark generic in at least one major country; it may still be protected elsewhere (Aspirin is still a Bayer trademark in some countries). <b>Slipping</b> means it is still protected but widely used as the everyday word. The region is where the generic use is documented. Status and notes are editorial summaries of the linked sources, not legal advice.</p>`;
+<p><b>Lost</b> means the trademark is legally generic or has lapsed in at least one major country, though it may still be protected elsewhere. <b>Slipping</b> means it is still a trademark but used as an everyday word, with at least 10% lowercase uses in print or no usable casing data. <b>Held</b> means it is still a trademark and still capitalised in print at least nine times in ten, although people say it for any brand.</p>
+<p>The region is where the generic use is documented. Status and notes are editorial summaries of the linked sources, not legal advice.</p>`;

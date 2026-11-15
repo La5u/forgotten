@@ -20,5 +20,5 @@ export function dictionarySparks(url,{crossovers=false}={}){let D,rows=[],io;
     for(const [node,e] of rows){if(!D.entries[e.word])continue;node.classList.add('has-spark');
       const host=document.createElement('div');host.className='spark';node.append(host);pending.set(host,e);io.observe(host)}};
   // Let the initial dictionary paint before fetching or parsing the extra data.
-  requestAnimationFrame(()=>setTimeout(async()=>{try{const r=await fetch(url);if(!r.ok)throw Error(r.status);D=await r.json();watch()}catch(e){console.warn('Book histories unavailable',e)}},0));
-  return (nodes,entries)=>{rows=Array.from(nodes,(node,i)=>[node,entries[i]]);watch()}}
+  const ready=new Promise(resolve=>requestAnimationFrame(()=>setTimeout(async()=>{try{const r=await fetch(url);if(!r.ok)throw Error(r.status);D=await r.json();watch()}catch(e){console.warn('Book histories unavailable',e)}finally{resolve()}},0)));
+  return Object.assign((nodes,entries)=>{rows=Array.from(nodes,(node,i)=>[node,entries[i]]);watch()},{ready})}

@@ -5,6 +5,7 @@ RAW = 'data/raw/generic/list.jsonl'
 CACHE = 'data/raw/generic/ngrams.json'
 OUT = 'site/generic.json'
 URL = 'https://books.google.com/ngrams/json'
+HELD_LOWER_SHARE_THRESHOLD = 0.10
 
 
 def variants(row):
@@ -87,7 +88,10 @@ def build(row, have):
         decades[str(year)] = {'lower_share': lo / total if total else None,
                               'per_million': round(total / 10 * 1e6, 4)}
     recent = decades.get('2010', {'lower_share': None, 'per_million': None})
-    return {**row, 'decades': decades, 'lower_share_recent': recent['lower_share'],
+    share = recent['lower_share']
+    group = 'lost' if row['status'] == 'lost' else (
+        'held' if isinstance(share, (int, float)) and share < HELD_LOWER_SHARE_THRESHOLD else 'slipping')
+    return {**row, 'group': group, 'decades': decades, 'lower_share_recent': share,
             'total_recent_per_million': recent['per_million'],
             'first_decade_majority_lower': next((y for y, d in decades.items()
                 if d['lower_share'] is not None and d['lower_share'] > 0.5), None)}

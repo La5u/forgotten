@@ -1,5 +1,7 @@
 {
  "fix": {
+  "garfield": {"owner": "Paramount"},
+  "nickelodeon": {"owner": "Paramount"},
   "cortana": {
    "group": "taken",
    "winner": "brand"
