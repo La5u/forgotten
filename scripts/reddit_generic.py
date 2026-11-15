@@ -78,6 +78,12 @@ def main():
     width, height = 2000, args.height * 2000 / args.width
     entries = json.loads((Path(__file__).resolve().parents[1] /
                           'site/generic.json').read_text(encoding='utf-8'))['entries']
+    entries = [e for e in entries
+               if e.get('year_source', 'none') != 'none'
+               and e.get('on_wikipedia_list', False) is True
+               and finite(e.get('launch_year'))
+               and finite(e.get('lower_share_recent'))
+               and 0 <= e['lower_share_recent'] <= 1]
     counts = Counter(e['group'] for e in entries)
     svg = ET.Element(f'{{{NS}}}svg', {
         'width': str(args.width), 'height': str(args.height),
@@ -96,7 +102,7 @@ def main():
         return node
 
     add('rect', width=width, height=height, fill='white')
-    text(80, 130, 'Brand names that became ordinary words', 76, '#16130f',
+    text(80, 130, 'Brands that became words', 76, '#16130f',
          font_family='Georgia, serif')
     text(80, 220, 'Each dot is a brand name. Higher = written in lowercase', 40)
     text(80, 270, 'more often in books of the 2010s, like any other word.', 40)
@@ -179,14 +185,20 @@ def main():
             assert not any(hits_dot(box, p) for p in points)
             assert not intersects(box, half_box)
 
-    text(80, height - 115, 'Data: Google Books Ngram (English, 2010-2019),')
-    brand_count = f'{len(entries)} brands'
-    if len(entries) != len(points):
-        brand_count += f', {len(points)} plotted'
-    text(80, height - 65,
-         f"Wikipedia's list of generic and genericized trademarks. {brand_count}.")
+    footer_lines = [
+        'Brands and launch years: Wikipedia (List of generic and genericized trademarks, brand articles).',
+        f'Lowercase share: Google Books Ngram, English, 2010-2019. {len(points)} brands. Not peer-reviewed.',
+    ]
+    for i, line in enumerate(footer_lines):
+        text(80, height - 115 + i * 50, line)
     if args.url is not None:
-        text(1920, height - 115, args.url, fill='#16130f', text_anchor='end')
+        url_left = 1920 - text_width(args.url, 30)
+        url_line = next((i for i, line in enumerate(footer_lines)
+                         if 80 + text_width(line, 30) + 30 <= url_left), None)
+        if url_line is None:
+            parser.error('URL does not fit beside either footer line at 30px')
+        text(1920, height - 115 + url_line * 50, args.url,
+             fill='#16130f', text_anchor='end')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     ET.ElementTree(svg).write(args.output, encoding='utf-8', xml_declaration=True)
     if args.check:
