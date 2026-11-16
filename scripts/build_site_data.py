@@ -52,6 +52,8 @@ def by_data(r):
 # article is about the word itself (its title contains the word), never a synonym concept (ask -> Question).
 FILL = {w: v for w, v in json.load(open('data/raw/orig_fill/views.json')).items()
         if v[1] and any(x in re.findall(r'[a-z]+', v[0].lower()) for x in stems(w))}
+# Given-name articles for names that have no other comparison (scripts/fetch_name_articles.py).
+NAME_ART = json.load(open('data/raw/name_articles.json')) if os.path.exists('data/raw/name_articles.json') else {}
 REGIONS = json.load(open('data/regions.json')) if os.path.exists('data/regions.json') else {}
 FICTION = json.load(open('data/fiction.json')) if os.path.exists('data/fiction.json') else {}
 SENSES = json.load(open('data/senses.json')) if os.path.exists('data/senses.json') else {}
@@ -80,6 +82,7 @@ for r in rows:
     for t in r.get('extra_brand_articles', []) if 'brand_views' not in FIX.get(r['word'].lower(), {}) else []: r['brand_views'] = (r.get('brand_views') or 0) + (med12(t) or 0)  # brand split over several articles
     if r['word'].lower() in FIX and 'group' in FIX[r['word'].lower()]: OVERRIDES[r['word'].lower()] = FIX[r['word'].lower()]['group']
     if 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('original_views') and r['word'].lower() in FILL: r['original_views'] = FILL[r['word'].lower()][1]; r['original_article'] = FILL[r['word'].lower()][0]
+    if 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('original_views') and r['kind'] in ('name', 'place') and r['word'].lower() in NAME_ART: r['original_article'], r['original_views'] = NAME_ART[r['word'].lower()]
     if not r.get('brand_views') and r.get('original_views'): r['brand_views'] = 0; r['no_brand_article'] = True  # brand never got a Wikipedia article
     if 'original_views' in FIX.get(r['word'].lower(), {}) and FIX[r['word'].lower()]['original_views'] is None: r['brand_share'] = None
     if r.get('brand_views') is not None and r.get('original_views'): r['brand_share'] = r['brand_views']/(r['brand_views']+r['original_views']) if not r.get('no_brand_article') else None
@@ -88,7 +91,8 @@ for r in rows:
         if g2: r['group'], r['winner'] = g2, w2
         elif r['group'] == 'data': r['group'] = 'contested'
     if r.get('no_plot'): r['brand_share'] = None  # traffic is shared with a parent article, or the comparison article is a bad match
-    wv = wiktionary.views(r['word'].lower(), LAST12) if r['kind'] in ('common', 'rare') and not r.get('original_views') and 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('no_plot') and not r.get('no_brand_article') and r.get('brand_views') and wiktionary.page(r['word'].lower()) == 'ok' else None  # skip form-of stubs and pages without English
+    wt = r['word'].capitalize() if r['kind'] in ('name', 'place') else r['word'].lower()  # names: the capitalised entry ("Yoshi")
+    wv = wiktionary.views(wt, LAST12) if not r.get('original_views') and 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('no_plot') and not r.get('no_brand_article') and r.get('brand_views') and wiktionary.page(wt) == 'ok' else None  # skip form-of stubs and pages without English
     if (r.get('brand_views') or 0) + (r.get('original_views') or 0) < 300: continue  # owner, 2026-11-09: too little evidence either way
     g = OVERRIDES.get(r['word'].lower(), r['group'])
     r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year'])
