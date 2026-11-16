@@ -66,6 +66,9 @@ LAST12 = [f'{y}{m:02d}' for y in (2025, 2026) for m in range(1, 13) if '202511' 
 def med12(t):
     v = VIEWS.get(t)
     return statistics.median(v.get(k, 0) for k in LAST12) if v else None
+# Stand-in for the original meaning when it has no Wikipedia article: en.wiktionary views of the plain lowercase word,
+# same months and agent filter (scripts/fetch_wiktionary_views.py), scaled after the loop. Missing page = no figure, never zero.
+import wiktionary
 from merge_preferences import PREFERRED, SWAPS
 for w in SWAPS:  # Judge files own the swapped brands' verdicts.
     FIX[w] = {k: v for k, v in FIX.get(w, {}).items() if k not in ('group', 'winner', 'confidence', 'reason')}
@@ -85,6 +88,7 @@ for r in rows:
         if g2: r['group'], r['winner'] = g2, w2
         elif r['group'] == 'data': r['group'] = 'contested'
     if r.get('no_plot'): r['brand_share'] = None  # traffic is shared with a parent article, or the comparison article is a bad match
+    wv = wiktionary.views(r['word'].lower(), LAST12) if r['kind'] in ('common', 'rare') and not r.get('original_views') and 'original_views' not in FIX.get(r['word'].lower(), {}) and not r.get('no_plot') and not r.get('no_brand_article') and r.get('brand_views') and wiktionary.page(r['word'].lower()) == 'ok' else None  # skip form-of stubs and pages without English
     if (r.get('brand_views') or 0) + (r.get('original_views') or 0) < 300: continue  # owner, 2026-11-09: too little evidence either way
     g = OVERRIDES.get(r['word'].lower(), r['group'])
     r['launch_year'] = LAUNCH.get(r['word'].lower(), r['launch_year'])
@@ -109,15 +113,33 @@ for r in rows:
     w = r['word'].lower()
     e['english'] = w not in FOREIGN and (any(x in LOWER for x in stems(w)) or w in ENGLISH or ('name_series' in e and r['kind'] in ('name', 'place')))
     if w in SENSES: e['also'] = SENSES[w]
+    e['wiktionary_views'] = None; e['_wv'] = wv
     if region.get('place') is True: e['kind'] = 'place'
     e['word'] = w.capitalize() if e['kind'] in ('name', 'place') else w  # headwords lowercase, proper names capitalised (owner, 2026-11-09)
     out.append(e)
+# Wiktionary traffic is smaller than Wikipedia traffic for the same word, more so for rare words. Scale factor per
+# tercile of book frequency = 1 / median(wiktionary / wikipedia original views) over English common/rare words that have both.
+cal = [(e['pre_launch_per_million'], wiktionary.views(e['word'], LAST12)/e['original_views']) for e in out if e['english'] and e['kind'] in ('common', 'rare')
+       and e['share_basis'] == 'wikipedia' and (e['original_views'] or 0) > 0 and (wiktionary.views(e['word'], LAST12) or 0) > 0]
+sig2 = lambda x: float(f'{x:.2g}')
+bounds = statistics.quantiles([p for p, _ in cal if p is not None], n=3)
+terc = lambda p: 0 if p <= bounds[0] else 1 if p <= bounds[1] else 2
+factors = [sig2(1/statistics.median(x for p, x in cal if p is not None and terc(p) == i)) for i in range(3)]
+overall = sig2(1/statistics.median(x for _, x in cal))
+SCALE = {'tercile_bounds_per_million': [round(b, 4) for b in bounds], 'factors': factors, 'overall': overall, 'n': len(cal)}
+print('wiktionary scale', SCALE)
+for e in out:
+    wv = e.pop('_wv')
+    if wv is None or e['brand_share'] is not None: continue
+    f = factors[terc(e['pre_launch_per_million'])] if e['pre_launch_per_million'] is not None else overall
+    if e['brand_views'] + f*wv < 300: continue  # same evidence rule as above, on scaled views
+    e.update(wiktionary_views=wv, brand_share_est=round(e['brand_views']/(e['brand_views'] + f*wv), 3), share_basis='wiktionary')
 ssa = {}
 for y in range(1970, 2026):
     for l in open(f'data/raw/ssa/yob{y}.txt'):
         n, sx, c = l.strip().split(',')
         if n == 'Alexa': ssa[str(y)] = ssa.get(str(y), 0) + int(c)
 alexa_long = {'us': ssa, 'uk': {str(y): c for y, c in sorted(names['Alexa']['uk'].items())}}
-json.dump({'entries': out, 'alexa_long': alexa_long}, open('site/data.json', 'w'), separators=(',', ':'))
+json.dump({'entries': out, 'alexa_long': alexa_long, 'wiktionary_scale': SCALE}, open('site/data.json', 'w'), separators=(',', ':'))
 print(len(out), collections.Counter(e['group'] for e in out))
 print([(e['word'], e['us_drop']) for e in out if e['word'] in ('Alexa', 'Siri', 'Tesla')])

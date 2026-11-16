@@ -16,6 +16,7 @@ Site: [lowercase.lasu.dev](https://lowercase.lasu.dev)
 
 - **Google Books Ngram** (English): lowercase and capitalised uses per year, 1900–2022.
 - **Wikipedia**: monthly page views for the brand and the original meaning, disambiguation pages to find candidates, and the [list of generic and genericized trademarks](https://en.wikipedia.org/wiki/List_of_generic_and_genericized_trademarks).
+- **Wiktionary**: monthly English Wiktionary page views of the plain word where the old meaning has no Wikipedia article, scaled by how much smaller Wiktionary traffic is for words of similar frequency; the result is shown as an estimate (`scripts/fetch_wiktionary_views.py`).
 - **US Social Security Administration**: births per name and year.
 
 Candidate words were proposed and judged with language models, then reviewed by hand. Launch years and owners can be wrong; corrections are welcome.

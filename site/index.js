@@ -1,8 +1,9 @@
 import {load,GROUPS,KINDS,esc,num,stealsChart,METHODS,MARK,isName,shareY,ownerNeeded,headerOffset} from './shared.js';import {dictionarySparks} from './sparks.js';import {pageCharts} from './charts.js';
 headerOffset();
 const D=await load(),E=D.entries,$=s=>document.querySelector(s),k='#16130f';
+const SP=fetch(new URL('sparks.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('sparks.json: '+r.status);return r.json()});  // one fetch for page charts and dictionary, after data.json so the scatter gets the bandwidth first
 const CHART={searchJump:true,crossovers:true};
-const sparks=dictionarySparks(new URL('sparks.json',import.meta.url),{crossovers:CHART.crossovers});
+const sparks=dictionarySparks(SP,{crossovers:CHART.crossovers});
 if(CHART.crossovers)$('#spark-note').append(' Dot: capitals cross above lowercase after a launch since 1900 and stay above.');
 let g='',ki='',lang='en',type='words',n=220,minViews=20000,searchNote='',showKept=false;
 const TRAFFIC=[0,1000,2000,5000,10000,15000,20000,30000,40000,50000,75000,100000,200000];
@@ -17,7 +18,7 @@ const scat=()=>{const base=filtered(),group=g||sg;document.querySelectorAll('#sc
   const off=r.off,nb=r.noBooks,nv=off.length-nb;
   $('#slg').innerHTML=[...r.legendRows,['Size',r.sizeItems]].map(([label,items])=>`<div class="lgrow"><span class="lglabel">${label}</span>${items.map(([m,t])=>`<span${label==='Mark'?` data-row="${label}" data-mark="${m}"`:''}>${MARK(label==='Size'?'dot':m,k,label==='Size'?m:3.6)}${t}</span>`).join('')}${label==='Size'?'<span>views a month</span>':''}</div>`).join('');
   $('#slg').querySelectorAll('[data-row]').forEach(e=>r.bindLegend(e,e.dataset.row,e.dataset.mark,e.textContent));
-  $('#unplot').innerHTML=off.length?`<details><summary>Not plotted (${off.length}): ${[nv&&`${nv} with no usable Wikipedia comparison or positive book estimate`,nb&&`${nb} with no book count from before the launch`].filter(Boolean).join('; ')}</summary>${off.map(e=>esc(e.word)).join(', ')}.</details>`:''};
+  $('#unplot').innerHTML=off.length?`<details><summary>Not plotted (${off.length}): ${[nv&&`${nv} with no Wikipedia comparison, usable Wiktionary page or positive book estimate`,nb&&`${nb} with no book count from before the launch`].filter(Boolean).join('; ')}</summary>${off.map(e=>esc(e.word)).join(', ')}.</details>`:''};
 function reveal(e,traffic=true){const changes=[];if(e.group==='failed')showKept=true;if((g||sg)!==e.group){g=sg=e.group;changes.push('Shown in '+GROUPS[e.group].label)}
   if(type&&(type==='names')!==isName(e)){type=isName(e)?'names':'words';changes.push('Showing '+(type==='names'?'Names & places':'Words'))}
   if(ki&&e.kind!==ki&&!(ki==='name'&&e.kind==='place')){ki='';changes.push('Kind filter cleared')}
@@ -32,7 +33,7 @@ function jump(e){reveal(e,false);bar();const r=dictionaryRows(),i=r.indexOf(e);i
 $('#traffic').oninput=ev=>{minViews=TRAFFIC[+ev.target.value];scat()};
 document.querySelector('#scat .seg').onclick=ev=>{const b=ev.target.closest('button');if(b){sg=b.dataset.g;g=sg;if(g==='failed')showKept=true;bar();n=220;render()}};
 const draw=()=>scat();addEventListener('resize',draw);
-const chartsReady=pageCharts(E).catch(e=>{console.error(e);document.querySelectorAll('.chart').forEach(h=>{if(!h.children.length)h.innerHTML='<p class="note">Chart could not load.</p>'})});
+const chartsReady=pageCharts(E,SP).catch(e=>{console.error(e);document.querySelectorAll('.chart').forEach(h=>{if(!h.children.length)h.innerHTML='<p class="note">Chart could not load.</p>'})});
 
 $('#m').innerHTML=METHODS+'<p>Dictionary histories show Google Books uses per million words, 1900–2022, averaged over three-year bins; both casings share a scale from zero.</p>';
 const c=$('#c');c.innerHTML='<input type="search" id="q" placeholder="Look up a word or company" aria-label="Search"><span id="kb"></span><span id="lb"></span><button id="kept" type="button" aria-pressed="false"></button>';
