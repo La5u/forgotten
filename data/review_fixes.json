@@ -1,7 +1,11 @@
 {
  "fix": {
-  "garfield": {"owner": "Paramount"},
-  "nickelodeon": {"owner": "Paramount"},
+  "garfield": {
+   "launch_year": 1978
+  },
+  "nickelodeon": {
+   "owner": "Paramount"
+  },
   "cortana": {
    "group": "taken",
    "winner": "brand"
@@ -80,9 +84,6 @@
   },
   "dove": {
    "launch_year": 1957
-  },
-  "garfield": {
-   "launch_year": 1978
   },
   "hades": {
    "launch_year": 2018
@@ -962,6 +963,16 @@
   "chrome": {
    "group": "taken",
    "winner": "brand"
+  },
+  "aerie": {
+   "group": "contested",
+   "winner": "even",
+   "reason": "The clothing brand and the bird's nest draw similar attention (owner, 2026-11-16)."
+  },
+  "wotsits": {
+   "group": "contested",
+   "winner": "original",
+   "reason": "A British snack; the word for a forgotten thing gets more attention (owner, 2026-11-16)."
   }
  },
  "reject": [
